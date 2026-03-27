@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试页面</title>
+</head>
+<body>
+    <h1>测试页面</h1>
+    <div id="test-output"></div>
+    
+    <script src="milestone-data.js"></script>
+    <script>
+        // 测试数据是否加载
+        window.addEventListener('load', function() {
+            const output = document.getElementById('test-output');
+            
+            if (typeof milestoneData === 'undefined') {
+                output.innerHTML = '<p style="color: red;">错误：milestoneData未定义</p>';
+                return;
+            }
+            
+            if (Object.keys(milestoneData).length === 0) {
+                output.innerHTML = '<p style="color: red;">错误：milestoneData为空</p>';
+                return;
+            }
+            
+            let html = '<p style="color: green;">✓ milestoneData已加载</p>';
+            html += '<p>包含 ' + Object.keys(milestoneData).length + ' 个英雄</p>';
+            
+            // 显示第一个英雄的数据
+            const firstHero = Object.keys(milestoneData)[0];
+            const hero = milestoneData[firstHero];
+            html += '<h2>' + hero.name + '</h2>';
+            html += '<p>类型: ' + hero.type + '</p>';
+            html += '<p>里程碑数量: ' + Object.keys(hero.milestones).length + '</p>';
+            
+            output.innerHTML = html;
+        });
+    </script>
+</body>
+</html>

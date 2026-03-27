@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>攻略 - Spire of Ash Wiki</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0d0d0d;
+            color: #c9b896;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2418 100%);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #8b6914;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: #d4af37;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+
+        .header p {
+            color: #8b7355;
+            margin-top: 10px;
+        }
+
+        .nav {
+            background: #1a1a1a;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #3d3220;
+        }
+
+        .nav a {
+            color: #a89f91;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s;
+            border: 1px solid transparent;
+        }
+
+        .nav a:hover {
+            background: #2d2418;
+            border-color: #8b6914;
+            color: #d4af37;
+        }
+
+        .nav a.active {
+            background: #3d3220;
+            border-color: #d4af37;
+            color: #d4af37;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .section-title h2 {
+            color: #d4af37;
+            font-size: 2em;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+        }
+
+        /* 阵容推荐卡片样式 */
+        .team-recommendation {
+            background: #1a1a1a;
+            border: 2px solid #8b6914;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px 0;
+        }
+
+        .team-recommendation h3 {
+            color: #d4af37;
+            font-size: 1.8em;
+            text-align: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #3d3220;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+
+        .team-card {
+            background: #0d0d0d;
+            border: 1px solid #3d3220;
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .team-card:hover {
+            border-color: #8b6914;
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.1);
+        }
+
+        .team-card h4 {
+            color: #d4af37;
+            font-size: 1.2em;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #2d2418;
+        }
+
+        .team-core {
+            color: #a89f91;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .team-core strong {
+            color: #d4af37;
+        }
+
+        .team-members {
+            margin: 12px 0;
+            padding: 10px;
+            background: #1a1a1a;
+            border-radius: 6px;
+        }
+
+        .team-members-title {
+            color: #8b7355;
+            font-size: 0.85em;
+            margin-bottom: 8px;
+        }
+
+        .member-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .member-tag {
+            background: #2d2418;
+            color: #c9b896;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            border: 1px solid #3d3220;
+        }
+
+        .team-bonus {
+            margin: 12px 0;
+            padding: 10px;
+            background: #1a1a1a;
+            border-radius: 6px;
+            border-left: 3px solid #8b6914;
+        }
+
+        .team-bonus-title {
+            color: #8b7355;
+            font-size: 0.85em;
+            margin-bottom: 8px;
+        }
+
+        .bonus-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .bonus-tag {
+            background: #3d3220;
+            color: #d4af37;
+            padding: 2px 6px;
+            border-radius: 10px;
+            font-size: 0.75em;
+        }
+
+        .team-tactic {
+            color: #a89f91;
+            font-size: 0.9em;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #2d2418;
+            line-height: 1.5;
+        }
+
+        .category-title {
+            color: #d4af37;
+            font-size: 1.4em;
+            margin: 30px 0 15px 0;
+            padding: 10px 15px;
+            background: #2d2418;
+            border-radius: 6px;
+            border-left: 4px solid #8b6914;
+        }
+
+        .footer {
+            background: #1a1a1a;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #8b7355;
+            border-top: 1px solid #3d3220;
+        }
+
+        @media (max-width: 768px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Spire of Ash Wiki</h1>
+        <p>探索灰烬之塔的世界</p>
+    </div>
+
+    <div class="nav">
+        <a href="index.html">首页</a>
+        <a href="characters.html">角色</a>
+        <a href="items.html">物品</a>
+        <a href="guides.html" class="active">攻略</a>
+        <a href="dummies.html">木桩</a>
+    </div>
+
+    <div class="container">
+        <div class="section-title">
+            <h2>攻略指南</h2>
+            <p>基于36个英雄的技能、队伍加成和里程碑分析</p>
+        </div>
+
+        <!-- 阵容推荐 -->
+        <div class="team-recommendation">
+            <h3>阵容推荐</h3>
+            
+            <!-- 元素伤害流派 -->
+            <div class="category-title">一、元素伤害流派</div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <h4>1. 火焰爆发流</h4>
+                    <div class="team-core"><strong>核心：</strong>日炼决斗者（+10%火焰伤害，+6%暴击）</div>
+                    <div class="team-members">
+                        <div class="team-members-title">推荐阵容</div>
+                        <div class="member-list">
+                            <span class="member-tag">日炼决斗者</span>
+                            <span class="member-tag">灰烬先知</span>
+                            <span class="member-tag">黎明圣骑士</span>
+                            <span class="member-tag">铭文工匠</span>
+                            <span class="member-tag">淘金探者</span>
+                        </div>
+                    </div>
+                    <div class="team-bonus">
+                        <div class="team-bonus-title">队伍加成</div>
+                        <div class="bonus-list">
+                            <span class="bonus-tag">+10%火焰伤害</span>
+                            <span class="bonus-tag">+6%暴击</span>
+                            <span class="bonus-tag">+8%伤害</span>
+                            <span class="bonus-tag">+18%护甲</span>
+                            <span class="bonus-tag">+12%全抗性</span>
+                            <span class="bonus-tag">+8%伤害减免</span>
+                            <span class="bonus-tag">+10%闪避</span>
+                        </div>
+                    </div>
+                    <div class="team-tactic"><strong>战术：</strong>火焰伤害叠加，持续燃烧效果，配合高生存能力进行长期作战。</div>
+                </div>
+
+                <div class="team-card">
+                    <h4>2. 闪电风暴流</h4>
+                    <div class="team-core"><strong>核心：</strong>雷霆武僧（+8%攻速，+10%感电效果）</div>
+                    <div class="team-members">
+                        <div class="team-members-title">推荐阵容</div>
+                        <div class="member-list">
+                            <span class="member-tag">雷霆武僧</span>
+                            <span class="member-tag">风暴壁垒队长</span>
+                            <span class="member-tag">火花工程师</span>
+                            <span class="member-tag">以太指挥者</span>
+                            <span class="member-tag">风暴吟唱者</span>
+                        </div>
+                    </div>
+                    <div class="team-bonus">
+                        <div class="team-bonus-title">队伍加成</div>
+                        <div class="bonus-list">
+                            <span class="bonus-tag">+16%攻击速度</span>
+                            <span class="bonus-tag">+10%感电效果</span>
+                            <span class="bonus-tag">+12%感电几率</span>
+                            <span class="bonus-tag">+8%施法速度</span>
+                            <span class="bonus-tag">+12%法力回复</span>
+                            <span class="bonus-tag">+8%冷却恢复</span>
+                        </div>
+                    </div>
+                    <div class="team-tactic"><strong>战术：</strong>高频感电触发，连锁爆发伤害，快速施法循环。</div>
+                </div>
+
+                <div class="team-card">
+                    <h4>3. 冰霜控制流</h4>
+                    <div class="team-core"><strong>核心：</strong>霜冻建筑师（+12%冰冷抗性，+10%屏障强度）</div>
+                    <div class="team-members">
+                        <div class="team-members-title">推荐阵容</div>
+                        <div class="member-list">
+                            <span class="member-tag">霜冻建筑师</span>
+                            <span class="member-tag">迷雾游侠</span>
+                            <span class="member-tag">战地医官</span>
+                            <span class="member-tag">编年吟游诗人</span>
+                            <span class="member-tag">棱镜传令官</span>
+                        </div>
+                    </div>
+                    <div class="team-bonus">
+                        <div class="team-bonus-title">队伍加成</div>
+                        <div class="bonus-list">
+                            <span class="bonus-tag">+12%冰冷抗性</span>
+                            <span class="bonus-tag">+10%屏障强度</span>
+                            <span class="bonus-tag">+12%治疗/屏障效果</span>
+                            <span class="bonus-tag">+10%增益持续时间</span>
+                            <span class="bonus-tag">+8%元素伤害</span>
+                            <span class="bonus-tag">+8%全抗性</span>
+                        </div>
+                    </div>
+                    <div class="team-tactic"><strong>战术：</strong>冰霜减速控制，高防御屏障，持续治疗支援。</div>
+                </div>
+
+                <div class="team-card">
+                    <h4>4. 毒素持续流</h4>
+                    <div class="team-core"><strong>核心：</strong>虚空召唤者（+10%混沌伤害，+8%对减益目标伤害）</div>
+                    <div class="team-members">
+                        <div class="team-members-title">推荐阵容</div>
+                        <div class="member-list">
+                            <span class="member-tag">虚空召唤者</span>
+                            <span class="member-tag">孢子炼金师</span>
+                            <span class="member-tag">墓穴掮客</span>
+                            <span class="member-tag">咒文锻造师</span>
+                            <span class="member-tag">暗影图书管理员</span>
+                        </div>
+                    </div>
+                    <div class="team-bonus">
+                        <div class="team-bonus-title">队伍加成</div>
+                        <div class="bonus-list">
+                            <span class="bonus-tag">+10%混沌伤害</span>
+                            <span class="bonus-tag">+24%对减益目标伤害</span>
+                            <span class="bonus-tag">+12%诅咒效果</span>
+                            <span class="bonus-tag">+6%生命偷取</span>
+                            <span class="bonus-tag">+12%中毒抗性</span>
+                        </div>
+                    </div>
+                    <div class="team-tactic"><strong>战术：</strong>多重减益叠加，持续毒素伤害，生命偷取维持。</div>
+                </div>
+            </div>
+
+            <!-- 物理伤害流派 -->
+            <div class="category-title">二、物理伤害流派</div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <h4>5. 物理暴击流</h4>
+                    <div class="team-core"><strong>核心：</strong>弹道圣者（+8%投射物速度，+10%暴击几率）</div>
+                    <div class="team-members">
+                        <div class="team-members-title">推荐阵容</div>
+                        <div class="member-list">
+                            <span class="member-tag">弹道圣者</span>
+                            <span class="member-tag">血旗战士</span>
+                            <span class="member-tag">噬星掠夺者</span>
+                            <span class="member-tag">疾风守望者</span>
+                            <span class="member-tag">编年吟游诗人</span>
+                        </div>
+                    </div>
+                    <div class="team-bonus">
+                        <div class="team-bonus-title">队伍加成</div>
+                        <div class="bonus-list">
+                            <span class="bonus-tag">+10%暴击几率</span>
+                            <span class="bonus-tag">+6%暴击倍率</span>
+                            <span class="bonus-tag">+8%攻击速度</span>
+                            <span class="bonus-tag">+10%对精英伤害</span>
+                            <span class="bonus-tag">+10%流血几率</span>
+                            <span class="bonus-tag">+8%投射物速度</span>
+                        </div>
+                    </div>
+                    <div class="team-tactic"><strong>战术：</strong>高暴击率输出，流血效果叠加，快速攻击节奏。</div>
+                </div>
+
+                <div class="team-card">
+                    <h4>6. 近战狂暴流</h4>
+                    <div class="team-core"><strong>核心：</strong>裂隙之刃（+8%冷却恢复，+10%对精英伤害）</div>
+                    <div class="team-members">
+                        <div class="team-members-title">推荐阵容</div>
+                        <div class="member-list">
+                            <span class="member-tag">裂隙之刃</span>
+                            <span class="member-tag">血旗战士</span>
+                            <span class="member-tag">噬星掠夺者</span>
+                            <span class="member-tag">破誓哨兵</span>
+                            <span class="member-tag">泰坦守护</span>
+                        </div>
+                    </div>
+                    <div class="team-bonus">
+                        <div class="team-bonus-title">队伍加成</div>
+                        <div class="bonus-list">
+                            <span class="bonus-tag">+20%对精英伤害</span>
+                            <span class="bonus-tag">+8%攻击速度</span>
+                            <span class="bonus-tag">+10%流血几率</span>
+                            <span class="bonus-tag">+6%暴击倍率</span>
+                            <span class="bonus-tag">+12%最大生命值</span>
+                            <span class="bonus-tag">+8%屏障强度</span>
+                        </div>
+                    </div>
+                    <div class="team-tactic"><strong>战术：</strong>针对精英敌人特化，高生存能力，持续流血输出。</div>
+                </div>
+            </div>
+
+            <!-- 混沌/以太流派 -->
+            <div class="category-title">三、混沌/以太流派</div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <h4>7. 混沌虚空流</h4>
+                    <div class="team-core"><strong>核心：</strong>虚空召唤者（+10%混沌伤害，+8%对减益目标伤害）</div>
+                    <div class="team-members">
+                        <div class="team-members-title">推荐阵容</div>
+                        <div class="member-list">
+                            <span class="member-tag">虚空召唤者</span>
+                            <span class="member-tag">裂隙之刃</span>
+                            <span class="member-tag">噬星掠夺者</span>
+                            <span class="member-tag">镜像堡垒</span>
+                            <span class="member-tag">虚无守卫</span>
+                        </div>
+                    </div>
+                    <div class="team-bonus">
+                        <div class="team-bonus-title">队伍加成</div>
+                        <div class="bonus-list">
+                            <span class="bonus-tag">+10%混沌伤害</span>
+                            <span class="bonus-tag">+20%对精英伤害</span>
+                            <span class="bonus-tag">+8%冷却恢复</span>
+                            <span class="bonus-tag">+8%伤害减免</span>
+                            <span class="bonus-tag">+10%法术伤害减免</span>
+                        </div>
+                    </div>
+                    <div class="team-tactic"><strong>战术：</strong>混沌伤害爆发，高防御体系，专门针对精英敌人。</div>
+                </div>
+
+                <div class="team-card">
+                    <h4>8. 以太奥术流</h4>
+                    <div class="team-core"><strong>核心：</strong>以太指挥者（+12%法力回复，+8%冷却恢复）</div>
+                    <div class="team-members">
+                        <div class="team-members-title">推荐阵容</div>
+                        <div class="member-list">
+                            <span class="member-tag">以太指挥者</span>
+                            <span class="member-tag">裂隙之刃</span>
+                            <span class="member-tag">星辰抄录师</span>
+                            <span class="member-tag">铭文工匠</span>
+                            <span class="member-tag">虚无守卫</span>
+                        </div>
+                    </div>
+                    <div class="team-bonus">
+                        <div class="team-bonus-title">队伍加成</div>
+                        <div class="bonus-list">
+                            <span class="bonus-tag">+20%法力回复</span>
+                            <span class="bonus-tag">+16%冷却恢复</span>
+                            <span class="bonus-tag">+10%增益持续时间</span>
+                            <span class="bonus-tag">+10%辅助效果</span>
+                            <span class="bonus-tag">+10%法术伤害减免</span>
+                        </div>
+                    </div>
+                    <div class="team-tactic"><strong>战术：</strong>快速技能循环，高法力回复，强辅助能力。</div>
+                </div>
+            </div>
+
+            <!-- 防御生存流派 -->
+            <div class="category-title">四、防御生存流派</div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <h4>9. 钢铁防御流</h4>
+                    <div class="team-core"><strong>核心：</strong>钢铁主教（+8%格挡几率，+10%护甲）</div>
+                    <div class="team-members">
+                        <div class="team-members-title">推荐阵容</div>
+                        <div class="member-list">
+                            <span class="member-tag">钢铁主教</span>
+                            <span class="member-tag">黎明圣骑士</span>
+                            <span class="member-tag">灰烬先锋</span>
+                            <span class="member-tag">岩石缚法者</span>
+                            <span class="member-tag">泰坦守护</span>
+                        </div>
+                    </div>
+                    <div class="team-bonus">
+                        <div class="team-bonus-title">队伍加成</div>
+                        <div class="bonus-list">
+                            <span class="bonus-tag">+36%护甲</span>
+                            <span class="bonus-tag">+18%韧性</span>
+                            <span class="bonus-tag">+12%最大生命值</span>
+                            <span class="bonus-tag">+8%屏障强度</span>
+                            <span class="bonus-tag">+6%全抗性</span>
+                            <span class="bonus-tag">+8%格挡几率</span>
+                        </div>
+                    </div>
+                    <div class="team-tactic"><strong>战术：</strong>超高防御体系，格挡减伤，纯坦克型队伍。</div>
+                </div>
+
+                <div class="team-card">
+                    <h4>10. 闪避生存流</h4>
+                    <div class="team-core"><strong>核心：</strong>疾风守望者（+10%闪避，+6%移动/行动速度）</div>
+                    <div class="team-members">
+                        <div class="team-members-title">推荐阵容</div>
+                        <div class="member-list">
+                            <span class="member-tag">疾风守望者</span>
+                            <span class="member-tag">灰烬先知</span>
+                            <span class="member-tag">镜像堡垒</span>
+                            <span class="member-tag">破誓哨兵</span>
+                            <span class="member-tag">编年吟游诗人</span>
+                        </div>
+                    </div>
+                    <div class="team-bonus">
+                        <div class="team-bonus-title">队伍加成</div>
+                        <div class="bonus-list">
+                            <span class="bonus-tag">+20%闪避</span>
+                            <span class="bonus-tag">+16%伤害减免</span>
+                            <span class="bonus-tag">+10%护甲</span>
+                            <span class="bonus-tag">+8%对精英伤害减免</span>
+                            <span class="bonus-tag">+14%行动速度</span>
+                        </div>
+                    </div>
+                    <div class="team-tactic"><strong>战术：</strong>高闪避规避伤害，高减伤，灵活机动作战。</div>
+                </div>
+            </div>
+
+            <!-- 辅助支援流派 -->
+            <div class="category-title">五、辅助支援流派</div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <h4>11. 治疗辅助流</h4>
+                    <div class="team-core"><strong>核心：</strong>战地医官（+12%治疗/屏障效果，+8%生命回复）</div>
+                    <div class="team-members">
+                        <div class="team-members-title">推荐阵容</div>
+                        <div class="member-list">
+                            <span class="member-tag">战地医官</span>
+                            <span class="member-tag">镀金施善者</span>
+                            <span class="member-tag">星辰抄录师</span>
+                            <span class="member-tag">铭文工匠</span>
+                            <span class="member-tag">编年吟游诗人</span>
+                        </div>
+                    </div>
+                    <div class="team-bonus">
+                        <div class="team-bonus-title">队伍加成</div>
+                        <div class="bonus-list">
+                            <span class="bonus-tag">+12%治疗/屏障效果</span>
+                            <span class="bonus-tag">+14%生命回复</span>
+                            <span class="bonus-tag">+20%增益持续时间</span>
+                            <span class="bonus-tag">+10%辅助效果</span>
+                            <span class="bonus-tag">+8%冷却恢复</span>
+                        </div>
+                    </div>
+                    <div class="team-tactic"><strong>战术：</strong>强大治疗能力，增益持续，全面保障队伍生存。</div>
+                </div>
+
+                <div class="team-card">
+                    <h4>12. 增益辅助流</h4>
+                    <div class="team-core"><strong>核心：</strong>编年吟游诗人（+10%增益持续时间，+8%行动速度）</div>
+                    <div class="team-members">
+                        <div class="team-members-title">推荐阵容</div>
+                        <div class="member-list">
+                            <span class="member-tag">编年吟游诗人</span>
+                            <span class="member-tag">星辰抄录师</span>
+                            <span class="member-tag">铭文工匠</span>
+                            <span class="member-tag">以太指挥者</span>
+                            <span class="member-tag">风暴吟唱者</span>
+                        </div>
+                    </div>
+                    <div class="team-bonus">
+                        <div class="team-bonus-title">队伍加成</div>
+                        <div class="bonus-list">
+                            <span class="bonus-tag">+20%增益持续时间</span>
+                            <span class="bonus-tag">+16%冷却恢复</span>
+                            <span class="bonus-tag">+10%辅助效果</span>
+                            <span class="bonus-tag">+12%法力回复</span>
+                            <span class="bonus-tag">+8%施法速度</span>
+                            <span class="bonus-tag">+8%攻击速度</span>
+                        </div>
+                    </div>
+                    <div class="team-tactic"><strong>战术：</strong>增益最大化，快速技能循环，全面提升队伍能力。</div>
+                </div>
+            </div>
+
+            <!-- 混合流派 -->
+            <div class="category-title">六、混合流派</div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <h4>13. 元素混沌混合流</h4>
+                    <div class="team-core"><strong>核心：</strong>棱镜传令官（+8%全抗性，+8%元素伤害）</div>
+                    <div class="team-members">
+                        <div class="team-members-title">推荐阵容</div>
+                        <div class="member-list">
+                            <span class="member-tag">棱镜传令官</span>
+                            <span class="member-tag">日炼决斗者</span>
+                            <span class="member-tag">雷霆武僧</span>
+                            <span class="member-tag">虚空召唤者</span>
+                            <span class="member-tag">霜冻建筑师</span>
+                        </div>
+                    </div>
+                    <div class="team-bonus">
+                        <div class="team-bonus-title">队伍加成</div>
+                        <div class="bonus-list">
+                            <span class="bonus-tag">+8%全抗性</span>
+                            <span class="bonus-tag">+8%元素伤害</span>
+                            <span class="bonus-tag">+10%火焰伤害</span>
+                            <span class="bonus-tag">+10%感电效果</span>
+                            <span class="bonus-tag">+10%混沌伤害</span>
+                            <span class="bonus-tag">+12%冰冷抗性</span>
+                        </div>
+                    </div>
+                    <div class="team-tactic"><strong>战术：</strong>全元素覆盖，混沌增强，高防御体系。</div>
+                </div>
+
+                <div class="team-card">
+                    <h4>14. 物理法术混合流</h4>
+                    <div class="team-core"><strong>核心：</strong>弹道圣者（+8%投射物速度，+10%暴击几率）</div>
+                    <div class="team-members">
+                        <div class="team-members-title">推荐阵容</div>
+                        <div class="member-list">
+                            <span class="member-tag">弹道圣者</span>
+                            <span class="member-tag">以太指挥者</span>
+                            <span class="member-tag">火花工程师</span>
+                            <span class="member-tag">裂隙之刃</span>
+                            <span class="member-tag">星辰抄录师</span>
+                        </div>
+                    </div>
+                    <div class="team-bonus">
+                        <div class="team-bonus-title">队伍加成</div>
+                        <div class="bonus-list">
+                            <span class="bonus-tag">+10%暴击几率</span>
+                            <span class="bonus-tag">+8%投射物速度</span>
+                            <span class="bonus-tag">+12%感电几率</span>
+                            <span class="bonus-tag">+8%投射物伤害</span>
+                            <span class="bonus-tag">+24%冷却恢复</span>
+                            <span class="bonus-tag">+12%法力回复</span>
+                        </div>
+                    </div>
+                    <div class="team-tactic"><strong>战术：</strong>物理法术双重输出，快速技能循环，高暴击。</div>
+                </div>
+
+                <div class="team-card">
+                    <h4>15. 生存输出平衡流</h4>
+                    <div class="team-core"><strong>核心：</strong>黎明圣骑士（+10%护甲，+6%全抗性）</div>
+                    <div class="team-members">
+                        <div class="team-members-title">推荐阵容</div>
+                        <div class="member-list">
+                            <span class="member-tag">黎明圣骑士</span>
+                            <span class="member-tag">灰烬先知</span>
+                            <span class="member-tag">日炼决斗者</span>
+                            <span class="member-tag">战地医官</span>
+                            <span class="member-tag">编年吟游诗人</span>
+                        </div>
+                    </div>
+                    <div class="team-bonus">
+                        <div class="team-bonus-title">队伍加成</div>
+                        <div class="bonus-list">
+                            <span class="bonus-tag">+10%护甲</span>
+                            <span class="bonus-tag">+6%全抗性</span>
+                            <span class="bonus-tag">+8%伤害减免</span>
+                            <span class="bonus-tag">+10%闪避</span>
+                            <span class="bonus-tag">+10%火焰伤害</span>
+                            <span class="bonus-tag">+6%暴击</span>
+                            <span class="bonus-tag">+12%治疗/屏障效果</span>
+                        </div>
+                    </div>
+                    <div class="team-tactic"><strong>战术：</strong>平衡生存与输出，适合各种战斗环境。</div>
+                </div>
+            </div>
+
+            <!-- 特殊机制流派 -->
+            <div class="category-title">七、特殊机制流派</div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <h4>16. 精英猎杀流</h4>
+                    <div class="team-core"><strong>核心：</strong>裂隙之刃（+8%冷却恢复，+10%对精英伤害）</div>
+                    <div class="team-members">
+                        <div class="team-members-title">推荐阵容</div>
+                        <div class="member-list">
+                            <span class="member-tag">裂隙之刃</span>
+                            <span class="member-tag">噬星掠夺者</span>
+                            <span class="member-tag">暗影图书管理员</span>
+                            <span class="member-tag">虚空召唤者</span>
+                            <span class="member-tag">墓穴掮客</span>
+                        </div>
+                    </div>
+                    <div class="team-bonus">
+                        <div class="team-bonus-title">队伍加成</div>
+                        <div class="bonus-list">
+                            <span class="bonus-tag">+28%对精英伤害</span>
+                            <span class="bonus-tag">+6%暴击倍率</span>
+                            <span class="bonus-tag">+10%物品稀有度</span>
+                            <span class="bonus-tag">+10%混沌伤害</span>
+                            <span class="bonus-tag">+18%对减益目标伤害</span>
+                            <span class="bonus-tag">+6%生命偷取</span>
+                        </div>
+                    </div>
+                    <div class="team-tactic"><strong>战术：</strong>专门针对精英敌人，高伤害输出，物品获取加成。</div>
+                </div>
+
+                <div class="team-card">
+                    <h4>17. 金币获取流</h4>
+                    <div class="team-core"><strong>核心：</strong>淘金探者（+8%伤害，+10%金币获取）</div>
+                    <div class="team-members">
+                        <div class="team-members-title">推荐阵容</div>
+                        <div class="member-list">
+                            <span class="member-tag">淘金探者</span>
+                            <span class="member-tag">镀金施善者</span>
+                            <span class="member-tag">暗影图书管理员</span>
+                            <span class="member-tag">噬星掠夺者</span>
+                            <span class="member-tag">虚空召唤者</span>
+                        </div>
+                    </div>
+                    <div class="team-bonus">
+                        <div class="team-bonus-title">队伍加成</div>
+                        <div class="bonus-list">
+                            <span class="bonus-tag">+20%金币获取</span>
+                            <span class="bonus-tag">+10%物品稀有度</span>
+                            <span class="bonus-tag">+8%伤害</span>
+                            <span class="bonus-tag">+18%对精英伤害</span>
+                            <span class="bonus-tag">+6%暴击倍率</span>
+                            <span class="bonus-tag">+10%混沌伤害</span>
+                        </div>
+                    </div>
+                    <div class="team-tactic"><strong>战术：</strong>最大化金币和物品获取，适合刷图farming。</div>
+                </div>
+
+                <div class="team-card">
+                    <h4>18. 减益控制流</h4>
+                    <div class="team-core"><strong>核心：</strong>咒文锻造师（+12%诅咒效果，+6%对减益目标伤害）</div>
+                    <div class="team-members">
+                        <div class="team-members-title">推荐阵容</div>
+                        <div class="member-list">
+                            <span class="member-tag">咒文锻造师</span>
+                            <span class="member-tag">黄昏协调者</span>
+                            <span class="member-tag">虚空召唤者</span>
+                            <span class="member-tag">墓穴掮客</span>
+                            <span class="member-tag">孢子炼金师</span>
+                        </div>
+                    </div>
+                    <div class="team-bonus">
+                        <div class="team-bonus-title">队伍加成</div>
+                        <div class="bonus-list">
+                            <span class="bonus-tag">+12%诅咒效果</span>
+                            <span class="bonus-tag">+32%对减益目标伤害</span>
+                            <span class="bonus-tag">+16%减益持续时间缩短</span>
+                            <span class="bonus-tag">+10%混沌伤害</span>
+                            <span class="bonus-tag">+6%生命偷取</span>
+                            <span class="bonus-tag">+12%中毒抗性</span>
+                        </div>
+                    </div>
+                    <div class="team-tactic"><strong>战术：</strong>多重减益叠加，对减益目标造成巨额伤害。</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 Spire of Ash Wiki - 由玩家社区维护</p>
+    </div>
+</body>
+</html>

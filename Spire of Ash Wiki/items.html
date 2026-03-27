@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>物品 - Spire of Ash Wiki</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0d0d0d;
+            color: #c9b896;
+            line-height: 1.6;
+        }
+        .header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2418 100%);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #8b6914;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            color: #d4af37;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+        .header p {
+            color: #8b7355;
+            margin-top: 10px;
+        }
+        .nav {
+            background: #1a1a1a;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #3d3220;
+        }
+        .nav a {
+            color: #a89f91;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s;
+            border: 1px solid transparent;
+        }
+        .nav a:hover {
+            background: #2d2418;
+            border-color: #8b6914;
+            color: #d4af37;
+        }
+        .nav a.active {
+            background: #3d3220;
+            border-color: #d4af37;
+            color: #d4af37;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .section-title h2 {
+            color: #d4af37;
+            font-size: 2em;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+        }
+
+        /* 物品分类卡片 */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .category-card {
+            background: #1a1a1a;
+            border: 2px solid #3d3220;
+            border-radius: 10px;
+            padding: 20px;
+            transition: all 0.3s;
+        }
+        .category-card:hover {
+            border-color: #8b6914;
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.1);
+        }
+        .category-card h3 {
+            color: #d4af37;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #3d3220;
+        }
+
+        /* 表格样式 */
+        .item-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.9em;
+        }
+        .item-table th {
+            background: #2d2418;
+            color: #d4af37;
+            padding: 12px;
+            text-align: left;
+            border-bottom: 2px solid #8b6914;
+        }
+        .item-table td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #3d3220;
+        }
+        .item-table tr:hover {
+            background: #2d2418;
+        }
+
+        /* 品质标签 */
+        .tier-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            margin: 2px;
+        }
+        .tier-1 { background: #4a4a4a; color: #999; }
+        .tier-2 { background: #2d4a2d; color: #7fbf7f; }
+        .tier-3 { background: #2d3d4a; color: #7fbfff; }
+        .tier-4 { background: #4a3d2d; color: #ffbf7f; }
+        .tier-5 { background: #4a2d3d; color: #ff7fbf; }
+        .tier-6 { background: #3d2d4a; color: #bf7fff; }
+
+        /* 属性倾向标签 */
+        .align-tag {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.75em;
+            margin: 1px;
+        }
+        .align-strength { background: #4a2d2d; color: #ff7f7f; }
+        .align-dexterity { background: #2d4a2d; color: #7fff7f; }
+        .align-intelligence { background: #2d2d4a; color: #7f7fff; }
+
+        /* 折叠面板 */
+        .collapsible {
+            background: #2d2418;
+            color: #d4af37;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.1em;
+            border-radius: 5px;
+            margin: 10px 0;
+            transition: all 0.3s;
+        }
+        .collapsible:hover {
+            background: #3d3220;
+        }
+        .collapsible:after {
+            content: '\002B';
+            color: #d4af37;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+        .active:after {
+            content: "\2212";
+        }
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background: #1a1a1a;
+            border-radius: 0 0 5px 5px;
+        }
+
+        /* 货币物品样式 */
+        .currency-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .currency-card {
+            background: #0d0d0d;
+            border: 1px solid #3d3220;
+            border-radius: 8px;
+            padding: 15px;
+            transition: all 0.3s;
+        }
+        .currency-card:hover {
+            border-color: #8b6914;
+        }
+        .currency-card h4 {
+            color: #d4af37;
+            margin-bottom: 8px;
+        }
+        .currency-type {
+            color: #8b7355;
+            font-size: 0.85em;
+            margin-bottom: 10px;
+        }
+        .currency-desc {
+            color: #a89f91;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+
+        .footer {
+            background: #1a1a1a;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #8b7355;
+            border-top: 1px solid #3d3220;
+        }
+
+        @media (max-width: 768px) {
+            .category-grid { grid-template-columns: 1fr; }
+            .item-table { font-size: 0.8em; }
+            .item-table th, .item-table td { padding: 8px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Spire of Ash Wiki</h1>
+        <p>物品数据库</p>
+    </div>
+
+    <div class="nav">
+        <a href="index.html">首页</a>
+        <a href="characters.html">角色</a>
+        <a href="items.html" class="active">物品</a>
+        <a href="guides.html">攻略</a>
+        <a href="dummies.html">木桩</a>
+    </div>
+
+    <div class="container">
+        <div class="section-title">
+            <h2>物品数据库</h2>
+            <p>基于游戏数据文件提取的完整物品信息</p>
+        </div>
+
+        <!-- 武器分类 -->
+        <button class="collapsible">🗡️ 武器装备 (Weapons)</button>
+        <div class="content">
+            <div class="category-card">
+                <h3>单手武器 (One-Handed)</h3>
+                <table class="item-table">
+                    <tr>
+                        <th>类型</th>
+                        <th>T1 (生锈/破旧)</th>
+                        <th>T2 (锻造/修补)</th>
+                        <th>T3 (淬火/连环)</th>
+                        <th>T4 (杰作/板甲)</th>
+                        <th>T5 (传奇/领主)</th>
+                        <th>T6 (神话/超凡)</th>
+                    </tr>
+                    <tr>
+                        <td><strong>剑 (Sword)</strong></td>
+                        <td>缺口之刃<br><span class="tier-tag tier-1">Chipped Blade</span></td>
+                        <td>海盗弯刀<br><span class="tier-tag tier-2">Corsair Cutlass</span></td>
+                        <td>决斗者之刃<br><span class="tier-tag tier-3">Duelist Blade</span></td>
+                        <td>放血者<br><span class="tier-tag tier-4">Bloodletter</span></td>
+                        <td>穿魂剑<br><span class="tier-tag tier-5">Soulpiercer</span></td>
+                        <td>蚀牙<br><span class="tier-tag tier-6">Eclipse Fang</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>斧 (Axe)</strong></td>
+                        <td>缺口手斧<br><span class="tier-tag tier-1">Notched Hatchet</span></td>
+                        <td>屠夫劈斧<br><span class="tier-tag tier-2">Butcher Cleaver</span></td>
+                        <td>袭击者战斧<br><span class="tier-tag tier-3">Raider Axe</span></td>
+                        <td>裂颅者<br><span class="tier-tag tier-4">Skull Splitter</span></td>
+                        <td>噬骨者<br><span class="-tier-tag tier-5">Bonereaver</span></td>
+                        <td>处刑者裁决<br><span class="tier-tag tier-6">Executioner's Verdict</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>锤 (Mace)</strong></td>
+                        <td>裂片短棍<br><span class="tier-tag tier-1">Splintered Cudgel</span></td>
+                        <td>铁头锤<br><span class="tier-tag tier-2">Ironhead Mace</span></td>
+                        <td>碎颅者<br><span class="tier-tag tier-3">Skullcracker</span></td>
+                        <td>碎骨锤<br><span class="tier-tag tier-4">Boneshatter Mace</span></td>
+                        <td>晨星<br><span class="tier-tag tier-5">Morningstar</span></td>
+                        <td>审判之威<br><span class="tier-tag tier-6">Judgment's Weight</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>矛 (Spear)</strong></td>
+                        <td>生锈标枪<br><span class="tier-tag tier-1">Rusted Javelin</span></td>
+                        <td>猎人之矛<br><span class="tier-tag tier-2">Huntsman Spear</span></td>
+                        <td>穿刺者<br><span class="tier-tag tier-3">Impaler</span></td>
+                        <td>毒蛇长枪<br><span class="tier-tag tier-4">Viper Lance</span></td>
+                        <td>穿魂矛<br><span class="tier-tag tier-5">Soulskewer</span></td>
+                        <td>屠龙者<br><span class="tier-tag tier-6">Dragonpiercer</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>匕首 (Dagger)</strong></td>
+                        <td>染血短刀<br><span class="tier-tag tier-1">Bloodstained Shiv</span></td>
+                        <td>刺客之刃<br><span class="tier-tag tier-2">Assassin Blade</span></td>
+                        <td>毒牙<br><span class="tier-tag tier-3">Venomfang</span></td>
+                        <td>暗影打击<br><span class="tier-tag tier-4">Shadowstrike</span></td>
+                        <td>噬魂者<br><span class="tier-tag tier-5">Soulreaver</span></td>
+                        <td>死亡低语<br><span class="tier-tag tier-6">Death's Whisper</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>魔杖 (Wand)</strong></td>
+                        <td>裂片魔杖<br><span class="tier-tag tier-1">Splintered Wand</span></td>
+                        <td>灰烬木魔杖<br><span class="tier-tag tier-2">Ashwood Wand</span></td>
+                        <td>骨刺魔杖<br><span class="tier-tag tier-3">Bonespire Wand</span></td>
+                        <td>符纹木魔杖<br><span class="tier-tag tier-4">Runewood Wand</span></td>
+                        <td>水晶心魔杖<br><span class="tier-tag tier-5">Crystalheart Wand</span></td>
+                        <td>虚空尖塔<br><span class="tier-tag tier-6">Voidspire</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>权杖 (Scepter)</strong></td>
+                        <td>失色权杖<br><span class="tier-tag tier-1">Tarnished Scepter</span></td>
+                        <td>侍僧权杖<br><span class="tier-tag tier-2">Acolyte Scepter</span></td>
+                        <td>誓约守护者<br><span class="tier-tag tier-3">Oathkeeper</span></td>
+                        <td>符纹束缚权杖<br><span class="tier-tag tier-4">Runebound Scepter</span></td>
+                        <td>灵魂守护者<br><span class="tier-tag tier-5">Soulwarden</span></td>
+                        <td>执政官权威<br><span class="tier-tag tier-6">Archon's Authority</span></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="category-card">
+                <h3>双手武器 (Two-Handed)</h3>
+                <table class="item-table">
+                    <tr>
+                        <th>类型</th>
+                        <th>T1</th>
+                        <th>T2</th>
+                        <th>T3</th>
+                        <th>T4</th>
+                        <th>T5</th>
+                        <th>T6</th>
+                    </tr>
+                    <tr>
+                        <td><strong>大剑</strong></td>
+                        <td>破损巨剑<br><span class="tier-tag tier-1">Battered Greatsword</span></td>
+                        <td>高地 claymore<br><span class="tier-tag tier-2">Highland Claymore</span></td>
+                        <td>军阀之刃<br><span class="tier-tag tier-3">Warlord Blade</span></td>
+                        <td>誓约破坏者<br><span class="tier-tag tier-4">Oathbreaker</span></td>
+                        <td>末日先驱<br><span class="tier-tag tier-5">Doomharbinger</span></td>
+                        <td>湮灭之刃<br><span class="tier-tag tier-6">Oblivion's Edge</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>巨斧</strong></td>
+                        <td>伐木劈斧<br><span class="tier-tag tier-1">Woodsman Splitter</span></td>
+                        <td>掠夺者战斧<br><span class="tier-tag tier-2">Marauder Axe</span></td>
+                        <td>毁灭者巨斧<br><span class="tier-tag tier-3">Ravager Greataxe</span></td>
+                        <td>刽子手新月斧<br><span class="tier-tag tier-4">Headsman's Crescent</span></td>
+                        <td>泰坦陨落斧<br><span class="tier-tag tier-5">Titanfall Axe</span></td>
+                        <td>世界切割者<br><span class="tier-tag tier-6">Worldcleaver</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>巨锤</strong></td>
+                        <td>粗糙大棒<br><span class="tier-tag tier-1">Crude Greatclub</span></td>
+                        <td>铁缚大锤<br><span class="tier-tag tier-2">Ironbound Maul</span></td>
+                        <td>毁灭者<br><span class="tier-tag tier-3">Devastator</span></td>
+                        <td>攻城破坏者<br><span class="tier-tag tier-4">Siegebreaker</span></td>
+                        <td>撼地者<br><span class="tier-tag tier-5">Earthshaker</span></td>
+                        <td>世界粉碎者<br><span class="tier-tag tier-6">Worldcrusher</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>长矛</strong></td>
+                        <td>弯曲长枪<br><span class="tier-tag tier-1">Bent Pike</span></td>
+                        <td>哨兵戟<br><span class="tier-tag tier-2">Sentinel Halberd</span></td>
+                        <td>守卫者长柄刀<br><span class="tier-tag tier-3">Warden Partisan</span></td>
+                        <td>墓守卫长柄武器<br><span class="tier-tag tier-4">Graveguard Polearm</span></td>
+                        <td>收割者长刀<br><span class="tier-tag tier-5">Reaper Glaive</span></td>
+                        <td>弑神者之触<br><span class="tier-tag tier-6">Godslayer's Reach</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>弓 (Bow)</strong></td>
+                        <td>磨损短弓<br><span class="tier-tag tier-1">Frayed Shortbow</span></td>
+                        <td>游侠弓<br><span class="tier-tag tier-2">Ranger Bow</span></td>
+                        <td>神射手反曲弓<br><span class="tier-tag tier-3">Deadeye Recurve</span></td>
+                        <td>鹰眼长弓<br><span class="tier-tag tier-4">Hawkeye Longbow</span></td>
+                        <td>灵魂之弦<br><span class="tier-tag tier-5">Soulstring</span></td>
+                        <td>虚空木弓<br><span class="tier-tag tier-6">Voidwood Bow</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>弩 (Crossbow)</strong></td>
+                        <td>磨损弩<br><span class="tier-tag tier-1">Worn Crossbow</span></td>
+                        <td>铁弩<br><span class="tier-tag tier-2">Ironbolt Crossbow</span></td>
+                        <td>连发劲弩<br><span class="tier-tag tier-3">Repeating Arbalest</span></td>
+                        <td>攻城弩<br><span class="tier-tag tier-4">Siegebow</span></td>
+                        <td>死亡低语<br><span class="tier-tag tier-5">Deathwhisper</span></td>
+                        <td>穿神者<br><span class="tier-tag tier-6">Godpiercer</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>火枪 (Gun)</strong></td>
+                        <td>生锈火枪<br><span class="tier-tag tier-1">Rusty Blunderbuss</span></td>
+                        <td>灰烬之地霰弹枪<br><span class="tier-tag tier-2">Ashland Scattergun</span></td>
+                        <td>神射手火枪<br><span class="tier-tag tier-3">Deadeye Musket</span></td>
+                        <td>来复枪先驱<br><span class="tier-tag tier-4">Rifled Harbinger</span></td>
+                        <td>雷霆之击<br><span class="tier-tag tier-5">Thunderclap</span></td>
+                        <td>末日钻孔<br><span class="tier-tag tier-6">Doombore</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>法杖 (Staff)</strong></td>
+                        <td>弯曲法杖<br><span class="tier-tag tier-1">Crooked Staff</span></td>
+                        <td>朝圣者法杖<br><span class="tier-tag tier-2">Pilgrim Staff</span></td>
+                        <td>古木法杖<br><span class="tier-tag tier-3">Elderwood Staff</span></td>
+                        <td>蛇脊法杖<br><span class="tier-tag tier-4">Serpentspine</span></td>
+                        <td>贤者之担<br><span class="tier-tag tier-5">Sage's Burden</span></td>
+                        <td>执政官意志<br><span class="tier-tag tier-6">Archon's Will</span></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="category-card">
+                <h3>副手武器 (Offhand)</h3>
+                <table class="item-table">
+                    <tr>
+                        <th>类型</th>
+                        <th>T1</th>
+                        <th>T2</th>
+                        <th>T3</th>
+                        <th>T4</th>
+                        <th>T5</th>
+                        <th>T6</th>
+                    </tr>
+                    <tr>
+                        <td><strong>魔典 (Grimoire)</strong></td>
+                        <td>腐烂之书<br><span class="tier-tag tier-1">Rotting Tome</span></td>
+                        <td>符咒束缚魔典<br><span class="tier-tag tier-2">Hexbound Grimoire</span></td>
+                        <td>神秘学者法典<br><span class="tier-tag tier-3">Occultist Codex</span></td>
+                        <td>末日经文<br><span class="tier-tag tier-4">Doomscript</span></td>
+                        <td>禁忌经文<br><span class="tier-tag tier-5">Forbidden Scripture</span></td>
+                        <td>湮灭词典<br><span class="tier-tag tier-6">Oblivion's Lexicon</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>圣物 (Relic)</strong></td>
+                        <td>开裂偶像<br><span class="tier-tag tier-1">Cracked Idol</span></td>
+                        <td>朝圣者圣物<br><span class="tier-tag tier-2">Pilgrim Relic</span></td>
+                        <td>神圣雕像<br><span class="tier-tag tier-3">Sanctified Effigy</span></td>
+                        <td>神圣圣物<br><span class="tier-tag tier-4">Hallowed Relic</span></td>
+                        <td>殉道者碎片<br><span class="tier-tag tier-5">Martyr Fragment</span></td>
+                        <td>六翼天使之泪<br><span class="tier-tag tier-6">Seraph's Tear</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>法球 (Orb)</strong></td>
+                        <td>碎裂法球<br><span class="tier-tag tier-1">Fractured Orb</span></td>
+                        <td>迷雾束缚法球<br><span class="tier-tag tier-2">Mistbound Orb</span></td>
+                        <td>水晶束缚球体<br><span class="tier-tag tier-3">Crystalbound Sphere</span></td>
+                        <td>星界之眼<br><span class="tier-tag tier-4">Astral Eye</span></td>
+                        <td>先知之眼<br><span class="tier-tag tier-5">Prophet's Eye</span></td>
+                        <td>虚空之心<br><span class="tier-tag tier-6">Voidheart</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>箭袋 (Quiver)</strong></td>
+                        <td>磨损箭袋<br><span class="tier-tag tier-1">Frayed Quiver</span></td>
+                        <td>骨皮箭袋<br><span class="tier-tag tier-2">Bonehide Quiver</span></td>
+                        <td>潜行者箭袋<br><span class="tier-tag tier-3">Stalker Quiver</span></td>
+                        <td>死亡颂唱者箭袋<br><span class="tier-tag tier-4">Deathsinger Quiver</span></td>
+                        <td>穿魂者箭袋<br><span class="tier-tag tier-5">Soulpiercer Quiver</span></td>
+                        <td>虚空羽箭袋<br><span class="tier-tag tier-6">Voidfletched Quiver</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>法器 (Focus)</strong></td>
+                        <td>碎裂法器<br><span class="tier-tag tier-1">Fractured Focus</span></td>
+                        <td>灰烬束缚法器<br><span class="tier-tag tier-2">Ashbound Focus</span></td>
+                        <td>风暴召唤者法器<br><span class="tier-tag tier-3">Stormcaller Focus</span></td>
+                        <td>霜织者法器<br><span class="tier-tag tier-4">Frostweaver Focus</span></td>
+                        <td>混沌束缚法器<br><span class="tier-tag tier-5">Chaosbound Focus</span></td>
+                        <td>虚空之心法器<br><span class="tier-tag tier-6">Voidheart Focus</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- 护甲分类 -->
+        <button class="collapsible">🛡️ 护甲装备 (Armor)</button>
+        <div class="content">
+            <div class="category-card">
+                <h3>力量型护甲 (Strength - 重甲)</h3>
+                <table class="item-table">
+                    <tr>
+                        <th>部位</th>
+                        <th>T1</th>
+                        <th>T2</th>
+                        <th>T3</th>
+                        <th>T4</th>
+                        <th>T5</th>
+                        <th>T6</th>
+                    </tr>
+                    <tr>
+                        <td><strong>头盔</strong></td>
+                        <td>凹陷战盔<br><span class="tier-tag tier-1">Dented Warhelm</span></td>
+                        <td>攻城疤痕头盔<br><span class="tier-tag tier-2">Siege-Scarred Helm</span></td>
+                        <td>战痕巨盔<br><span class="tier-tag tier-3">Battleworn Greathelm</span></td>
+                        <td>碎骨者面甲<br><span class="tier-tag tier-4">Bonecrusher Visage</span></td>
+                        <td>恐惧领主皇冠<br><span class="tier-tag tier-5">Dreadlord Crown</span></td>
+                        <td>世界破坏者头盔<br><span class="tier-tag tier-6">Worldbreaker Helm</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>胸甲</strong></td>
+                        <td>坑洞战铁甲<br><span class="tier-tag tier-1">Pitted War-Iron</span></td>
+                        <td>铁缚胸甲<br><span class="tier-tag tier-2">Ironbound Cuirass</span></td>
+                        <td>军阀甲壳<br><span class="tier-tag tier-3">Warlord's Carapace</span></td>
+                        <td>攻城锻造板甲<br><span class="tier-tag tier-4">Siege-Forged Plate</span></td>
+                        <td>泰坦堡垒<br><span class="tier-tag tier-5">Titan's Bastion</span></td>
+                        <td>弑神者神盾<br><span class="tier-tag tier-6">Godslayer Aegis</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>手套</strong></td>
+                        <td>生锈战拳<br><span class="tier-tag tier-1">Rusted Warfists</span></td>
+                        <td>铁指节握具<br><span class="tier-tag tier-2">Iron-Knuckle Grips</span></td>
+                        <td>碎骨护手<br><span class="tier-tag tier-3">Crushbone Gauntlets</span></td>
+                        <td>攻城破坏者护手<br><span class="tier-tag tier-4">Siegebreaker Mitts</span></td>
+                        <td>恐惧领主拳套<br><span class="tier-tag tier-5">Dreadlord Fists</span></td>
+                        <td>世界毁灭者护手<br><span class="tier-tag tier-6">Worldrender Gauntlets</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>靴子</strong></td>
+                        <td>战痕护靴<br><span class="tier-tag tier-1">Warworn Treads</span></td>
+                        <td>铁钉战靴<br><span class="tier-tag tier-2">Iron-Shod Boots</span></td>
+                        <td>践踏者护胫<br><span class="tier-tag tier-3">Stomper's Greaves</span></td>
+                        <td>震地者战靴<br><span class="tier-tag tier-4">Earthshatter Boots</span></td>
+                        <td>泰坦行军靴<br><span class="tier-tag tier-5">Titan's March</span></td>
+                        <td>破地者战靴<br><span class="tier-tag tier-6">Groundbreaker Sabatons</span></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="category-card">
+                <h3>敏捷型护甲 (Dexterity - 皮甲)</h3>
+                <table class="item-table">
+                    <tr>
+                        <th>部位</th>
+                        <th>T1</th>
+                        <th>T2</th>
+                        <th>T3</th>
+                        <th>T4</th>
+                        <th>T5</th>
+                        <th>T6</th>
+                    </tr>
+                    <tr>
+                        <td><strong>头盔</strong></td>
+                        <td>缝合兜帽<br><span class="tier-tag tier-1">Stitched Hood</span></td>
+                        <td>盗墓者兜帽<br><span class="tier-tag tier-2">Graverobber's Cowl</span></td>
+                        <td>死亡潜行者面具<br><span class="tier-tag tier-3">Deathstalker Mask</span></td>
+                        <td>低语鳞兜帽<br><span class="tier-tag tier-4">Whisperscale Hood</span></td>
+                        <td>墓翼面甲<br><span class="tier-tag tier-5">Gravewing Visage</span></td>
+                        <td>灵魂剥制者兜帽<br><span class="tier-tag tier-6">Soulflayer Cowl</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>胸甲</strong></td>
+                        <td>剥皮残片<br><span class="tier-tag tier-1">Flayed Scraps</span></td>
+                        <td>拾荒者外套<br><span class="tier-tag tier-2">Scavenger's Coat</span></td>
+                        <td>死亡潜行者披风<br><span class="tier-tag tier-3">Deathstalker Mantle</span></td>
+                        <td>夜空洞穴背心<br><span class="tier-tag tier-4">Nighthollow Vest</span></td>
+                        <td>墓翼短上衣<br><span class="tier-tag tier-5">Gravewing Jerkin</span></td>
+                        <td>灵魂剥制者法衣<br><span class="tier-tag tier-6">Soulflayer Vestment</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>手套</strong></td>
+                        <td>磨损裹布<br><span class="tier-tag tier-1">Threadbare Wraps</span></td>
+                        <td>窃贼手套<br><span class="tier-tag tier-2">Cutpurse Gloves</span></td>
+                        <td>绞杀者握具<br><span class="tier-tag tier-3">Strangler's Grips</span></td>
+                        <td>低语触摸手套<br><span class="tier-tag tier-4">Whispertouch Gloves</span></td>
+                        <td>幻影爪套<br><span class="tier-tag tier-5">Phantom Clutches</span></td>
+                        <td>灵魂窃贼之手<br><span class="tier-tag tier-6">Soulthief Hands</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>靴子</strong></td>
+                        <td>磨损鞋垫<br><span class="tier-tag tier-1">Worn Footpads</span></td>
+                        <td>寂静护靴<br><span class="tier-tag tier-2">Silent Treads</span></td>
+                        <td>暗影步战靴<br><span class="tier-tag tier-3">Shadowstep Boots</span></td>
+                        <td>幽灵行者鞋底<br><span class="tier-tag tier-4">Ghostwalker Soles</span></td>
+                        <td>幻影行军靴<br><span class="tier-tag tier-5">Phantom's March</span></td>
+                        <td>虚空行者战靴<br><span class="tier-tag tier-6">Voidstrider Boots</span></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="category-card">
+                <h3>智力型护甲 (Intelligence - 布甲)</h3>
+                <table class="item-table">
+                    <tr>
+                        <th>部位</th>
+                        <th>T1</th>
+                        <th>T2</th>
+                        <th>T3</th>
+                        <th>T4</th>
+                        <th>T5</th>
+                        <th>T6</th>
+                    </tr>
+                    <tr>
+                        <td><strong>头盔</strong></td>
+                        <td>磨损头巾<br><span class="tier-tag tier-1">Frayed Skullcap</span></td>
+                        <td>学者头环<br><span class="tier-tag tier-2">Scholar's Circlet</span></td>
+                        <td>低语丝绸兜帽<br><span class="tier-tag tier-3">Whispersilk Hood</span></td>
+                        <td>虚空触碰兜帽<br><span class="tier-tag tier-4">Voidtouched Cowl</span></td>
+                        <td>巫妖丝线皇冠<br><span class="tier-tag tier-5">Lich-Thread Crown</span></td>
+                        <td>熵之面容<br><span class="tier-tag tier-6">Entropy's Visage</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>胸甲</strong></td>
+                        <td>破损阴森织物<br><span class="tier-tag tier-1">Tattered Grimweave</span></td>
+                        <td>空洞纺织长袍<br><span class="tier-tag tier-2">Hollowspun Robe</span></td>
+                        <td>低语丝绸法衣<br><span class="tier-tag tier-3">Whispersilk Vestment</span></td>
+                        <td>虚空触碰长袍<br><span class="tier-tag tier-4">Voidtouched Raiment</span></td>
+                        <td>巫妖丝线长袍<br><span class="tier-tag tier-5">Lich-Thread Robe</span></td>
+                        <td>熵之裹尸布<br><span class="tier-tag tier-6">Entropy's Shroud</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>手套</strong></td>
+                        <td>散开裹布<br><span class="tier-tag tier-1">Unraveled Wraps</span></td>
+                        <td>墨迹手套<br><span class="tier-tag tier-2">Inkstained Gloves</span></td>
+                        <td>法术编织之手<br><span class="tier-tag tier-3">Spellwoven Hands</span></td>
+                        <td>虚空掌握手套<br><span class="tier-tag tier-4">Voidgrasp Gloves</span></td>
+                        <td>巫妖触摸裹布<br><span class="tier-tag tier-5">Lich-Touch Wraps</span></td>
+                        <td>熵之握扣<br><span class="tier-tag tier-6">Entropy's Clasp</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>靴子</strong></td>
+                        <td>虫蛀拖鞋<br><span class="tier-tag tier-1">Moth-Eaten Slippers</span></td>
+                        <td>侍僧凉鞋<br><span class="tier-tag tier-2">Acolyte's Sandals</span></td>
+                        <td>法术编织者护靴<br><span class="tier-tag tier-3">Spellweaver's Treads</span></td>
+                        <td>虚空行者鞋底<br><span class="tier-tag tier-4">Voidwalker Soles</span></td>
+                        <td>巫妖步战靴<br><span class="tier-tag tier-5">Lich-Step Boots</span></td>
+                        <td>熵之途径<br><span class="tier-tag tier-6">Entropy's Path</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- 盾牌分类 -->
+        <button class="collapsible">🛡️ 盾牌 (Shields)</button>
+        <div class="content">
+            <div class="category-card">
+                <h3>力量型盾牌 (Armor)</h3>
+                <table class="item-table">
+                    <tr>
+                        <th>类型</th>
+                        <th>名称</th>
+                        <th>特点</th>
+                    </tr>
+                    <tr>
+                        <td>小圆盾</td>
+                        <td>破损小圆盾<br><span class="tier-tag tier-1">Battered Buckler</span></td>
+                        <td>轻型，快速格挡</td>
+                    </tr>
+                    <tr>
+                        <td>塔奇盾</td>
+                        <td>铁制塔奇盾<br><span class="tier-tag tier-2">Iron Targe</span></td>
+                        <td>中型，平衡防御</td>
+                    </tr>
+                    <tr>
+                        <td>鸢盾</td>
+                        <td>战争鸢盾<br><span class="tier-tag tier-3">War Kite</span></td>
+                        <td>大型，优秀防护</td>
+                    </tr>
+                    <tr>
+                        <td>加热盾</td>
+                        <td>堡垒加热盾<br><span class="tier-tag tier-4">Fortress Heater</span></td>
+                        <td>重型，高护甲</td>
+                    </tr>
+                    <tr>
+                        <td>塔盾</td>
+                        <td>攻城塔盾<br><span class="tier-tag tier-5">Siege Tower</span></td>
+                        <td>巨型，极高防御</td>
+                    </tr>
+                    <tr>
+                        <td>壁垒盾</td>
+                        <td>泰坦壁垒盾<br><span class="tier-tag tier-6">Titan Bulwark</span></td>
+                        <td>传说级，终极防护</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="category-card">
+                <h3>敏捷型盾牌 (Evasion)</h3>
+                <table class="item-table">
+                    <tr>
+                        <th>类型</th>
+                        <th>名称</th>
+                        <th>特点</th>
+                    </tr>
+                    <tr>
+                        <td>小圆盾</td>
+                        <td>皮制小圆盾<br><span class="tier-tag tier-1">Hide Buckler</span></td>
+                        <td>轻型，高闪避</td>
+                    </tr>
+                    <tr>
+                        <td>塔奇盾</td>
+                        <td>暗影塔奇盾<br><span class="tier-tag tier-2">Shadow Targe</span></td>
+                        <td>中型，闪避加成</td>
+                    </tr>
+                    <tr>
+                        <td>鸢盾</td>
+                        <td>风之鸢盾<br><span class="tier-tag tier-3">Wind Kite</span></td>
+                        <td>大型，机动性</td>
+                    </tr>
+                    <tr>
+                        <td>加热盾</td>
+                        <td>幽灵加热盾<br><span class="tier-tag tier-4">Ghost Heater</span></td>
+                        <td>重型，闪避+格挡</td>
+                    </tr>
+                    <tr>
+                        <td>塔盾</td>
+                        <td>幻象塔盾<br><span class="tier-tag tier-5">Mirage Tower</span></td>
+                        <td>巨型，高闪避</td>
+                    </tr>
+                    <tr>
+                        <td>壁垒盾</td>
+                        <td>幻影壁垒盾<br><span class="tier-tag tier-6">Phantom Bulwark</span></td>
+                        <td>传说级，极致闪避</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="category-card">
+                <h3>智力型盾牌 (Threshold)</h3>
+                <table class="item-table">
+                    <tr>
+                        <th>类型</th>
+                        <th>名称</th>
+                        <th>特点</th>
+                    </tr>
+                    <tr>
+                        <td>小圆盾</td>
+                        <td>守护小圆盾<br><span class="tier-tag tier-1">Warding Buckler</span></td>
+                        <td>轻型，法术防御</td>
+                    </tr>
+                    <tr>
+                        <td>塔奇盾</td>
+                        <td>灵体塔奇盾<br><span class="tier-tag tier-2">Spirit Targe</span></td>
+                        <td>中型，阈值加成</td>
+                    </tr>
+                    <tr>
+                        <td>鸢盾</td>
+                        <td>奥术鸢盾<br><span class="tier-tag tier-3">Arcane Kite</span></td>
+                        <td>大型，法术抗性</td>
+                    </tr>
+                    <tr>
+                        <td>加热盾</td>
+                        <td>符文加热盾<br><span class="tier-tag tier-4">Rune Heater</span></td>
+                        <td>重型，高阈值</td>
+                    </tr>
+                    <tr>
+                        <td>塔盾</td>
+                        <td>以太塔盾<br><span class="tier-tag tier-5">Ether Tower</span></td>
+                        <td>巨型，法术免疫</td>
+                    </tr>
+                    <tr>
+                        <td>壁垒盾</td>
+                        <td>虚空壁垒盾<br><span class="tier-tag tier-6">Void Bulwark</span></td>
+                        <td>传说级，终极法术防御</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- 饰品分类 -->
+        <button class="collapsible">💍 饰品 (Jewelry)</button>
+        <div class="content">
+            <div class="category-card">
+                <h3>戒指 (Rings)</h3>
+                <table class="item-table">
+                    <tr>
+                        <th>类型</th>
+                        <th>T1-T6基础戒指</th>
+                        <th>特殊属性戒指</th>
+                    </tr>
+                    <tr>
+                        <td><strong>基础</strong></td>
+                        <td>
+                            T1: 墓尘指环<br><span class="tier-tag tier-1">Grave-Dust Band</span><br>
+                            T2: 腐蚀印章<br><span class="tier-tag tier-2">Corroded Signet</span><br>
+                            T3: 空洞戒指<br><span class="tier-tag tier-3">Hollow Ring</span><br>
+                            T4: 封印契约<br><span class="tier-tag tier-4">Sealed Covenant</span><br>
+                            T5: 誓约之环<br><span class="tier-tag tier-5">Oathbound Circle</span><br>
+                            T6: 灵魂锻造环<br><span class="tier-tag tier-6">Soul-Forged Loop</span>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><strong>抗性</strong></td>
+                        <td></td>
+                        <td>
+                            火焰抗性: 灰烬诞生指环<br><span class="align-tag align-strength">Cinderborn Band</span><br>
+                            冰冷抗性: 永冻环<br><span class="align-tag align-dexterity">Permafrost Loop</span><br>
+                            闪电抗性: 风暴守卫印章<br><span class="align-tag align-intelligence">Stormwarden Signet</span><br>
+                            混沌抗性: 虚空行者戒指<br><span class="tier-tag tier-5">Voidwalker's Ring</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>攻击</strong></td>
+                        <td></td>
+                        <td>
+                            命中: 神眼指环<br><span class="tier-tag tier-3">Deadeye Circlet</span><br>
+                            暴击率: 处刑者指环<br><span class="tier-tag tier-4">Executioner's Band</span><br>
+                            攻速: 狂战士环<br><span class="tier-tag tier-3">Berserker Loop</span><br>
+                            物理伤害: 血铁印章<br><span class="tier-tag tier-3">Bloodiron Signet</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>防御</strong></td>
+                        <td></td>
+                        <td>
+                            闪避: 暗影舞者戒指<br><span class="align-tag align-dexterity">Shadowdancer Ring</span><br>
+                            护甲: 壁垒指环<br><span class="align-tag align-strength">Bulwark Band</span><br>
+                            法力回复: 魔网戒指<br><span class="align-tag align-intelligence">Leyline Ring</span><br>
+                            能量护盾: 庇护环<br><span class="align-tag align-intelligence">Aegis Loop</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="category-card">
+                <h3>项链 (Amulets)</h3>
+                <table class="item-table">
+                    <tr>
+                        <th>类型</th>
+                        <th>基础项链</th>
+                        <th>特殊属性项链</th>
+                    </tr>
+                    <tr>
+                        <td><strong>基础</strong></td>
+                        <td>
+                            T1: 骨制护身符<br><span class="tier-tag tier-1">Bone Talisman</span><br>
+                            T2: 墓穴玻璃吊坠<br><span class="tier-tag tier-2">Cryptglass Pendant</span><br>
+                            T3: 尖塔守卫护身符<br><span class="tier-tag tier-3">Spireguard Amulet</span><br>
+                            T4: 誓印勋章<br><span class="tier-tag tier-4">Oath-Sealed Medallion</span><br>
+                            T5: 灵魂守护者护身符<br><span class="tier-tag tier-5">Soulwarden Talisman</span><br>
+                            T6: 执政官封印<br><span class="tier-tag tier-6">Archon's Seal</span>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><strong>施法</strong></td>
+                        <td></td>
+                        <td>
+                            法术伤害: 妖术编织者护身符<br><span class="align-tag align-intelligence">Hexweaver Talisman</span><br>
+                            施法速度: 时间法师之眼<br><span class="align-tag align-intelligence">Chronomancer's Eye</span><br>
+                            法力: 源泉吊坠<br><span class="align-tag align-intelligence">Wellspring Pendant</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>暴击</strong></td>
+                        <td></td>
+                        <td>
+                            暴击率: 收割者专注<br><span class="tier-tag tier-4">Reaper's Focus</span><br>
+                            暴击倍率: 命运束缚者护身符<br><span class="tier-tag tier-5">Fatebinder Amulet</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>防御</strong></td>
+                        <td></td>
+                        <td>
+                            生命: 心石吊坠<br><span class="align-tag align-strength">Heartstone Pendant</span><br>
+                            能量护盾: 虚空守卫护身符<br><span class="align-tag align-intelligence">Nullward Talisman</span><br>
+                            全抗性: 堡垒护身符<br><span class="tier-tag tier-4">Bastion Amulet</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>元素伤害</strong></td>
+                        <td></td>
+                        <td>
+                            元素伤害: 元素汇流<br><span class="tier-tag tier-4">Elemental Conflux</span><br>
+                            火焰伤害: 火山碎屑护身符<br><span class="align-tag align-strength">Pyroclast Talisman</span><br>
+                            冰冷伤害: 霜咬护身符<br><span class="align-tag align-dexterity">Frostbite Amulet</span><br>
+                            闪电伤害: 雷霆召唤者吊坠<br><span class="align-tag align-intelligence">Thundercaller Pendant</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="category-card">
+                <h3>腰带 (Belts)</h3>
+                <table class="item-table">
+                    <tr>
+                        <th>类型</th>
+                        <th>基础腰带</th>
+                        <th>特殊属性腰带</th>
+                    </tr>
+                    <tr>
+                        <td><strong>基础</strong></td>
+                        <td>
+                            T1: 掘墓者绳索<br><span class="tier-tag tier-1">Gravedigger's Cord</span><br>
+                            T2: 尸缚腰带<br><span class="tier-tag tier-2">Corpse-Bound Belt</span><br>
+                            T3: 守卫者束带<br><span class="tier-tag tier-3">Warden's Cinch</span><br>
+                            T4: 连环扣带<br><span class="tier-tag tier-4">Chain-Linked Girdle</span><br>
+                            T5: 攻城锻造腰带<br><span class="tier-tag tier-5">Siege-Forged Belt</span><br>
+                            T6: 世界破坏者腰带<br><span class="tier-tag tier-6">Worldbreaker Sash</span>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><strong>防御</strong></td>
+                        <td></td>
+                        <td>
+                            闪避: 暗影步腰带<br><span class="align-tag align-dexterity">Shadowstep Sash</span><br>
+                            力量: 巨人扣带<br><span class="align-tag align-strength">Colossus Girdle</span><br>
+                            全属性: 平衡腰带<br><span class="tier-tag tier-4">Equilibrium Sash</span><br>
+                            火焰抗性: 熔岩守卫扣带<br><span class="align-tag align-strength">Magmaward Girdle</span><br>
+                            冰冷抗性: 冰川束缚<br><span class="align-tag align-dexterity">Glacial Binding</span><br>
+                            闪电抗性: 雷霆守卫腰带<br><span class="align-tag align-intelligence">Thunderguard Belt</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>实用</strong></td>
+                        <td></td>
+                        <td>
+                            移动速度: 风行者腰带<br><span class="align-tag align-dexterity">Windrunner Sash</span><br>
+                            眩晕恢复: 钢铁意志扣带<br><span class="align-tag align-strength">Ironwill Girdle</span><br>
+                            生命回复: 血红绳索<br><span class="align-tag align-strength">Sanguine Cord</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>攻击</strong></td>
+                        <td></td>
+                        <td>
+                            物理伤害: 碎骨者扣带<br><span class="align-tag align-strength">Bonecrusher Girdle</span><br>
+                            元素伤害: 导管腰带<br><span class="tier-tag tier-4">Conduit Sash</span><br>
+                            武器元素伤害: 符纹束缚腰带<br><span class="tier-tag tier-4">Runebound Girdle</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- 货币分类 -->
+        <button class="collapsible">💰 货币与制作 (Currency)</button>
+        <div class="content">
+            <div class="category-card">
+                <h3>制作货币类型</h3>
+                <div class="currency-grid">
+                    <div class="currency-card">
+                        <h4>转化宝珠 (Transmute Orb)</h4>
+                        <div class="currency-type">类型: Orb</div>
+                        <div class="currency-desc">将普通物品升级为魔法物品，附加1-2个随机词缀</div>
+                    </div>
+                    <div class="currency-card">
+                        <h4>炼金宝珠 (Alchemy Orb)</h4>
+                        <div class="currency-type">类型: Orb</div>
+                        <div class="currency-desc">将普通物品升级为稀有物品，附加随机词缀</div>
+                    </div>
+                    <div class="currency-card">
+                        <h4>混沌宝珠 (Chaos Orb)</h4>
+                        <div class="currency-type">类型: Orb</div>
+                        <div class="currency-desc">重新随机稀有物品上的1个词缀</div>
+                    </div>
+                    <div class="currency-card">
+                        <h4>崇高宝珠 (Exalted Orb)</h4>
+                        <div class="currency-type">类型: Orb</div>
+                        <div class="currency-desc">为稀有物品添加1个随机词缀（需要空位）</div>
+                    </div>
+                    <div class="currency-card">
+                        <h4>净化宝珠 (Scouring Orb)</h4>
+                        <div class="currency-type">类型: Orb</div>
+                        <div class="currency-desc">移除所有词缀，将物品恢复为普通品质</div>
+                    </div>
+                    <div class="currency-card">
+                        <h4>增幅卷轴 (Augment)</h4>
+                        <div class="currency-type">类型: Orb</div>
+                        <div class="currency-desc">为魔法物品添加1个随机词缀（需要空位）</div>
+                    </div>
+                    <div class="currency-card">
+                        <h4>帝王宝珠 (Regal Orb)</h4>
+                        <div class="currency-type">类型: Orb</div>
+                        <div class="currency-desc">将魔法物品升级为稀有物品，并添加1个随机词缀</div>
+                    </div>
+                    <div class="currency-card">
+                        <h4>废除宝珠 (Annulment Orb)</h4>
+                        <div class="currency-type">类型: Orb</div>
+                        <div class="currency-desc">随机移除物品上的1个词缀</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <h3>法令 (Edicts)</h3>
+                <div class="currency-grid">
+                    <div class="currency-card">
+                        <h4>锁定前缀 (Lock Prefixes)</h4>
+                        <div class="currency-type">类型: Edict</div>
+                        <div class="currency-desc">锁定前缀，下次制作时前缀不会改变</div>
+                    </div>
+                    <div class="currency-card">
+                        <h4>锁定后缀 (Lock Suffixes)</h4>
+                        <div class="currency-type">类型: Edict</div>
+                        <div class="currency-desc">锁定后缀，下次制作时后缀不会改变</div>
+                    </div>
+                    <div class="currency-card">
+                        <h4>替换前缀 (Remove-Add Prefix)</h4>
+                        <div class="currency-type">类型: Edict</div>
+                        <div class="currency-desc">替换1个随机前缀</div>
+                    </div>
+                    <div class="currency-card">
+                        <h4>替换后缀 (Remove-Add Suffix)</h4>
+                        <div class="currency-type">类型: Edict</div>
+                        <div class="currency-desc">替换1个随机后缀</div>
+                    </div>
+                    <div class="currency-card">
+                        <h4>升级词缀 (Upgrade Mod)</h4>
+                        <div class="currency-type">类型: Edict</div>
+                        <div class="currency-desc">将1个随机词缀提升1级</div>
+                    </div>
+                    <div class="currency-card">
+                        <h4>重新数值 (Reroll Values)</h4>
+                        <div class="currency-type">类型: Edict</div>
+                        <div class="currency-desc">重新随机词缀数值，保持词缀类型不变</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <h3>印记与符印 (Imprints & Sigils)</h3>
+                <div class="currency-grid">
+                    <div class="currency-card">
+                        <h4>火焰印记 (Fire Imprint)</h4>
+                        <div class="currency-type">类型: Imprint</div>
+                        <div class="currency-desc">为物品添加火焰印记标签，解锁火焰相关词缀</div>
+                    </div>
+                    <div class="currency-card">
+                        <h4>冰冷印记 (Cold Imprint)</h4>
+                        <div class="currency-type">类型: Imprint</div>
+                        <div class="currency-desc">为物品添加冰冷印记标签，解锁冰冷相关词缀</div>
+                    </div>
+                    <div class="currency-card">
+                        <h4>闪电印记 (Lightning Imprint)</h4>
+                        <div class="currency-type">类型: Imprint</div>
+                        <div class="currency-desc">为物品添加闪电印记标签，解锁闪电相关词缀</div>
+                    </div>
+                    <div class="currency-card">
+                        <h4>混沌印记 (Chaos Imprint)</h4>
+                        <div class="currency-type">类型: Imprint</div>
+                        <div class="currency-desc">为物品添加混沌印记标签，解锁混沌相关词缀</div>
+                    </div>
+                    <div class="currency-card">
+                        <h4>物理符印 (Physical Sigil)</h4>
+                        <div class="currency-type">类型: Sigil</div>
+                        <div class="currency-desc">镶嵌到物品中，增强物理伤害词缀</div>
+                    </div>
+                    <div class="currency-card">
+                        <h4>流血符印 (Bleed Sigil)</h4>
+                        <div class="currency-type">类型: Sigil</div>
+                        <div class="currency-desc">镶嵌到物品中，增强流血效果词缀</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 词缀系统 -->
+        <button class="collapsible">✨ 词缀系统 (Affixes)</button>
+        <div class="content">
+            <div class="category-card">
+                <h3>词缀类型说明</h3>
+                <table class="item-table">
+                    <tr>
+                        <th>词缀类型</th>
+                        <th>说明</th>
+                        <th>示例</th>
+                    </tr>
+                    <tr>
+                        <td><strong>前缀 (Prefix)</strong></td>
+                        <td>物品名称前面的修饰词，通常提供攻击或防御属性</td>
+                        <td>锋利的、坚固的、燃烧的</td>
+                    </tr>
+                    <tr>
+                        <td><strong>后缀 (Suffix)</strong></td>
+                        <td>物品名称后面的修饰词，通常提供辅助或特殊效果</td>
+                        <td>之力、之速、之火</td>
+                    </tr>
+                    <tr>
+                        <td><strong>固有词缀 (Implicit)</strong></td>
+                        <td>物品基础类型自带的固定属性</td>
+                        <td>剑的暴击率、护甲的防御值</td>
+                    </tr>
+                    <tr>
+                        <td><strong>印记词缀 (Influence)</strong></td>
+                        <td>通过印记解锁的特殊词缀，与特定标签相关</td>
+                        <td>火焰伤害加成、冰霜抗性</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="category-card">
+                <h3>印记标签类型</h3>
+                <table class="item-table">
+                    <tr>
+                        <th>标签</th>
+                        <th>相关词缀</th>
+                        <th>适用装备</th>
+                    </tr>
+                    <tr>
+                        <td><span class="align-tag align-strength">fire</span></td>
+                        <td>火焰伤害、火焰抗性、燃烧效果</td>
+                        <td>武器、护甲、饰品</td>
+                    </tr>
+                    <tr>
+                        <td><span class="align-tag align-dexterity">cold</span></td>
+                        <td>冰冷伤害、冰冷抗性、减速效果</td>
+                        <td>武器、护甲、饰品</td>
+                    </tr>
+                    <tr>
+                        <td><span class="align-tag align-intelligence">lightning</span></td>
+                        <td>闪电伤害、闪电抗性、感电效果</td>
+                        <td>武器、护甲、饰品</td>
+                    </tr>
+                    <tr>
+                        <td><span class="tier-tag tier-5">chaos</span></td>
+                        <td>混沌伤害、混沌抗性</td>
+                        <td>武器、护甲、饰品</td>
+                    </tr>
+                    <tr>
+                        <td><span class="tier-tag tier-4">physical</span></td>
+                        <td>物理伤害、护甲穿透</td>
+                        <td>武器、护甲</td>
+                    </tr>
+                    <tr>
+                        <td><span class="tier-tag tier-3">bleed</span></td>
+                        <td>流血伤害、流血几率</td>
+                        <td>武器</td>
+                    </tr>
+                    <tr>
+                        <td><span class="tier-tag tier-2">poison</span></td>
+                        <td>中毒伤害、中毒持续时间</td>
+                        <td>武器</td>
+                    </tr>
+                    <tr>
+                        <td><span class="align-tag align-intelligence">spell</span></td>
+                        <td>法术伤害、施法速度</td>
+                        <td>法器、魔杖</td>
+                    </tr>
+                    <tr>
+                        <td><span class="align-tag align-strength">melee</span></td>
+                        <td>近战伤害、攻击速度</td>
+                        <td>近战武器</td>
+                    </tr>
+                    <tr>
+                        <td><span class="align-tag align-dexterity">projectile</span></td>
+                        <td>投射物伤害、投射物速度</td>
+                        <td>远程武器</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 Spire of Ash Wiki - 物品数据基于游戏文件提取</p>
+    </div>
+
+    <script>
+        // 折叠面板功能
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

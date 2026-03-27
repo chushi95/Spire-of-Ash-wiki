@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页 - Spire of Ash Wiki</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0d0d0d;
+            color: #c9b896;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2418 100%);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #8b6914;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: #d4af37;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+
+        .header p {
+            color: #8b7355;
+            margin-top: 10px;
+        }
+
+        .nav {
+            background: #1a1a1a;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #3d3220;
+        }
+
+        .nav a {
+            color: #a89f91;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s;
+            border: 1px solid transparent;
+        }
+
+        .nav a:hover {
+            background: #2d2418;
+            border-color: #8b6914;
+            color: #d4af37;
+        }
+
+        .nav a.active {
+            background: #3d3220;
+            border-color: #d4af37;
+            color: #d4af37;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .welcome-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .welcome-section h2 {
+            color: #d4af37;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .welcome-section p {
+            color: #a89f91;
+            font-size: 1.1em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .footer {
+            background: #1a1a1a;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #8b7355;
+            border-top: 1px solid #3d3220;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Spire of Ash Wiki</h1>
+        <p>探索灰烬之塔的世界</p>
+    </div>
+
+    <div class="nav">
+        <a href="index.html" class="active">首页</a>
+        <a href="characters.html">角色</a>
+        <a href="items.html">物品</a>
+        <a href="guides.html">攻略</a>
+        <a href="dummies.html">木桩</a>
+    </div>
+
+    <div class="container">
+        <div class="welcome-section">
+            <h2>欢迎来到灰烬之塔 Wiki</h2>
+            <p>这是一个由玩家社区维护的游戏 Wiki，致力于提供关于灰烬之塔的全面信息。</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 Spire of Ash Wiki - 由玩家社区维护</p>
+    </div>
+</body>
+</html>
