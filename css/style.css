@@ -38,7 +38,10 @@ body::after {
 }
 
 header {
-    background-color: #000;
+    background-image: url('/images/banner.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     min-height: 250px;
     padding: 54px;
     text-align: center;
@@ -56,12 +59,9 @@ header::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('images/banner.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.5;
+    background: rgba(0, 0, 0, 0.5);
     z-index: 0;
+    pointer-events: none;
 }
 
 header > * {
