@@ -60,9 +60,9 @@
         },
         init: function() {
             var backgrounds = [
-                '/images/background.webp',
-                '/images/background2.webp',
-                '/images/background3.webp'
+                'images/background.webp',
+                'images/background2.webp',
+                'images/background3.webp'
             ];
             var randomIndex = Math.floor(Math.random() * backgrounds.length);
             var style = document.createElement('style');
