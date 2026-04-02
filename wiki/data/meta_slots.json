@@ -1,0 +1,352 @@
+[
+  {
+    "name": "Warcry of Might",
+    "name_id": "warcry_of_might",
+    "name_cn": null,
+    "icon": "⚔️",
+    "type": "MetaSlot",
+    "type2": "进攻",
+    "category": "元槽位",
+    "quality": "legendary",
+    "tags": [
+      "元槽位",
+      "进攻"
+    ],
+    "stats": {
+      "分类": "进攻"
+    },
+    "description": "+25% more damage, +6% crit chance, +0.30 crit multi, +8% attack & cast speed",
+    "description_cn": null,
+    "effects": [
+      "25% more Damage",
+      "6% increased Critical Strike Chance",
+      "+30% to Critical Strike Multiplier",
+      "8% increased Attack and Cast Speed"
+    ],
+    "costs": []
+  },
+  {
+    "name": "Precision Protocol",
+    "name_id": "precision_protocol",
+    "name_cn": null,
+    "icon": "🎯",
+    "type": "MetaSlot",
+    "type2": "进攻",
+    "category": "元槽位",
+    "quality": "legendary",
+    "tags": [
+      "元槽位",
+      "进攻"
+    ],
+    "stats": {
+      "分类": "进攻"
+    },
+    "description": "+20% crit chance, +0.80 crit multi, +30% more vs full-life targets, power charge on crit, +30ms CDR on crit. Costs -15% attack speed.",
+    "description_cn": null,
+    "effects": [
+      "20% increased Critical Strike Chance",
+      "+80% to Critical Strike Multiplier",
+      "30% more Damage against Full Life targets",
+      "Gain a Power Charge on Critical Strike",
+      "30ms Cooldown Recovery on Critical Strike"
+    ],
+    "costs": [
+      "15% reduced Attack Speed"
+    ]
+  },
+  {
+    "name": "Elemental Fury",
+    "name_id": "elemental_fury",
+    "name_cn": null,
+    "icon": "🔥⚡",
+    "type": "MetaSlot",
+    "type2": "进攻",
+    "category": "元槽位",
+    "quality": "legendary",
+    "tags": [
+      "元槽位",
+      "进攻"
+    ],
+    "stats": {
+      "分类": "进攻"
+    },
+    "description": "Convert 75% phys→elements (25% each fire/cold/lightning), +15% elemental spell penetration, +25% ailment effect, ignites spread. Costs -20% physical damage.",
+    "description_cn": null,
+    "effects": [
+      "Convert 75% of Physical Damage to Elemental",
+      "Spells Penetrate 15% Elemental Resistance",
+      "25% increased Ailment Effect",
+      "Ignites spread to nearby enemies"
+    ],
+    "costs": [
+      "20% less Physical Damage"
+    ]
+  },
+  {
+    "name": "Aegis of the Undying",
+    "name_id": "aegis_of_the_undying",
+    "name_cn": null,
+    "icon": "🛡️💖",
+    "type": "MetaSlot",
+    "type2": "防御",
+    "category": "元槽位",
+    "quality": "legendary",
+    "tags": [
+      "元槽位",
+      "防御"
+    ],
+    "stats": {
+      "分类": "防御"
+    },
+    "description": "+40% fortify effect, +20% life recoup, +15 life on block, +12% attack & spell block. Costs -18% move speed, -12% attack speed.",
+    "description_cn": null,
+    "effects": [
+      "40% increased Fortify Effect",
+      "Recoup 20% of Damage taken as Life",
+      "+15 Life gained on Block",
+      "+12% Attack and Spell Block Chance"
+    ],
+    "costs": [
+      "18% reduced Movement Speed",
+      "12% reduced Attack Speed"
+    ]
+  },
+  {
+    "name": "Iron Bastion",
+    "name_id": "iron_bastion",
+    "name_cn": null,
+    "icon": "🏰",
+    "type": "MetaSlot",
+    "type2": "防御",
+    "category": "元槽位",
+    "quality": "legendary",
+    "tags": [
+      "元槽位",
+      "防御"
+    ],
+    "stats": {
+      "分类": "防御"
+    },
+    "description": "+50% armour, +3 endurance charges, +120 threshold, +15% phys overwhelm, +20 armor shred on hit. Costs -5% max fire/cold/lightning resistance.",
+    "description_cn": null,
+    "effects": [
+      "50% increased Armour",
+      "+3 to maximum Endurance Charges",
+      "+120 to Physical Damage Threshold",
+      "Overwhelm 15% Physical Damage Reduction",
+      "+20 Armour Shred on Hit"
+    ],
+    "costs": [
+      "-5% to maximum Fire, Cold, and Lightning Resistance"
+    ]
+  },
+  {
+    "name": "Warden's Vigil",
+    "name_id": "wardens_vigil",
+    "name_cn": null,
+    "icon": "👁️🛡️",
+    "type": "MetaSlot",
+    "type2": "防御",
+    "category": "元槽位",
+    "quality": "legendary",
+    "tags": [
+      "元槽位",
+      "防御"
+    ],
+    "stats": {
+      "分类": "防御"
+    },
+    "description": "+50% evasion, +25% spell suppression, +12% dodge, +15% speed on evade, +15% move speed. Costs -25% max life.",
+    "description_cn": null,
+    "effects": [
+      "50% increased Evasion Rating",
+      "+25% Spell Suppression Chance",
+      "+12% Dodge Chance",
+      "15% increased Speed on Evade",
+      "15% increased Movement Speed"
+    ],
+    "costs": [
+      "25% less maximum Life"
+    ]
+  },
+  {
+    "name": "Windrunner's Grace",
+    "name_id": "windrunners_grace",
+    "name_cn": null,
+    "icon": "💨",
+    "type": "MetaSlot",
+    "type2": "速度",
+    "category": "元槽位",
+    "quality": "legendary",
+    "tags": [
+      "元槽位",
+      "速度"
+    ],
+    "stats": {
+      "分类": "速度"
+    },
+    "description": "+3 frenzy charges, +25% move speed, +20% attack & cast speed, +15% projectile speed, +20% speed on kill. Costs -20% life, -25% armour.",
+    "description_cn": null,
+    "effects": [
+      "+3 to maximum Frenzy Charges",
+      "25% increased Movement Speed",
+      "20% increased Attack and Cast Speed",
+      "15% increased Projectile Speed",
+      "20% increased Speed on Kill"
+    ],
+    "costs": [
+      "20% less maximum Life",
+      "25% less Armour"
+    ]
+  },
+  {
+    "name": "Arcane Conduit",
+    "name_id": "arcane_conduit",
+    "name_cn": null,
+    "icon": "🔮",
+    "type": "MetaSlot",
+    "type2": "施法",
+    "category": "元槽位",
+    "quality": "legendary",
+    "tags": [
+      "元槽位",
+      "施法"
+    ],
+    "stats": {
+      "分类": "施法"
+    },
+    "description": "+1 spell barrage, +0.50 spell crit multi, +15% mana→spell damage, +25% spell CDR, +15 mana regen/s. Costs -30% attack damage, -20% armour.",
+    "description_cn": null,
+    "effects": [
+      "+1 to Spell Barrage",
+      "+50% to Spell Critical Strike Multiplier",
+      "15% of Mana added as Spell Damage",
+      "25% increased Spell Cooldown Recovery",
+      "+15 Mana Regeneration per second"
+    ],
+    "costs": [
+      "30% less Attack Damage",
+      "20% less Armour"
+    ]
+  },
+  {
+    "name": "Wellspring of Vitality",
+    "name_id": "wellspring_of_vitality",
+    "name_cn": null,
+    "icon": "💓",
+    "type": "MetaSlot",
+    "type2": "维持",
+    "category": "元槽位",
+    "quality": "legendary",
+    "tags": [
+      "元槽位",
+      "维持"
+    ],
+    "stats": {
+      "分类": "维持"
+    },
+    "description": "+50% aura effect, +40% healing effect, +25% aura radius, +30 life regen/s, +15 mana regen/s. Costs -20% global damage.",
+    "description_cn": null,
+    "effects": [
+      "50% increased Aura Effect",
+      "40% increased Healing Effect",
+      "25% increased Aura Radius",
+      "+30 Life Regeneration per second",
+      "+15 Mana Regeneration per second"
+    ],
+    "costs": [
+      "20% less Damage"
+    ]
+  },
+  {
+    "name": "Bloodpact",
+    "name_id": "bloodpact",
+    "name_cn": null,
+    "icon": "💧",
+    "type": "MetaSlot",
+    "type2": "维持",
+    "category": "元槽位",
+    "quality": "legendary",
+    "tags": [
+      "元槽位",
+      "维持"
+    ],
+    "stats": {
+      "分类": "维持"
+    },
+    "description": "+5% life leech, +8 life on hit, +30% more vs bleeding, +25% bleed chance, +40% bleed multi, +25% more bleed while moving. Costs all life regen.",
+    "description_cn": null,
+    "effects": [
+      "5% of Damage Leeched as Life",
+      "+8 Life gained on Hit",
+      "30% more Damage against Bleeding enemies",
+      "25% chance to inflict Bleed",
+      "40% increased Bleed Multiplier",
+      "25% more Bleed Damage while Moving"
+    ],
+    "costs": [
+      "Life Regeneration is disabled"
+    ]
+  },
+  {
+    "name": "Fortune's Favor",
+    "name_id": "fortunes_favor",
+    "name_cn": null,
+    "icon": "💰",
+    "type": "MetaSlot",
+    "type2": "战利品",
+    "category": "元槽位",
+    "quality": "legendary",
+    "tags": [
+      "元槽位",
+      "战利品"
+    ],
+    "stats": {
+      "分类": "战利品"
+    },
+    "description": "+80 IIQ, +60 IIR, +15% duplicate drops, +30% gold find, +20% key quality, +15% XP. Costs -20% damage, -15% life.",
+    "description_cn": null,
+    "effects": [
+      "+80% increased Item Quantity",
+      "+60% increased Item Rarity",
+      "15% chance for Duplicate Drops",
+      "30% increased Gold Find",
+      "20% increased Key Quality",
+      "15% increased Experience gained"
+    ],
+    "costs": [
+      "20% less Damage",
+      "15% less maximum Life"
+    ]
+  },
+  {
+    "name": "Equilibrium",
+    "name_id": "equilibrium",
+    "name_cn": null,
+    "icon": "⚖️",
+    "type": "MetaSlot",
+    "type2": "混合",
+    "category": "元槽位",
+    "quality": "legendary",
+    "tags": [
+      "元槽位",
+      "混合"
+    ],
+    "stats": {
+      "分类": "混合"
+    },
+    "description": "+10% double damage chance, +1 attr→resist conversion, +10% STR→melee / DEX→proj / INT→spell damage, +15% life & mana. Costs -0.20 crit multiplier.",
+    "description_cn": null,
+    "effects": [
+      "10% chance to deal Double Damage",
+      "+1 Attribute to Resistance Conversion",
+      "10% of Strength added as Melee Damage",
+      "10% of Dexterity added as Projectile Damage",
+      "10% of Intelligence added as Spell Damage",
+      "15% increased maximum Life and Mana"
+    ],
+    "costs": [
+      "-20% to Critical Strike Multiplier"
+    ]
+  }
+]
