@@ -691,11 +691,16 @@
 
             if (type === 'items') {
                 // 装备卡片 - 保持新布局
+                var levelBadge = '';
+                if (item.req && item.req.level) {
+                    levelBadge = '<span class="level-badge">Lv.' + item.req.level + '</span>';
+                }
                 return '<div class="card equipment-card quality-' + quality + '" data-index="' + dataIndex + '">' +
                     '<div class="card-header">' +
                         '<div class="card-title-wrapper">' +
                             '<h3>' + name + '</h3>' +
                             qualityBadge +
+                            levelBadge +
                             itemIconHtml +
                         '</div>' +
                     '</div>' +
@@ -786,6 +791,7 @@
         },
         createModalContent: function(item) {
             var name = this.getDisplayText(item.name_cn, item.name_id, item.name);
+            var englishName = item.name || '';
             var icon = item.icon || '✨';
             var type = this.getDisplayText(item.type_cn, item.type_id, item.type);
             var category = this.getDisplayText(item.category_cn, item.category_id, item.category);
@@ -793,6 +799,28 @@
 
             var headerMeta = [];
             var headerMetaHtml = '';
+            
+            // 添加武器类型和握持方式到头部信息
+            if (item.weaponFamily) {
+                var weaponFamilyNames = {
+                    'axe': '斧头',
+                    'sword': '剑',
+                    'mace': '锤',
+                    'spear': '长矛'
+                };
+                headerMeta.push(weaponFamilyNames[item.weaponFamily] || item.weaponFamily);
+            }
+            if (item.hands) {
+                var handsNames = {
+                    '1H': '单手',
+                    '2H': '双手'
+                };
+                headerMeta.push(handsNames[item.hands] || item.hands);
+            }
+            
+            if (headerMeta.length > 0) {
+                headerMetaHtml = headerMeta.join(' · ');
+            }
 
             var tagsHtml = '';
             if (item.tags && item.tags.length > 0) {
@@ -817,13 +845,11 @@
                 var weaponStats = item.baseStats.weapon;
                 statsHtml += '<div class="modal-section"><h3>装备属性</h3><div class="item-stats">';
                 if (weaponStats.baseAttackTime) {
-                    statsHtml += '<div class="stat-item"><span class="stat-label">攻击速度:</span> <span class="stat-value">' + weaponStats.baseAttackTime + 's</span></div>';
+                    var attacksPerSecond = (1 / weaponStats.baseAttackTime).toFixed(2);
+                    statsHtml += '<div class="stat-item"><span class="stat-label">攻击速度:</span> <span class="stat-value">' + attacksPerSecond + ' 次/秒</span></div>';
                 }
                 if (weaponStats.critChance) {
-                    statsHtml += '<div class="stat-item"><span class="stat-label">暴击几率:</span> <span class="stat-value">' + (weaponStats.critChance * 100) + '%</span></div>';
-                }
-                if (weaponStats.damageVariance) {
-                    statsHtml += '<div class="stat-item"><span class="stat-label">伤害波动:</span> <span class="stat-value">' + (weaponStats.damageVariance.minMult * 100) + '% - ' + (weaponStats.damageVariance.maxMult * 100) + '%</span></div>';
+                    statsHtml += '<div class="stat-item"><span class="stat-label">暴击几率:</span> <span class="stat-value">' + (weaponStats.critChance * 100).toFixed(1) + '%</span></div>';
                 }
                 statsHtml += '</div></div>';
             }
@@ -893,7 +919,96 @@
                 content += '<div class="modal-section"><h3>角色里程碑</h3><div class="milestones-container">' + milestonesHtml + '</div></div>';
             }
 
-            return modalImageHtml + '<div class="modal-scrollable"><div class="modal-header"><div class="modal-title-section"><h2>' + name + '</h2><div class="modal-meta">' + headerMetaHtml + '</div></div></div>' + tagsHtml + content + '</div>';
+            if (item.category === 'weapon' && this.data.affixes && this.data.affixes.length > 0) {
+                var itemLevel = item.req && item.req.level ? item.req.level : 1;
+                var itemTags = item.tags || [];
+                
+                var availablePrefixes = this.data.affixes.filter(function(affix) {
+                    if (affix.type !== 'prefix') return false;
+                    var tagMatch = affix.tags.some(function(tag) { return itemTags.indexOf(tag) !== -1; });
+                    if (!tagMatch) return false;
+                    var tierMatch = affix.tiers.some(function(tier) { 
+                        return itemLevel >= tier.minIlvl && itemLevel <= tier.maxIlvl; 
+                    });
+                    return tierMatch;
+                }.bind(this));
+                
+                var availableSuffixes = this.data.affixes.filter(function(affix) {
+                    if (affix.type !== 'suffix') return false;
+                    var tagMatch = affix.tags.some(function(tag) { return itemTags.indexOf(tag) !== -1; });
+                    if (!tagMatch) return false;
+                    var tierMatch = affix.tiers.some(function(tier) { 
+                        return itemLevel >= tier.minIlvl && itemLevel <= tier.maxIlvl; 
+                    });
+                    return tierMatch;
+                }.bind(this));
+                
+                if (availablePrefixes.length > 0 || availableSuffixes.length > 0) {
+                    var affixesHtml = '';
+                    
+                    if (availablePrefixes.length > 0) {
+                        affixesHtml += '<div class="affix-group"><h4 class="affix-group-title">前缀</h4>';
+                        availablePrefixes.forEach(function(affix) {
+                            var affixName = affix.name_cn || affix.name;
+                            var description = affix.description || affix.statId;
+                            var weight = affix.weight || 1000;
+                            
+                            var tiersHtml = affix.tiers.map(function(tier) {
+                                var valueRange = tier.minValue + '-' + tier.maxValue;
+                                if (affix.statId.indexOf('.percent') !== -1 || affix.statId.indexOf('crit.') !== -1) {
+                                    valueRange = tier.minValue + '%-' + tier.maxValue + '%';
+                                }
+                                return '<div class="tier-item"><span class="tier-label">T' + tier.tier + '</span><span class="tier-range">' + valueRange + '</span><span class="tier-ilvl">ilvl ' + tier.minIlvl + '-' + tier.maxIlvl + '</span></div>';
+                            }).join('');
+                            
+                            affixesHtml += '<div class="affix-item-expanded">' +
+                                '<div class="affix-header">' +
+                                    '<div class="affix-name-main">' + affixName + '</div>' +
+                                    '<div class="affix-weight">权重: ' + weight + '</div>' +
+                                '</div>' +
+                                '<div class="affix-desc">' + description + '</div>' +
+                                '<div class="affix-tiers">' + tiersHtml + '</div>' +
+                            '</div>';
+                        }.bind(this));
+                        affixesHtml += '</div>';
+                    }
+                    
+                    if (availableSuffixes.length > 0) {
+                        affixesHtml += '<div class="affix-group"><h4 class="affix-group-title">后缀</h4>';
+                        availableSuffixes.forEach(function(affix) {
+                            var affixName = affix.name_cn || affix.name;
+                            var description = affix.description || affix.statId;
+                            var weight = affix.weight || 1000;
+                            
+                            var tiersHtml = affix.tiers.map(function(tier) {
+                                var valueRange = tier.minValue + '-' + tier.maxValue;
+                                if (affix.statId.indexOf('.percent') !== -1 || affix.statId.indexOf('crit.') !== -1) {
+                                    valueRange = tier.minValue + '%-' + tier.maxValue + '%';
+                                }
+                                return '<div class="tier-item"><span class="tier-label">T' + tier.tier + '</span><span class="tier-range">' + valueRange + '</span><span class="tier-ilvl">ilvl ' + tier.minIlvl + '-' + tier.maxIlvl + '</span></div>';
+                            }).join('');
+                            
+                            affixesHtml += '<div class="affix-item-expanded">' +
+                                '<div class="affix-header">' +
+                                    '<div class="affix-name-main">' + affixName + '</div>' +
+                                    '<div class="affix-weight">权重: ' + weight + '</div>' +
+                                '</div>' +
+                                '<div class="affix-desc">' + description + '</div>' +
+                                '<div class="affix-tiers">' + tiersHtml + '</div>' +
+                            '</div>';
+                        }.bind(this));
+                        affixesHtml += '</div>';
+                    }
+                    
+                    content += '<div class="modal-section"><h3>可用词缀</h3><div class="affixes-container">' + affixesHtml + '</div></div>';
+                }
+            }
+
+            var nameHtml = '<h2>' + name + '</h2>';
+            if (englishName && englishName !== name) {
+                nameHtml += '<div class="english-name">' + englishName + '</div>';
+            }
+            return modalImageHtml + '<div class="modal-scrollable"><div class="modal-header"><div class="modal-title-section">' + nameHtml + '<div class="modal-meta">' + headerMetaHtml + '</div></div></div>' + content + '</div>';
         }
     };
 

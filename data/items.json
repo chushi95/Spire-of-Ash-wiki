@@ -21,6 +21,7 @@
     "baseStats": {
       "weapon": {
         "baseAttackTime": 1.421,
+        "damageCurve": "weapon_damage_1h",
         "damageVariance": {
           "minMult": 0.75,
           "maxMult": 1.25
@@ -59,6 +60,7 @@
     "baseStats": {
       "weapon": {
         "baseAttackTime": 1.421,
+        "damageCurve": "weapon_damage_1h",
         "damageVariance": {
           "minMult": 0.75,
           "maxMult": 1.25
@@ -97,6 +99,7 @@
     "baseStats": {
       "weapon": {
         "baseAttackTime": 1.421,
+        "damageCurve": "weapon_damage_1h",
         "damageVariance": {
           "minMult": 0.75,
           "maxMult": 1.25
@@ -135,6 +138,7 @@
     "baseStats": {
       "weapon": {
         "baseAttackTime": 1.421,
+        "damageCurve": "weapon_damage_1h",
         "damageVariance": {
           "minMult": 0.75,
           "maxMult": 1.25
@@ -173,6 +177,7 @@
     "baseStats": {
       "weapon": {
         "baseAttackTime": 1.421,
+        "damageCurve": "weapon_damage_1h",
         "damageVariance": {
           "minMult": 0.75,
           "maxMult": 1.25
@@ -211,6 +216,7 @@
     "baseStats": {
       "weapon": {
         "baseAttackTime": 1.421,
+        "damageCurve": "weapon_damage_1h",
         "damageVariance": {
           "minMult": 0.75,
           "maxMult": 1.25
