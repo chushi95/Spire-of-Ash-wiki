@@ -19,6 +19,7 @@
             <li><a href="#" data-tab="items">物品信息</a></li>
             <li><a href="#" data-tab="affixes">词缀信息</a></li>
             <li><a href="#" data-tab="cards">以太卡牌</a></li>
+            <li><a href="#" data-tab="damage-test">伤害测试</a></li>
         </ul>
     </nav>
     
@@ -133,7 +134,9 @@
                 <button class="sub-tab-btn" data-subtab="货币">货币</button>
             </div>
             <div class="sub-tabs-level2" id="equipment-tabs" style="display: none;">
-                <button class="sub-tab-btn level2 active" data-subtab2="武器">武器</button>
+                <button class="sub-tab-btn level2 active" data-subtab2="攻击武器">攻击武器</button>
+                <button class="sub-tab-btn level2" data-subtab2="施法武器">施法武器</button>
+                <button class="sub-tab-btn level2" data-subtab2="副手武器">副手武器</button>
                 <button class="sub-tab-btn level2" data-subtab2="护甲">护甲</button>
                 <button class="sub-tab-btn level2" data-subtab2="首饰">首饰</button>
                 <button class="sub-tab-btn level2" data-subtab2="药剂">药剂</button>
@@ -158,6 +161,63 @@
         
         <section id="cards" class="tab-content">
             <div class="card-grid" id="cards-grid"></div>
+        </section>
+        
+        <section id="damage-test" class="tab-content">
+            <div class="damage-test-container">
+                <h2 style="color: #B8860B; margin-bottom: 32px; text-align: center;">伤害测试功能</h2>
+                <div class="damage-test-cards">
+                    <div class="damage-card">
+                        <div class="damage-card-header">
+                            <h3>选择角色</h3>
+                        </div>
+                        <div class="damage-card-body" id="character-selector">
+                            <div class="character-selector-list" id="available-characters"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="damage-card">
+                        <div class="damage-card-header">
+                            <h3>队伍列表</h3>
+                        </div>
+                        <div class="damage-card-body">
+                            <div class="team-list" id="team-list"></div>
+                            <div style="margin-top: 16px; text-align: center;">
+                                <span style="color: #888; font-size: 0.9em;">可添加 1-5 个角色</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="damage-card">
+                        <div class="damage-card-header">
+                            <h3>计算伤害</h3>
+                        </div>
+                        <div class="damage-card-body" id="damage-calculator">
+                            <div class="damage-settings">
+                                <div class="setting-row">
+                                    <label>目标敌人:</label>
+                                    <select id="target-enemy">
+                                        <option value="dummy">训练假人</option>
+                                        <option value="boss">Boss</option>
+                                    </select>
+                                </div>
+                                <div class="setting-row">
+                                    <label>模拟时间:</label>
+                                    <select id="simulation-time">
+                                        <option value="60">1分钟</option>
+                                        <option value="180">3分钟</option>
+                                        <option value="300">5分钟</option>
+                                    </select>
+                                </div>
+                                <button id="calculate-btn" class="calculate-btn">开始计算</button>
+                            </div>
+                            <div class="damage-result" id="damage-result">
+                                <p style="color: #888; text-align: center;">点击"开始计算"查看结果</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     

@@ -1,1 +1,230 @@
-[]
+[
+  {
+    "name": "Notched Hatchet",
+    "name_cn": "缺口手斧",
+    "name_id": "axe_1h_rusted",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "axe",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "axe",
+      "1H",
+      "attack"
+    ],
+    "quality": "common",
+    "image": "images/axe_rusted.webp",
+    "description": "一把生锈但依然锋利的斧头",
+    "description_cn": "一把生锈但依然锋利的斧头",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.421,
+        "damageVariance": {
+          "minMult": 0.75,
+          "maxMult": 1.25
+        },
+        "critChance": 0.053
+      }
+    },
+    "implicit": "42% of Physical Damage Converted to Fire",
+    "implicit_cn": "42%的物理伤害转换为火焰伤害",
+    "req": {
+      "level": 1,
+      "stats": {
+        "strength": 21
+      }
+    }
+  },
+  {
+    "name": "Butcher Cleaver",
+    "name_cn": "屠夫斩斧",
+    "name_id": "axe_1h_forged",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "axe",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "axe",
+      "1H",
+      "attack"
+    ],
+    "quality": "magic",
+    "image": "images/axe_forged.webp",
+    "description": "经过锻造的优质斧头",
+    "description_cn": "经过锻造的优质斧头",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.421,
+        "damageVariance": {
+          "minMult": 0.75,
+          "maxMult": 1.25
+        },
+        "critChance": 0.053
+      }
+    },
+    "implicit": "Bleeding you inflict deals Damage 35% faster",
+    "implicit_cn": "你造成的流血伤害加快35%",
+    "req": {
+      "level": 17,
+      "stats": {
+        "strength": 21
+      }
+    }
+  },
+  {
+    "name": "Raider Axe",
+    "name_cn": "掠夺者战斧",
+    "name_id": "axe_1h_tempered",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "axe",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "axe",
+      "1H",
+      "attack"
+    ],
+    "quality": "rare",
+    "image": "images/axe_tempered.webp",
+    "description": "经过回火工艺的精良斧头",
+    "description_cn": "经过回火工艺的精良斧头",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.421,
+        "damageVariance": {
+          "minMult": 0.75,
+          "maxMult": 1.25
+        },
+        "critChance": 0.053
+      }
+    },
+    "implicit": "13% chance to deal Double Damage",
+    "implicit_cn": "13%几率造成双倍伤害",
+    "req": {
+      "level": 34,
+      "stats": {
+        "strength": 21
+      }
+    }
+  },
+  {
+    "name": "Skull Splitter",
+    "name_cn": "颅骨分裂者",
+    "name_id": "axe_1h_masterwork",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "axe",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "axe",
+      "1H",
+      "attack"
+    ],
+    "quality": "epic",
+    "image": "images/axe_masterwork.webp",
+    "description": "精工打造的高级斧头",
+    "description_cn": "精工打造的高级斧头",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.421,
+        "damageVariance": {
+          "minMult": 0.75,
+          "maxMult": 1.25
+        },
+        "critChance": 0.053
+      }
+    },
+    "implicit": "Gain 23% of Physical Damage as Extra Chaos Damage",
+    "implicit_cn": "获得23%物理伤害作为额外混乱伤害",
+    "req": {
+      "level": 50,
+      "stats": {
+        "strength": 21
+      }
+    }
+  },
+  {
+    "name": "Bonereaver",
+    "name_cn": "碎骨者",
+    "name_id": "axe_1h_legendary",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "axe",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "axe",
+      "1H",
+      "attack"
+    ],
+    "quality": "legendary",
+    "image": "images/axe_legendary.webp",
+    "description": "传说中的神器斧头",
+    "description_cn": "传说中的神器斧头",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.421,
+        "damageVariance": {
+          "minMult": 0.75,
+          "maxMult": 1.25
+        },
+        "critChance": 0.053
+      }
+    },
+    "implicit": "26% more Damage vs Bleeding enemies",
+    "implicit_cn": "对流血敌人造成26%更多伤害",
+    "req": {
+      "level": 67,
+      "stats": {
+        "strength": 21
+      }
+    }
+  },
+  {
+    "name": "Executioner's Verdict",
+    "name_cn": "刽子手的裁决",
+    "name_id": "axe_1h_mythic",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "axe",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "axe",
+      "1H",
+      "attack"
+    ],
+    "quality": "mythic",
+    "image": "images/axe_mythic.webp",
+    "description": "神话级别的终极斧头",
+    "description_cn": "神话级别的终极斧头",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.421,
+        "damageVariance": {
+          "minMult": 0.75,
+          "maxMult": 1.25
+        },
+        "critChance": 0.053
+      }
+    },
+    "implicit": "28% chance to Armor Break",
+    "implicit_cn": "28%几率造成破甲",
+    "req": {
+      "level": 84,
+      "stats": {
+        "strength": 21
+      }
+    }
+  }
+]

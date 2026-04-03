@@ -55,8 +55,11 @@
         },
         currentSubTab2: {
             characters: '进攻',
-            items_装备: '武器',
+            items_装备: '攻击武器',
             items_货币: '宝珠'
+        },
+        damageTest: {
+            team: []
         },
         init: function() {
             var backgrounds = [
@@ -75,6 +78,188 @@
             this.bindModalEvents();
             this.restoreUIState();
             this.loadAllData();
+            this.initDamageTest();
+        },
+        initDamageTest: function() {
+            var self = this;
+            var calculateBtn = document.getElementById('calculate-btn');
+            if (calculateBtn) {
+                calculateBtn.addEventListener('click', function() {
+                    self.calculateDamage();
+                });
+            }
+        },
+        renderCharacterSelector: function() {
+            var container = document.getElementById('available-characters');
+            if (!container) return;
+            
+            var characters = this.data.characters || [];
+            var self = this;
+            
+            container.innerHTML = characters.filter(function(char) {
+                return char.type !== 'MetaSlot' && char.class !== 'MetaSlot' && char.category !== 'MetaSlot';
+            }).map(function(char) {
+                var name = self.getDisplayText(char.name_cn, char.name_id, char.name);
+                var image = char.image || '';
+                var isInTeam = self.damageTest.team.some(function(t) { return t.name_id === char.name_id; });
+                
+                return '<div class="character-item" data-name-id="' + char.name_id + '">' +
+                    (image ? '<img src="' + image + '" alt="' + name + '">' : '') +
+                    '<span class="character-item-name">' + name + '</span>' +
+                    (isInTeam ? 
+                        '<span style="color: #666; font-size: 0.85em;">已添加</span>' :
+                        '<button class="character-item-add" onclick="WikiApp.addToTeam(\'' + char.name_id + '\')">添加</button>') +
+                '</div>';
+            }).join('');
+        },
+        addToTeam: function(nameId) {
+            if (this.damageTest.team.length >= 5) {
+                alert('队伍最多只能添加 5 个角色！');
+                return;
+            }
+            
+            var character = this.data.characters.find(function(c) { return c.name_id === nameId; });
+            if (!character) return;
+            
+            if (this.damageTest.team.some(function(t) { return t.name_id === nameId; })) {
+                alert('该角色已在队伍中！');
+                return;
+            }
+            
+            this.damageTest.team.push(character);
+            this.renderTeamList();
+            this.renderCharacterSelector();
+        },
+        removeFromTeam: function(nameId) {
+            this.damageTest.team = this.damageTest.team.filter(function(t) { return t.name_id !== nameId; });
+            this.renderTeamList();
+            this.renderCharacterSelector();
+        },
+        renderTeamList: function() {
+            var container = document.getElementById('team-list');
+            if (!container) return;
+            
+            var self = this;
+            
+            if (this.damageTest.team.length === 0) {
+                container.innerHTML = '<p style="color: #666; text-align: center; padding: 40px 0;">请从左侧选择角色添加到队伍</p>';
+                return;
+            }
+            
+            container.innerHTML = this.damageTest.team.map(function(char, index) {
+                var name = self.getDisplayText(char.name_cn, char.name_id, char.name);
+                var image = char.image || '';
+                
+                return '<div class="team-member">' +
+                    (image ? '<img src="' + image + '" alt="' + name + '">' : '') +
+                    '<div class="team-member-info">' +
+                        '<div class="team-member-name">' + name + '</div>' +
+                    '</div>' +
+                    '<button class="team-member-remove" onclick="WikiApp.removeFromTeam(\'' + char.name_id + '\')">&times;</button>' +
+                '</div>';
+            }).join('');
+        },
+        calculateDamage: function() {
+            var resultContainer = document.getElementById('damage-result');
+            if (!resultContainer) return;
+            
+            if (this.damageTest.team.length === 0) {
+                resultContainer.innerHTML = '<p style="color: #ff6666; text-align: center;">请先添加角色到队伍！</p>';
+                return;
+            }
+            
+            var targetEnemy = document.getElementById('target-enemy').value;
+            var simulationTime = parseInt(document.getElementById('simulation-time').value) || 60;
+            
+            var totalDamage = 0;
+            var minDamage = Infinity;
+            var maxDamage = 0;
+            var attackCount = simulationTime * 2;
+            
+            var damageBreakdown = {};
+            var self = this;
+            
+            this.damageTest.team.forEach(function(char) {
+                var charName = self.getDisplayText(char.name_cn, char.name_id, char.name);
+                damageBreakdown[charName] = {
+                    total: 0,
+                    count: 0,
+                    min: Infinity,
+                    max: 0
+                };
+            });
+            
+            for (var i = 0; i < attackCount; i++) {
+                var charIndex = i % this.damageTest.team.length;
+                var char = this.damageTest.team[charIndex];
+                var charName = this.getDisplayText(char.name_cn, char.name_id, char.name);
+                
+                var damage = Math.floor(Math.random() * 10000) + 1000;
+                totalDamage += damage;
+                
+                if (damage < minDamage) minDamage = damage;
+                if (damage > maxDamage) maxDamage = damage;
+                
+                damageBreakdown[charName].total += damage;
+                damageBreakdown[charName].count++;
+                if (damage < damageBreakdown[charName].min) damageBreakdown[charName].min = damage;
+                if (damage > damageBreakdown[charName].max) damageBreakdown[charName].max = damage;
+            }
+            
+            var avgDamage = Math.floor(totalDamage / attackCount);
+            var dps = Math.floor(totalDamage / simulationTime);
+            
+            var timeLabel = simulationTime === 60 ? '1分钟' : (simulationTime === 180 ? '3分钟' : '5分钟');
+            
+            var breakdownHtml = '';
+            for (var name in damageBreakdown) {
+                var data = damageBreakdown[name];
+                var charAvg = Math.floor(data.total / data.count);
+                breakdownHtml += '' +
+                    '<div class="damage-source-item">' +
+                        '<div class="damage-source-name">' + name + '</div>' +
+                        '<div class="damage-source-stats">' +
+                            '<span>总伤害: ' + data.total.toLocaleString() + '</span>' +
+                            '<span>平均: ' + charAvg.toLocaleString() + '</span>' +
+                            '<span>最低: ' + data.min.toLocaleString() + '</span>' +
+                            '<span>最高: ' + data.max.toLocaleString() + '</span>' +
+                        '</div>' +
+                    '</div>';
+            }
+            
+            resultContainer.innerHTML = '' +
+                '<div class="result-item">' +
+                    '<span class="result-label">队伍角色:</span>' +
+                    '<span class="result-value">' + this.damageTest.team.length + ' 个</span>' +
+                '</div>' +
+                '<div class="result-item">' +
+                    '<span class="result-label">模拟时间:</span>' +
+                    '<span class="result-value">' + timeLabel + '</span>' +
+                '</div>' +
+                '<div class="result-item">' +
+                    '<span class="result-label">总伤害:</span>' +
+                    '<span class="result-value">' + totalDamage.toLocaleString() + '</span>' +
+                '</div>' +
+                '<div class="result-item">' +
+                    '<span class="result-label">平均伤害:</span>' +
+                    '<span class="result-value">' + avgDamage.toLocaleString() + '</span>' +
+                '</div>' +
+                '<div class="result-item">' +
+                    '<span class="result-label">最低伤害:</span>' +
+                    '<span class="result-value">' + minDamage.toLocaleString() + '</span>' +
+                '</div>' +
+                '<div class="result-item">' +
+                    '<span class="result-label">最高伤害:</span>' +
+                    '<span class="result-value">' + maxDamage.toLocaleString() + '</span>' +
+                '</div>' +
+                '<div class="result-item">' +
+                    '<span class="result-label">DPS:</span>' +
+                    '<span class="result-value">' + dps.toLocaleString() + '</span>' +
+                '</div>' +
+                '<div style="margin-top: 20px; padding-top: 16px; border-top: 1px solid #3d3520;">' +
+                    '<h4 style="color: #B8860B; margin-bottom: 12px; font-size: 1em;">伤害出处详情:</h4>' +
+                    '<div class="damage-source-list">' + breakdownHtml + '</div>' +
+                '</div>';
         },
         loadSavedState: function() {
             var savedTab = localStorage.getItem('wikiCurrentTab');
@@ -186,6 +371,7 @@
             if (tabName === 'items') {
                 var equipmentTabs = document.getElementById('equipment-tabs');
                 var currencyTabs = document.getElementById('currency-tabs');
+                var armorTabs = document.getElementById('armor-tabs');
                 if (equipmentTabs) {
                     if (subtabName === '装备') {
                         equipmentTabs.style.display = 'flex';
@@ -201,6 +387,9 @@
                     } else {
                         currencyTabs.style.display = 'none';
                     }
+                }
+                if (armorTabs) {
+                    armorTabs.style.display = 'none';
                 }
             }
             this.renderTab(tabName);
@@ -224,6 +413,7 @@
             this.renderTab(tabName);
             this.saveState();
         },
+
         switchTab: function(tabName) {
             this.currentTab = tabName;
             document.querySelectorAll('nav ul li a').forEach(function(link) {
@@ -271,7 +461,10 @@
                     }
                 }
             }
-            if (tabName !== 'home') {
+            if (tabName === 'damage-test') {
+                this.renderCharacterSelector();
+                this.renderTeamList();
+            } else if (tabName !== 'home') {
                 this.renderTab(tabName);
             }
             this.saveState();
@@ -297,6 +490,10 @@
                     console.log('Loaded ' + data.length + ' ' + type);
                     if (self.currentTab === type) {
                         self.renderTab(type);
+                    }
+                    if (type === 'characters' && self.currentTab === 'damage-test') {
+                        self.renderCharacterSelector();
+                        self.renderTeamList();
                     }
                 })
                 .catch(function(error) {
@@ -329,6 +526,55 @@
                     });
                 }
             }
+            if (type === 'items') {
+                var subtab = this.currentSubTab[type] || '装备';
+                if (subtab === '装备') {
+                    var subtab2 = this.currentSubTab2[type + '_装备'] || '攻击武器';
+                    if (subtab2 === '攻击武器') {
+                        items = items.filter(function(item) {
+                            return (item.category === 'weapon' || item.slot === 'weapon') && 
+                                   !item.tags.includes('caster');
+                        });
+                    } else if (subtab2 === '施法武器') {
+                        items = items.filter(function(item) {
+                            return (item.category === 'weapon' || item.slot === 'weapon') && 
+                                   item.tags.includes('caster');
+                        });
+                    } else if (subtab2 === '副手武器') {
+                        items = items.filter(function(item) {
+                            return item.category === 'offhand' || item.slot === 'offhand' || item.weaponFamily === 'shield';
+                        });
+                    } else if (subtab2 === '护甲') {
+                        items = items.filter(function(item) {
+                            return item.category === 'armor' || 
+                                   item.slot === 'helm' || item.slot === 'body' || 
+                                   item.slot === 'gloves' || item.slot === 'boots';
+                        });
+                    } else if (subtab2 === '首饰') {
+                        items = items.filter(function(item) {
+                            return item.category === 'jewelry' || 
+                                   item.slot === 'ring' || item.slot === 'amulet';
+                        });
+                    } else if (subtab2 === '药剂') {
+                        items = items.filter(function(item) {
+                            return item.type === '药剂' || item.class === '药剂' || item.category === '药剂' ||
+                                   item.slot === 'flask' || item.tags.includes('flask');
+                        });
+                    }
+                } else if (subtab === '独特装备') {
+                    items = items.filter(function(item) {
+                        return item.type === '独特装备' || 
+                               item.class === '独特装备' || 
+                               item.category === '独特装备' ||
+                               item.tags && item.tags.includes('unique');
+                    });
+                } else if (subtab === '货币') {
+                    var subtab2 = this.currentSubTab2[type + '_货币'] || '宝珠';
+                    items = items.filter(function(item) {
+                        return item.type === subtab2 || item.class === subtab2 || item.category === subtab2;
+                    });
+                }
+            }
             if (items.length === 0) {
                 grid.innerHTML = '<div class="empty-message">暂无数据</div>';
                 return;
@@ -357,6 +603,7 @@
             var desc = this.getDisplayText(item.description_cn, item.description_id, item.description);
             var effect = this.getDisplayText(item.effect_cn, item.effect_id, item.effect);
             var extraInfo = '';
+            var quality = item.quality || 'common';
             
             if (item.partyBuff) {
                 var pbName = this.getDisplayText(item.partyBuff.name_cn, item.partyBuff.name_id, item.partyBuff.name);
@@ -394,20 +641,84 @@
                 descHtml += '</div>';
             }
 
-            var cardImageHtml = '';
+            var itemIconHtml = '';
             if (item.image) {
-                cardImageHtml = '<div class="card-image" style="background-image: url(\'' + item.image + '\')"></div>';
+                itemIconHtml = '<div class="item-icon" style="background-image: url(\'' + item.image + '\')"></div>';
+            } else {
+                itemIconHtml = '<div class="item-icon item-icon-placeholder"></div>';
             }
 
-            return '<div class="card" data-index="' + dataIndex + '">' +
-                cardImageHtml +
-                '<div class="card-header">' +
-                    '<div class="card-title">' +
-                        '<h3>' + name + '</h3>' +
+            var qualityBadge = '';
+            var qualityNames = {
+                'common': '普通',
+                'magic': '魔法',
+                'rare': '稀有',
+                'epic': '史诗',
+                'legendary': '传奇',
+                'mythic': '神话'
+            };
+            if (quality && qualityNames[quality]) {
+                // 只有角色卡片的史诗标签才去掉，其他都显示
+                if (type === 'items' || quality !== 'epic') {
+                    qualityBadge = '<span class="quality-badge quality-' + quality + '">' + qualityNames[quality] + '</span>';
+                }
+            }
+
+            var baseStatsHtml = '';
+            if (item.baseStats && item.baseStats.weapon) {
+                var stats = item.baseStats.weapon;
+                baseStatsHtml = '<div class="item-base-stats">';
+                baseStatsHtml += '<div class="stat-line"><strong>攻击速度:</strong> ' + stats.baseAttackTime + 's</div>';
+                baseStatsHtml += '<div class="stat-line"><strong>暴击几率:</strong> ' + (stats.critChance * 100).toFixed(1) + '%</div>';
+                if (stats.damageVariance) {
+                    baseStatsHtml += '<div class="stat-line"><strong>伤害波动:</strong> ' + (stats.damageVariance.minMult * 100) + '% - ' + (stats.damageVariance.maxMult * 100) + '%</div>';
+                }
+                baseStatsHtml += '</div>';
+            }
+
+            var implicitHtml = '';
+            if (item.implicit_cn || item.implicit) {
+                var implicitText = item.implicit_cn || item.implicit;
+                implicitHtml = '<div class="item-implicit"><strong>固有词缀:</strong> ' + implicitText + '</div>';
+            }
+
+            var cardContent = '';
+            if (type === 'items') {
+                cardContent = implicitHtml;
+            } else {
+                cardContent = descHtml;
+            }
+
+            if (type === 'items') {
+                // 装备卡片 - 保持新布局
+                return '<div class="card equipment-card quality-' + quality + '" data-index="' + dataIndex + '">' +
+                    '<div class="card-header">' +
+                        '<div class="card-title-wrapper">' +
+                            '<h3>' + name + '</h3>' +
+                            qualityBadge +
+                            itemIconHtml +
+                        '</div>' +
                     '</div>' +
-                '</div>' +
-                descHtml +
-            '</div>';
+                    cardContent +
+                '</div>';
+            } else {
+                // 角色卡片 - 图片作为整个卡片背景，透明度50%
+                var cardStyle = '';
+                if (item.image) {
+                    cardStyle = ' style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(\'' + item.image + '\'); background-size: cover; background-position: center;"';
+                }
+                return '<div class="card quality-' + quality + '" data-index="' + dataIndex + '"' + cardStyle + '>' +
+                    '<div class="card-header">' +
+                        '<div class="card-title-wrapper">' +
+                            '<div class="card-title">' +
+                                '<h3>' + name + '</h3>' +
+                                qualityBadge +
+                            '</div>' +
+                        '</div>' +
+                    '</div>' +
+                    cardContent +
+                '</div>';
+            }
         },
         bindModalEvents: function() {
             var self = this;
@@ -499,6 +810,53 @@
             }
 
             var content = '';
+
+            // 添加装备基础数据信息
+            var statsHtml = '';
+            if (item.baseStats && item.baseStats.weapon) {
+                var weaponStats = item.baseStats.weapon;
+                statsHtml += '<div class="modal-section"><h3>装备属性</h3><div class="item-stats">';
+                if (weaponStats.baseAttackTime) {
+                    statsHtml += '<div class="stat-item"><span class="stat-label">攻击速度:</span> <span class="stat-value">' + weaponStats.baseAttackTime + 's</span></div>';
+                }
+                if (weaponStats.critChance) {
+                    statsHtml += '<div class="stat-item"><span class="stat-label">暴击几率:</span> <span class="stat-value">' + (weaponStats.critChance * 100) + '%</span></div>';
+                }
+                if (weaponStats.damageVariance) {
+                    statsHtml += '<div class="stat-item"><span class="stat-label">伤害波动:</span> <span class="stat-value">' + (weaponStats.damageVariance.minMult * 100) + '% - ' + (weaponStats.damageVariance.maxMult * 100) + '%</span></div>';
+                }
+                statsHtml += '</div></div>';
+            }
+            
+            // 添加固有词缀
+            if (item.implicit || item.implicit_cn) {
+                var implicitText = this.getDisplayText(item.implicit_cn, null, item.implicit);
+                content += '<div class="modal-section"><h3>固有词缀</h3><div class="implicit-affix">' + implicitText + '</div></div>';
+            }
+            
+            content += statsHtml;
+            
+            // 添加装备需求信息
+            var reqHtml = '';
+            if (item.req) {
+                reqHtml += '<div class="modal-section"><h3>装备需求</h3><div class="item-req">';
+                if (item.req.level) {
+                    reqHtml += '<div class="stat-item"><span class="stat-label">等级:</span> <span class="stat-value">' + item.req.level + '</span></div>';
+                }
+                if (item.req.stats) {
+                    var statNames = {
+                        'strength': '力量',
+                        'dexterity': '敏捷',
+                        'intelligence': '智慧'
+                    };
+                    for (var stat in item.req.stats) {
+                        var statName = statNames[stat] || stat;
+                        reqHtml += '<div class="stat-item"><span class="stat-label">' + statName + ':</span> <span class="stat-value">' + item.req.stats[stat] + '</span></div>';
+                    }
+                }
+                reqHtml += '</div></div>';
+            }
+            content += reqHtml;
 
             var desc = this.getDisplayText(item.description_cn, item.description_id, item.description);
             if (desc !== '暂无数据') {
