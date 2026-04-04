@@ -16,8 +16,8 @@
     ],
     "quality": "common",
     "image": "images/axe_rusted.webp",
-    "description": "一把生锈但依然锋利的斧头",
-    "description_cn": "一把生锈但依然锋利的斧头",
+    "description": "一把缺口手斧",
+    "description_cn": "一把缺口手斧",
     "baseStats": {
       "weapon": {
         "baseAttackTime": 1.421,
@@ -29,18 +29,16 @@
         "critChance": 0.053
       }
     },
-    "implicit": "42% of Physical Damage Converted to Fire",
-    "implicit_cn": "42%的物理伤害转换为火焰伤害",
+    "implicit": "42% of Physical Damage Converted to Fire.",
+    "implicit_cn": "42% 物理伤害转化为火焰伤害",
     "req": {
       "level": 1,
-      "stats": {
-        "strength": 21
-      }
+      "stats": {}
     }
   },
   {
     "name": "Butcher Cleaver",
-    "name_cn": "屠夫斩斧",
+    "name_cn": "屠夫剁刀",
     "name_id": "axe_1h_forged",
     "type": "攻击武器",
     "category": "weapon",
@@ -55,8 +53,8 @@
     ],
     "quality": "magic",
     "image": "images/axe_forged.webp",
-    "description": "经过锻造的优质斧头",
-    "description_cn": "经过锻造的优质斧头",
+    "description": "一把屠夫剁刀",
+    "description_cn": "一把屠夫剁刀",
     "baseStats": {
       "weapon": {
         "baseAttackTime": 1.421,
@@ -68,13 +66,11 @@
         "critChance": 0.053
       }
     },
-    "implicit": "Bleeding you inflict deals Damage 35% faster",
-    "implicit_cn": "你造成的流血伤害加快35%",
+    "implicit": "Bleeding you inflict deals Damage 35% faster.",
+    "implicit_cn": "你造成的流血伤害速度提高 35%",
     "req": {
       "level": 17,
-      "stats": {
-        "strength": 21
-      }
+      "stats": {}
     }
   },
   {
@@ -94,8 +90,8 @@
     ],
     "quality": "rare",
     "image": "images/axe_tempered.webp",
-    "description": "经过回火工艺的精良斧头",
-    "description_cn": "经过回火工艺的精良斧头",
+    "description": "一把掠夺者战斧",
+    "description_cn": "一把掠夺者战斧",
     "baseStats": {
       "weapon": {
         "baseAttackTime": 1.421,
@@ -107,13 +103,11 @@
         "critChance": 0.053
       }
     },
-    "implicit": "13% chance to deal Double Damage",
-    "implicit_cn": "13%几率造成双倍伤害",
+    "implicit": "13% chance to deal Double Damage.",
+    "implicit_cn": "13% 几率造成双倍伤害",
     "req": {
       "level": 34,
-      "stats": {
-        "strength": 21
-      }
+      "stats": {}
     }
   },
   {
@@ -133,8 +127,8 @@
     ],
     "quality": "epic",
     "image": "images/axe_masterwork.webp",
-    "description": "精工打造的高级斧头",
-    "description_cn": "精工打造的高级斧头",
+    "description": "一把颅骨分裂者",
+    "description_cn": "一把颅骨分裂者",
     "baseStats": {
       "weapon": {
         "baseAttackTime": 1.421,
@@ -146,18 +140,16 @@
         "critChance": 0.053
       }
     },
-    "implicit": "Gain 23% of Physical Damage as Extra Chaos Damage",
-    "implicit_cn": "获得23%物理伤害作为额外混乱伤害",
+    "implicit": "Gain 23% of Physical Damage as Extra Chaos Damage.",
+    "implicit_cn": "获得 23% 物理伤害作为额外混沌伤害",
     "req": {
       "level": 50,
-      "stats": {
-        "strength": 21
-      }
+      "stats": {}
     }
   },
   {
     "name": "Bonereaver",
-    "name_cn": "碎骨者",
+    "name_cn": "骸骨掠夺者",
     "name_id": "axe_1h_legendary",
     "type": "攻击武器",
     "category": "weapon",
@@ -172,8 +164,8 @@
     ],
     "quality": "legendary",
     "image": "images/axe_legendary.webp",
-    "description": "传说中的神器斧头",
-    "description_cn": "传说中的神器斧头",
+    "description": "一把骸骨掠夺者",
+    "description_cn": "一把骸骨掠夺者",
     "baseStats": {
       "weapon": {
         "baseAttackTime": 1.421,
@@ -185,13 +177,11 @@
         "critChance": 0.053
       }
     },
-    "implicit": "26% more Damage vs Bleeding enemies",
-    "implicit_cn": "对流血敌人造成26%更多伤害",
+    "implicit": "26% more Damage vs Bleeding enemies.",
+    "implicit_cn": "26% 对流血敌人伤害提高",
     "req": {
       "level": 67,
-      "stats": {
-        "strength": 21
-      }
+      "stats": {}
     }
   },
   {
@@ -211,8 +201,8 @@
     ],
     "quality": "mythic",
     "image": "images/axe_mythic.webp",
-    "description": "神话级别的终极斧头",
-    "description_cn": "神话级别的终极斧头",
+    "description": "一把刽子手的裁决",
+    "description_cn": "一把刽子手的裁决",
     "baseStats": {
       "weapon": {
         "baseAttackTime": 1.421,
@@ -224,13 +214,6557 @@
         "critChance": 0.053
       }
     },
-    "implicit": "28% chance to Armor Break",
-    "implicit_cn": "28%几率造成破甲",
+    "implicit": "28% chance to Armor Break.",
+    "implicit_cn": "28% 破甲几率",
     "req": {
       "level": 84,
-      "stats": {
-        "strength": 21
+      "stats": {}
+    }
+  },
+  {
+    "name": "Rusted Orb",
+    "name_cn": "生锈法球",
+    "name_id": "orb_1h_rusted",
+    "type": "施法武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "orb",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "orb",
+      "1H",
+      "caster"
+    ],
+    "quality": "common",
+    "image": "images/orb_rusted.webp",
+    "description": "一把生锈法球",
+    "description_cn": "一把生锈法球",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.35,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.9,
+          "maxMult": 1.1
+        },
+        "critChance": 0.06
       }
+    },
+    "implicit": "4% of Maximum Mana as Spell Damage.",
+    "implicit_cn": "4% 最大法力作为法术伤害",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Forged Orb",
+    "name_cn": "锻造法球",
+    "name_id": "orb_1h_forged",
+    "type": "施法武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "orb",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "orb",
+      "1H",
+      "caster"
+    ],
+    "quality": "magic",
+    "image": "images/orb_forged.webp",
+    "description": "一把锻造法球",
+    "description_cn": "一把锻造法球",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.35,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.9,
+          "maxMult": 1.1
+        },
+        "critChance": 0.06
+      }
+    },
+    "implicit": "On Crit, 25% chance to inflict Shock for 1.4s.",
+    "implicit_cn": "暴击时，25% 几率造成 1.4 秒感电",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Tempered Orb",
+    "name_cn": "回火法球",
+    "name_id": "orb_1h_tempered",
+    "type": "施法武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "orb",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "orb",
+      "1H",
+      "caster"
+    ],
+    "quality": "rare",
+    "image": "images/orb_tempered.webp",
+    "description": "一把回火法球",
+    "description_cn": "一把回火法球",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.35,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.9,
+          "maxMult": 1.1
+        },
+        "critChance": 0.06
+      }
+    },
+    "implicit": "+25% Spell Critical Strike Chance.",
+    "implicit_cn": "+25% 法术暴击几率",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Masterwork Orb",
+    "name_cn": "精工法球",
+    "name_id": "orb_1h_masterwork",
+    "type": "施法武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "orb",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "orb",
+      "1H",
+      "caster"
+    ],
+    "quality": "epic",
+    "image": "images/orb_masterwork.webp",
+    "description": "一把精工法球",
+    "description_cn": "一把精工法球",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.35,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.9,
+          "maxMult": 1.1
+        },
+        "critChance": 0.06
+      }
+    },
+    "implicit": "Ward is not depleted by a single Hit.",
+    "implicit_cn": "单次击中不会消耗护盾",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Orb of the Void",
+    "name_cn": "虚空法球",
+    "name_id": "orb_1h_legendary",
+    "type": "施法武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "orb",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "orb",
+      "1H",
+      "caster"
+    ],
+    "quality": "legendary",
+    "image": "images/orb_legendary.webp",
+    "description": "一把虚空法球",
+    "description_cn": "一把虚空法球",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.35,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.9,
+          "maxMult": 1.1
+        },
+        "critChance": 0.06
+      }
+    },
+    "implicit": "Gain 25% of Physical Damage as Extra Chaos Damage.",
+    "implicit_cn": "获得 25% 物理伤害作为额外混沌伤害",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Orb of the Arcane",
+    "name_cn": "奥术法球",
+    "name_id": "orb_1h_mythic",
+    "type": "施法武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "orb",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "orb",
+      "1H",
+      "caster"
+    ],
+    "quality": "mythic",
+    "image": "images/orb_mythic.webp",
+    "description": "一把奥术法球",
+    "description_cn": "一把奥术法球",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.35,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.9,
+          "maxMult": 1.1
+        },
+        "critChance": 0.06
+      }
+    },
+    "implicit": "Gain 31% of Cold Damage as Extra Lightning Damage.",
+    "implicit_cn": "获得 31% 冰霜伤害作为额外闪电伤害",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Rusted Grimoire",
+    "name_cn": "生锈魔法书",
+    "name_id": "grimoire_1h_rusted",
+    "type": "施法武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "grimoire",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "grimoire",
+      "1H",
+      "caster"
+    ],
+    "quality": "common",
+    "image": "images/grimoire_rusted.webp",
+    "description": "一本生锈魔法书",
+    "description_cn": "一本生锈魔法书",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.45,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.06
+      }
+    },
+    "implicit": "On Hit, 15% chance to inflict Temporal Chains for 1.6s.",
+    "implicit_cn": "击中时，15% 几率造成 1.6 秒时空锁链",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Forged Grimoire",
+    "name_cn": "锻造魔法书",
+    "name_id": "grimoire_1h_forged",
+    "type": "施法武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "grimoire",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "grimoire",
+      "1H",
+      "caster"
+    ],
+    "quality": "magic",
+    "image": "images/grimoire_forged.webp",
+    "description": "一本锻造魔法书",
+    "description_cn": "一本锻造魔法书",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.45,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.06
+      }
+    },
+    "implicit": "+12% Cooldown Recovery Rate.",
+    "implicit_cn": "+12% 冷却回复率",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Tempered Grimoire",
+    "name_cn": "回火魔法书",
+    "name_id": "grimoire_1h_tempered",
+    "type": "施法武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "grimoire",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "grimoire",
+      "1H",
+      "caster"
+    ],
+    "quality": "rare",
+    "image": "images/grimoire_tempered.webp",
+    "description": "一本回火魔法书",
+    "description_cn": "一本回火魔法书",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.45,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.06
+      }
+    },
+    "implicit": "All Damage can Poison.",
+    "implicit_cn": "所有伤害可以造成中毒",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Masterwork Grimoire",
+    "name_cn": "精工魔法书",
+    "name_id": "grimoire_1h_masterwork",
+    "type": "施法武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "grimoire",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "grimoire",
+      "1H",
+      "caster"
+    ],
+    "quality": "epic",
+    "image": "images/grimoire_masterwork.webp",
+    "description": "一本精工魔法书",
+    "description_cn": "一本精工魔法书",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.45,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.06
+      }
+    },
+    "implicit": "24% more Damage vs Poisoned enemies.",
+    "implicit_cn": "24% 对中毒敌人伤害提高",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Grimoire of Shadows",
+    "name_cn": "暗影魔法书",
+    "name_id": "grimoire_1h_legendary",
+    "type": "施法武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "grimoire",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "grimoire",
+      "1H",
+      "caster"
+    ],
+    "quality": "legendary",
+    "image": "images/grimoire_legendary.webp",
+    "description": "一本暗影魔法书",
+    "description_cn": "一本暗影魔法书",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.45,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.06
+      }
+    },
+    "implicit": "31% more Damage vs Bleeding enemies.",
+    "implicit_cn": "31% 对流血敌人伤害提高",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Grimoire of the Void",
+    "name_cn": "虚空魔法书",
+    "name_id": "grimoire_1h_mythic",
+    "type": "施法武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "grimoire",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "grimoire",
+      "1H",
+      "caster"
+    ],
+    "quality": "mythic",
+    "image": "images/grimoire_mythic.webp",
+    "description": "一本虚空魔法书",
+    "description_cn": "一本虚空魔法书",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.45,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.06
+      }
+    },
+    "implicit": "Ailments spread to enemies within 12m on Kill.",
+    "implicit_cn": "击杀时异常状态扩散到 12 米内的敌人",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Rusted Staff",
+    "name_cn": "生锈法杖",
+    "name_id": "staff_2h_rusted",
+    "type": "施法武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "staff",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "staff",
+      "2H",
+      "caster"
+    ],
+    "quality": "common",
+    "image": "images/staff_2h_rusted.webp",
+    "description": "一把生锈法杖",
+    "description_cn": "一把生锈法杖",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.6,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.06
+      }
+    },
+    "implicit": "Ignite spread to enemies within 4m on Kill.",
+    "implicit_cn": "击杀时点燃扩散到 4 米内的敌人",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Forged Staff",
+    "name_cn": "锻造法杖",
+    "name_id": "staff_2h_forged",
+    "type": "施法武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "staff",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "staff",
+      "2H",
+      "caster"
+    ],
+    "quality": "magic",
+    "image": "images/staff_2h_forged.webp",
+    "description": "一把锻造法杖",
+    "description_cn": "一把锻造法杖",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.6,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.06
+      }
+    },
+    "implicit": "10% Elemental Penetration.",
+    "implicit_cn": "10% 元素穿透",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Tempered Staff",
+    "name_cn": "回火法杖",
+    "name_id": "staff_2h_tempered",
+    "type": "施法武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "staff",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "staff",
+      "2H",
+      "caster"
+    ],
+    "quality": "rare",
+    "image": "images/staff_2h_tempered.webp",
+    "description": "一把回火法杖",
+    "description_cn": "一把回火法杖",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.6,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.06
+      }
+    },
+    "implicit": "Critical Strikes always Freeze.",
+    "implicit_cn": "暴击必定冻结",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Masterwork Staff",
+    "name_cn": "精工法杖",
+    "name_id": "staff_2h_masterwork",
+    "type": "施法武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "staff",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "staff",
+      "2H",
+      "caster"
+    ],
+    "quality": "epic",
+    "image": "images/staff_2h_masterwork.webp",
+    "description": "一把精工法杖",
+    "description_cn": "一把精工法杖",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.6,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.06
+      }
+    },
+    "implicit": "24% more Damage vs Chilled enemies.",
+    "implicit_cn": "24% 对冻伤敌人伤害提高",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Staff of the Arcane",
+    "name_cn": "奥术法杖",
+    "name_id": "staff_2h_legendary",
+    "type": "施法武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "staff",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "staff",
+      "2H",
+      "caster"
+    ],
+    "quality": "legendary",
+    "image": "images/staff_2h_legendary.webp",
+    "description": "一把奥术法杖",
+    "description_cn": "一把奥术法杖",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.6,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.06
+      }
+    },
+    "implicit": "+40% Minion Damage.",
+    "implicit_cn": "+40% 随从伤害",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Staff of the Void",
+    "name_cn": "虚空法杖",
+    "name_id": "staff_2h_mythic",
+    "type": "施法武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "staff",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "staff",
+      "2H",
+      "caster"
+    ],
+    "quality": "mythic",
+    "image": "images/staff_2h_mythic.webp",
+    "description": "一把虚空法杖",
+    "description_cn": "一把虚空法杖",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.6,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.06
+      }
+    },
+    "implicit": "+34% Area of Effect.",
+    "implicit_cn": "+34% 范围效果",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Simple Quiver",
+    "name_cn": "简易箭袋",
+    "name_id": "quiver_tier_1",
+    "type": "副手装备",
+    "category": "offhand",
+    "slot": "offhand",
+    "weaponFamily": "quiver",
+    "hands": "none",
+    "tags": [
+      "base",
+      "offhand",
+      "quiver",
+      "ranged"
+    ],
+    "quality": "common",
+    "image": "images/quiver_common.webp",
+    "description": "一个简易箭袋",
+    "description_cn": "一个简易箭袋",
+    "baseStats": {},
+    "implicit": "24% chance to Bleed.",
+    "implicit_cn": "24% 流血几率",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Leather Quiver",
+    "name_cn": "皮制箭袋",
+    "name_id": "quiver_tier_2",
+    "type": "副手装备",
+    "category": "offhand",
+    "slot": "offhand",
+    "weaponFamily": "quiver",
+    "hands": "none",
+    "tags": [
+      "base",
+      "offhand",
+      "quiver",
+      "ranged"
+    ],
+    "quality": "magic",
+    "image": "images/quiver_magic.webp",
+    "description": "一个皮制箭袋",
+    "description_cn": "一个皮制箭袋",
+    "baseStats": {},
+    "implicit": "1% of Damage Leeched as Life.",
+    "implicit_cn": "1% 伤害吸血",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Reinforced Quiver",
+    "name_cn": "加固箭袋",
+    "name_id": "quiver_tier_3",
+    "type": "副手装备",
+    "category": "offhand",
+    "slot": "offhand",
+    "weaponFamily": "quiver",
+    "hands": "none",
+    "tags": [
+      "base",
+      "offhand",
+      "quiver",
+      "ranged"
+    ],
+    "quality": "rare",
+    "image": "images/quiver_rare.webp",
+    "description": "一个加固箭袋",
+    "description_cn": "一个加固箭袋",
+    "baseStats": {},
+    "implicit": "Projectiles Pierce 2 additional targets.",
+    "implicit_cn": "投射物穿透 2 个额外目标",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Masterwork Quiver",
+    "name_cn": "精工箭袋",
+    "name_id": "quiver_tier_4",
+    "type": "副手装备",
+    "category": "offhand",
+    "slot": "offhand",
+    "weaponFamily": "quiver",
+    "hands": "none",
+    "tags": [
+      "base",
+      "offhand",
+      "quiver",
+      "ranged"
+    ],
+    "quality": "epic",
+    "image": "images/quiver_epic.webp",
+    "description": "一个精工箭袋",
+    "description_cn": "一个精工箭袋",
+    "baseStats": {},
+    "implicit": "All Damage can Poison.",
+    "implicit_cn": "所有伤害可以造成中毒",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Legendary Quiver",
+    "name_cn": "传说箭袋",
+    "name_id": "quiver_tier_5",
+    "type": "副手装备",
+    "category": "offhand",
+    "slot": "offhand",
+    "weaponFamily": "quiver",
+    "hands": "none",
+    "tags": [
+      "base",
+      "offhand",
+      "quiver",
+      "ranged"
+    ],
+    "quality": "legendary",
+    "image": "images/quiver_legendary.webp",
+    "description": "一个传说箭袋",
+    "description_cn": "一个传说箭袋",
+    "baseStats": {},
+    "implicit": "Projectiles Chain 1 additional time.",
+    "implicit_cn": "投射物连锁 1 次额外",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Mythic Quiver",
+    "name_cn": "神话箭袋",
+    "name_id": "quiver_tier_6",
+    "type": "副手装备",
+    "category": "offhand",
+    "slot": "offhand",
+    "weaponFamily": "quiver",
+    "hands": "none",
+    "tags": [
+      "base",
+      "offhand",
+      "quiver",
+      "ranged"
+    ],
+    "quality": "mythic",
+    "image": "images/quiver_mythic.webp",
+    "description": "一个神话箭袋",
+    "description_cn": "一个神话箭袋",
+    "baseStats": {},
+    "implicit": "+34% Critical Strike Multiplier.",
+    "implicit_cn": "+34% 暴击倍率",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Buckler",
+    "name_cn": "小圆盾",
+    "name_id": "shield_buckler_strength",
+    "type": "副手装备",
+    "category": "offhand",
+    "slot": "offhand",
+    "weaponFamily": "shield",
+    "hands": "none",
+    "tags": [
+      "base",
+      "offhand",
+      "shield",
+      "block",
+      "strength"
+    ],
+    "quality": "common",
+    "image": "images/shield_common.webp",
+    "description": "一个小圆盾",
+    "description_cn": "一个小圆盾",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.864
+        }
+      },
+      "blockChance": 0.212
+    },
+    "implicit": "+7% Block Chance; On Block, gain 8% Attack Speed for 1.7s.",
+    "implicit_cn": "+7% 格挡几率；格挡时，获得 8% 攻击速度持续 1.7 秒",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Targe",
+    "name_cn": "圆盾",
+    "name_id": "shield_targe_strength",
+    "type": "副手装备",
+    "category": "offhand",
+    "slot": "offhand",
+    "weaponFamily": "shield",
+    "hands": "none",
+    "tags": [
+      "base",
+      "offhand",
+      "shield",
+      "block",
+      "strength"
+    ],
+    "quality": "magic",
+    "image": "images/shield_magic.webp",
+    "description": "一个圆盾",
+    "description_cn": "一个圆盾",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.864
+        }
+      },
+      "blockChance": 0.2332
+    },
+    "implicit": "+8% Block Chance; On Block, gain 13 Damage Increase for 2.6s.",
+    "implicit_cn": "+8% 格挡几率；格挡时，获得 13 伤害提高持续 2.6 秒",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Kite Shield",
+    "name_cn": "筝形盾",
+    "name_id": "shield_kite_strength",
+    "type": "副手装备",
+    "category": "offhand",
+    "slot": "offhand",
+    "weaponFamily": "shield",
+    "hands": "none",
+    "tags": [
+      "base",
+      "offhand",
+      "shield",
+      "block",
+      "strength"
+    ],
+    "quality": "rare",
+    "image": "images/shield_rare.webp",
+    "description": "一个筝形盾",
+    "description_cn": "一个筝形盾",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.864
+        }
+      },
+      "blockChance": 0.2544
+    },
+    "implicit": "+10% Block Chance; On Block, inflict Slow for 2.6s.",
+    "implicit_cn": "+10% 格挡几率；格挡时，造成减速持续 2.6 秒",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Heater Shield",
+    "name_cn": " heater盾",
+    "name_id": "shield_heater_strength",
+    "type": "副手装备",
+    "category": "offhand",
+    "slot": "offhand",
+    "weaponFamily": "shield",
+    "hands": "none",
+    "tags": [
+      "base",
+      "offhand",
+      "shield",
+      "block",
+      "strength"
+    ],
+    "quality": "epic",
+    "image": "images/shield_epic.webp",
+    "description": "一个 heater盾",
+    "description_cn": "一个 heater盾",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.864
+        }
+      },
+      "blockChance": 0.2756
+    },
+    "implicit": "+12% Block Chance; Reflect 14% of Physical Damage taken to Attacker.",
+    "implicit_cn": "+12% 格挡几率；反弹 14% 受到的物理伤害给攻击者",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Tower Shield",
+    "name_cn": "塔盾",
+    "name_id": "shield_tower_strength",
+    "type": "副手装备",
+    "category": "offhand",
+    "slot": "offhand",
+    "weaponFamily": "shield",
+    "hands": "none",
+    "tags": [
+      "base",
+      "offhand",
+      "shield",
+      "block",
+      "strength"
+    ],
+    "quality": "legendary",
+    "image": "images/shield_legendary.webp",
+    "description": "一个塔盾",
+    "description_cn": "一个塔盾",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.864
+        }
+      },
+      "blockChance": 0.2968
+    },
+    "implicit": "+14% Block Chance; Block Spells at 50% of Attack Block Chance.",
+    "implicit_cn": "+14% 格挡几率；以 50% 攻击格挡几率格挡法术",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Bulwark",
+    "name_cn": "壁垒盾",
+    "name_id": "shield_bulwark_strength",
+    "type": "副手装备",
+    "category": "offhand",
+    "slot": "offhand",
+    "weaponFamily": "shield",
+    "hands": "none",
+    "tags": [
+      "base",
+      "offhand",
+      "shield",
+      "block",
+      "strength"
+    ],
+    "quality": "mythic",
+    "image": "images/shield_mythic.webp",
+    "description": "一个壁垒盾",
+    "description_cn": "一个壁垒盾",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.864
+        }
+      },
+      "blockChance": 0.318
+    },
+    "implicit": "+17% Block Chance and 9% less Damage Taken.",
+    "implicit_cn": "+17% 格挡几率且受到的伤害降低 9%",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Simple Focus",
+    "name_cn": "简易法器",
+    "name_id": "focus_tier_1",
+    "type": "副手装备",
+    "category": "offhand",
+    "slot": "offhand",
+    "weaponFamily": "focus",
+    "hands": "none",
+    "tags": [
+      "base",
+      "offhand",
+      "focus",
+      "caster"
+    ],
+    "quality": "common",
+    "image": "images/focus_common.webp",
+    "description": "一个简易法器",
+    "description_cn": "一个简易法器",
+    "baseStats": {},
+    "implicit": "11% more Damage vs Ignited enemies.",
+    "implicit_cn": "11% 对点燃敌人伤害提高",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Ornate Focus",
+    "name_cn": "华丽法器",
+    "name_id": "focus_tier_2",
+    "type": "副手装备",
+    "category": "offhand",
+    "slot": "offhand",
+    "weaponFamily": "focus",
+    "hands": "none",
+    "tags": [
+      "base",
+      "offhand",
+      "focus",
+      "caster"
+    ],
+    "quality": "magic",
+    "image": "images/focus_magic.webp",
+    "description": "一个华丽法器",
+    "description_cn": "一个华丽法器",
+    "baseStats": {},
+    "implicit": "+1 Maximum Power Charges.",
+    "implicit_cn": "+1 最大能量球",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Enchanted Focus",
+    "name_cn": "附魔法器",
+    "name_id": "focus_tier_3",
+    "type": "副手装备",
+    "category": "offhand",
+    "slot": "offhand",
+    "weaponFamily": "focus",
+    "hands": "none",
+    "tags": [
+      "base",
+      "offhand",
+      "focus",
+      "caster"
+    ],
+    "quality": "rare",
+    "image": "images/focus_rare.webp",
+    "description": "一个附魔法器",
+    "description_cn": "一个附魔法器",
+    "baseStats": {},
+    "implicit": "12% Elemental Penetration.",
+    "implicit_cn": "12% 元素穿透",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Masterwork Focus",
+    "name_cn": "精工法器",
+    "name_id": "focus_tier_4",
+    "type": "副手装备",
+    "category": "offhand",
+    "slot": "offhand",
+    "weaponFamily": "focus",
+    "hands": "none",
+    "tags": [
+      "base",
+      "offhand",
+      "focus",
+      "caster"
+    ],
+    "quality": "epic",
+    "image": "images/focus_epic.webp",
+    "description": "一个精工法器",
+    "description_cn": "一个精工法器",
+    "baseStats": {},
+    "implicit": "+36 Ward, 14% of Damage taken from Mana before Life, and +27% increased Ward; Ward is not depleted by a single Hit.",
+    "implicit_cn": "+36 护盾，14% 伤害先从法力扣除，再从生命扣除，并且 +27% 护盾提高；单次击中不会消耗护盾",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Legendary Focus",
+    "name_cn": "传说法器",
+    "name_id": "focus_tier_5",
+    "type": "副手装备",
+    "category": "offhand",
+    "slot": "offhand",
+    "weaponFamily": "focus",
+    "hands": "none",
+    "tags": [
+      "base",
+      "offhand",
+      "focus",
+      "caster"
+    ],
+    "quality": "legendary",
+    "image": "images/focus_legendary.webp",
+    "description": "一个传说法器",
+    "description_cn": "一个传说法器",
+    "baseStats": {},
+    "implicit": "20% more Damage vs Shocked enemies.",
+    "implicit_cn": "20% 对感电敌人伤害提高",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Mythic Focus",
+    "name_cn": "神化法器",
+    "name_id": "focus_tier_6",
+    "type": "副手装备",
+    "category": "offhand",
+    "slot": "offhand",
+    "weaponFamily": "focus",
+    "hands": "none",
+    "tags": [
+      "base",
+      "offhand",
+      "focus",
+      "caster"
+    ],
+    "quality": "mythic",
+    "image": "images/focus_mythic.webp",
+    "description": "一个神化法器",
+    "description_cn": "一个神化法器",
+    "baseStats": {},
+    "implicit": "+1 Curse Limit.",
+    "implicit_cn": "+1 诅咒上限",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Rusted Scepter",
+    "name_cn": "生锈权杖",
+    "name_id": "scepter_1h_rusted",
+    "type": "副手装备",
+    "category": "offhand",
+    "slot": "offhand",
+    "weaponFamily": "scepter",
+    "hands": "1H",
+    "tags": [
+      "base",
+      "weapon",
+      "scepter",
+      "1H",
+      "caster"
+    ],
+    "quality": "common",
+    "image": "images/scepter_rusted.webp",
+    "description": "一把生锈权杖",
+    "description_cn": "一把生锈权杖",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.4,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.9,
+          "maxMult": 1.1
+        },
+        "critChance": 0.06
+      }
+    },
+    "implicit": "24% of Physical Damage Converted to Fire.",
+    "implicit_cn": "24% 物理伤害转化为火焰伤害",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Forged Scepter",
+    "name_cn": "锻造权杖",
+    "name_id": "scepter_1h_forged",
+    "type": "副手装备",
+    "category": "offhand",
+    "slot": "offhand",
+    "weaponFamily": "scepter",
+    "hands": "1H",
+    "tags": [
+      "base",
+      "weapon",
+      "scepter",
+      "1H",
+      "caster"
+    ],
+    "quality": "magic",
+    "image": "images/scepter_forged.webp",
+    "description": "一把锻造权杖",
+    "description_cn": "一把锻造权杖",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.4,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.9,
+          "maxMult": 1.1
+        },
+        "critChance": 0.06
+      }
+    },
+    "implicit": "On Hit, 22% chance to inflict Vulnerability for 1.4s.",
+    "implicit_cn": "击中时，22% 几率造成 1.4 秒易伤",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Tempered Scepter",
+    "name_cn": "回火权杖",
+    "name_id": "scepter_1h_tempered",
+    "type": "副手装备",
+    "category": "offhand",
+    "slot": "offhand",
+    "weaponFamily": "scepter",
+    "hands": "1H",
+    "tags": [
+      "base",
+      "weapon",
+      "scepter",
+      "1H",
+      "caster"
+    ],
+    "quality": "rare",
+    "image": "images/scepter_tempered.webp",
+    "description": "一把回火权杖",
+    "description_cn": "一把回火权杖",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.4,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.9,
+          "maxMult": 1.1
+        },
+        "critChance": 0.06
+      }
+    },
+    "implicit": "14% Fire Penetration for Spells.",
+    "implicit_cn": "14% 法术火焰穿透",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Masterwork Scepter",
+    "name_cn": "精工权杖",
+    "name_id": "scepter_1h_masterwork",
+    "type": "副手装备",
+    "category": "offhand",
+    "slot": "offhand",
+    "weaponFamily": "scepter",
+    "hands": "1H",
+    "tags": [
+      "base",
+      "weapon",
+      "scepter",
+      "1H",
+      "caster"
+    ],
+    "quality": "epic",
+    "image": "images/scepter_masterwork.webp",
+    "description": "一把精工权杖",
+    "description_cn": "一把精工权杖",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.4,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.9,
+          "maxMult": 1.1
+        },
+        "critChance": 0.06
+      }
+    },
+    "implicit": "All Damage can Ignite.",
+    "implicit_cn": "所有伤害可以造成点燃",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Scepter of the Elements",
+    "name_cn": "元素权杖",
+    "name_id": "scepter_1h_legendary",
+    "type": "副手装备",
+    "category": "offhand",
+    "slot": "offhand",
+    "weaponFamily": "scepter",
+    "hands": "1H",
+    "tags": [
+      "base",
+      "weapon",
+      "scepter",
+      "1H",
+      "caster"
+    ],
+    "quality": "legendary",
+    "image": "images/scepter_legendary.webp",
+    "description": "一把元素权杖",
+    "description_cn": "一把元素权杖",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.4,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.9,
+          "maxMult": 1.1
+        },
+        "critChance": 0.06
+      }
+    },
+    "implicit": "Critical Strikes always Ignite.",
+    "implicit_cn": "暴击必定点燃",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Scepter of the Arcane",
+    "name_cn": "奥术权杖",
+    "name_id": "scepter_1h_mythic",
+    "type": "副手装备",
+    "category": "offhand",
+    "slot": "offhand",
+    "weaponFamily": "scepter",
+    "hands": "1H",
+    "tags": [
+      "base",
+      "weapon",
+      "scepter",
+      "1H",
+      "caster"
+    ],
+    "quality": "mythic",
+    "image": "images/scepter_mythic.webp",
+    "description": "一把奥术权杖",
+    "description_cn": "一把奥术权杖",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.4,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.9,
+          "maxMult": 1.1
+        },
+        "critChance": 0.06
+      }
+    },
+    "implicit": "+33% Curse Effect.",
+    "implicit_cn": "+33% 诅咒效果",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Rusted Relic",
+    "name_cn": "生锈圣物",
+    "name_id": "relic_1h_rusted",
+    "type": "副手装备",
+    "category": "offhand",
+    "slot": "offhand",
+    "weaponFamily": "relic",
+    "hands": "1H",
+    "tags": [
+      "base",
+      "weapon",
+      "relic",
+      "1H",
+      "caster"
+    ],
+    "quality": "common",
+    "image": "images/relic_rusted.webp",
+    "description": "一个生锈圣物",
+    "description_cn": "一个生锈圣物",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.4,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.9,
+          "maxMult": 1.1
+        },
+        "critChance": 0.05
+      }
+    },
+    "implicit": "On Hit, recover 3 Life.",
+    "implicit_cn": "击中时回复 3 生命",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Forged Relic",
+    "name_cn": "锻造圣物",
+    "name_id": "relic_1h_forged",
+    "type": "副手装备",
+    "category": "offhand",
+    "slot": "offhand",
+    "weaponFamily": "relic",
+    "hands": "1H",
+    "tags": [
+      "base",
+      "weapon",
+      "relic",
+      "1H",
+      "caster"
+    ],
+    "quality": "magic",
+    "image": "images/relic_forged.webp",
+    "description": "一个锻造圣物",
+    "description_cn": "一个锻造圣物",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.4,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.9,
+          "maxMult": 1.1
+        },
+        "critChance": 0.05
+      }
+    },
+    "implicit": "On Kill, gain 8% Damage Reduction for 3.4s.",
+    "implicit_cn": "击杀时，获得 8% 伤害减免持续 3.4 秒",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Tempered Relic",
+    "name_cn": "回火圣物",
+    "name_id": "relic_1h_tempered",
+    "type": "副手装备",
+    "category": "offhand",
+    "slot": "offhand",
+    "weaponFamily": "relic",
+    "hands": "1H",
+    "tags": [
+      "base",
+      "weapon",
+      "relic",
+      "1H",
+      "caster"
+    ],
+    "quality": "rare",
+    "image": "images/relic_tempered.webp",
+    "description": "一个回火圣物",
+    "description_cn": "一个回火圣物",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.4,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.9,
+          "maxMult": 1.1
+        },
+        "critChance": 0.05
+      }
+    },
+    "implicit": "+20% Healing Effect.",
+    "implicit_cn": "+20% 治疗效果",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Masterwork Relic",
+    "name_cn": "精工圣物",
+    "name_id": "relic_1h_masterwork",
+    "type": "副手装备",
+    "category": "offhand",
+    "slot": "offhand",
+    "weaponFamily": "relic",
+    "hands": "1H",
+    "tags": [
+      "base",
+      "weapon",
+      "relic",
+      "1H",
+      "caster"
+    ],
+    "quality": "epic",
+    "image": "images/relic_masterwork.webp",
+    "description": "一个精工圣物",
+    "description_cn": "一个精工圣物",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.4,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.9,
+          "maxMult": 1.1
+        },
+        "critChance": 0.05
+      }
+    },
+    "implicit": "Ward is not depleted by a single Hit.",
+    "implicit_cn": "单次击中不会消耗护盾",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Relic of the Divine",
+    "name_cn": "神圣圣物",
+    "name_id": "relic_1h_legendary",
+    "type": "副手装备",
+    "category": "offhand",
+    "slot": "offhand",
+    "weaponFamily": "relic",
+    "hands": "1H",
+    "tags": [
+      "base",
+      "weapon",
+      "relic",
+      "1H",
+      "caster"
+    ],
+    "quality": "legendary",
+    "image": "images/relic_legendary.webp",
+    "description": "一个神圣圣物",
+    "description_cn": "一个神圣圣物",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.4,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.9,
+          "maxMult": 1.1
+        },
+        "critChance": 0.05
+      }
+    },
+    "implicit": "On Kill, recover 23 Mana.",
+    "implicit_cn": "击杀时回复 23 法力",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Relic of the Ancients",
+    "name_cn": "远古圣物",
+    "name_id": "relic_1h_mythic",
+    "type": "副手装备",
+    "category": "offhand",
+    "slot": "offhand",
+    "weaponFamily": "relic",
+    "hands": "1H",
+    "tags": [
+      "base",
+      "weapon",
+      "relic",
+      "1H",
+      "caster"
+    ],
+    "quality": "mythic",
+    "image": "images/relic_mythic.webp",
+    "description": "一个远古圣物",
+    "description_cn": "一个远古圣物",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.4,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.9,
+          "maxMult": 1.1
+        },
+        "critChance": 0.05
+      }
+    },
+    "implicit": "On Kill, recover 90 Life.",
+    "implicit_cn": "击杀时回复 90 生命",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Tattered Helm",
+    "name_cn": "破烂头盔",
+    "name_id": "helm_strength_tattered",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "strength"
+    ],
+    "quality": "common",
+    "image": "images/helm_common.webp",
+    "description": "一个破烂头盔",
+    "description_cn": "一个破烂头盔",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.81
+        }
+      }
+    },
+    "implicit": "4% reduced Stagger taken.",
+    "implicit_cn": "受到的冲击降低 4%",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Patched Helm",
+    "name_cn": "修补头盔",
+    "name_id": "helm_strength_patched",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "strength"
+    ],
+    "quality": "magic",
+    "image": "images/helm_magic.webp",
+    "description": "一个修补头盔",
+    "description_cn": "一个修补头盔",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.81
+        }
+      }
+    },
+    "implicit": "5% of Damage taken Recouped as Life.",
+    "implicit_cn": "5% 受到的伤害回复为生命",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Linked Helm",
+    "name_cn": "连锁头盔",
+    "name_id": "helm_strength_linked",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "strength"
+    ],
+    "quality": "rare",
+    "image": "images/helm_rare.webp",
+    "description": "一个连锁头盔",
+    "description_cn": "一个连锁头盔",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.81
+        }
+      }
+    },
+    "implicit": "5% Physical Damage Reduction.",
+    "implicit_cn": "5% 物理伤害减免",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Plated Helm",
+    "name_cn": "镀甲头盔",
+    "name_id": "helm_strength_plated",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "strength"
+    ],
+    "quality": "epic",
+    "image": "images/helm_epic.webp",
+    "description": "一个镀甲头盔",
+    "description_cn": "一个镀甲头盔",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.81
+        }
+      }
+    },
+    "implicit": "+12% increased Armor.",
+    "implicit_cn": "+12% 护甲提高",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Lordly Helm",
+    "name_cn": "领主头盔",
+    "name_id": "helm_strength_lordly",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "strength"
+    ],
+    "quality": "legendary",
+    "image": "images/helm_legendary.webp",
+    "description": "一个领主头盔",
+    "description_cn": "一个领主头盔",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.81
+        }
+      }
+    },
+    "implicit": "+7% Life Recovery Rate.",
+    "implicit_cn": "+7% 生命回复率",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Transcendent Helm",
+    "name_cn": "超凡头盔",
+    "name_id": "helm_strength_transcendent",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "strength"
+    ],
+    "quality": "mythic",
+    "image": "images/helm_mythic.webp",
+    "description": "一个超凡头盔",
+    "description_cn": "一个超凡头盔",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.81
+        }
+      }
+    },
+    "implicit": "+7% to all Maximum Elemental Resistances.",
+    "implicit_cn": "+7% 所有最大元素抗性",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Tattered Body",
+    "name_cn": "破烂胸甲",
+    "name_id": "body_strength_tattered",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "strength"
+    ],
+    "quality": "common",
+    "image": "images/body_common.webp",
+    "description": "一个破烂胸甲",
+    "description_cn": "一个破烂胸甲",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 1.728
+        }
+      }
+    },
+    "implicit": "Reflect 14% of Physical Damage taken to Attacker.",
+    "implicit_cn": "反弹 14% 受到的物理伤害给攻击者",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Patched Body",
+    "name_cn": "修补胸甲",
+    "name_id": "body_strength_patched",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "strength"
+    ],
+    "quality": "magic",
+    "image": "images/body_magic.webp",
+    "description": "一个修补胸甲",
+    "description_cn": "一个修补胸甲",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 1.728
+        }
+      }
+    },
+    "implicit": "Recover 14% of Life when Hit by a Savage Hit.",
+    "implicit_cn": "被重击击中时回复 14% 生命",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Linked Body",
+    "name_cn": "连锁胸甲",
+    "name_id": "body_strength_linked",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "strength"
+    ],
+    "quality": "rare",
+    "image": "images/body_rare.webp",
+    "description": "一个连锁胸甲",
+    "description_cn": "一个连锁胸甲",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 1.728
+        }
+      }
+    },
+    "implicit": "5% less Physical Damage Taken.",
+    "implicit_cn": "受到的物理伤害降低 5%",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Plated Body",
+    "name_cn": "镀甲胸甲",
+    "name_id": "body_strength_plated",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "strength"
+    ],
+    "quality": "epic",
+    "image": "images/body_epic.webp",
+    "description": "一个镀甲胸甲",
+    "description_cn": "一个镀甲胸甲",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 1.728
+        }
+      }
+    },
+    "implicit": "+6 minimum Fortification.",
+    "implicit_cn": "+6 最低防御工事",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Lordly Body",
+    "name_cn": "领主胸甲",
+    "name_id": "body_strength_lordly",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "strength"
+    ],
+    "quality": "legendary",
+    "image": "images/body_legendary.webp",
+    "description": "一个领主胸甲",
+    "description_cn": "一个领主胸甲",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 1.728
+        }
+      }
+    },
+    "implicit": "+8% increased Maximum Life.",
+    "implicit_cn": "+8% 最大生命提高",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Transcendent Body",
+    "name_cn": "超凡胸甲",
+    "name_id": "body_strength_transcendent",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "strength"
+    ],
+    "quality": "mythic",
+    "image": "images/body_mythic.webp",
+    "description": "一个超凡胸甲",
+    "description_cn": "一个超凡胸甲",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 1.728
+        }
+      }
+    },
+    "implicit": "7% Physical Damage Reduction.",
+    "implicit_cn": "7% 物理伤害减免",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Tattered Gloves",
+    "name_cn": "破烂手套",
+    "name_id": "gloves_strength_tattered",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "strength"
+    ],
+    "quality": "common",
+    "image": "images/gloves_common.webp",
+    "description": "一个破烂手套",
+    "description_cn": "一个破烂手套",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "On Hit, 8% chance to inflict Vulnerability for 2.3s.",
+    "implicit_cn": "击中时，8% 几率造成 2.3 秒易伤",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Patched Gloves",
+    "name_cn": "修补手套",
+    "name_id": "gloves_strength_patched",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "strength"
+    ],
+    "quality": "magic",
+    "image": "images/gloves_magic.webp",
+    "description": "一个修补手套",
+    "description_cn": "一个修补手套",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "21% chance to Stun.",
+    "implicit_cn": "21% 眩晕几率",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Linked Gloves",
+    "name_cn": "连锁手套",
+    "name_id": "gloves_strength_linked",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "strength"
+    ],
+    "quality": "rare",
+    "image": "images/gloves_rare.webp",
+    "description": "一个连锁手套",
+    "description_cn": "一个连锁手套",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "+24% Impale Damage.",
+    "implicit_cn": "+24% 穿刺伤害",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Plated Gloves",
+    "name_cn": "镀甲手套",
+    "name_id": "gloves_strength_plated",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "strength"
+    ],
+    "quality": "epic",
+    "image": "images/gloves_epic.webp",
+    "description": "一个镀甲手套",
+    "description_cn": "一个镀甲手套",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "16% chance to Armor Break.",
+    "implicit_cn": "16% 破甲几率",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Lordly Gloves",
+    "name_cn": "领主手套",
+    "name_id": "gloves_strength_lordly",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "strength"
+    ],
+    "quality": "legendary",
+    "image": "images/gloves_legendary.webp",
+    "description": "一个领主手套",
+    "description_cn": "一个领主手套",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "8% Physical Overwhelm.",
+    "implicit_cn": "8% 物理碾压",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Transcendent Gloves",
+    "name_cn": "超凡手套",
+    "name_id": "gloves_strength_transcendent",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "strength"
+    ],
+    "quality": "mythic",
+    "image": "images/gloves_mythic.webp",
+    "description": "一个超凡手套",
+    "description_cn": "一个超凡手套",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "9% chance to deal Double Damage.",
+    "implicit_cn": "9% 几率造成双倍伤害",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Tattered Boots",
+    "name_cn": "破烂鞋子",
+    "name_id": "boots_strength_tattered",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "strength"
+    ],
+    "quality": "common",
+    "image": "images/boots_common.webp",
+    "description": "一个破烂鞋子",
+    "description_cn": "一个破烂鞋子",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "+5% increased Armor and +4 Increased Movement Speed.",
+    "implicit_cn": "+5% 护甲提高和 +4 移动速度提高",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Patched Boots",
+    "name_cn": "修补鞋子",
+    "name_id": "boots_strength_patched",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "strength"
+    ],
+    "quality": "magic",
+    "image": "images/boots_magic.webp",
+    "description": "一个修补鞋子",
+    "description_cn": "一个修补鞋子",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "+8 Life Regeneration per second and +6 Increased Movement Speed.",
+    "implicit_cn": "+8 每秒生命回复和 +6 移动速度提高",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Linked Boots",
+    "name_cn": "连锁鞋子",
+    "name_id": "boots_strength_linked",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "strength"
+    ],
+    "quality": "rare",
+    "image": "images/boots_rare.webp",
+    "description": "一个连锁鞋子",
+    "description_cn": "一个连锁鞋子",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "+6 Increased Movement Speed; On Kill, gain 6% Damage Reduction for 3.5s.",
+    "implicit_cn": "+6 移动速度提高；击杀时，获得 6% 伤害减免持续 3.5 秒",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Plated Boots",
+    "name_cn": "镀甲鞋子",
+    "name_id": "boots_strength_plated",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "strength"
+    ],
+    "quality": "epic",
+    "image": "images/boots_epic.webp",
+    "description": "一个镀甲鞋子",
+    "description_cn": "一个镀甲鞋子",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "6% Physical Damage Reduction and +8 Increased Movement Speed.",
+    "implicit_cn": "6% 物理伤害减免和 +8 移动速度提高",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Lordly Boots",
+    "name_cn": "领主鞋子",
+    "name_id": "boots_strength_lordly",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "strength"
+    ],
+    "quality": "legendary",
+    "image": "images/boots_legendary.webp",
+    "description": "一个领主鞋子",
+    "description_cn": "一个领主鞋子",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "+9 Increased Movement Speed; Cannot be Slowed below base speed.",
+    "implicit_cn": "+9 移动速度提高；无法被减速至基础速度以下",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Transcendent Boots",
+    "name_cn": "超凡鞋子",
+    "name_id": "boots_strength_transcendent",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "strength"
+    ],
+    "quality": "mythic",
+    "image": "images/boots_mythic.webp",
+    "description": "一个超凡鞋子",
+    "description_cn": "一个超凡鞋子",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "+1 Maximum Endurance Charges and +10 Increased Movement Speed.",
+    "implicit_cn": "+1 最大耐力球和 +10 移动速度提高",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Chipped Blade",
+    "name_cn": "破损剑",
+    "name_id": "sword_1h_rusted",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "sword",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "sword",
+      "1H",
+      "attack"
+    ],
+    "quality": "common",
+    "image": "images/sword_rusted.webp",
+    "description": "一把破损剑",
+    "description_cn": "一把破损剑",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.372,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.8,
+          "maxMult": 1.2
+        },
+        "critChance": 0.0636
+      }
+    },
+    "implicit": "Hits can't be Evaded.",
+    "implicit_cn": "击中无法被闪避",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Corsair Cutlass",
+    "name_cn": "海盗弯刀",
+    "name_id": "sword_1h_forged",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "sword",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "sword",
+      "1H",
+      "attack"
+    ],
+    "quality": "magic",
+    "image": "images/sword_forged.webp",
+    "description": "一把海盗弯刀",
+    "description_cn": "一把海盗弯刀",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.372,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.8,
+          "maxMult": 1.2
+        },
+        "critChance": 0.0636
+      }
+    },
+    "implicit": "On Crit, gain 20% Attack and Cast Speed for 3.4s.",
+    "implicit_cn": "暴击时，获得 20% 攻击和施法速度持续 3.4 秒",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Tempered Sabre",
+    "name_cn": "回火军刀",
+    "name_id": "sword_1h_tempered",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "sword",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "sword",
+      "1H",
+      "attack"
+    ],
+    "quality": "rare",
+    "image": "images/sword_tempered.webp",
+    "description": "一把回火军刀",
+    "description_cn": "一把回火军刀",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.372,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.8,
+          "maxMult": 1.2
+        },
+        "critChance": 0.0636
+      }
+    },
+    "implicit": "55% chance to Impale.",
+    "implicit_cn": "55% 穿刺几率",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Masterwork Longsword",
+    "name_cn": "精工长剑",
+    "name_id": "sword_1h_masterwork",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "sword",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "sword",
+      "1H",
+      "attack"
+    ],
+    "quality": "epic",
+    "image": "images/sword_masterwork.webp",
+    "description": "一把精工长剑",
+    "description_cn": "一把精工长剑",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.372,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.8,
+          "maxMult": 1.2
+        },
+        "critChance": 0.0636
+      }
+    },
+    "implicit": "Gain a Frenzy Charge on Crit.",
+    "implicit_cn": "暴击时获得一个狂怒球",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Blade of the Bloodsea",
+    "name_cn": "血海之刃",
+    "name_id": "sword_1h_legendary",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "sword",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "sword",
+      "1H",
+      "attack"
+    ],
+    "quality": "legendary",
+    "image": "images/sword_legendary.webp",
+    "description": "一把血海之刃",
+    "description_cn": "一把血海之刃",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.372,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.8,
+          "maxMult": 1.2
+        },
+        "critChance": 0.0636
+      }
+    },
+    "implicit": "21% Cold Penetration for Attacks.",
+    "implicit_cn": "21% 攻击冰霜穿透",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Sword of the Unseen",
+    "name_cn": "无形之剑",
+    "name_id": "sword_1h_mythic",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "sword",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "sword",
+      "1H",
+      "attack"
+    ],
+    "quality": "mythic",
+    "image": "images/sword_mythic.webp",
+    "description": "一把无形之剑",
+    "description_cn": "一把无形之剑",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.372,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.8,
+          "maxMult": 1.2
+        },
+        "critChance": 0.0636
+      }
+    },
+    "implicit": "16% more Damage vs Low Life enemies.",
+    "implicit_cn": "16% 对低生命敌人伤害提高",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Rusted Mace",
+    "name_cn": "生锈锤",
+    "name_id": "mace_1h_rusted",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "mace",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "mace",
+      "1H",
+      "attack"
+    ],
+    "quality": "common",
+    "image": "images/mace_rusted.webp",
+    "description": "一把生锈锤",
+    "description_cn": "一把生锈锤",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.47,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.053
+      }
+    },
+    "implicit": "23% chance to Stun.",
+    "implicit_cn": "23% 眩晕几率",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Forged Club",
+    "name_cn": "锻造棍",
+    "name_id": "mace_1h_forged",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "mace",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "mace",
+      "1H",
+      "attack"
+    ],
+    "quality": "magic",
+    "image": "images/mace_forged.webp",
+    "description": "一把锻造棍",
+    "description_cn": "一把锻造棍",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.47,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.053
+      }
+    },
+    "implicit": "15% Fire Penetration for Attacks.",
+    "implicit_cn": "15% 攻击火焰穿透",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Tempered Maul",
+    "name_cn": "回火大锤",
+    "name_id": "mace_1h_tempered",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "mace",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "mace",
+      "1H",
+      "attack"
+    ],
+    "quality": "rare",
+    "image": "images/mace_tempered.webp",
+    "description": "一把回火大锤",
+    "description_cn": "一把回火大锤",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.47,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.053
+      }
+    },
+    "implicit": "On Hit, 30% chance to inflict Vulnerability for 3.6s.",
+    "implicit_cn": "击中时，30% 几率造成 3.6 秒易伤",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Masterwork Flail",
+    "name_cn": "精工连枷",
+    "name_id": "mace_1h_masterwork",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "mace",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "mace",
+      "1H",
+      "attack"
+    ],
+    "quality": "epic",
+    "image": "images/mace_masterwork.webp",
+    "description": "一把精工连枷",
+    "description_cn": "一把精工连枷",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.47,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.053
+      }
+    },
+    "implicit": "73 Armor Shred on Hit.",
+    "implicit_cn": "击中时削甲 73",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Mace of the Juggernaut",
+    "name_cn": "主宰之锤",
+    "name_id": "mace_1h_legendary",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "mace",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "mace",
+      "1H",
+      "attack"
+    ],
+    "quality": "legendary",
+    "image": "images/mace_legendary.webp",
+    "description": "一把主宰之锤",
+    "description_cn": "一把主宰之锤",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.47,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.053
+      }
+    },
+    "implicit": "+1 Maximum Endurance Charges.",
+    "implicit_cn": "+1 最大耐力球",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Mace of the Colossus",
+    "name_cn": "巨人之锤",
+    "name_id": "mace_1h_mythic",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "mace",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "mace",
+      "1H",
+      "attack"
+    ],
+    "quality": "mythic",
+    "image": "images/mace_mythic.webp",
+    "description": "一把巨人之锤",
+    "description_cn": "一把巨人之锤",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.47,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.053
+      }
+    },
+    "implicit": "26% more Damage vs Staggered enemies.",
+    "implicit_cn": "26% 对受冲击敌人伤害提高",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Rusted Javelin",
+    "name_cn": "生锈标枪",
+    "name_id": "spear_1h_rusted",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "spear",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "spear",
+      "1H",
+      "attack"
+    ],
+    "quality": "common",
+    "image": "images/spear_rusted.webp",
+    "description": "一把生锈标枪",
+    "description_cn": "一把生锈标枪",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.323,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.0636
+      }
+    },
+    "implicit": "Point Blank: 22% more Damage at close range.",
+    "implicit_cn": "近距离：22% 近距离伤害提高",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Forged Spear",
+    "name_cn": "锻造矛",
+    "name_id": "spear_1h_forged",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "spear",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "spear",
+      "1H",
+      "attack"
+    ],
+    "quality": "magic",
+    "image": "images/spear_forged.webp",
+    "description": "一把锻造矛",
+    "description_cn": "一把锻造矛",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.323,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.0636
+      }
+    },
+    "implicit": "+33% Spear Thrust Damage.",
+    "implicit_cn": "+33% 长矛穿刺伤害",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Tempered Lance",
+    "name_cn": "回火骑枪",
+    "name_id": "spear_1h_tempered",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "spear",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "spear",
+      "1H",
+      "attack"
+    ],
+    "quality": "rare",
+    "image": "images/spear_tempered.webp",
+    "description": "一把回火骑枪",
+    "description_cn": "一把回火骑枪",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.323,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.0636
+      }
+    },
+    "implicit": "On Crit, gain 10% Damage Reduction for 3.6s.",
+    "implicit_cn": "暴击时，获得 10% 伤害减免持续 3.6 秒",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Masterwork Pike",
+    "name_cn": "精工长矛",
+    "name_id": "spear_1h_masterwork",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "spear",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "spear",
+      "1H",
+      "attack"
+    ],
+    "quality": "epic",
+    "image": "images/spear_masterwork.webp",
+    "description": "一把精工长矛",
+    "description_cn": "一把精工长矛",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.323,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.0636
+      }
+    },
+    "implicit": "74% chance to Bleed.",
+    "implicit_cn": "74% 流血几率",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Spear of the Vanguard",
+    "name_cn": "先锋之矛",
+    "name_id": "spear_1h_legendary",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "spear",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "spear",
+      "1H",
+      "attack"
+    ],
+    "quality": "legendary",
+    "image": "images/spear_legendary.webp",
+    "description": "一把先锋之矛",
+    "description_cn": "一把先锋之矛",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.323,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.0636
+      }
+    },
+    "implicit": "13% more Damage vs Rare/Unique enemies.",
+    "implicit_cn": "13% 对稀有/独特敌人伤害提高",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Spear of the Divine",
+    "name_cn": "神圣之矛",
+    "name_id": "spear_1h_mythic",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "spear",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "spear",
+      "1H",
+      "attack"
+    ],
+    "quality": "mythic",
+    "image": "images/spear_mythic.webp",
+    "description": "一把神圣之矛",
+    "description_cn": "一把神圣之矛",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.323,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.0636
+      }
+    },
+    "implicit": "+39% Impale Damage.",
+    "implicit_cn": "+39% 穿刺伤害",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Rusted Dagger",
+    "name_cn": "生锈匕首",
+    "name_id": "dagger_1h_rusted",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "dagger",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "dagger",
+      "1H",
+      "attack"
+    ],
+    "quality": "common",
+    "image": "images/dagger_rusted.webp",
+    "description": "一把生锈匕首",
+    "description_cn": "一把生锈匕首",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.176,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.7,
+          "maxMult": 1.1
+        },
+        "critChance": 0.0848
+      }
+    },
+    "implicit": "All Damage can Poison.",
+    "implicit_cn": "所有伤害可以造成中毒",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Forged Stiletto",
+    "name_cn": "锻造短剑",
+    "name_id": "dagger_1h_forged",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "dagger",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "dagger",
+      "1H",
+      "attack"
+    ],
+    "quality": "magic",
+    "image": "images/dagger_forged.webp",
+    "description": "一把锻造短剑",
+    "description_cn": "一把锻造短剑",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.176,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.7,
+          "maxMult": 1.1
+        },
+        "critChance": 0.0848
+      }
+    },
+    "implicit": "Each Poison you inflict counts as two.",
+    "implicit_cn": "你造成的每个中毒计数为两个",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Tempered Dirk",
+    "name_cn": "回火短剑",
+    "name_id": "dagger_1h_tempered",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "dagger",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "dagger",
+      "1H",
+      "attack"
+    ],
+    "quality": "rare",
+    "image": "images/dagger_tempered.webp",
+    "description": "一把回火短剑",
+    "description_cn": "一把回火短剑",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.176,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.7,
+          "maxMult": 1.1
+        },
+        "critChance": 0.0848
+      }
+    },
+    "implicit": "On Crit, gain 30% Attack Speed for 3.6s.",
+    "implicit_cn": "暴击时，获得 30% 攻击速度持续 3.6 秒",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Masterwork Poignard",
+    "name_cn": "精工匕首",
+    "name_id": "dagger_1h_masterwork",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "dagger",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "dagger",
+      "1H",
+      "attack"
+    ],
+    "quality": "epic",
+    "image": "images/dagger_masterwork.webp",
+    "description": "一把精工匕首",
+    "description_cn": "一把精工匕首",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.176,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.7,
+          "maxMult": 1.1
+        },
+        "critChance": 0.0848
+      }
+    },
+    "implicit": "23% more Damage vs Poisoned enemies.",
+    "implicit_cn": "23% 对中毒敌人伤害提高",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Dagger of the Shadow",
+    "name_cn": "暗影匕首",
+    "name_id": "dagger_1h_legendary",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "dagger",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "dagger",
+      "1H",
+      "attack"
+    ],
+    "quality": "legendary",
+    "image": "images/dagger_legendary.webp",
+    "description": "一把暗影匕首",
+    "description_cn": "一把暗影匕首",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.176,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.7,
+          "maxMult": 1.1
+        },
+        "critChance": 0.0848
+      }
+    },
+    "implicit": "45% Chaos Damage over Time Multiplier.",
+    "implicit_cn": "45% 混沌持续伤害倍率",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Dagger of the Night",
+    "name_cn": "暗夜匕首",
+    "name_id": "dagger_1h_mythic",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "dagger",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "dagger",
+      "1H",
+      "attack"
+    ],
+    "quality": "mythic",
+    "image": "images/dagger_mythic.webp",
+    "description": "一把暗夜匕首",
+    "description_cn": "一把暗夜匕首",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.176,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.7,
+          "maxMult": 1.1
+        },
+        "critChance": 0.0848
+      }
+    },
+    "implicit": "On Kill, gain 27 Dodge Attack Chance for 5.8s.",
+    "implicit_cn": "击杀时，获得 27% 闪避攻击几率持续 5.8 秒",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Rusted Wand",
+    "name_cn": "生锈魔杖",
+    "name_id": "wand_1h_rusted",
+    "type": "施法武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "wand",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "wand",
+      "1H",
+      "attack"
+    ],
+    "quality": "common",
+    "image": "images/wand_rusted.webp",
+    "description": "一把生锈魔杖",
+    "description_cn": "一把生锈魔杖",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.3,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.07
+      }
+    },
+    "implicit": "On Hit, 18% chance to inflict Enfeeble for 1.6s.",
+    "implicit_cn": "击中时，18% 几率造成 1.6 秒虚弱",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Forged Sceptre",
+    "name_cn": "锻造权杖",
+    "name_id": "wand_1h_forged",
+    "type": "施法武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "wand",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "wand",
+      "1H",
+      "attack"
+    ],
+    "quality": "magic",
+    "image": "images/wand_forged.webp",
+    "description": "一把锻造权杖",
+    "description_cn": "一把锻造权杖",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.3,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.07
+      }
+    },
+    "implicit": "On Hit, 22% chance to inflict Weakness for 1.4s.",
+    "implicit_cn": "击中时，22% 几率造成 1.4 秒弱点",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Tempered Staff",
+    "name_cn": "回火法杖",
+    "name_id": "wand_1h_tempered",
+    "type": "施法武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "wand",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "wand",
+      "1H",
+      "attack"
+    ],
+    "quality": "rare",
+    "image": "images/wand_tempered.webp",
+    "description": "一把回火法杖",
+    "description_cn": "一把回火法杖",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.3,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.07
+      }
+    },
+    "implicit": "14% Cold Penetration for Spells.",
+    "implicit_cn": "14% 法术冰霜穿透",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Masterwork Rod",
+    "name_cn": "精工短杖",
+    "name_id": "wand_1h_masterwork",
+    "type": "施法武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "wand",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "wand",
+      "1H",
+      "attack"
+    ],
+    "quality": "epic",
+    "image": "images/wand_masterwork.webp",
+    "description": "一把精工短杖",
+    "description_cn": "一把精工短杖",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.3,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.07
+      }
+    },
+    "implicit": "17% Lightning Penetration for Spells.",
+    "implicit_cn": "17% 法术闪电穿透",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Wand of the Arcane",
+    "name_cn": "奥术魔杖",
+    "name_id": "wand_1h_legendary",
+    "type": "施法武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "wand",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "wand",
+      "1H",
+      "attack"
+    ],
+    "quality": "legendary",
+    "image": "images/wand_legendary.webp",
+    "description": "一把奥术魔杖",
+    "description_cn": "一把奥术魔杖",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.3,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.07
+      }
+    },
+    "implicit": "Recover 226ms of Cooldown on Crit.",
+    "implicit_cn": "暴击时回复 226 毫秒冷却",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Wand of the Elements",
+    "name_cn": "元素魔杖",
+    "name_id": "wand_1h_mythic",
+    "type": "施法武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "wand",
+    "hands": "1H",
+    "tags": [
+      "weapon",
+      "wand",
+      "1H",
+      "attack"
+    ],
+    "quality": "mythic",
+    "image": "images/wand_mythic.webp",
+    "description": "一把元素魔杖",
+    "description_cn": "一把元素魔杖",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.3,
+        "damageCurve": "weapon_damage_1h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.07
+      }
+    },
+    "implicit": "+28% Spell Cooldown Recovery Rate.",
+    "implicit_cn": "+28% 法术冷却回复率",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Woodsman Splitter",
+    "name_cn": "樵夫战斧",
+    "name_id": "axe_2h_rusted",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "axe",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "axe",
+      "2H",
+      "attack"
+    ],
+    "quality": "common",
+    "image": "images/axe_2h_rusted.webp",
+    "description": "一把樵夫战斧",
+    "description_cn": "一把樵夫战斧",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.715,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.78,
+          "maxMult": 1.3
+        },
+        "critChance": 0.053
+      }
+    },
+    "implicit": "33% of Physical Damage Converted to Cold.",
+    "implicit_cn": "33% 物理伤害转化为冰霜伤害",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Marauder Axe",
+    "name_cn": "掠夺者战斧",
+    "name_id": "axe_2h_forged",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "axe",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "axe",
+      "2H",
+      "attack"
+    ],
+    "quality": "magic",
+    "image": "images/axe_2h_forged.webp",
+    "description": "一把掠夺者战斧",
+    "description_cn": "一把掠夺者战斧",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.715,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.78,
+          "maxMult": 1.3
+        },
+        "critChance": 0.053
+      }
+    },
+    "implicit": "19% more Damage vs Full Life enemies.",
+    "implicit_cn": "19% 对满生命敌人伤害提高",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Ravager Greataxe",
+    "name_cn": "蹂躏者巨斧",
+    "name_id": "axe_2h_tempered",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "axe",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "axe",
+      "2H",
+      "attack"
+    ],
+    "quality": "rare",
+    "image": "images/axe_2h_tempered.webp",
+    "description": "一把蹂躏者巨斧",
+    "description_cn": "一把蹂躏者巨斧",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.715,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.78,
+          "maxMult": 1.3
+        },
+        "critChance": 0.053
+      }
+    },
+    "implicit": "Ailments spread to enemies within 4m on Kill.",
+    "implicit_cn": "击杀时异常状态扩散到 4 米内的敌人",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Headsman's Crescent",
+    "name_cn": "刽子手新月斧",
+    "name_id": "axe_2h_masterwork",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "axe",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "axe",
+      "2H",
+      "attack"
+    ],
+    "quality": "epic",
+    "image": "images/axe_2h_masterwork.webp",
+    "description": "一把刽子手新月斧",
+    "description_cn": "一把刽子手新月斧",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.715,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.78,
+          "maxMult": 1.3
+        },
+        "critChance": 0.053
+      }
+    },
+    "implicit": "38% Physical Overwhelm.",
+    "implicit_cn": "38% 物理碾压",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Titanfall Axe",
+    "name_cn": "泰坦降临之斧",
+    "name_id": "axe_2h_legendary",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "axe",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "axe",
+      "2H",
+      "attack"
+    ],
+    "quality": "legendary",
+    "image": "images/axe_2h_legendary.webp",
+    "description": "一把泰坦降临之斧",
+    "description_cn": "一把泰坦降临之斧",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.715,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.78,
+          "maxMult": 1.3
+        },
+        "critChance": 0.053
+      }
+    },
+    "implicit": "Ignites spread to nearby enemies on Kill.",
+    "implicit_cn": "击杀时点燃扩散到附近敌人",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Worldcleaver",
+    "name_cn": "世界分割者",
+    "name_id": "axe_2h_mythic",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "axe",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "axe",
+      "2H",
+      "attack"
+    ],
+    "quality": "mythic",
+    "image": "images/axe_2h_mythic.webp",
+    "description": "一把世界分割者",
+    "description_cn": "一把世界分割者",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.715,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.78,
+          "maxMult": 1.3
+        },
+        "critChance": 0.053
+      }
+    },
+    "implicit": "42% of Overkill Damage is dealt to nearby enemies.",
+    "implicit_cn": "42% 过杀伤害会作用于附近敌人",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Battered Greatsword",
+    "name_cn": "破旧巨剑",
+    "name_id": "sword_2h_rusted",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "sword",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "sword",
+      "2H",
+      "attack"
+    ],
+    "quality": "common",
+    "image": "images/sword_2h_rusted.webp",
+    "description": "一把破旧巨剑",
+    "description_cn": "一把破旧巨剑",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.568,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.8,
+          "maxMult": 1.25
+        },
+        "critChance": 0.0636
+      }
+    },
+    "implicit": "33% of Physical Damage Converted to Lightning.",
+    "implicit_cn": "33% 物理伤害转化为闪电伤害",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Highland Claymore",
+    "name_cn": "高地阔剑",
+    "name_id": "sword_2h_forged",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "sword",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "sword",
+      "2H",
+      "attack"
+    ],
+    "quality": "magic",
+    "image": "images/sword_2h_forged.webp",
+    "description": "一把高地阔剑",
+    "description_cn": "一把高地阔剑",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.568,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.8,
+          "maxMult": 1.25
+        },
+        "critChance": 0.0636
+      }
+    },
+    "implicit": "6% of Damage Leeched as Life.",
+    "implicit_cn": "6% 伤害吸血",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Warlord Blade",
+    "name_cn": "军阀之刃",
+    "name_id": "sword_2h_tempered",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "sword",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "sword",
+      "2H",
+      "attack"
+    ],
+    "quality": "rare",
+    "image": "images/sword_2h_tempered.webp",
+    "description": "一把军阀之刃",
+    "description_cn": "一把军阀之刃",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.568,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.8,
+          "maxMult": 1.25
+        },
+        "critChance": 0.0636
+      }
+    },
+    "implicit": "Gain a Power Charge on Crit.",
+    "implicit_cn": "暴击时获得一个能量球",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Oathbreaker",
+    "name_cn": "誓言破坏者",
+    "name_id": "sword_2h_masterwork",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "sword",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "sword",
+      "2H",
+      "attack"
+    ],
+    "quality": "epic",
+    "image": "images/sword_2h_masterwork.webp",
+    "description": "一把誓言破坏者",
+    "description_cn": "一把誓言破坏者",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.568,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.8,
+          "maxMult": 1.25
+        },
+        "critChance": 0.0636
+      }
+    },
+    "implicit": "+32% Stagger Buildup.",
+    "implicit_cn": "+32% 冲击累积",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Doomharbinger",
+    "name_cn": "末日先驱",
+    "name_id": "sword_2h_legendary",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "sword",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "sword",
+      "2H",
+      "attack"
+    ],
+    "quality": "legendary",
+    "image": "images/sword_2h_legendary.webp",
+    "description": "一把末日先驱",
+    "description_cn": "一把末日先驱",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.568,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.8,
+          "maxMult": 1.25
+        },
+        "critChance": 0.0636
+      }
+    },
+    "implicit": "Recover 650ms of Cooldowns on Kill.",
+    "implicit_cn": "击杀时回复 650 毫秒冷却",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Oblivion's Edge",
+    "name_cn": "湮灭之刃",
+    "name_id": "sword_2h_mythic",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "sword",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "sword",
+      "2H",
+      "attack"
+    ],
+    "quality": "mythic",
+    "image": "images/sword_2h_mythic.webp",
+    "description": "一把湮灭之刃",
+    "description_cn": "一把湮灭之刃",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.568,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.8,
+          "maxMult": 1.25
+        },
+        "critChance": 0.0636
+      }
+    },
+    "implicit": "Gain Rampage on Kill (stacking damage and speed).",
+    "implicit_cn": "击杀时获得狂暴（叠加伤害和速度）",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Crude Greatclub",
+    "name_cn": "粗陋巨棍",
+    "name_id": "mace_2h_rusted",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "mace",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "mace",
+      "2H",
+      "attack"
+    ],
+    "quality": "common",
+    "image": "images/mace_2h_rusted.webp",
+    "description": "一把粗陋巨棍",
+    "description_cn": "一把粗陋巨棍",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.764,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.9,
+          "maxMult": 1.2
+        },
+        "critChance": 0.053
+      }
+    },
+    "implicit": "27% of Physical Damage Converted to Chaos.",
+    "implicit_cn": "27% 物理伤害转化为混沌伤害",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Ironbound Maul",
+    "name_cn": "铁缚大锤",
+    "name_id": "mace_2h_forged",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "mace",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "mace",
+      "2H",
+      "attack"
+    ],
+    "quality": "magic",
+    "image": "images/mace_2h_forged.webp",
+    "description": "一把铁缚大锤",
+    "description_cn": "一把铁缚大锤",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.764,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.9,
+          "maxMult": 1.2
+        },
+        "critChance": 0.053
+      }
+    },
+    "implicit": "On Hit, gain 8% Damage Reduction for 3.4s.",
+    "implicit_cn": "击中时，获得 8% 伤害减免持续 3.4 秒",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Devastator",
+    "name_cn": "毁灭者",
+    "name_id": "mace_2h_tempered",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "mace",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "mace",
+      "2H",
+      "attack"
+    ],
+    "quality": "rare",
+    "image": "images/mace_2h_tempered.webp",
+    "description": "一把毁灭者",
+    "description_cn": "一把毁灭者",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.764,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.9,
+          "maxMult": 1.2
+        },
+        "critChance": 0.053
+      }
+    },
+    "implicit": "18% Lightning Penetration for Attacks.",
+    "implicit_cn": "18% 攻击闪电穿透",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Siegebreaker",
+    "name_cn": "攻城破坏者",
+    "name_id": "mace_2h_masterwork",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "mace",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "mace",
+      "2H",
+      "attack"
+    ],
+    "quality": "epic",
+    "image": "images/mace_2h_masterwork.webp",
+    "description": "一把攻城破坏者",
+    "description_cn": "一把攻城破坏者",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.764,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.9,
+          "maxMult": 1.2
+        },
+        "critChance": 0.053
+      }
+    },
+    "implicit": "33% Physical Overwhelm.",
+    "implicit_cn": "33% 物理碾压",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Earthshaker",
+    "name_cn": "撼地者",
+    "name_id": "mace_2h_legendary",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "mace",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "mace",
+      "2H",
+      "attack"
+    ],
+    "quality": "legendary",
+    "image": "images/mace_2h_legendary.webp",
+    "description": "一把撼地者",
+    "description_cn": "一把撼地者",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.764,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.9,
+          "maxMult": 1.2
+        },
+        "critChance": 0.053
+      }
+    },
+    "implicit": "15% chance to deal Double Damage.",
+    "implicit_cn": "15% 几率造成双倍伤害",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Worldcrusher",
+    "name_cn": "世界粉碎者",
+    "name_id": "mace_2h_mythic",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "mace",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "mace",
+      "2H",
+      "attack"
+    ],
+    "quality": "mythic",
+    "image": "images/mace_2h_mythic.webp",
+    "description": "一把世界粉碎者",
+    "description_cn": "一把世界粉碎者",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.764,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.9,
+          "maxMult": 1.2
+        },
+        "critChance": 0.053
+      }
+    },
+    "implicit": "43% more Damage while on Low Life.",
+    "implicit_cn": "低生命时 43% 伤害提高",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Bent Pike",
+    "name_cn": "弯曲长矛",
+    "name_id": "spear_2h_rusted",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "spear",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "spear",
+      "2H",
+      "attack"
+    ],
+    "quality": "common",
+    "image": "images/spear_2h_rusted.webp",
+    "description": "一把弯曲长矛",
+    "description_cn": "一把弯曲长矛",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.519,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.2
+        },
+        "critChance": 0.0636
+      }
+    },
+    "implicit": "13% Cold Penetration for Attacks.",
+    "implicit_cn": "13% 攻击冰霜穿透",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Sentinel Halberd",
+    "name_cn": "哨兵戟",
+    "name_id": "spear_2h_forged",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "spear",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "spear",
+      "2H",
+      "attack"
+    ],
+    "quality": "magic",
+    "image": "images/spear_2h_forged.webp",
+    "description": "一把哨兵戟",
+    "description_cn": "一把哨兵戟",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.519,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.2
+        },
+        "critChance": 0.0636
+      }
+    },
+    "implicit": "100% chance to Impale.",
+    "implicit_cn": "100% 穿刺几率",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Warden Partisan",
+    "name_cn": "守卫长矛",
+    "name_id": "spear_2h_tempered",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "spear",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "spear",
+      "2H",
+      "attack"
+    ],
+    "quality": "rare",
+    "image": "images/spear_2h_tempered.webp",
+    "description": "一把守卫长矛",
+    "description_cn": "一把守卫长矛",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.519,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.2
+        },
+        "critChance": 0.0636
+      }
+    },
+    "implicit": "+2 additional Impale Hits.",
+    "implicit_cn": "+2 额外穿刺命中",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Graveguard Polearm",
+    "name_cn": "墓卫长柄",
+    "name_id": "spear_2h_masterwork",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "spear",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "spear",
+      "2H",
+      "attack"
+    ],
+    "quality": "epic",
+    "image": "images/spear_2h_masterwork.webp",
+    "description": "一把墓卫长柄",
+    "description_cn": "一把墓卫长柄",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.519,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.2
+        },
+        "critChance": 0.0636
+      }
+    },
+    "implicit": "Far Shot: 32% more Damage at maximum range.",
+    "implicit_cn": "远程射击：最大距离时 32% 伤害提高",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Reaper Glaive",
+    "name_cn": "收割者镰刀",
+    "name_id": "spear_2h_legendary",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "spear",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "spear",
+      "2H",
+      "attack"
+    ],
+    "quality": "legendary",
+    "image": "images/spear_2h_legendary.webp",
+    "description": "一把收割者镰刀",
+    "description_cn": "一把收割者镰刀",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.519,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.2
+        },
+        "critChance": 0.0636
+      }
+    },
+    "implicit": "7% of Damage Leeched as Mana.",
+    "implicit_cn": "7% 伤害吸蓝",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Godslayer's Reach",
+    "name_cn": "杀神之触",
+    "name_id": "spear_2h_mythic",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "spear",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "spear",
+      "2H",
+      "attack"
+    ],
+    "quality": "mythic",
+    "image": "images/spear_2h_mythic.webp",
+    "description": "一把杀神之触",
+    "description_cn": "一把杀神之触",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.519,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.2
+        },
+        "critChance": 0.0636
+      }
+    },
+    "implicit": "25% more Damage vs Distant enemies.",
+    "implicit_cn": "25% 对远距离敌人伤害提高",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Frayed Shortbow",
+    "name_cn": "磨损短弓",
+    "name_id": "bow_2h_rusted",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "bow",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "bow",
+      "2H",
+      "attack"
+    ],
+    "quality": "common",
+    "image": "images/bow_2h_rusted.webp",
+    "description": "一把磨损短弓",
+    "description_cn": "一把磨损短弓",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.47,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.7,
+          "maxMult": 1.3
+        },
+        "critChance": 0.0636
+      }
+    },
+    "implicit": "+2 additional Projectiles.",
+    "implicit_cn": "+2 额外投射物",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Ranger Bow",
+    "name_cn": "游侠弓",
+    "name_id": "bow_2h_forged",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "bow",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "bow",
+      "2H",
+      "attack"
+    ],
+    "quality": "magic",
+    "image": "images/bow_2h_forged.webp",
+    "description": "一把游侠弓",
+    "description_cn": "一把游侠弓",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.47,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.7,
+          "maxMult": 1.3
+        },
+        "critChance": 0.0636
+      }
+    },
+    "implicit": "Projectiles Pierce 3 additional targets.",
+    "implicit_cn": "投射物穿透 3 个额外目标",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Deadeye Recurve",
+    "name_cn": "神射手反曲弓",
+    "name_id": "bow_2h_tempered",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "bow",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "bow",
+      "2H",
+      "attack"
+    ],
+    "quality": "rare",
+    "image": "images/bow_2h_tempered.webp",
+    "description": "一把神射手反曲弓",
+    "description_cn": "一把神射手反曲弓",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.47,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.7,
+          "maxMult": 1.3
+        },
+        "critChance": 0.0636
+      }
+    },
+    "implicit": "Far Shot: 34% more Damage at maximum range.",
+    "implicit_cn": "远程射击：最大距离时 34% 伤害提高",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Hawkeye Longbow",
+    "name_cn": "鹰眼长弓",
+    "name_id": "bow_2h_masterwork",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "bow",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "bow",
+      "2H",
+      "attack"
+    ],
+    "quality": "epic",
+    "image": "images/bow_2h_masterwork.webp",
+    "description": "一把鹰眼长弓",
+    "description_cn": "一把鹰眼长弓",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.47,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.7,
+          "maxMult": 1.3
+        },
+        "critChance": 0.0636
+      }
+    },
+    "implicit": "Projectiles Chain 1 additional time.",
+    "implicit_cn": "投射物连锁 1 次额外",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Soulstring",
+    "name_cn": "灵魂弦",
+    "name_id": "bow_2h_legendary",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "bow",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "bow",
+      "2H",
+      "attack"
+    ],
+    "quality": "legendary",
+    "image": "images/bow_2h_legendary.webp",
+    "description": "一把灵魂弦",
+    "description_cn": "一把灵魂弦",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.47,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.7,
+          "maxMult": 1.3
+        },
+        "critChance": 0.0636
+      }
+    },
+    "implicit": "On Crit, gain 29% Attack and Cast Speed for 4s.",
+    "implicit_cn": "暴击时，获得 29% 攻击和施法速度持续 4 秒",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Voidwood Bow",
+    "name_cn": "虚空木弓",
+    "name_id": "bow_2h_mythic",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "bow",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "bow",
+      "2H",
+      "attack"
+    ],
+    "quality": "mythic",
+    "image": "images/bow_2h_mythic.webp",
+    "description": "一把虚空木弓",
+    "description_cn": "一把虚空木弓",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.47,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.7,
+          "maxMult": 1.3
+        },
+        "critChance": 0.0636
+      }
+    },
+    "implicit": "Projectiles Pierce 99 additional targets.",
+    "implicit_cn": "投射物穿透 99 个额外目标",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Worn Crossbow",
+    "name_cn": "磨损弩",
+    "name_id": "crossbow_2h_rusted",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "crossbow",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "crossbow",
+      "2H",
+      "attack"
+    ],
+    "quality": "common",
+    "image": "images/crossbow_2h_rusted.webp",
+    "description": "一把磨损弩",
+    "description_cn": "一把磨损弩",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.666,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.0742
+      }
+    },
+    "implicit": "+10% Attack Speed.",
+    "implicit_cn": "+10% 攻击速度",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Ironbolt Crossbow",
+    "name_cn": "铁矢弩",
+    "name_id": "crossbow_2h_forged",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "crossbow",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "crossbow",
+      "2H",
+      "attack"
+    ],
+    "quality": "magic",
+    "image": "images/crossbow_2h_forged.webp",
+    "description": "一把铁矢弩",
+    "description_cn": "一把铁矢弩",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.666,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.0742
+      }
+    },
+    "implicit": "38% chance to Impale.",
+    "implicit_cn": "38% 穿刺几率",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Repeating Arbalest",
+    "name_cn": "连发弩炮",
+    "name_id": "crossbow_2h_tempered",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "crossbow",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "crossbow",
+      "2H",
+      "attack"
+    ],
+    "quality": "rare",
+    "image": "images/crossbow_2h_tempered.webp",
+    "description": "一把连发弩炮",
+    "description_cn": "一把连发弩炮",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.666,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.0742
+      }
+    },
+    "implicit": "On Hit, 35% chance to inflict Slow for 2.6s.",
+    "implicit_cn": "击中时，35% 几率造成 2.6 秒减速",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Siegebow",
+    "name_cn": "攻城弩",
+    "name_id": "crossbow_2h_masterwork",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "crossbow",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "crossbow",
+      "2H",
+      "attack"
+    ],
+    "quality": "epic",
+    "image": "images/crossbow_2h_masterwork.webp",
+    "description": "一把攻城弩",
+    "description_cn": "一把攻城弩",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.666,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.0742
+      }
+    },
+    "implicit": "Gain 19% of Physical Damage as Extra Lightning Damage.",
+    "implicit_cn": "获得 19% 物理伤害作为额外闪电伤害",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Deathwhisper",
+    "name_cn": "死亡私语",
+    "name_id": "crossbow_2h_legendary",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "crossbow",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "crossbow",
+      "2H",
+      "attack"
+    ],
+    "quality": "legendary",
+    "image": "images/crossbow_2h_legendary.webp",
+    "description": "一把死亡私语",
+    "description_cn": "一把死亡私语",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.666,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.0742
+      }
+    },
+    "implicit": "20% Cold Penetration for Attacks.",
+    "implicit_cn": "20% 攻击冰霜穿透",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Godpiercer",
+    "name_cn": "穿神者",
+    "name_id": "crossbow_2h_mythic",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "crossbow",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "crossbow",
+      "2H",
+      "attack"
+    ],
+    "quality": "mythic",
+    "image": "images/crossbow_2h_mythic.webp",
+    "description": "一把穿神者",
+    "description_cn": "一把穿神者",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.666,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.85,
+          "maxMult": 1.15
+        },
+        "critChance": 0.0742
+      }
+    },
+    "implicit": "16% chance to deal Double Damage.",
+    "implicit_cn": "16% 几率造成双倍伤害",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Rusty Blunderbuss",
+    "name_cn": "生锈大口径枪",
+    "name_id": "gun_2h_rusted",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "gun",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "gun",
+      "2H",
+      "attack"
+    ],
+    "quality": "common",
+    "image": "images/gun_2h_rusted.webp",
+    "description": "一把生锈大口径枪",
+    "description_cn": "一把生锈大口径枪",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.568,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.75,
+          "maxMult": 1.25
+        },
+        "critChance": 0.0742
+      }
+    },
+    "implicit": "Shocking an enemy releases a nova of Lightning.",
+    "implicit_cn": "感电敌人时释放闪电新星",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Ashland Scattergun",
+    "name_cn": "灰烬霰弹枪",
+    "name_id": "gun_2h_forged",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "gun",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "gun",
+      "2H",
+      "attack"
+    ],
+    "quality": "magic",
+    "image": "images/gun_2h_forged.webp",
+    "description": "一把灰烬霰弹枪",
+    "description_cn": "一把灰烬霰弹枪",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.568,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.75,
+          "maxMult": 1.25
+        },
+        "critChance": 0.0742
+      }
+    },
+    "implicit": "On Crit, inflict Shock for 2.4s.",
+    "implicit_cn": "暴击时，造成感电持续 2.4 秒",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Deadeye Musket",
+    "name_cn": "神射手步枪",
+    "name_id": "gun_2h_tempered",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "gun",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "gun",
+      "2H",
+      "attack"
+    ],
+    "quality": "rare",
+    "image": "images/gun_2h_tempered.webp",
+    "description": "一把神射手步枪",
+    "description_cn": "一把神射手步枪",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.568,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.75,
+          "maxMult": 1.25
+        },
+        "critChance": 0.0742
+      }
+    },
+    "implicit": "16% Fire Penetration for Attacks.",
+    "implicit_cn": "16% 攻击火焰穿透",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Rifled Harbinger",
+    "name_cn": "来复线先驱",
+    "name_id": "gun_2h_masterwork",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "gun",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "gun",
+      "2H",
+      "attack"
+    ],
+    "quality": "epic",
+    "image": "images/gun_2h_masterwork.webp",
+    "description": "一把来复线先驱",
+    "description_cn": "一把来复线先驱",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.568,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.75,
+          "maxMult": 1.25
+        },
+        "critChance": 0.0742
+      }
+    },
+    "implicit": "Gain 21% of Physical Damage as Extra Chaos Damage.",
+    "implicit_cn": "获得 21% 物理伤害作为额外混沌伤害",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Thunderclap",
+    "name_cn": "雷霆一击",
+    "name_id": "gun_2h_legendary",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "gun",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "gun",
+      "2H",
+      "attack"
+    ],
+    "quality": "legendary",
+    "image": "images/gun_2h_legendary.webp",
+    "description": "一把雷霆一击",
+    "description_cn": "一把雷霆一击",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.568,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.75,
+          "maxMult": 1.25
+        },
+        "critChance": 0.0742
+      }
+    },
+    "implicit": "Gain 25% of Physical Damage as Extra Lightning Damage.",
+    "implicit_cn": "获得 25% 物理伤害作为额外闪电伤害",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Doombore",
+    "name_cn": "末日钻孔机",
+    "name_id": "gun_2h_mythic",
+    "type": "攻击武器",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponFamily": "gun",
+    "hands": "2H",
+    "tags": [
+      "weapon",
+      "gun",
+      "2H",
+      "attack"
+    ],
+    "quality": "mythic",
+    "image": "images/gun_2h_mythic.webp",
+    "description": "一把末日钻孔机",
+    "description_cn": "一把末日钻孔机",
+    "baseStats": {
+      "weapon": {
+        "baseAttackTime": 1.568,
+        "damageCurve": "weapon_damage_2h",
+        "damageVariance": {
+          "minMult": 0.75,
+          "maxMult": 1.25
+        },
+        "critChance": 0.0742
+      }
+    },
+    "implicit": "Hits can't be Evaded.",
+    "implicit_cn": "击中无法被闪避",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Ring Tier 1",
+    "name_cn": "简易戒指",
+    "name_id": "ring_tier_1",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "ring",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "ring"
+    ],
+    "quality": "common",
+    "image": "images/ring_common.webp",
+    "description": "一个简易戒指",
+    "description_cn": "一个简易戒指",
+    "baseStats": {},
+    "implicit": "+# to Maximum Life",
+    "implicit_cn": "+# 最大生命值",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Ring Tier 2",
+    "name_cn": "铁戒指",
+    "name_id": "ring_tier_2",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "ring",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "ring"
+    ],
+    "quality": "magic",
+    "image": "images/ring_magic.webp",
+    "description": "一个铁戒指",
+    "description_cn": "一个铁戒指",
+    "baseStats": {},
+    "implicit": "+# to Maximum Mana",
+    "implicit_cn": "+# 最大法力值",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Ring Tier 3",
+    "name_cn": "银戒指",
+    "name_id": "ring_tier_3",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "ring",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "ring"
+    ],
+    "quality": "rare",
+    "image": "images/ring_rare.webp",
+    "description": "一个银戒指",
+    "description_cn": "一个银戒指",
+    "baseStats": {},
+    "implicit": "+#% to a Single Elemental Resistance",
+    "implicit_cn": "+#% 单一元素抗性",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Ring Tier 4",
+    "name_cn": "金戒指",
+    "name_id": "ring_tier_4",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "ring",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "ring"
+    ],
+    "quality": "rare",
+    "image": "images/ring_rare.webp",
+    "description": "一个金戒指",
+    "description_cn": "一个金戒指",
+    "baseStats": {},
+    "implicit": "+# to All Attributes",
+    "implicit_cn": "+# 全属性",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Ring Tier 5",
+    "name_cn": "铂金戒指",
+    "name_id": "ring_tier_5",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "ring",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "ring"
+    ],
+    "quality": "legendary",
+    "image": "images/ring_legendary.webp",
+    "description": "一个铂金戒指",
+    "description_cn": "一个铂金戒指",
+    "baseStats": {},
+    "implicit": "+# Life Regenerated per Second",
+    "implicit_cn": "+# 每秒生命回复",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Ring Tier 6",
+    "name_cn": "永恒戒指",
+    "name_id": "ring_tier_6",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "ring",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "ring"
+    ],
+    "quality": "mythic",
+    "image": "images/ring_mythic.webp",
+    "description": "一个永恒戒指",
+    "description_cn": "一个永恒戒指",
+    "baseStats": {},
+    "implicit": "+#% to All Elemental Resistances",
+    "implicit_cn": "+#% 全元素抗性",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Ring Fire Res",
+    "name_cn": "抗火戒指",
+    "name_id": "ring_fire_res",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "ring",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "ring"
+    ],
+    "quality": "magic",
+    "image": "images/ring_magic.webp",
+    "description": "一个抗火戒指",
+    "description_cn": "一个抗火戒指",
+    "baseStats": {},
+    "implicit": "+#% to Fire Resistance",
+    "implicit_cn": "+#% 火焰抗性",
+    "req": {
+      "level": 10,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Ring Cold Res",
+    "name_cn": "抗寒戒指",
+    "name_id": "ring_cold_res",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "ring",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "ring"
+    ],
+    "quality": "magic",
+    "image": "images/ring_magic.webp",
+    "description": "一个抗寒戒指",
+    "description_cn": "一个抗寒戒指",
+    "baseStats": {},
+    "implicit": "+#% to Cold Resistance",
+    "implicit_cn": "+#% 冰霜抗性",
+    "req": {
+      "level": 10,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Ring Lightning Res",
+    "name_cn": "抗电戒指",
+    "name_id": "ring_lightning_res",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "ring",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "ring"
+    ],
+    "quality": "magic",
+    "image": "images/ring_magic.webp",
+    "description": "一个抗电戒指",
+    "description_cn": "一个抗电戒指",
+    "baseStats": {},
+    "implicit": "+#% to Lightning Resistance",
+    "implicit_cn": "+#% 闪电抗性",
+    "req": {
+      "level": 10,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Ring Chaos Res",
+    "name_cn": "抗混戒指",
+    "name_id": "ring_chaos_res",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "ring",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "ring"
+    ],
+    "quality": "rare",
+    "image": "images/ring_rare.webp",
+    "description": "一个抗混戒指",
+    "description_cn": "一个抗混戒指",
+    "baseStats": {},
+    "implicit": "+#% to Chaos Resistance",
+    "implicit_cn": "+#% 混沌抗性",
+    "req": {
+      "level": 25,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Ring Accuracy",
+    "name_cn": "精准戒指",
+    "name_id": "ring_accuracy",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "ring",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "ring"
+    ],
+    "quality": "magic",
+    "image": "images/ring_magic.webp",
+    "description": "一个精准戒指",
+    "description_cn": "一个精准戒指",
+    "baseStats": {},
+    "implicit": "+# to Accuracy Rating",
+    "implicit_cn": "+# 精准度",
+    "req": {
+      "level": 15,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Ring Crit Chance",
+    "name_cn": "暴击戒指",
+    "name_id": "ring_crit_chance",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "ring",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "ring"
+    ],
+    "quality": "rare",
+    "image": "images/ring_rare.webp",
+    "description": "一个暴击戒指",
+    "description_cn": "一个暴击戒指",
+    "baseStats": {},
+    "implicit": "+#% Increased Critical Strike Chance",
+    "implicit_cn": "+#% 暴击率",
+    "req": {
+      "level": 40,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Ring Attack Speed",
+    "name_cn": "攻速戒指",
+    "name_id": "ring_attack_speed",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "ring",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "ring"
+    ],
+    "quality": "epic",
+    "image": "images/ring_epic.webp",
+    "description": "一个攻速戒指",
+    "description_cn": "一个攻速戒指",
+    "baseStats": {},
+    "implicit": "+#% Increased Attack Speed",
+    "implicit_cn": "+#% 攻击速度",
+    "req": {
+      "level": 55,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Ring Phys Damage",
+    "name_cn": "物理戒指",
+    "name_id": "ring_phys_damage",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "ring",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "ring"
+    ],
+    "quality": "rare",
+    "image": "images/ring_rare.webp",
+    "description": "一个物理戒指",
+    "description_cn": "一个物理戒指",
+    "baseStats": {},
+    "implicit": "+#% Increased Physical Damage",
+    "implicit_cn": "+#% 物理伤害",
+    "req": {
+      "level": 45,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Ring Evasion",
+    "name_cn": "闪避戒指",
+    "name_id": "ring_evasion",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "ring",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "ring"
+    ],
+    "quality": "magic",
+    "image": "images/ring_magic.webp",
+    "description": "一个闪避戒指",
+    "description_cn": "一个闪避戒指",
+    "baseStats": {},
+    "implicit": "+# to Evasion Rating",
+    "implicit_cn": "+# 闪避值",
+    "req": {
+      "level": 20,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Ring Armor",
+    "name_cn": "护甲戒指",
+    "name_id": "ring_armor",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "ring",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "ring"
+    ],
+    "quality": "magic",
+    "image": "images/ring_magic.webp",
+    "description": "一个护甲戒指",
+    "description_cn": "一个护甲戒指",
+    "baseStats": {},
+    "implicit": "+# to Armor",
+    "implicit_cn": "+# 护甲",
+    "req": {
+      "level": 20,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Ring Mana Regen",
+    "name_cn": "回蓝戒指",
+    "name_id": "ring_mana_regen",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "ring",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "ring"
+    ],
+    "quality": "rare",
+    "image": "images/ring_rare.webp",
+    "description": "一个回蓝戒指",
+    "description_cn": "一个回蓝戒指",
+    "baseStats": {},
+    "implicit": "+# Mana Regenerated per Second",
+    "implicit_cn": "+# 每秒法力回复",
+    "req": {
+      "level": 30,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Ring Energy Shield",
+    "name_cn": "护盾戒指",
+    "name_id": "ring_energy_shield",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "ring",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "ring"
+    ],
+    "quality": "epic",
+    "image": "images/ring_epic.webp",
+    "description": "一个护盾戒指",
+    "description_cn": "一个护盾戒指",
+    "baseStats": {},
+    "implicit": "+# to Maximum Energy Shield",
+    "implicit_cn": "+# 最大能量护盾",
+    "req": {
+      "level": 60,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Amulet Tier 1",
+    "name_cn": "青铜项链",
+    "name_id": "amulet_tier_1",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "amulet",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "amulet"
+    ],
+    "quality": "common",
+    "image": "images/amulet_common.webp",
+    "description": "一个青铜项链",
+    "description_cn": "一个青铜项链",
+    "baseStats": {},
+    "implicit": "+# to Strength",
+    "implicit_cn": "+# 力量",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Amulet Tier 2",
+    "name_cn": "银项链",
+    "name_id": "amulet_tier_2",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "amulet",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "amulet"
+    ],
+    "quality": "magic",
+    "image": "images/amulet_magic.webp",
+    "description": "一个银项链",
+    "description_cn": "一个银项链",
+    "baseStats": {},
+    "implicit": "+# to Dexterity",
+    "implicit_cn": "+# 敏捷",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Amulet Tier 3",
+    "name_cn": "金项链",
+    "name_id": "amulet_tier_3",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "amulet",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "amulet"
+    ],
+    "quality": "rare",
+    "image": "images/amulet_rare.webp",
+    "description": "一个金项链",
+    "description_cn": "一个金项链",
+    "baseStats": {},
+    "implicit": "+# to Intelligence",
+    "implicit_cn": "+# 智力",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Amulet Tier 4",
+    "name_cn": "珠宝项链",
+    "name_id": "amulet_tier_4",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "amulet",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "amulet"
+    ],
+    "quality": "rare",
+    "image": "images/amulet_rare.webp",
+    "description": "一个珠宝项链",
+    "description_cn": "一个珠宝项链",
+    "baseStats": {},
+    "implicit": "+#% Increased Rarity of Items Found",
+    "implicit_cn": "+#% 物品稀有度",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Amulet Tier 5",
+    "name_cn": "永恒项链",
+    "name_id": "amulet_tier_5",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "amulet",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "amulet"
+    ],
+    "quality": "legendary",
+    "image": "images/amulet_legendary.webp",
+    "description": "一个永恒项链",
+    "description_cn": "一个永恒项链",
+    "baseStats": {},
+    "implicit": "+# to All Attributes",
+    "implicit_cn": "+# 全属性",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Amulet Tier 6",
+    "name_cn": "神盾项链",
+    "name_id": "amulet_tier_6",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "amulet",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "amulet"
+    ],
+    "quality": "mythic",
+    "image": "images/amulet_mythic.webp",
+    "description": "一个神盾项链",
+    "description_cn": "一个神盾项链",
+    "baseStats": {},
+    "implicit": "+#% Increased Experience Gained",
+    "implicit_cn": "+#% 经验获取",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Amulet Spell Damage",
+    "name_cn": "法术项链",
+    "name_id": "amulet_spell_damage",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "amulet",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "amulet"
+    ],
+    "quality": "rare",
+    "image": "images/amulet_rare.webp",
+    "description": "一个法术项链",
+    "description_cn": "一个法术项链",
+    "baseStats": {},
+    "implicit": "+#% Increased Spell Damage",
+    "implicit_cn": "+#% 法术伤害",
+    "req": {
+      "level": 25,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Amulet Cast Speed",
+    "name_cn": "施法项链",
+    "name_id": "amulet_cast_speed",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "amulet",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "amulet"
+    ],
+    "quality": "rare",
+    "image": "images/amulet_rare.webp",
+    "description": "一个施法项链",
+    "description_cn": "一个施法项链",
+    "baseStats": {},
+    "implicit": "+#% Increased Cast Speed",
+    "implicit_cn": "+#% 施法速度",
+    "req": {
+      "level": 40,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Amulet Mana",
+    "name_cn": "法力项链",
+    "name_id": "amulet_mana",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "amulet",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "amulet"
+    ],
+    "quality": "magic",
+    "image": "images/amulet_magic.webp",
+    "description": "一个法力项链",
+    "description_cn": "一个法力项链",
+    "baseStats": {},
+    "implicit": "+# to Maximum Mana",
+    "implicit_cn": "+# 最大法力值",
+    "req": {
+      "level": 15,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Amulet Crit Chance",
+    "name_cn": "暴击项链",
+    "name_id": "amulet_crit_chance",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "amulet",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "amulet"
+    ],
+    "quality": "rare",
+    "image": "images/amulet_rare.webp",
+    "description": "一个暴击项链",
+    "description_cn": "一个暴击项链",
+    "baseStats": {},
+    "implicit": "+#% Increased Global Critical Strike Chance",
+    "implicit_cn": "+#% 全局暴击率",
+    "req": {
+      "level": 40,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Amulet Crit Multi",
+    "name_cn": "暴伤项链",
+    "name_id": "amulet_crit_multi",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "amulet",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "amulet"
+    ],
+    "quality": "epic",
+    "image": "images/amulet_epic.webp",
+    "description": "一个暴伤项链",
+    "description_cn": "一个暴伤项链",
+    "baseStats": {},
+    "implicit": "+#% to Critical Strike Multiplier",
+    "implicit_cn": "+#% 暴击伤害",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Amulet Life",
+    "name_cn": "生命项链",
+    "name_id": "amulet_life",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "amulet",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "amulet"
+    ],
+    "quality": "magic",
+    "image": "images/amulet_magic.webp",
+    "description": "一个生命项链",
+    "description_cn": "一个生命项链",
+    "baseStats": {},
+    "implicit": "+# to Maximum Life",
+    "implicit_cn": "+# 最大生命值",
+    "req": {
+      "level": 10,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Amulet Energy Shield",
+    "name_cn": "护盾项链",
+    "name_id": "amulet_energy_shield",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "amulet",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "amulet"
+    ],
+    "quality": "epic",
+    "image": "images/amulet_epic.webp",
+    "description": "一个护盾项链",
+    "description_cn": "一个护盾项链",
+    "baseStats": {},
+    "implicit": "+# to Maximum Energy Shield",
+    "implicit_cn": "+# 最大能量护盾",
+    "req": {
+      "level": 60,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Amulet All Res",
+    "name_cn": "全抗项链",
+    "name_id": "amulet_all_res",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "amulet",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "amulet"
+    ],
+    "quality": "rare",
+    "image": "images/amulet_rare.webp",
+    "description": "一个全抗项链",
+    "description_cn": "一个全抗项链",
+    "baseStats": {},
+    "implicit": "+#% to All Elemental Resistances",
+    "implicit_cn": "+#% 全元素抗性",
+    "req": {
+      "level": 60,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Amulet Ele Damage",
+    "name_cn": "元素项链",
+    "name_id": "amulet_ele_damage",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "amulet",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "amulet"
+    ],
+    "quality": "rare",
+    "image": "images/amulet_rare.webp",
+    "description": "一个元素项链",
+    "description_cn": "一个元素项链",
+    "baseStats": {},
+    "implicit": "+#% Increased Elemental Damage",
+    "implicit_cn": "+#% 元素伤害",
+    "req": {
+      "level": 30,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Amulet Fire Damage",
+    "name_cn": "火焰项链",
+    "name_id": "amulet_fire_damage",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "amulet",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "amulet"
+    ],
+    "quality": "magic",
+    "image": "images/amulet_magic.webp",
+    "description": "一个火焰项链",
+    "description_cn": "一个火焰项链",
+    "baseStats": {},
+    "implicit": "+#% Increased Fire Damage",
+    "implicit_cn": "+#% 火焰伤害",
+    "req": {
+      "level": 20,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Amulet Cold Damage",
+    "name_cn": "冰霜项链",
+    "name_id": "amulet_cold_damage",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "amulet",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "amulet"
+    ],
+    "quality": "magic",
+    "image": "images/amulet_magic.webp",
+    "description": "一个冰霜项链",
+    "description_cn": "一个冰霜项链",
+    "baseStats": {},
+    "implicit": "+#% Increased Cold Damage",
+    "implicit_cn": "+#% 冰霜伤害",
+    "req": {
+      "level": 20,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Amulet Lightning Damage",
+    "name_cn": "闪电项链",
+    "name_id": "amulet_lightning_damage",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "amulet",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "amulet"
+    ],
+    "quality": "magic",
+    "image": "images/amulet_magic.webp",
+    "description": "一个闪电项链",
+    "description_cn": "一个闪电项链",
+    "baseStats": {},
+    "implicit": "+#% Increased Lightning Damage",
+    "implicit_cn": "+#% 闪电伤害",
+    "req": {
+      "level": 20,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Belt Tier 1",
+    "name_cn": "简易腰带",
+    "name_id": "belt_tier_1",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "belt",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "belt"
+    ],
+    "quality": "common",
+    "image": "images/belt_common.webp",
+    "description": "一个简易腰带",
+    "description_cn": "一个简易腰带",
+    "baseStats": {},
+    "implicit": "+# to Maximum Life",
+    "implicit_cn": "+# 最大生命值",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Belt Tier 2",
+    "name_cn": "铆钉腰带",
+    "name_id": "belt_tier_2",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "belt",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "belt"
+    ],
+    "quality": "magic",
+    "image": "images/belt_magic.webp",
+    "description": "一个铆钉腰带",
+    "description_cn": "一个铆钉腰带",
+    "baseStats": {},
+    "implicit": "+#% Increased Flask Effect Duration",
+    "implicit_cn": "+#% 药剂效果持续时间",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Belt Tier 3",
+    "name_cn": "加固腰带",
+    "name_id": "belt_tier_3",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "belt",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "belt"
+    ],
+    "quality": "rare",
+    "image": "images/belt_rare.webp",
+    "description": "一个加固腰带",
+    "description_cn": "一个加固腰带",
+    "baseStats": {},
+    "implicit": "+# to Armor",
+    "implicit_cn": "+# 护甲",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Belt Tier 4",
+    "name_cn": "战争腰带",
+    "name_id": "belt_tier_4",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "belt",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "belt"
+    ],
+    "quality": "rare",
+    "image": "images/belt_rare.webp",
+    "description": "一个战争腰带",
+    "description_cn": "一个战争腰带",
+    "baseStats": {},
+    "implicit": "+#% Increased Flask Charges Gained",
+    "implicit_cn": "+#% 药剂充能获取",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Belt Tier 5",
+    "name_cn": "冠军腰带",
+    "name_id": "belt_tier_5",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "belt",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "belt"
+    ],
+    "quality": "legendary",
+    "image": "images/belt_legendary.webp",
+    "description": "一个冠军腰带",
+    "description_cn": "一个冠军腰带",
+    "baseStats": {},
+    "implicit": "+# Life Recovered on Kill",
+    "implicit_cn": "+# 击杀回复生命",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Belt Tier 6",
+    "name_cn": "永恒腰带",
+    "name_id": "belt_tier_6",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "belt",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "belt"
+    ],
+    "quality": "mythic",
+    "image": "images/belt_mythic.webp",
+    "description": "一个永恒腰带",
+    "description_cn": "一个永恒腰带",
+    "baseStats": {},
+    "implicit": "+#% Reduced Flask Charges Used",
+    "implicit_cn": "+#% 减少药剂充能消耗",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Belt Evasion",
+    "name_cn": "闪避腰带",
+    "name_id": "belt_evasion",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "belt",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "belt"
+    ],
+    "quality": "magic",
+    "image": "images/belt_magic.webp",
+    "description": "一个闪避腰带",
+    "description_cn": "一个闪避腰带",
+    "baseStats": {},
+    "implicit": "+# to Evasion Rating",
+    "implicit_cn": "+# 闪避值",
+    "req": {
+      "level": 20,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Belt Strength",
+    "name_cn": "力量腰带",
+    "name_id": "belt_strength",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "belt",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "belt"
+    ],
+    "quality": "magic",
+    "image": "images/belt_magic.webp",
+    "description": "一个力量腰带",
+    "description_cn": "一个力量腰带",
+    "baseStats": {},
+    "implicit": "+# to Strength",
+    "implicit_cn": "+# 力量",
+    "req": {
+      "level": 10,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Belt All Attributes",
+    "name_cn": "全属腰带",
+    "name_id": "belt_all_attributes",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "belt",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "belt"
+    ],
+    "quality": "epic",
+    "image": "images/belt_epic.webp",
+    "description": "一个全属腰带",
+    "description_cn": "一个全属腰带",
+    "baseStats": {},
+    "implicit": "+# to All Attributes",
+    "implicit_cn": "+# 全属性",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Belt Fire Res",
+    "name_cn": "抗火腰带",
+    "name_id": "belt_fire_res",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "belt",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "belt"
+    ],
+    "quality": "magic",
+    "image": "images/belt_magic.webp",
+    "description": "一个抗火腰带",
+    "description_cn": "一个抗火腰带",
+    "baseStats": {},
+    "implicit": "+#% to Fire Resistance",
+    "implicit_cn": "+#% 火焰抗性",
+    "req": {
+      "level": 10,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Belt Cold Res",
+    "name_cn": "抗寒腰带",
+    "name_id": "belt_cold_res",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "belt",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "belt"
+    ],
+    "quality": "magic",
+    "image": "images/belt_magic.webp",
+    "description": "一个抗寒腰带",
+    "description_cn": "一个抗寒腰带",
+    "baseStats": {},
+    "implicit": "+#% to Cold Resistance",
+    "implicit_cn": "+#% 冰霜抗性",
+    "req": {
+      "level": 10,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Belt Lightning Res",
+    "name_cn": "抗电腰带",
+    "name_id": "belt_lightning_res",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "belt",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "belt"
+    ],
+    "quality": "magic",
+    "image": "images/belt_magic.webp",
+    "description": "一个抗电腰带",
+    "description_cn": "一个抗电腰带",
+    "baseStats": {},
+    "implicit": "+#% to Lightning Resistance",
+    "implicit_cn": "+#% 闪电抗性",
+    "req": {
+      "level": 10,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Belt Movement Speed",
+    "name_cn": "移速腰带",
+    "name_id": "belt_movement_speed",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "belt",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "belt"
+    ],
+    "quality": "rare",
+    "image": "images/belt_rare.webp",
+    "description": "一个移速腰带",
+    "description_cn": "一个移速腰带",
+    "baseStats": {},
+    "implicit": "+#% Increased Movement Speed",
+    "implicit_cn": "+#% 移动速度",
+    "req": {
+      "level": 35,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Belt Stun Recovery",
+    "name_cn": "解晕腰带",
+    "name_id": "belt_stun_recovery",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "belt",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "belt"
+    ],
+    "quality": "rare",
+    "image": "images/belt_rare.webp",
+    "description": "一个解晕腰带",
+    "description_cn": "一个解晕腰带",
+    "baseStats": {},
+    "implicit": "+#% Increased Stun Recovery",
+    "implicit_cn": "+#% 眩晕恢复",
+    "req": {
+      "level": 25,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Belt Life Regen",
+    "name_cn": "回血腰带",
+    "name_id": "belt_life_regen",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "belt",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "belt"
+    ],
+    "quality": "rare",
+    "image": "images/belt_rare.webp",
+    "description": "一个回血腰带",
+    "description_cn": "一个回血腰带",
+    "baseStats": {},
+    "implicit": "+# Life Regenerated per Second",
+    "implicit_cn": "+# 每秒生命回复",
+    "req": {
+      "level": 40,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Belt Phys Damage",
+    "name_cn": "物理腰带",
+    "name_id": "belt_phys_damage",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "belt",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "belt"
+    ],
+    "quality": "rare",
+    "image": "images/belt_rare.webp",
+    "description": "一个物理腰带",
+    "description_cn": "一个物理腰带",
+    "baseStats": {},
+    "implicit": "+#% Increased Physical Damage",
+    "implicit_cn": "+#% 物理伤害",
+    "req": {
+      "level": 45,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Belt Ele Damage",
+    "name_cn": "元素腰带",
+    "name_id": "belt_ele_damage",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "belt",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "belt"
+    ],
+    "quality": "rare",
+    "image": "images/belt_rare.webp",
+    "description": "一个元素腰带",
+    "description_cn": "一个元素腰带",
+    "baseStats": {},
+    "implicit": "+#% Increased Elemental Damage",
+    "implicit_cn": "+#% 元素伤害",
+    "req": {
+      "level": 30,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Belt Weapon Ele Damage",
+    "name_cn": "武元腰带",
+    "name_id": "belt_weapon_ele_damage",
+    "type": "饰品",
+    "category": "jewelry",
+    "slot": "belt",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "jewelry",
+      "belt"
+    ],
+    "quality": "epic",
+    "image": "images/belt_epic.webp",
+    "description": "一个武元腰带",
+    "description_cn": "一个武元腰带",
+    "baseStats": {},
+    "implicit": "+#% Increased Elemental Damage with Attack Skills",
+    "implicit_cn": "+#% 攻击技能的元素伤害",
+    "req": {
+      "level": 70,
+      "stats": {}
     }
   }
 ]

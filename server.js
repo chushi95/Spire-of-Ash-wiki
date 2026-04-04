@@ -12,7 +12,8 @@ const mimeTypes = {
   '.png': 'image/png',
   '.jpg': 'image/jpeg',
   '.gif': 'image/gif',
-  '.svg': 'image/svg+xml'
+  '.svg': 'image/svg+xml',
+  '.webp': 'image/webp'
 };
 
 const server = http.createServer((req, res) => {

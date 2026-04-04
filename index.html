@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -16,7 +17,13 @@
         <ul>
             <li><a href="#" data-tab="home" class="active">首页</a></li>
             <li><a href="#" data-tab="characters">角色信息</a></li>
-            <li><a href="#" data-tab="items">物品信息</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-trigger">物品信息</a>
+                <div class="dropdown-menu">
+                    <a href="#" data-tab="items">物品</a>
+                    <a href="#" data-tab="unique-items">独特装备</a>
+                </div>
+            </li>
             <li><a href="#" data-tab="affixes">词缀信息</a></li>
             <li><a href="#" data-tab="cards">以太卡牌</a></li>
             <li><a href="#" data-tab="damage-test">伤害测试</a></li>
@@ -128,27 +135,84 @@
         </section>
         
         <section id="items" class="tab-content">
-            <div class="sub-tabs" id="items-tabs">
-                <button class="sub-tab-btn active" data-subtab="装备">装备</button>
-                <button class="sub-tab-btn" data-subtab="独特装备">独特装备</button>
-                <button class="sub-tab-btn" data-subtab="货币">货币</button>
-            </div>
-            <div class="sub-tabs-level2" id="equipment-tabs" style="display: none;">
-                <button class="sub-tab-btn level2 active" data-subtab2="攻击武器">攻击武器</button>
-                <button class="sub-tab-btn level2" data-subtab2="施法武器">施法武器</button>
-                <button class="sub-tab-btn level2" data-subtab2="副手武器">副手武器</button>
-                <button class="sub-tab-btn level2" data-subtab2="护甲">护甲</button>
-                <button class="sub-tab-btn level2" data-subtab2="首饰">首饰</button>
-                <button class="sub-tab-btn level2" data-subtab2="药剂">药剂</button>
-            </div>
-            <div class="sub-tabs-level2" id="currency-tabs" style="display: none;">
-                <button class="sub-tab-btn level2 active" data-subtab2="宝珠">宝珠</button>
-                <button class="sub-tab-btn level2" data-subtab2="铭文">铭文</button>
-                <button class="sub-tab-btn level2" data-subtab2="符印">符印</button>
-                <button class="sub-tab-btn level2" data-subtab2="印记">印记</button>
-                <button class="sub-tab-btn level2" data-subtab2="法令">法令</button>
+            <div class="sub-tabs-container" id="items-tabs">
+                <div class="tab-group">
+                    <span class="tab-group-label">单手武器</span>
+                    <div class="tab-group-buttons">
+                        <button class="sub-tab-btn active" data-subtab="斧">斧</button>
+                        <button class="sub-tab-btn" data-subtab="剑">剑</button>
+                        <button class="sub-tab-btn" data-subtab="锤">锤</button>
+                        <button class="sub-tab-btn" data-subtab="长矛">长矛</button>
+                        <button class="sub-tab-btn" data-subtab="匕首">匕首</button>
+                        <button class="sub-tab-btn" data-subtab="魔杖">魔杖</button>
+                        <button class="sub-tab-btn" data-subtab="法球">法球</button>
+                        <button class="sub-tab-btn" data-subtab="魔法书">魔法书</button>
+                    </div>
+                </div>
+                <div class="tab-group">
+                    <span class="tab-group-label">双手武器</span>
+                    <div class="tab-group-buttons">
+                        <button class="sub-tab-btn" data-subtab="双手斧">双手斧</button>
+                        <button class="sub-tab-btn" data-subtab="双手剑">双手剑</button>
+                        <button class="sub-tab-btn" data-subtab="双手锤">双手锤</button>
+                        <button class="sub-tab-btn" data-subtab="双手长矛">双手长矛</button>
+                        <button class="sub-tab-btn" data-subtab="弓">弓</button>
+                        <button class="sub-tab-btn" data-subtab="弩">弩</button>
+                        <button class="sub-tab-btn" data-subtab="枪械">枪械</button>
+                        <button class="sub-tab-btn" data-subtab="法杖">法杖</button>
+                    </div>
+                </div>
+                <div class="tab-group">
+                    <span class="tab-group-label">副手</span>
+                    <div class="tab-group-buttons">
+                        <button class="sub-tab-btn" data-subtab="箭袋">箭袋</button>
+                        <button class="sub-tab-btn" data-subtab="盾">盾</button>
+                        <button class="sub-tab-btn" data-subtab="法器">法器</button>
+                        <button class="sub-tab-btn" data-subtab="权杖">权杖</button>
+                        <button class="sub-tab-btn" data-subtab="圣物">圣物</button>
+                    </div>
+                </div>
+                <div class="tab-group">
+                    <span class="tab-group-label">护甲</span>
+                    <div class="tab-group-buttons">
+                        <button class="sub-tab-btn" data-subtab="头盔">头盔</button>
+                        <button class="sub-tab-btn" data-subtab="胸甲">胸甲</button>
+                        <button class="sub-tab-btn" data-subtab="手套">手套</button>
+                        <button class="sub-tab-btn" data-subtab="鞋子">鞋子</button>
+                    </div>
+                </div>
+                <div class="tab-group">
+                    <span class="tab-group-label">饰品</span>
+                    <div class="tab-group-buttons">
+                        <button class="sub-tab-btn" data-subtab="项链">项链</button>
+                        <button class="sub-tab-btn" data-subtab="戒指">戒指</button>
+                        <button class="sub-tab-btn" data-subtab="腰带">腰带</button>
+                    </div>
+                </div>
+                <div class="tab-group">
+                    <span class="tab-group-label">药剂</span>
+                    <div class="tab-group-buttons">
+                        <button class="sub-tab-btn" data-subtab="生命药剂">生命药剂</button>
+                        <button class="sub-tab-btn" data-subtab="法力药剂">法力药剂</button>
+                        <button class="sub-tab-btn" data-subtab="实用药剂">实用药剂</button>
+                    </div>
+                </div>
+                <div class="tab-group">
+                    <span class="tab-group-label">货币</span>
+                    <div class="tab-group-buttons">
+                        <button class="sub-tab-btn" data-subtab="宝珠">宝珠</button>
+                        <button class="sub-tab-btn" data-subtab="铭文">铭文</button>
+                        <button class="sub-tab-btn" data-subtab="符印">符印</button>
+                        <button class="sub-tab-btn" data-subtab="印记">印记</button>
+                        <button class="sub-tab-btn" data-subtab="法令">法令</button>
+                    </div>
+                </div>
             </div>
             <div class="card-grid" id="items-grid"></div>
+        </section>
+        
+        <section id="unique-items" class="tab-content">
+            <div class="card-grid" id="unique-items-grid"></div>
         </section>
         
         <section id="skills" class="tab-content">

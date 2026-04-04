@@ -1,3 +1,4 @@
+
 (function() {
     'use strict';
 
@@ -46,12 +47,14 @@
             items: [],
             skills: [],
             affixes: [],
+            weapon_affixes: [],
             cards: []
         },
         currentTab: 'home',
         currentSubTab: {
             characters: '进攻型',
-            items: '装备'
+            items: '斧',
+            'unique-items': '独特装备'
         },
         currentSubTab2: {
             characters: '进攻',
@@ -294,12 +297,26 @@
                         link.classList.add('active');
                     }
                 });
+                // 处理下拉菜单的active状态
+                if (this.currentTab === 'items' || this.currentTab === 'unique-items') {
+                    document.querySelector('.dropdown-trigger').classList.add('active');
+                } else {
+                    document.querySelector('.dropdown-trigger').classList.remove('active');
+                }
                 document.querySelectorAll('.tab-content').forEach(function(section) {
                     section.classList.remove('active');
                     if (section.id === self.currentTab) {
                         section.classList.add('active');
                     }
                 });
+                
+                // 处理items页面的"全部"状态
+                if (this.currentTab === 'items' && this.currentSubTab.items === '全部') {
+                    var subTabBtns = document.querySelectorAll('#items .sub-tab-btn');
+                    subTabBtns.forEach(function(btn) {
+                        btn.classList.remove('active');
+                    });
+                }
             }
         },
         saveState: function() {
@@ -314,7 +331,26 @@
                 link.addEventListener('click', function(e) {
                     e.preventDefault();
                     var tab = link.getAttribute('data-tab');
-                    self.switchTab(tab);
+                    var subtab = link.getAttribute('data-subtab');
+                    
+                    if (tab) {
+                        if (tab === 'items') {
+                            // 如果是"物品"按钮，显示所有物品
+                            self.switchTab(tab);
+                            // 清除所有sub-tab的选中状态
+                            var subTabBtns = document.querySelectorAll('#items .sub-tab-btn');
+                            subTabBtns.forEach(function(btn) {
+                                btn.classList.remove('active');
+                            });
+                            // 设置一个特殊的标记来表示显示所有物品
+                            self.currentSubTab.items = '全部';
+                            self.renderTab(tab);
+                            self.saveState();
+                        } else {
+                            // 其他标签页正常切换
+                            self.switchTab(tab);
+                        }
+                    }
                 });
             });
         },
@@ -368,30 +404,7 @@
                     }
                 }
             }
-            if (tabName === 'items') {
-                var equipmentTabs = document.getElementById('equipment-tabs');
-                var currencyTabs = document.getElementById('currency-tabs');
-                var armorTabs = document.getElementById('armor-tabs');
-                if (equipmentTabs) {
-                    if (subtabName === '装备') {
-                        equipmentTabs.style.display = 'flex';
-                        this.bindSubTab2Events();
-                    } else {
-                        equipmentTabs.style.display = 'none';
-                    }
-                }
-                if (currencyTabs) {
-                    if (subtabName === '货币') {
-                        currencyTabs.style.display = 'flex';
-                        this.bindSubTab2Events();
-                    } else {
-                        currencyTabs.style.display = 'none';
-                    }
-                }
-                if (armorTabs) {
-                    armorTabs.style.display = 'none';
-                }
-            }
+
             this.renderTab(tabName);
             this.saveState();
         },
@@ -422,15 +435,18 @@
                     link.classList.add('active');
                 }
             });
+            // 处理下拉菜单的active状态
+            if (tabName === 'items' || tabName === 'unique-items') {
+                document.querySelector('.dropdown-trigger').classList.add('active');
+            } else {
+                document.querySelector('.dropdown-trigger').classList.remove('active');
+            }
             document.querySelectorAll('.tab-content').forEach(function(section) {
                 section.classList.remove('active');
                 if (section.id === tabName) {
                     section.classList.add('active');
                 }
             });
-            if (tabName === 'characters' || tabName === 'items') {
-                this.bindSubTabEvents();
-            }
             if (tabName === 'characters') {
                 this.bindSubTab2Events();
                 var metaSlotsTabs = document.getElementById('meta-slots-tabs');
@@ -442,25 +458,15 @@
                     }
                 }
             }
-            if (tabName === 'items') {
-                this.bindSubTab2Events();
-                var equipmentTabs = document.getElementById('equipment-tabs');
-                var currencyTabs = document.getElementById('currency-tabs');
-                if (equipmentTabs) {
-                    if (this.currentSubTab.items === '装备') {
-                        equipmentTabs.style.display = 'flex';
-                    } else {
-                        equipmentTabs.style.display = 'none';
-                    }
-                }
-                if (currencyTabs) {
-                    if (this.currentSubTab.items === '货币') {
-                        currencyTabs.style.display = 'flex';
-                    } else {
-                        currencyTabs.style.display = 'none';
-                    }
-                }
+            
+            // 处理items标签的"全部"状态
+            if (tabName === 'items' && this.currentSubTab.items === '全部') {
+                var subTabBtns = document.querySelectorAll('#items .sub-tab-btn');
+                subTabBtns.forEach(function(btn) {
+                    btn.classList.remove('active');
+                });
             }
+
             if (tabName === 'damage-test') {
                 this.renderCharacterSelector();
                 this.renderTeamList();
@@ -470,7 +476,7 @@
             this.saveState();
         },
         loadAllData: function() {
-            var dataTypes = ['characters', 'meta_slots', 'items', 'skills', 'affixes', 'cards'];
+            var dataTypes = ['characters', 'meta_slots', 'items', 'skills', 'affixes', 'weapon_affixes', 'cards'];
             var self = this;
             dataTypes.forEach(function(type) {
                 self.loadData(type);
@@ -502,6 +508,15 @@
                 });
         },
         renderTab: function(type) {
+            // 处理unique-items标签页 - 内容由用户自己添加
+            if (type === 'unique-items') {
+                var grid = document.getElementById('unique-items-grid');
+                if (!grid) return;
+                // 暂时显示暂无数据，等用户自己添加内容
+                grid.innerHTML = '<div class="empty-message">暂无数据</div>';
+                return;
+            }
+            
             var grid = document.getElementById(type + '-grid');
             if (!grid) return;
             var items = this.data[type] || [];
@@ -527,54 +542,170 @@
                 }
             }
             if (type === 'items') {
-                var subtab = this.currentSubTab[type] || '装备';
-                if (subtab === '装备') {
-                    var subtab2 = this.currentSubTab2[type + '_装备'] || '攻击武器';
-                    if (subtab2 === '攻击武器') {
-                        items = items.filter(function(item) {
-                            return (item.category === 'weapon' || item.slot === 'weapon') && 
-                                   !item.tags.includes('caster');
-                        });
-                    } else if (subtab2 === '施法武器') {
-                        items = items.filter(function(item) {
-                            return (item.category === 'weapon' || item.slot === 'weapon') && 
-                                   item.tags.includes('caster');
-                        });
-                    } else if (subtab2 === '副手武器') {
-                        items = items.filter(function(item) {
-                            return item.category === 'offhand' || item.slot === 'offhand' || item.weaponFamily === 'shield';
-                        });
-                    } else if (subtab2 === '护甲') {
-                        items = items.filter(function(item) {
-                            return item.category === 'armor' || 
-                                   item.slot === 'helm' || item.slot === 'body' || 
-                                   item.slot === 'gloves' || item.slot === 'boots';
-                        });
-                    } else if (subtab2 === '首饰') {
-                        items = items.filter(function(item) {
-                            return item.category === 'jewelry' || 
-                                   item.slot === 'ring' || item.slot === 'amulet';
-                        });
-                    } else if (subtab2 === '药剂') {
-                        items = items.filter(function(item) {
-                            return item.type === '药剂' || item.class === '药剂' || item.category === '药剂' ||
-                                   item.slot === 'flask' || item.tags.includes('flask');
-                        });
-                    }
-                } else if (subtab === '独特装备') {
+                var subtab = this.currentSubTab[type] || '斧';
+                
+                // 如果是"全部"，显示所有物品，不进行筛选
+                if (subtab === '全部') {
+                    // 不进行筛选，直接使用所有物品
+                } else {
+                // 单手武器分类
+                if (subtab === '斧') {
                     items = items.filter(function(item) {
-                        return item.type === '独特装备' || 
-                               item.class === '独特装备' || 
-                               item.category === '独特装备' ||
-                               item.tags && item.tags.includes('unique');
+                        return item.weaponFamily === 'axe' && item.hands === '1H';
+                    }).slice(0, 6);
+                } else if (subtab === '剑') {
+                    items = items.filter(function(item) {
+                        return item.weaponFamily === 'sword' && item.hands === '1H';
                     });
-                } else if (subtab === '货币') {
-                    var subtab2 = this.currentSubTab2[type + '_货币'] || '宝珠';
+                } else if (subtab === '锤') {
                     items = items.filter(function(item) {
-                        return item.type === subtab2 || item.class === subtab2 || item.category === subtab2;
+                        return item.weaponFamily === 'mace' && item.hands === '1H';
+                    });
+                } else if (subtab === '长矛') {
+                    items = items.filter(function(item) {
+                        return item.weaponFamily === 'spear' && item.hands === '1H';
+                    });
+                } else if (subtab === '匕首') {
+                    items = items.filter(function(item) {
+                        return item.weaponFamily === 'dagger';
+                    });
+                } else if (subtab === '魔杖') {
+                    items = items.filter(function(item) {
+                        return item.weaponFamily === 'wand';
+                    });
+                } else if (subtab === '法球') {
+                    items = items.filter(function(item) {
+                        return item.weaponFamily === 'orb';
+                    });
+                } else if (subtab === '魔法书') {
+                    items = items.filter(function(item) {
+                        return item.weaponFamily === 'grimoire';
                     });
                 }
+                // 双手武器分类
+                else if (subtab === '双手斧') {
+                    items = items.filter(function(item) {
+                        return item.weaponFamily === 'axe' && item.hands === '2H';
+                    });
+                } else if (subtab === '双手剑') {
+                    items = items.filter(function(item) {
+                        return item.weaponFamily === 'sword' && item.hands === '2H';
+                    });
+                } else if (subtab === '双手锤') {
+                    items = items.filter(function(item) {
+                        return item.weaponFamily === 'mace' && item.hands === '2H';
+                    });
+                } else if (subtab === '双手长矛') {
+                    items = items.filter(function(item) {
+                        return item.weaponFamily === 'spear' && item.hands === '2H';
+                    });
+                } else if (subtab === '弓') {
+                    items = items.filter(function(item) {
+                        return item.weaponFamily === 'bow';
+                    });
+                } else if (subtab === '弩') {
+                    items = items.filter(function(item) {
+                        return item.weaponFamily === 'crossbow';
+                    });
+                } else if (subtab === '枪械') {
+                    items = items.filter(function(item) {
+                        return item.weaponFamily === 'gun';
+                    });
+                } else if (subtab === '法杖') {
+                    items = items.filter(function(item) {
+                        return item.weaponFamily === 'staff';
+                    });
+                }
+                // 副手分类
+                else if (subtab === '箭袋') {
+                    items = items.filter(function(item) {
+                        return item.weaponFamily === 'quiver';
+                    });
+                } else if (subtab === '盾') {
+                    items = items.filter(function(item) {
+                        return item.weaponFamily === 'shield';
+                    });
+                } else if (subtab === '法器') {
+                    items = items.filter(function(item) {
+                        return item.weaponFamily === 'focus';
+                    });
+                } else if (subtab === '权杖') {
+                    items = items.filter(function(item) {
+                        return item.weaponFamily === 'scepter';
+                    });
+                } else if (subtab === '圣物') {
+                    items = items.filter(function(item) {
+                        return item.weaponFamily === 'relic';
+                    });
+                }
+                // 其他分类
+                else if (subtab === '头盔') {
+                    items = items.filter(function(item) {
+                        return item.slot === 'helm';
+                    });
+                } else if (subtab === '胸甲') {
+                    items = items.filter(function(item) {
+                        return item.slot === 'body';
+                    });
+                } else if (subtab === '手套') {
+                    items = items.filter(function(item) {
+                        return item.slot === 'gloves';
+                    });
+                } else if (subtab === '鞋子') {
+                    items = items.filter(function(item) {
+                        return item.slot === 'boots';
+                    });
+                } else if (subtab === '项链') {
+                    items = items.filter(function(item) {
+                        return item.slot === 'amulet';
+                    });
+                } else if (subtab === '戒指') {
+                    items = items.filter(function(item) {
+                        return item.slot === 'ring';
+                    });
+                } else if (subtab === '腰带') {
+                    items = items.filter(function(item) {
+                        return item.slot === 'belt';
+                    });
+                } else if (subtab === '生命药剂') {
+                    items = items.filter(function(item) {
+                        var name = item.name_cn || item.name || '';
+                        var desc = item.description_cn || item.description || '';
+                        return (item.type === '药剂' || item.class === '药剂' || item.category === '药剂' ||
+                               item.slot === 'flask' || (item.tags && item.tags.includes('flask'))) &&
+                               (name.includes('生命') || name.includes('health') || 
+                                desc.includes('生命') || desc.includes('health'));
+                    });
+                } else if (subtab === '法力药剂') {
+                    items = items.filter(function(item) {
+                        var name = item.name_cn || item.name || '';
+                        var desc = item.description_cn || item.description || '';
+                        return (item.type === '药剂' || item.class === '药剂' || item.category === '药剂' ||
+                               item.slot === 'flask' || (item.tags && item.tags.includes('flask'))) &&
+                               (name.includes('法力') || name.includes('mana') || 
+                                desc.includes('法力') || desc.includes('mana'));
+                    });
+                } else if (subtab === '实用药剂') {
+                    items = items.filter(function(item) {
+                        var name = item.name_cn || item.name || '';
+                        var desc = item.description_cn || item.description || '';
+                        var isFlask = item.type === '药剂' || item.class === '药剂' || item.category === '药剂' ||
+                                     item.slot === 'flask' || (item.tags && item.tags.includes('flask'));
+                        var isHealthOrMana = (name.includes('生命') || name.includes('health') || 
+                                            desc.includes('生命') || desc.includes('health') ||
+                                            name.includes('法力') || name.includes('mana') || 
+                                            desc.includes('法力') || desc.includes('mana'));
+                        return isFlask && !isHealthOrMana;
+                    });
+                } else if (subtab === '宝珠' || subtab === '铭文' || subtab === '符印' || 
+                           subtab === '印记' || subtab === '法令') {
+                    items = items.filter(function(item) {
+                        return item.type === subtab || item.class === subtab || item.category === subtab;
+                    });
+                }
+                }
             }
+            
             if (items.length === 0) {
                 grid.innerHTML = '<div class="empty-message">暂无数据</div>';
                 return;
@@ -757,6 +888,134 @@
                                 return item.type === bucket || item.class === bucket || item.category === bucket;
                             });
                         }
+                    } else if (type === 'items') {
+                        var subtab = self.currentSubTab[type] || '斧';
+                        
+                        // 如果是"全部"，显示所有物品，不进行筛选
+                        if (subtab === '全部') {
+                            // 不进行筛选，直接使用所有物品
+                        } else {
+                            // 单手武器分类
+                            if (subtab === '斧') {
+                                items = items.filter(function(item) {
+                                    return item.weaponFamily === 'axe' && item.hands === '1H';
+                                }).slice(0, 6);
+                            } else if (subtab === '剑') {
+                                items = items.filter(function(item) {
+                                    return item.weaponFamily === 'sword' && item.hands === '1H';
+                                });
+                            } else if (subtab === '锤') {
+                                items = items.filter(function(item) {
+                                    return item.weaponFamily === 'mace' && item.hands === '1H';
+                                });
+                            } else if (subtab === '长矛') {
+                                items = items.filter(function(item) {
+                                    return item.weaponFamily === 'spear' && item.hands === '1H';
+                                });
+                            } else if (subtab === '匕首') {
+                                items = items.filter(function(item) {
+                                    return item.weaponFamily === 'dagger';
+                                });
+                            } else if (subtab === '魔杖') {
+                                items = items.filter(function(item) {
+                                    return item.weaponFamily === 'wand';
+                                });
+                            } else if (subtab === '法球') {
+                                items = items.filter(function(item) {
+                                    return item.weaponFamily === 'orb';
+                                });
+                            } else if (subtab === '魔法书') {
+                                items = items.filter(function(item) {
+                                    return item.weaponFamily === 'grimoire';
+                                });
+                            }
+                            // 双手武器分类
+                            else if (subtab === '双手斧') {
+                                items = items.filter(function(item) {
+                                    return item.weaponFamily === 'axe' && item.hands === '2H';
+                                });
+                            } else if (subtab === '双手剑') {
+                                items = items.filter(function(item) {
+                                    return item.weaponFamily === 'sword' && item.hands === '2H';
+                                });
+                            } else if (subtab === '双手锤') {
+                                items = items.filter(function(item) {
+                                    return item.weaponFamily === 'mace' && item.hands === '2H';
+                                });
+                            } else if (subtab === '双手长矛') {
+                                items = items.filter(function(item) {
+                                    return item.weaponFamily === 'spear' && item.hands === '2H';
+                                });
+                            } else if (subtab === '弓') {
+                                items = items.filter(function(item) {
+                                    return item.weaponFamily === 'bow';
+                                });
+                            } else if (subtab === '弩') {
+                                items = items.filter(function(item) {
+                                    return item.weaponFamily === 'crossbow';
+                                });
+                            } else if (subtab === '枪械') {
+                                items = items.filter(function(item) {
+                                    return item.weaponFamily === 'gun';
+                                });
+                            } else if (subtab === '法杖') {
+                                items = items.filter(function(item) {
+                                    return item.weaponFamily === 'staff';
+                                });
+                            }
+                            // 副手分类
+                            else if (subtab === '箭袋') {
+                                items = items.filter(function(item) {
+                                    return item.weaponFamily === 'quiver';
+                                });
+                            } else if (subtab === '盾') {
+                                items = items.filter(function(item) {
+                                    return item.weaponFamily === 'shield';
+                                });
+                            } else if (subtab === '法器') {
+                                items = items.filter(function(item) {
+                                    return item.weaponFamily === 'focus';
+                                });
+                            } else if (subtab === '权杖') {
+                                items = items.filter(function(item) {
+                                    return item.weaponFamily === 'scepter';
+                                });
+                            } else if (subtab === '圣物') {
+                                items = items.filter(function(item) {
+                                    return item.weaponFamily === 'relic';
+                                });
+                            }
+                            // 护甲分类
+                            else if (subtab === '头盔') {
+                                items = items.filter(function(item) {
+                                    return item.slot === 'helm';
+                                });
+                            } else if (subtab === '胸甲') {
+                                items = items.filter(function(item) {
+                                    return item.slot === 'body';
+                                });
+                            } else if (subtab === '手套') {
+                                items = items.filter(function(item) {
+                                    return item.slot === 'gloves';
+                                });
+                            } else if (subtab === '鞋子') {
+                                items = items.filter(function(item) {
+                                    return item.slot === 'boots';
+                                });
+                            } else if (subtab === '项链') {
+                                items = items.filter(function(item) {
+                                    return item.slot === 'amulet';
+                                });
+                            } else if (subtab === '戒指') {
+                                items = items.filter(function(item) {
+                                    return item.slot === 'ring';
+                                });
+                            } else if (subtab === '腰带') {
+                                items = items.filter(function(item) {
+                                    return item.slot === 'belt';
+                                });
+                            }
+                        }
                     }
                     
                     var item = items[parseInt(dataIndex)];
@@ -919,90 +1178,7 @@
                 content += '<div class="modal-section"><h3>角色里程碑</h3><div class="milestones-container">' + milestonesHtml + '</div></div>';
             }
 
-            if (item.category === 'weapon' && this.data.affixes && this.data.affixes.length > 0) {
-                var itemLevel = item.req && item.req.level ? item.req.level : 1;
-                var itemTags = item.tags || [];
-                
-                var availablePrefixes = this.data.affixes.filter(function(affix) {
-                    if (affix.type !== 'prefix') return false;
-                    var tagMatch = affix.tags.some(function(tag) { return itemTags.indexOf(tag) !== -1; });
-                    if (!tagMatch) return false;
-                    var tierMatch = affix.tiers.some(function(tier) { 
-                        return itemLevel >= tier.minIlvl && itemLevel <= tier.maxIlvl; 
-                    });
-                    return tierMatch;
-                }.bind(this));
-                
-                var availableSuffixes = this.data.affixes.filter(function(affix) {
-                    if (affix.type !== 'suffix') return false;
-                    var tagMatch = affix.tags.some(function(tag) { return itemTags.indexOf(tag) !== -1; });
-                    if (!tagMatch) return false;
-                    var tierMatch = affix.tiers.some(function(tier) { 
-                        return itemLevel >= tier.minIlvl && itemLevel <= tier.maxIlvl; 
-                    });
-                    return tierMatch;
-                }.bind(this));
-                
-                if (availablePrefixes.length > 0 || availableSuffixes.length > 0) {
-                    var affixesHtml = '';
-                    
-                    if (availablePrefixes.length > 0) {
-                        affixesHtml += '<div class="affix-group"><h4 class="affix-group-title">前缀</h4>';
-                        availablePrefixes.forEach(function(affix) {
-                            var affixName = affix.name_cn || affix.name;
-                            var description = affix.description || affix.statId;
-                            var weight = affix.weight || 1000;
-                            
-                            var tiersHtml = affix.tiers.map(function(tier) {
-                                var valueRange = tier.minValue + '-' + tier.maxValue;
-                                if (affix.statId.indexOf('.percent') !== -1 || affix.statId.indexOf('crit.') !== -1) {
-                                    valueRange = tier.minValue + '%-' + tier.maxValue + '%';
-                                }
-                                return '<div class="tier-item"><span class="tier-label">T' + tier.tier + '</span><span class="tier-range">' + valueRange + '</span><span class="tier-ilvl">ilvl ' + tier.minIlvl + '-' + tier.maxIlvl + '</span></div>';
-                            }).join('');
-                            
-                            affixesHtml += '<div class="affix-item-expanded">' +
-                                '<div class="affix-header">' +
-                                    '<div class="affix-name-main">' + affixName + '</div>' +
-                                    '<div class="affix-weight">权重: ' + weight + '</div>' +
-                                '</div>' +
-                                '<div class="affix-desc">' + description + '</div>' +
-                                '<div class="affix-tiers">' + tiersHtml + '</div>' +
-                            '</div>';
-                        }.bind(this));
-                        affixesHtml += '</div>';
-                    }
-                    
-                    if (availableSuffixes.length > 0) {
-                        affixesHtml += '<div class="affix-group"><h4 class="affix-group-title">后缀</h4>';
-                        availableSuffixes.forEach(function(affix) {
-                            var affixName = affix.name_cn || affix.name;
-                            var description = affix.description || affix.statId;
-                            var weight = affix.weight || 1000;
-                            
-                            var tiersHtml = affix.tiers.map(function(tier) {
-                                var valueRange = tier.minValue + '-' + tier.maxValue;
-                                if (affix.statId.indexOf('.percent') !== -1 || affix.statId.indexOf('crit.') !== -1) {
-                                    valueRange = tier.minValue + '%-' + tier.maxValue + '%';
-                                }
-                                return '<div class="tier-item"><span class="tier-label">T' + tier.tier + '</span><span class="tier-range">' + valueRange + '</span><span class="tier-ilvl">ilvl ' + tier.minIlvl + '-' + tier.maxIlvl + '</span></div>';
-                            }).join('');
-                            
-                            affixesHtml += '<div class="affix-item-expanded">' +
-                                '<div class="affix-header">' +
-                                    '<div class="affix-name-main">' + affixName + '</div>' +
-                                    '<div class="affix-weight">权重: ' + weight + '</div>' +
-                                '</div>' +
-                                '<div class="affix-desc">' + description + '</div>' +
-                                '<div class="affix-tiers">' + tiersHtml + '</div>' +
-                            '</div>';
-                        }.bind(this));
-                        affixesHtml += '</div>';
-                    }
-                    
-                    content += '<div class="modal-section"><h3>可用词缀</h3><div class="affixes-container">' + affixesHtml + '</div></div>';
-                }
-            }
+
 
             var nameHtml = '<h2>' + name + '</h2>';
             if (englishName && englishName !== name) {

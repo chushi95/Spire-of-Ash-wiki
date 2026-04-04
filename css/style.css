@@ -143,6 +143,55 @@ nav ul li a.active {
     background: rgba(184, 134, 11, 0.15);
 }
 
+/* 下拉菜单样式 */
+nav ul li.dropdown {
+    position: relative;
+}
+
+nav ul li .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(26, 21, 16, 0.95);
+    border: 1px solid #3d3520;
+    border-top: none;
+    min-width: 150px;
+    z-index: 100;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+nav ul li.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+nav ul li .dropdown-menu a {
+    padding: 12px 20px;
+    border-bottom: 1px solid #3d3520;
+    white-space: nowrap;
+}
+
+nav ul li .dropdown-menu a:last-child {
+    border-bottom: none;
+}
+
+nav ul li .dropdown-menu a:hover {
+    background: rgba(184, 134, 11, 0.2);
+}
+
+/* 下拉菜单分组标签样式 */
+nav ul li .dropdown-menu .dropdown-group-label {
+    display: block;
+    padding: 12px 20px 8px 20px;
+    color: #B8860B;
+    font-weight: bold;
+    font-size: 0.9em;
+    border-bottom: 1px solid rgba(184, 134, 11, 0.3);
+    margin-bottom: 4px;
+    cursor: default;
+    user-select: none;
+}
+
 main {
     max-width: 1400px;
     margin: 0 auto;
@@ -285,15 +334,61 @@ main {
     gap: 12px;
     margin-bottom: 16px;
     flex-wrap: wrap;
+    align-items: center;
+}
+
+/* 物品信息页面的子标签容器 */
+.sub-tabs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 16px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 分组容器 */
+.tab-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+/* 分组标签样式 */
+.tab-group-label {
+    color: #B8860B;
+    font-weight: bold;
+    font-size: 0.85em;
+    padding: 8px 12px;
+    background: rgba(184, 134, 11, 0.1);
+    border: 2px solid #B8860B;
+    border-radius: 4px;
+    cursor: default;
+    user-select: none;
+    width: 95px;
+    text-align: center;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+/* 分组按钮容器 */
+.tab-group-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 .sub-tab-btn {
-    padding: 12px 24px;
+    padding: 6px 14px;
     background: #1a1510;
     color: #a0a0a0;
     border: 2px solid #3d3520;
-    border-radius: 8px;
-    font-size: 1em;
+    border-radius: 4px;
+    font-size: 0.85em;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -1052,6 +1147,36 @@ main {
 .tier-ilvl {
     color: #888;
     font-size: 0.75em;
+}
+
+.tier-item.current-tier {
+    background: rgba(184, 134, 11, 0.2);
+    border-color: rgba(184, 134, 11, 0.5);
+}
+
+.affix-restricted {
+    opacity: 0.5;
+    border-style: dashed;
+}
+
+.affix-restriction {
+    color: #ff6b6b;
+    font-size: 0.85em;
+    background: rgba(255, 107, 107, 0.15);
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    display: inline-block;
+}
+
+.exclusive-tag {
+    color: #B8860B;
+    font-size: 0.8em;
+    background: rgba(184, 134, 11, 0.15);
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-left: 8px;
+    font-weight: normal;
 }
 
 .affix-item {
