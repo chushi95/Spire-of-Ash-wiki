@@ -5382,8 +5382,8 @@
     "description": "一个简易戒指",
     "description_cn": "一个简易戒指",
     "baseStats": {},
-    "implicit": "+# to Maximum Life",
-    "implicit_cn": "+# 最大生命值",
+    "implicit": "Culling Strike against enemies below 9% Life.",
+    "implicit_cn": "对生命值低于 9% 的敌人造成斩杀。",
     "req": {
       "level": 1,
       "stats": {}
@@ -5408,8 +5408,8 @@
     "description": "一个铁戒指",
     "description_cn": "一个铁戒指",
     "baseStats": {},
-    "implicit": "+# to Maximum Mana",
-    "implicit_cn": "+# 最大法力值",
+    "implicit": "27% of Overkill Damage is dealt to nearby enemies.",
+    "implicit_cn": "27% 的过量伤害会对附近敌人造成伤害。",
     "req": {
       "level": 17,
       "stats": {}
@@ -5434,8 +5434,8 @@
     "description": "一个银戒指",
     "description_cn": "一个银戒指",
     "baseStats": {},
-    "implicit": "+#% to a Single Elemental Resistance",
-    "implicit_cn": "+#% 单一元素抗性",
+    "implicit": "Gain a Frenzy Charge on Crit.",
+    "implicit_cn": "暴击时获得狂怒球。",
     "req": {
       "level": 34,
       "stats": {}
@@ -5460,8 +5460,8 @@
     "description": "一个金戒指",
     "description_cn": "一个金戒指",
     "baseStats": {},
-    "implicit": "+# to All Attributes",
-    "implicit_cn": "+# 全属性",
+    "implicit": "13% chance to deal Double Damage.",
+    "implicit_cn": "13% 几率造成双倍伤害。",
     "req": {
       "level": 50,
       "stats": {}
@@ -5486,8 +5486,8 @@
     "description": "一个铂金戒指",
     "description_cn": "一个铂金戒指",
     "baseStats": {},
-    "implicit": "+# Life Regenerated per Second",
-    "implicit_cn": "+# 每秒生命回复",
+    "implicit": "+8% Attack Speed.",
+    "implicit_cn": "+8% 攻击速度。",
     "req": {
       "level": 67,
       "stats": {}
@@ -5512,8 +5512,8 @@
     "description": "一个永恒戒指",
     "description_cn": "一个永恒戒指",
     "baseStats": {},
-    "implicit": "+#% to All Elemental Resistances",
-    "implicit_cn": "+#% 全元素抗性",
+    "implicit": "Enemies you Kill Explode, dealing 4% of their Life as Fire Damage.",
+    "implicit_cn": "Enemies you Kill Explode, dealing 4% of their Life as Fire Damage.",
     "req": {
       "level": 84,
       "stats": {}
@@ -5538,8 +5538,8 @@
     "description": "一个抗火戒指",
     "description_cn": "一个抗火戒指",
     "baseStats": {},
-    "implicit": "+#% to Fire Resistance",
-    "implicit_cn": "+#% 火焰抗性",
+    "implicit": "Gain 11% of Physical Damage as Extra Fire Damage.",
+    "implicit_cn": "获得 11% 物理伤害作为额外火焰伤害。",
     "req": {
       "level": 10,
       "stats": {}
@@ -5564,8 +5564,8 @@
     "description": "一个抗寒戒指",
     "description_cn": "一个抗寒戒指",
     "baseStats": {},
-    "implicit": "+#% to Cold Resistance",
-    "implicit_cn": "+#% 冰霜抗性",
+    "implicit": "17% chance to Chill.",
+    "implicit_cn": "17% 几率造成冰冻。",
     "req": {
       "level": 10,
       "stats": {}
@@ -5590,8 +5590,8 @@
     "description": "一个抗电戒指",
     "description_cn": "一个抗电戒指",
     "baseStats": {},
-    "implicit": "+#% to Lightning Resistance",
-    "implicit_cn": "+#% 闪电抗性",
+    "implicit": "17% chance to Shock.",
+    "implicit_cn": "17% 几率造成感电。",
     "req": {
       "level": 10,
       "stats": {}
@@ -5616,8 +5616,8 @@
     "description": "一个抗混戒指",
     "description_cn": "一个抗混戒指",
     "baseStats": {},
-    "implicit": "+#% to Chaos Resistance",
-    "implicit_cn": "+#% 混沌抗性",
+    "implicit": "27% chance to Poison.",
+    "implicit_cn": "27% 几率造成中毒。",
     "req": {
       "level": 25,
       "stats": {}
@@ -5642,8 +5642,8 @@
     "description": "一个精准戒指",
     "description_cn": "一个精准戒指",
     "baseStats": {},
-    "implicit": "+# to Accuracy Rating",
-    "implicit_cn": "+# 精准度",
+    "implicit": "Hits can't be Evaded.",
+    "implicit_cn": "击中无法被闪避。",
     "req": {
       "level": 15,
       "stats": {}
@@ -5668,8 +5668,8 @@
     "description": "一个暴击戒指",
     "description_cn": "一个暴击戒指",
     "baseStats": {},
-    "implicit": "+#% Increased Critical Strike Chance",
-    "implicit_cn": "+#% 暴击率",
+    "implicit": "Gain a Power Charge on Crit.",
+    "implicit_cn": "暴击时获得能量球。",
     "req": {
       "level": 40,
       "stats": {}
@@ -5694,8 +5694,8 @@
     "description": "一个攻速戒指",
     "description_cn": "一个攻速戒指",
     "baseStats": {},
-    "implicit": "+#% Increased Attack Speed",
-    "implicit_cn": "+#% 攻击速度",
+    "implicit": "On Kill, gain 23% Attack Speed and 12% Movement Speed for 2.4s.",
+    "implicit_cn": "击杀时，获得 23% 攻击速度和 12% 移动速度，持续 2.4 秒。",
     "req": {
       "level": 55,
       "stats": {}
@@ -5720,8 +5720,8 @@
     "description": "一个物理戒指",
     "description_cn": "一个物理戒指",
     "baseStats": {},
-    "implicit": "+#% Increased Physical Damage",
-    "implicit_cn": "+#% 物理伤害",
+    "implicit": "14% Physical Overwhelm.",
+    "implicit_cn": "14% 物理碾压。",
     "req": {
       "level": 45,
       "stats": {}
@@ -5746,8 +5746,8 @@
     "description": "一个闪避戒指",
     "description_cn": "一个闪避戒指",
     "baseStats": {},
-    "implicit": "+# to Evasion Rating",
-    "implicit_cn": "+# 闪避值",
+    "implicit": "Gain 7% Speed on Evade.",
+    "implicit_cn": "闪避时获得 7% 速度。",
     "req": {
       "level": 20,
       "stats": {}
@@ -5772,8 +5772,8 @@
     "description": "一个护甲戒指",
     "description_cn": "一个护甲戒指",
     "baseStats": {},
-    "implicit": "+# to Armor",
-    "implicit_cn": "+# 护甲",
+    "implicit": "30 Armor Shred on Hit.",
+    "implicit_cn": "击中时造成 30 护甲粉碎。",
     "req": {
       "level": 20,
       "stats": {}
@@ -5798,8 +5798,8 @@
     "description": "一个回蓝戒指",
     "description_cn": "一个回蓝戒指",
     "baseStats": {},
-    "implicit": "+# Mana Regenerated per Second",
-    "implicit_cn": "+# 每秒法力回复",
+    "implicit": "17% of Damage taken from Mana before Life.",
+    "implicit_cn": "17% 伤害先从法力值扣除，再从生命值扣除。",
     "req": {
       "level": 30,
       "stats": {}
@@ -5824,8 +5824,8 @@
     "description": "一个护盾戒指",
     "description_cn": "一个护盾戒指",
     "baseStats": {},
-    "implicit": "+# to Maximum Energy Shield",
-    "implicit_cn": "+# 最大能量护盾",
+    "implicit": "+18 Ward; Ward is not depleted by a single Hit.",
+    "implicit_cn": "+18 护盾；单次攻击不会耗尽护盾。",
     "req": {
       "level": 60,
       "stats": {}
@@ -5850,8 +5850,8 @@
     "description": "一个青铜项链",
     "description_cn": "一个青铜项链",
     "baseStats": {},
-    "implicit": "+# to Strength",
-    "implicit_cn": "+# 力量",
+    "implicit": "Ailments spread to enemies within 9m on Kill.",
+    "implicit_cn": "击杀时，异常状态会传播到 9 米内的敌人。",
     "req": {
       "level": 1,
       "stats": {}
@@ -5876,8 +5876,8 @@
     "description": "一个银项链",
     "description_cn": "一个银项链",
     "baseStats": {},
-    "implicit": "+# to Dexterity",
-    "implicit_cn": "+# 敏捷",
+    "implicit": "Gain 11% of Fire Damage as Extra Cold Damage.",
+    "implicit_cn": "获得 11% 火焰伤害作为额外冰霜伤害。",
     "req": {
       "level": 17,
       "stats": {}
@@ -5902,8 +5902,8 @@
     "description": "一个金项链",
     "description_cn": "一个金项链",
     "baseStats": {},
-    "implicit": "+# to Intelligence",
-    "implicit_cn": "+# 智力",
+    "implicit": "Recover 16% of Life when Hit by a Savage Hit.",
+    "implicit_cn": "被猛击击中时，回复 16% 生命值。",
     "req": {
       "level": 34,
       "stats": {}
@@ -5928,8 +5928,8 @@
     "description": "一个珠宝项链",
     "description_cn": "一个珠宝项链",
     "baseStats": {},
-    "implicit": "+#% Increased Rarity of Items Found",
-    "implicit_cn": "+#% 物品稀有度",
+    "implicit": "Curses on slain enemies echo within 23m.",
+    "implicit_cn": "被击杀敌人身上的诅咒会在 23 米内回响。",
     "req": {
       "level": 50,
       "stats": {}
@@ -5954,8 +5954,8 @@
     "description": "一个永恒项链",
     "description_cn": "一个永恒项链",
     "baseStats": {},
-    "implicit": "+# to All Attributes",
-    "implicit_cn": "+# 全属性",
+    "implicit": "Critical Strike Damage is Lucky.",
+    "implicit_cn": "暴击伤害幸运。",
     "req": {
       "level": 67,
       "stats": {}
@@ -5980,8 +5980,8 @@
     "description": "一个神盾项链",
     "description_cn": "一个神盾项链",
     "baseStats": {},
-    "implicit": "+#% Increased Experience Gained",
-    "implicit_cn": "+#% 经验获取",
+    "implicit": "Skills Cost Life instead of Mana.",
+    "implicit_cn": "技能消耗生命值而非法力值。",
     "req": {
       "level": 84,
       "stats": {}
@@ -6006,8 +6006,8 @@
     "description": "一个法术项链",
     "description_cn": "一个法术项链",
     "baseStats": {},
-    "implicit": "+#% Increased Spell Damage",
-    "implicit_cn": "+#% 法术伤害",
+    "implicit": "All Damage can Ignite.",
+    "implicit_cn": "所有伤害可以造成点燃。",
     "req": {
       "level": 25,
       "stats": {}
@@ -6032,8 +6032,8 @@
     "description": "一个施法项链",
     "description_cn": "一个施法项链",
     "baseStats": {},
-    "implicit": "+#% Increased Cast Speed",
-    "implicit_cn": "+#% 施法速度",
+    "implicit": "Recover 55ms of Cooldown on Crit.",
+    "implicit_cn": "暴击时回复 55 毫秒冷却。",
     "req": {
       "level": 40,
       "stats": {}
@@ -6058,8 +6058,8 @@
     "description": "一个法力项链",
     "description_cn": "一个法力项链",
     "baseStats": {},
-    "implicit": "+# to Maximum Mana",
-    "implicit_cn": "+# 最大法力值",
+    "implicit": "Recover 6 Mana on Kill.",
+    "implicit_cn": "击杀时回复 6 法力值。",
     "req": {
       "level": 15,
       "stats": {}
@@ -6084,8 +6084,8 @@
     "description": "一个暴击项链",
     "description_cn": "一个暴击项链",
     "baseStats": {},
-    "implicit": "+#% Increased Global Critical Strike Chance",
-    "implicit_cn": "+#% 全局暴击率",
+    "implicit": "On Crit, gain 19% Attack and Cast Speed for 2.3s.",
+    "implicit_cn": "暴击时，获得 19% 攻击和施法速度，持续 2.3 秒。",
     "req": {
       "level": 40,
       "stats": {}
@@ -6110,8 +6110,8 @@
     "description": "一个暴伤项链",
     "description_cn": "一个暴伤项链",
     "baseStats": {},
-    "implicit": "+#% to Critical Strike Multiplier",
-    "implicit_cn": "+#% 暴击伤害",
+    "implicit": "16% more Damage vs Full Life enemies.",
+    "implicit_cn": "对满生命值敌人造成 16% 更多伤害。",
     "req": {
       "level": 50,
       "stats": {}
@@ -6136,8 +6136,8 @@
     "description": "一个生命项链",
     "description_cn": "一个生命项链",
     "baseStats": {},
-    "implicit": "+# to Maximum Life",
-    "implicit_cn": "+# 最大生命值",
+    "implicit": "7% of Damage taken Recouped as Life.",
+    "implicit_cn": "7% 受到的伤害回复为生命值。",
     "req": {
       "level": 10,
       "stats": {}
@@ -6162,8 +6162,8 @@
     "description": "一个护盾项链",
     "description_cn": "一个护盾项链",
     "baseStats": {},
-    "implicit": "+# to Maximum Energy Shield",
-    "implicit_cn": "+# 最大能量护盾",
+    "implicit": "Threshold protects Mana before it is drained.",
+    "implicit_cn": "阈值在法力值被消耗前保护它。",
     "req": {
       "level": 60,
       "stats": {}
@@ -6188,8 +6188,8 @@
     "description": "一个全抗项链",
     "description_cn": "一个全抗项链",
     "baseStats": {},
-    "implicit": "+#% to All Elemental Resistances",
-    "implicit_cn": "+#% 全元素抗性",
+    "implicit": "2% less Damage Taken.",
+    "implicit_cn": "受到的伤害减少 2%。",
     "req": {
       "level": 60,
       "stats": {}
@@ -6214,8 +6214,8 @@
     "description": "一个元素项链",
     "description_cn": "一个元素项链",
     "baseStats": {},
-    "implicit": "+#% Increased Elemental Damage",
-    "implicit_cn": "+#% 元素伤害",
+    "implicit": "Gain 8% of Fire Damage as Extra Lightning Damage.",
+    "implicit_cn": "获得 8% 火焰伤害作为额外闪电伤害。",
     "req": {
       "level": 30,
       "stats": {}
@@ -6240,8 +6240,8 @@
     "description": "一个火焰项链",
     "description_cn": "一个火焰项链",
     "baseStats": {},
-    "implicit": "+#% Increased Fire Damage",
-    "implicit_cn": "+#% 火焰伤害",
+    "implicit": "Ignites spread to nearby enemies on Kill.",
+    "implicit_cn": "击杀时，点燃会传播到附近敌人。",
     "req": {
       "level": 20,
       "stats": {}
@@ -6266,8 +6266,8 @@
     "description": "一个冰霜项链",
     "description_cn": "一个冰霜项链",
     "baseStats": {},
-    "implicit": "+#% Increased Cold Damage",
-    "implicit_cn": "+#% 冰霜伤害",
+    "implicit": "Critical Strikes always Freeze.",
+    "implicit_cn": "暴击必定造成冰冻。",
     "req": {
       "level": 20,
       "stats": {}
@@ -6292,8 +6292,8 @@
     "description": "一个闪电项链",
     "description_cn": "一个闪电项链",
     "baseStats": {},
-    "implicit": "+#% Increased Lightning Damage",
-    "implicit_cn": "+#% 闪电伤害",
+    "implicit": "Gain 10% of Cold Damage as Extra Lightning Damage.",
+    "implicit_cn": "Gain 10% of Cold Damage as Extra Lightning Damage.",
     "req": {
       "level": 20,
       "stats": {}
@@ -6318,8 +6318,8 @@
     "description": "一个简易腰带",
     "description_cn": "一个简易腰带",
     "baseStats": {},
-    "implicit": "+# to Maximum Life",
-    "implicit_cn": "+# 最大生命值",
+    "implicit": "Reflect 13% of Elemental Damage taken to Attacker.",
+    "implicit_cn": "将 13% 受到的元素伤害反弹给攻击者。",
     "req": {
       "level": 1,
       "stats": {}
@@ -6344,8 +6344,8 @@
     "description": "一个铆钉腰带",
     "description_cn": "一个铆钉腰带",
     "baseStats": {},
-    "implicit": "+#% Increased Flask Effect Duration",
-    "implicit_cn": "+#% 药剂效果持续时间",
+    "implicit": "Recover 10% of Life when Hit by a Savage Hit.",
+    "implicit_cn": "被猛击击中时，回复 10% 生命值。",
     "req": {
       "level": 17,
       "stats": {}
@@ -6370,8 +6370,8 @@
     "description": "一个加固腰带",
     "description_cn": "一个加固腰带",
     "baseStats": {},
-    "implicit": "+# to Armor",
-    "implicit_cn": "+# 护甲",
+    "implicit": "On Block, gain 12% Damage Reduction for 3.6s.",
+    "implicit_cn": "格挡时，获得 12% 伤害减免，持续 3.6 秒。",
     "req": {
       "level": 34,
       "stats": {}
@@ -6396,8 +6396,8 @@
     "description": "一个战争腰带",
     "description_cn": "一个战争腰带",
     "baseStats": {},
-    "implicit": "+#% Increased Flask Charges Gained",
-    "implicit_cn": "+#% 药剂充能获取",
+    "implicit": "Block Spells at 60% of Attack Block Chance.",
+    "implicit_cn": "以 60% 攻击格挡几率格挡法术。",
     "req": {
       "level": 50,
       "stats": {}
@@ -6422,8 +6422,8 @@
     "description": "一个冠军腰带",
     "description_cn": "一个冠军腰带",
     "baseStats": {},
-    "implicit": "+# Life Recovered on Kill",
-    "implicit_cn": "+# 击杀回复生命",
+    "implicit": "2% of Damage Leeched as Life.",
+    "implicit_cn": "2% 伤害偷取为生命值。",
     "req": {
       "level": 67,
       "stats": {}
@@ -6448,8 +6448,8 @@
     "description": "一个永恒腰带",
     "description_cn": "一个永恒腰带",
     "baseStats": {},
-    "implicit": "+#% Reduced Flask Charges Used",
-    "implicit_cn": "+#% 减少药剂充能消耗",
+    "implicit": "2% less Damage Taken.",
+    "implicit_cn": "受到的伤害减少 2%。",
     "req": {
       "level": 84,
       "stats": {}
@@ -6474,8 +6474,8 @@
     "description": "一个闪避腰带",
     "description_cn": "一个闪避腰带",
     "baseStats": {},
-    "implicit": "+# to Evasion Rating",
-    "implicit_cn": "+# 闪避值",
+    "implicit": "+6% Spell Suppression Chance.",
+    "implicit_cn": "+6% 法术压制几率。",
     "req": {
       "level": 20,
       "stats": {}
@@ -6500,8 +6500,8 @@
     "description": "一个力量腰带",
     "description_cn": "一个力量腰带",
     "baseStats": {},
-    "implicit": "+# to Strength",
-    "implicit_cn": "+# 力量",
+    "implicit": "On Hit, 14% chance to inflict Vulnerability for 2.1s.",
+    "implicit_cn": "击中时，14% 几率造成易伤，持续 2.1 秒。",
     "req": {
       "level": 10,
       "stats": {}
@@ -6526,8 +6526,8 @@
     "description": "一个全属腰带",
     "description_cn": "一个全属腰带",
     "baseStats": {},
-    "implicit": "+# to All Attributes",
-    "implicit_cn": "+# 全属性",
+    "implicit": "+6% Experience Gain.",
+    "implicit_cn": "+6% 经验获取。",
     "req": {
       "level": 50,
       "stats": {}
@@ -6552,8 +6552,8 @@
     "description": "一个抗火腰带",
     "description_cn": "一个抗火腰带",
     "baseStats": {},
-    "implicit": "+#% to Fire Resistance",
-    "implicit_cn": "+#% 火焰抗性",
+    "implicit": "Gain 12% of Physical Damage as Extra Fire Damage.",
+    "implicit_cn": "获得 12% 物理伤害作为额外火焰伤害。",
     "req": {
       "level": 10,
       "stats": {}
@@ -6578,8 +6578,8 @@
     "description": "一个抗寒腰带",
     "description_cn": "一个抗寒腰带",
     "baseStats": {},
-    "implicit": "+#% to Cold Resistance",
-    "implicit_cn": "+#% 冰霜抗性",
+    "implicit": "On Block, recover 14 Threshold.",
+    "implicit_cn": "格挡时，回复 14 阈值。",
     "req": {
       "level": 10,
       "stats": {}
@@ -6604,8 +6604,8 @@
     "description": "一个抗电腰带",
     "description_cn": "一个抗电腰带",
     "baseStats": {},
-    "implicit": "+#% to Lightning Resistance",
-    "implicit_cn": "+#% 闪电抗性",
+    "implicit": "Recover 60ms of Cooldowns on Kill.",
+    "implicit_cn": "击杀时，回复 60 毫秒冷却。",
     "req": {
       "level": 10,
       "stats": {}
@@ -6630,8 +6630,8 @@
     "description": "一个移速腰带",
     "description_cn": "一个移速腰带",
     "baseStats": {},
-    "implicit": "+#% Increased Movement Speed",
-    "implicit_cn": "+#% 移动速度",
+    "implicit": "On Kill, gain 18% Movement Speed for 3.6s.",
+    "implicit_cn": "击杀时，获得 18% 移动速度，持续 3.6 秒。",
     "req": {
       "level": 35,
       "stats": {}
@@ -6656,8 +6656,8 @@
     "description": "一个解晕腰带",
     "description_cn": "一个解晕腰带",
     "baseStats": {},
-    "implicit": "+#% Increased Stun Recovery",
-    "implicit_cn": "+#% 眩晕恢复",
+    "implicit": "13% more Speed while you have no Charges.",
+    "implicit_cn": "没有球时，速度提高 13%。",
     "req": {
       "level": 25,
       "stats": {}
@@ -6682,8 +6682,8 @@
     "description": "一个回血腰带",
     "description_cn": "一个回血腰带",
     "baseStats": {},
-    "implicit": "+# Life Regenerated per Second",
-    "implicit_cn": "+# 每秒生命回复",
+    "implicit": "Recover 10 Life on Kill.",
+    "implicit_cn": "击杀时回复 10 生命值。",
     "req": {
       "level": 40,
       "stats": {}
@@ -6708,8 +6708,8 @@
     "description": "一个物理腰带",
     "description_cn": "一个物理腰带",
     "baseStats": {},
-    "implicit": "+#% Increased Physical Damage",
-    "implicit_cn": "+#% 物理伤害",
+    "implicit": "15% Physical Overwhelm.",
+    "implicit_cn": "15% 物理碾压。",
     "req": {
       "level": 45,
       "stats": {}
@@ -6734,8 +6734,8 @@
     "description": "一个元素腰带",
     "description_cn": "一个元素腰带",
     "baseStats": {},
-    "implicit": "+#% Increased Elemental Damage",
-    "implicit_cn": "+#% 元素伤害",
+    "implicit": "+17% Ailment Effect.",
+    "implicit_cn": "+17% 异常状态效果。",
     "req": {
       "level": 30,
       "stats": {}
@@ -6760,8 +6760,8 @@
     "description": "一个武元腰带",
     "description_cn": "一个武元腰带",
     "baseStats": {},
-    "implicit": "+#% Increased Elemental Damage with Attack Skills",
-    "implicit_cn": "+#% 攻击技能的元素伤害",
+    "implicit": "+9% Weapon Elemental Damage.",
+    "implicit_cn": "+9% 武器元素伤害。",
     "req": {
       "level": 70,
       "stats": {}
