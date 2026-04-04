@@ -1884,822 +1884,6 @@
     }
   },
   {
-    "name": "Tattered Helm",
-    "name_cn": "破烂头盔",
-    "name_id": "helm_strength_tattered",
-    "type": "护甲",
-    "category": "armor",
-    "slot": "helm",
-    "weaponFamily": null,
-    "hands": "none",
-    "tags": [
-      "base",
-      "armor",
-      "helm",
-      "strength"
-    ],
-    "quality": "common",
-    "image": "images/helm_common.webp",
-    "description": "一个破烂头盔",
-    "description_cn": "一个破烂头盔",
-    "baseStats": {
-      "defenses": {
-        "armor": {
-          "curve": "defense_armor",
-          "mult": 0.81
-        }
-      }
-    },
-    "implicit": "4% reduced Stagger taken.",
-    "implicit_cn": "受到的冲击降低 4%",
-    "req": {
-      "level": 1,
-      "stats": {}
-    }
-  },
-  {
-    "name": "Patched Helm",
-    "name_cn": "修补头盔",
-    "name_id": "helm_strength_patched",
-    "type": "护甲",
-    "category": "armor",
-    "slot": "helm",
-    "weaponFamily": null,
-    "hands": "none",
-    "tags": [
-      "base",
-      "armor",
-      "helm",
-      "strength"
-    ],
-    "quality": "magic",
-    "image": "images/helm_magic.webp",
-    "description": "一个修补头盔",
-    "description_cn": "一个修补头盔",
-    "baseStats": {
-      "defenses": {
-        "armor": {
-          "curve": "defense_armor",
-          "mult": 0.81
-        }
-      }
-    },
-    "implicit": "5% of Damage taken Recouped as Life.",
-    "implicit_cn": "5% 受到的伤害回复为生命",
-    "req": {
-      "level": 17,
-      "stats": {}
-    }
-  },
-  {
-    "name": "Linked Helm",
-    "name_cn": "连锁头盔",
-    "name_id": "helm_strength_linked",
-    "type": "护甲",
-    "category": "armor",
-    "slot": "helm",
-    "weaponFamily": null,
-    "hands": "none",
-    "tags": [
-      "base",
-      "armor",
-      "helm",
-      "strength"
-    ],
-    "quality": "rare",
-    "image": "images/helm_rare.webp",
-    "description": "一个连锁头盔",
-    "description_cn": "一个连锁头盔",
-    "baseStats": {
-      "defenses": {
-        "armor": {
-          "curve": "defense_armor",
-          "mult": 0.81
-        }
-      }
-    },
-    "implicit": "5% Physical Damage Reduction.",
-    "implicit_cn": "5% 物理伤害减免",
-    "req": {
-      "level": 34,
-      "stats": {}
-    }
-  },
-  {
-    "name": "Plated Helm",
-    "name_cn": "镀甲头盔",
-    "name_id": "helm_strength_plated",
-    "type": "护甲",
-    "category": "armor",
-    "slot": "helm",
-    "weaponFamily": null,
-    "hands": "none",
-    "tags": [
-      "base",
-      "armor",
-      "helm",
-      "strength"
-    ],
-    "quality": "epic",
-    "image": "images/helm_epic.webp",
-    "description": "一个镀甲头盔",
-    "description_cn": "一个镀甲头盔",
-    "baseStats": {
-      "defenses": {
-        "armor": {
-          "curve": "defense_armor",
-          "mult": 0.81
-        }
-      }
-    },
-    "implicit": "+12% increased Armor.",
-    "implicit_cn": "+12% 护甲提高",
-    "req": {
-      "level": 50,
-      "stats": {}
-    }
-  },
-  {
-    "name": "Lordly Helm",
-    "name_cn": "领主头盔",
-    "name_id": "helm_strength_lordly",
-    "type": "护甲",
-    "category": "armor",
-    "slot": "helm",
-    "weaponFamily": null,
-    "hands": "none",
-    "tags": [
-      "base",
-      "armor",
-      "helm",
-      "strength"
-    ],
-    "quality": "legendary",
-    "image": "images/helm_legendary.webp",
-    "description": "一个领主头盔",
-    "description_cn": "一个领主头盔",
-    "baseStats": {
-      "defenses": {
-        "armor": {
-          "curve": "defense_armor",
-          "mult": 0.81
-        }
-      }
-    },
-    "implicit": "+7% Life Recovery Rate.",
-    "implicit_cn": "+7% 生命回复率",
-    "req": {
-      "level": 67,
-      "stats": {}
-    }
-  },
-  {
-    "name": "Transcendent Helm",
-    "name_cn": "超凡头盔",
-    "name_id": "helm_strength_transcendent",
-    "type": "护甲",
-    "category": "armor",
-    "slot": "helm",
-    "weaponFamily": null,
-    "hands": "none",
-    "tags": [
-      "base",
-      "armor",
-      "helm",
-      "strength"
-    ],
-    "quality": "mythic",
-    "image": "images/helm_mythic.webp",
-    "description": "一个超凡头盔",
-    "description_cn": "一个超凡头盔",
-    "baseStats": {
-      "defenses": {
-        "armor": {
-          "curve": "defense_armor",
-          "mult": 0.81
-        }
-      }
-    },
-    "implicit": "+7% to all Maximum Elemental Resistances.",
-    "implicit_cn": "+7% 所有最大元素抗性",
-    "req": {
-      "level": 84,
-      "stats": {}
-    }
-  },
-  {
-    "name": "Tattered Body",
-    "name_cn": "破烂胸甲",
-    "name_id": "body_strength_tattered",
-    "type": "护甲",
-    "category": "armor",
-    "slot": "body",
-    "weaponFamily": null,
-    "hands": "none",
-    "tags": [
-      "base",
-      "armor",
-      "body",
-      "strength"
-    ],
-    "quality": "common",
-    "image": "images/body_common.webp",
-    "description": "一个破烂胸甲",
-    "description_cn": "一个破烂胸甲",
-    "baseStats": {
-      "defenses": {
-        "armor": {
-          "curve": "defense_armor",
-          "mult": 1.728
-        }
-      }
-    },
-    "implicit": "Reflect 14% of Physical Damage taken to Attacker.",
-    "implicit_cn": "反弹 14% 受到的物理伤害给攻击者",
-    "req": {
-      "level": 1,
-      "stats": {}
-    }
-  },
-  {
-    "name": "Patched Body",
-    "name_cn": "修补胸甲",
-    "name_id": "body_strength_patched",
-    "type": "护甲",
-    "category": "armor",
-    "slot": "body",
-    "weaponFamily": null,
-    "hands": "none",
-    "tags": [
-      "base",
-      "armor",
-      "body",
-      "strength"
-    ],
-    "quality": "magic",
-    "image": "images/body_magic.webp",
-    "description": "一个修补胸甲",
-    "description_cn": "一个修补胸甲",
-    "baseStats": {
-      "defenses": {
-        "armor": {
-          "curve": "defense_armor",
-          "mult": 1.728
-        }
-      }
-    },
-    "implicit": "Recover 14% of Life when Hit by a Savage Hit.",
-    "implicit_cn": "被重击击中时回复 14% 生命",
-    "req": {
-      "level": 17,
-      "stats": {}
-    }
-  },
-  {
-    "name": "Linked Body",
-    "name_cn": "连锁胸甲",
-    "name_id": "body_strength_linked",
-    "type": "护甲",
-    "category": "armor",
-    "slot": "body",
-    "weaponFamily": null,
-    "hands": "none",
-    "tags": [
-      "base",
-      "armor",
-      "body",
-      "strength"
-    ],
-    "quality": "rare",
-    "image": "images/body_rare.webp",
-    "description": "一个连锁胸甲",
-    "description_cn": "一个连锁胸甲",
-    "baseStats": {
-      "defenses": {
-        "armor": {
-          "curve": "defense_armor",
-          "mult": 1.728
-        }
-      }
-    },
-    "implicit": "5% less Physical Damage Taken.",
-    "implicit_cn": "受到的物理伤害降低 5%",
-    "req": {
-      "level": 34,
-      "stats": {}
-    }
-  },
-  {
-    "name": "Plated Body",
-    "name_cn": "镀甲胸甲",
-    "name_id": "body_strength_plated",
-    "type": "护甲",
-    "category": "armor",
-    "slot": "body",
-    "weaponFamily": null,
-    "hands": "none",
-    "tags": [
-      "base",
-      "armor",
-      "body",
-      "strength"
-    ],
-    "quality": "epic",
-    "image": "images/body_epic.webp",
-    "description": "一个镀甲胸甲",
-    "description_cn": "一个镀甲胸甲",
-    "baseStats": {
-      "defenses": {
-        "armor": {
-          "curve": "defense_armor",
-          "mult": 1.728
-        }
-      }
-    },
-    "implicit": "+6 minimum Fortification.",
-    "implicit_cn": "+6 最低防御工事",
-    "req": {
-      "level": 50,
-      "stats": {}
-    }
-  },
-  {
-    "name": "Lordly Body",
-    "name_cn": "领主胸甲",
-    "name_id": "body_strength_lordly",
-    "type": "护甲",
-    "category": "armor",
-    "slot": "body",
-    "weaponFamily": null,
-    "hands": "none",
-    "tags": [
-      "base",
-      "armor",
-      "body",
-      "strength"
-    ],
-    "quality": "legendary",
-    "image": "images/body_legendary.webp",
-    "description": "一个领主胸甲",
-    "description_cn": "一个领主胸甲",
-    "baseStats": {
-      "defenses": {
-        "armor": {
-          "curve": "defense_armor",
-          "mult": 1.728
-        }
-      }
-    },
-    "implicit": "+8% increased Maximum Life.",
-    "implicit_cn": "+8% 最大生命提高",
-    "req": {
-      "level": 67,
-      "stats": {}
-    }
-  },
-  {
-    "name": "Transcendent Body",
-    "name_cn": "超凡胸甲",
-    "name_id": "body_strength_transcendent",
-    "type": "护甲",
-    "category": "armor",
-    "slot": "body",
-    "weaponFamily": null,
-    "hands": "none",
-    "tags": [
-      "base",
-      "armor",
-      "body",
-      "strength"
-    ],
-    "quality": "mythic",
-    "image": "images/body_mythic.webp",
-    "description": "一个超凡胸甲",
-    "description_cn": "一个超凡胸甲",
-    "baseStats": {
-      "defenses": {
-        "armor": {
-          "curve": "defense_armor",
-          "mult": 1.728
-        }
-      }
-    },
-    "implicit": "7% Physical Damage Reduction.",
-    "implicit_cn": "7% 物理伤害减免",
-    "req": {
-      "level": 84,
-      "stats": {}
-    }
-  },
-  {
-    "name": "Tattered Gloves",
-    "name_cn": "破烂手套",
-    "name_id": "gloves_strength_tattered",
-    "type": "护甲",
-    "category": "armor",
-    "slot": "gloves",
-    "weaponFamily": null,
-    "hands": "none",
-    "tags": [
-      "base",
-      "armor",
-      "gloves",
-      "strength"
-    ],
-    "quality": "common",
-    "image": "images/gloves_common.webp",
-    "description": "一个破烂手套",
-    "description_cn": "一个破烂手套",
-    "baseStats": {
-      "defenses": {
-        "armor": {
-          "curve": "defense_armor",
-          "mult": 0.594
-        }
-      }
-    },
-    "implicit": "On Hit, 8% chance to inflict Vulnerability for 2.3s.",
-    "implicit_cn": "击中时，8% 几率造成 2.3 秒易伤",
-    "req": {
-      "level": 1,
-      "stats": {}
-    }
-  },
-  {
-    "name": "Patched Gloves",
-    "name_cn": "修补手套",
-    "name_id": "gloves_strength_patched",
-    "type": "护甲",
-    "category": "armor",
-    "slot": "gloves",
-    "weaponFamily": null,
-    "hands": "none",
-    "tags": [
-      "base",
-      "armor",
-      "gloves",
-      "strength"
-    ],
-    "quality": "magic",
-    "image": "images/gloves_magic.webp",
-    "description": "一个修补手套",
-    "description_cn": "一个修补手套",
-    "baseStats": {
-      "defenses": {
-        "armor": {
-          "curve": "defense_armor",
-          "mult": 0.594
-        }
-      }
-    },
-    "implicit": "21% chance to Stun.",
-    "implicit_cn": "21% 眩晕几率",
-    "req": {
-      "level": 17,
-      "stats": {}
-    }
-  },
-  {
-    "name": "Linked Gloves",
-    "name_cn": "连锁手套",
-    "name_id": "gloves_strength_linked",
-    "type": "护甲",
-    "category": "armor",
-    "slot": "gloves",
-    "weaponFamily": null,
-    "hands": "none",
-    "tags": [
-      "base",
-      "armor",
-      "gloves",
-      "strength"
-    ],
-    "quality": "rare",
-    "image": "images/gloves_rare.webp",
-    "description": "一个连锁手套",
-    "description_cn": "一个连锁手套",
-    "baseStats": {
-      "defenses": {
-        "armor": {
-          "curve": "defense_armor",
-          "mult": 0.594
-        }
-      }
-    },
-    "implicit": "+24% Impale Damage.",
-    "implicit_cn": "+24% 穿刺伤害",
-    "req": {
-      "level": 34,
-      "stats": {}
-    }
-  },
-  {
-    "name": "Plated Gloves",
-    "name_cn": "镀甲手套",
-    "name_id": "gloves_strength_plated",
-    "type": "护甲",
-    "category": "armor",
-    "slot": "gloves",
-    "weaponFamily": null,
-    "hands": "none",
-    "tags": [
-      "base",
-      "armor",
-      "gloves",
-      "strength"
-    ],
-    "quality": "epic",
-    "image": "images/gloves_epic.webp",
-    "description": "一个镀甲手套",
-    "description_cn": "一个镀甲手套",
-    "baseStats": {
-      "defenses": {
-        "armor": {
-          "curve": "defense_armor",
-          "mult": 0.594
-        }
-      }
-    },
-    "implicit": "16% chance to Armor Break.",
-    "implicit_cn": "16% 破甲几率",
-    "req": {
-      "level": 50,
-      "stats": {}
-    }
-  },
-  {
-    "name": "Lordly Gloves",
-    "name_cn": "领主手套",
-    "name_id": "gloves_strength_lordly",
-    "type": "护甲",
-    "category": "armor",
-    "slot": "gloves",
-    "weaponFamily": null,
-    "hands": "none",
-    "tags": [
-      "base",
-      "armor",
-      "gloves",
-      "strength"
-    ],
-    "quality": "legendary",
-    "image": "images/gloves_legendary.webp",
-    "description": "一个领主手套",
-    "description_cn": "一个领主手套",
-    "baseStats": {
-      "defenses": {
-        "armor": {
-          "curve": "defense_armor",
-          "mult": 0.594
-        }
-      }
-    },
-    "implicit": "8% Physical Overwhelm.",
-    "implicit_cn": "8% 物理碾压",
-    "req": {
-      "level": 67,
-      "stats": {}
-    }
-  },
-  {
-    "name": "Transcendent Gloves",
-    "name_cn": "超凡手套",
-    "name_id": "gloves_strength_transcendent",
-    "type": "护甲",
-    "category": "armor",
-    "slot": "gloves",
-    "weaponFamily": null,
-    "hands": "none",
-    "tags": [
-      "base",
-      "armor",
-      "gloves",
-      "strength"
-    ],
-    "quality": "mythic",
-    "image": "images/gloves_mythic.webp",
-    "description": "一个超凡手套",
-    "description_cn": "一个超凡手套",
-    "baseStats": {
-      "defenses": {
-        "armor": {
-          "curve": "defense_armor",
-          "mult": 0.594
-        }
-      }
-    },
-    "implicit": "9% chance to deal Double Damage.",
-    "implicit_cn": "9% 几率造成双倍伤害",
-    "req": {
-      "level": 84,
-      "stats": {}
-    }
-  },
-  {
-    "name": "Tattered Boots",
-    "name_cn": "破烂鞋子",
-    "name_id": "boots_strength_tattered",
-    "type": "护甲",
-    "category": "armor",
-    "slot": "boots",
-    "weaponFamily": null,
-    "hands": "none",
-    "tags": [
-      "base",
-      "armor",
-      "boots",
-      "strength"
-    ],
-    "quality": "common",
-    "image": "images/boots_common.webp",
-    "description": "一个破烂鞋子",
-    "description_cn": "一个破烂鞋子",
-    "baseStats": {
-      "defenses": {
-        "armor": {
-          "curve": "defense_armor",
-          "mult": 0.594
-        }
-      }
-    },
-    "implicit": "+5% increased Armor and +4 Increased Movement Speed.",
-    "implicit_cn": "+5% 护甲提高和 +4 移动速度提高",
-    "req": {
-      "level": 1,
-      "stats": {}
-    }
-  },
-  {
-    "name": "Patched Boots",
-    "name_cn": "修补鞋子",
-    "name_id": "boots_strength_patched",
-    "type": "护甲",
-    "category": "armor",
-    "slot": "boots",
-    "weaponFamily": null,
-    "hands": "none",
-    "tags": [
-      "base",
-      "armor",
-      "boots",
-      "strength"
-    ],
-    "quality": "magic",
-    "image": "images/boots_magic.webp",
-    "description": "一个修补鞋子",
-    "description_cn": "一个修补鞋子",
-    "baseStats": {
-      "defenses": {
-        "armor": {
-          "curve": "defense_armor",
-          "mult": 0.594
-        }
-      }
-    },
-    "implicit": "+8 Life Regeneration per second and +6 Increased Movement Speed.",
-    "implicit_cn": "+8 每秒生命回复和 +6 移动速度提高",
-    "req": {
-      "level": 17,
-      "stats": {}
-    }
-  },
-  {
-    "name": "Linked Boots",
-    "name_cn": "连锁鞋子",
-    "name_id": "boots_strength_linked",
-    "type": "护甲",
-    "category": "armor",
-    "slot": "boots",
-    "weaponFamily": null,
-    "hands": "none",
-    "tags": [
-      "base",
-      "armor",
-      "boots",
-      "strength"
-    ],
-    "quality": "rare",
-    "image": "images/boots_rare.webp",
-    "description": "一个连锁鞋子",
-    "description_cn": "一个连锁鞋子",
-    "baseStats": {
-      "defenses": {
-        "armor": {
-          "curve": "defense_armor",
-          "mult": 0.594
-        }
-      }
-    },
-    "implicit": "+6 Increased Movement Speed; On Kill, gain 6% Damage Reduction for 3.5s.",
-    "implicit_cn": "+6 移动速度提高；击杀时，获得 6% 伤害减免持续 3.5 秒",
-    "req": {
-      "level": 34,
-      "stats": {}
-    }
-  },
-  {
-    "name": "Plated Boots",
-    "name_cn": "镀甲鞋子",
-    "name_id": "boots_strength_plated",
-    "type": "护甲",
-    "category": "armor",
-    "slot": "boots",
-    "weaponFamily": null,
-    "hands": "none",
-    "tags": [
-      "base",
-      "armor",
-      "boots",
-      "strength"
-    ],
-    "quality": "epic",
-    "image": "images/boots_epic.webp",
-    "description": "一个镀甲鞋子",
-    "description_cn": "一个镀甲鞋子",
-    "baseStats": {
-      "defenses": {
-        "armor": {
-          "curve": "defense_armor",
-          "mult": 0.594
-        }
-      }
-    },
-    "implicit": "6% Physical Damage Reduction and +8 Increased Movement Speed.",
-    "implicit_cn": "6% 物理伤害减免和 +8 移动速度提高",
-    "req": {
-      "level": 50,
-      "stats": {}
-    }
-  },
-  {
-    "name": "Lordly Boots",
-    "name_cn": "领主鞋子",
-    "name_id": "boots_strength_lordly",
-    "type": "护甲",
-    "category": "armor",
-    "slot": "boots",
-    "weaponFamily": null,
-    "hands": "none",
-    "tags": [
-      "base",
-      "armor",
-      "boots",
-      "strength"
-    ],
-    "quality": "legendary",
-    "image": "images/boots_legendary.webp",
-    "description": "一个领主鞋子",
-    "description_cn": "一个领主鞋子",
-    "baseStats": {
-      "defenses": {
-        "armor": {
-          "curve": "defense_armor",
-          "mult": 0.594
-        }
-      }
-    },
-    "implicit": "+9 Increased Movement Speed; Cannot be Slowed below base speed.",
-    "implicit_cn": "+9 移动速度提高；无法被减速至基础速度以下",
-    "req": {
-      "level": 67,
-      "stats": {}
-    }
-  },
-  {
-    "name": "Transcendent Boots",
-    "name_cn": "超凡鞋子",
-    "name_id": "boots_strength_transcendent",
-    "type": "护甲",
-    "category": "armor",
-    "slot": "boots",
-    "weaponFamily": null,
-    "hands": "none",
-    "tags": [
-      "base",
-      "armor",
-      "boots",
-      "strength"
-    ],
-    "quality": "mythic",
-    "image": "images/boots_mythic.webp",
-    "description": "一个超凡鞋子",
-    "description_cn": "一个超凡鞋子",
-    "baseStats": {
-      "defenses": {
-        "armor": {
-          "curve": "defense_armor",
-          "mult": 0.594
-        }
-      }
-    },
-    "implicit": "+1 Maximum Endurance Charges and +10 Increased Movement Speed.",
-    "implicit_cn": "+1 最大耐力球和 +10 移动速度提高",
-    "req": {
-      "level": 84,
-      "stats": {}
-    }
-  },
-  {
     "name": "Chipped Blade",
     "name_cn": "破损剑",
     "name_id": "sword_1h_rusted",
@@ -5378,7 +4562,7 @@
       "ring"
     ],
     "quality": "common",
-    "image": "images/ring_common.webp",
+    "image": "images/ring_tier_1.webp",
     "description": "一个简易戒指",
     "description_cn": "一个简易戒指",
     "baseStats": {},
@@ -5404,7 +4588,7 @@
       "ring"
     ],
     "quality": "magic",
-    "image": "images/ring_magic.webp",
+    "image": "images/ring_tier_2.webp",
     "description": "一个铁戒指",
     "description_cn": "一个铁戒指",
     "baseStats": {},
@@ -5430,7 +4614,7 @@
       "ring"
     ],
     "quality": "rare",
-    "image": "images/ring_rare.webp",
+    "image": "images/ring_tier_3.webp",
     "description": "一个银戒指",
     "description_cn": "一个银戒指",
     "baseStats": {},
@@ -5456,7 +4640,7 @@
       "ring"
     ],
     "quality": "rare",
-    "image": "images/ring_rare.webp",
+    "image": "images/ring_tier_4.webp",
     "description": "一个金戒指",
     "description_cn": "一个金戒指",
     "baseStats": {},
@@ -5482,7 +4666,7 @@
       "ring"
     ],
     "quality": "legendary",
-    "image": "images/ring_legendary.webp",
+    "image": "images/ring_tier_5.webp",
     "description": "一个铂金戒指",
     "description_cn": "一个铂金戒指",
     "baseStats": {},
@@ -5508,7 +4692,7 @@
       "ring"
     ],
     "quality": "mythic",
-    "image": "images/ring_mythic.webp",
+    "image": "images/ring_tier_6.webp",
     "description": "一个永恒戒指",
     "description_cn": "一个永恒戒指",
     "baseStats": {},
@@ -5534,7 +4718,7 @@
       "ring"
     ],
     "quality": "magic",
-    "image": "images/ring_magic.webp",
+    "image": "images/ring_fire_res.webp",
     "description": "一个抗火戒指",
     "description_cn": "一个抗火戒指",
     "baseStats": {},
@@ -5560,7 +4744,7 @@
       "ring"
     ],
     "quality": "magic",
-    "image": "images/ring_magic.webp",
+    "image": "images/ring_cold_res.webp",
     "description": "一个抗寒戒指",
     "description_cn": "一个抗寒戒指",
     "baseStats": {},
@@ -5586,7 +4770,7 @@
       "ring"
     ],
     "quality": "magic",
-    "image": "images/ring_magic.webp",
+    "image": "images/ring_lightning_res.webp",
     "description": "一个抗电戒指",
     "description_cn": "一个抗电戒指",
     "baseStats": {},
@@ -5612,7 +4796,7 @@
       "ring"
     ],
     "quality": "rare",
-    "image": "images/ring_rare.webp",
+    "image": "images/ring_chaos_res.webp",
     "description": "一个抗混戒指",
     "description_cn": "一个抗混戒指",
     "baseStats": {},
@@ -5638,7 +4822,7 @@
       "ring"
     ],
     "quality": "magic",
-    "image": "images/ring_magic.webp",
+    "image": "images/ring_accuracy.webp",
     "description": "一个精准戒指",
     "description_cn": "一个精准戒指",
     "baseStats": {},
@@ -5664,7 +4848,7 @@
       "ring"
     ],
     "quality": "rare",
-    "image": "images/ring_rare.webp",
+    "image": "images/ring_crit_chance.webp",
     "description": "一个暴击戒指",
     "description_cn": "一个暴击戒指",
     "baseStats": {},
@@ -5690,7 +4874,7 @@
       "ring"
     ],
     "quality": "epic",
-    "image": "images/ring_epic.webp",
+    "image": "images/ring_attack_speed.webp",
     "description": "一个攻速戒指",
     "description_cn": "一个攻速戒指",
     "baseStats": {},
@@ -5716,7 +4900,7 @@
       "ring"
     ],
     "quality": "rare",
-    "image": "images/ring_rare.webp",
+    "image": "images/ring_phys_damage.webp",
     "description": "一个物理戒指",
     "description_cn": "一个物理戒指",
     "baseStats": {},
@@ -5742,7 +4926,7 @@
       "ring"
     ],
     "quality": "magic",
-    "image": "images/ring_magic.webp",
+    "image": "images/ring_evasion.webp",
     "description": "一个闪避戒指",
     "description_cn": "一个闪避戒指",
     "baseStats": {},
@@ -5768,7 +4952,7 @@
       "ring"
     ],
     "quality": "magic",
-    "image": "images/ring_magic.webp",
+    "image": "images/ring_armor.webp",
     "description": "一个护甲戒指",
     "description_cn": "一个护甲戒指",
     "baseStats": {},
@@ -5794,7 +4978,7 @@
       "ring"
     ],
     "quality": "rare",
-    "image": "images/ring_rare.webp",
+    "image": "images/ring_mana_regen.webp",
     "description": "一个回蓝戒指",
     "description_cn": "一个回蓝戒指",
     "baseStats": {},
@@ -5820,7 +5004,7 @@
       "ring"
     ],
     "quality": "epic",
-    "image": "images/ring_epic.webp",
+    "image": "images/ring_energy_shield.webp",
     "description": "一个护盾戒指",
     "description_cn": "一个护盾戒指",
     "baseStats": {},
@@ -5846,7 +5030,7 @@
       "amulet"
     ],
     "quality": "common",
-    "image": "images/amulet_common.webp",
+    "image": "images/amulet_tier_1.webp",
     "description": "一个青铜项链",
     "description_cn": "一个青铜项链",
     "baseStats": {},
@@ -5872,7 +5056,7 @@
       "amulet"
     ],
     "quality": "magic",
-    "image": "images/amulet_magic.webp",
+    "image": "images/amulet_tier_2.webp",
     "description": "一个银项链",
     "description_cn": "一个银项链",
     "baseStats": {},
@@ -5898,7 +5082,7 @@
       "amulet"
     ],
     "quality": "rare",
-    "image": "images/amulet_rare.webp",
+    "image": "images/amulet_tier_3.webp",
     "description": "一个金项链",
     "description_cn": "一个金项链",
     "baseStats": {},
@@ -5924,7 +5108,7 @@
       "amulet"
     ],
     "quality": "rare",
-    "image": "images/amulet_rare.webp",
+    "image": "images/amulet_tier_4.webp",
     "description": "一个珠宝项链",
     "description_cn": "一个珠宝项链",
     "baseStats": {},
@@ -5950,7 +5134,7 @@
       "amulet"
     ],
     "quality": "legendary",
-    "image": "images/amulet_legendary.webp",
+    "image": "images/amulet_tier_5.webp",
     "description": "一个永恒项链",
     "description_cn": "一个永恒项链",
     "baseStats": {},
@@ -5976,7 +5160,7 @@
       "amulet"
     ],
     "quality": "mythic",
-    "image": "images/amulet_mythic.webp",
+    "image": "images/amulet_tier_6.webp",
     "description": "一个神盾项链",
     "description_cn": "一个神盾项链",
     "baseStats": {},
@@ -6002,7 +5186,7 @@
       "amulet"
     ],
     "quality": "rare",
-    "image": "images/amulet_rare.webp",
+    "image": "images/amulet_spell_damage.webp",
     "description": "一个法术项链",
     "description_cn": "一个法术项链",
     "baseStats": {},
@@ -6028,7 +5212,7 @@
       "amulet"
     ],
     "quality": "rare",
-    "image": "images/amulet_rare.webp",
+    "image": "images/amulet_cast_speed.webp",
     "description": "一个施法项链",
     "description_cn": "一个施法项链",
     "baseStats": {},
@@ -6054,7 +5238,7 @@
       "amulet"
     ],
     "quality": "magic",
-    "image": "images/amulet_magic.webp",
+    "image": "images/amulet_mana.webp",
     "description": "一个法力项链",
     "description_cn": "一个法力项链",
     "baseStats": {},
@@ -6080,7 +5264,7 @@
       "amulet"
     ],
     "quality": "rare",
-    "image": "images/amulet_rare.webp",
+    "image": "images/amulet_crit_chance.webp",
     "description": "一个暴击项链",
     "description_cn": "一个暴击项链",
     "baseStats": {},
@@ -6106,7 +5290,7 @@
       "amulet"
     ],
     "quality": "epic",
-    "image": "images/amulet_epic.webp",
+    "image": "images/amulet_crit_multi.webp",
     "description": "一个暴伤项链",
     "description_cn": "一个暴伤项链",
     "baseStats": {},
@@ -6132,7 +5316,7 @@
       "amulet"
     ],
     "quality": "magic",
-    "image": "images/amulet_magic.webp",
+    "image": "images/amulet_life.webp",
     "description": "一个生命项链",
     "description_cn": "一个生命项链",
     "baseStats": {},
@@ -6158,7 +5342,7 @@
       "amulet"
     ],
     "quality": "epic",
-    "image": "images/amulet_epic.webp",
+    "image": "images/amulet_energy_shield.webp",
     "description": "一个护盾项链",
     "description_cn": "一个护盾项链",
     "baseStats": {},
@@ -6184,7 +5368,7 @@
       "amulet"
     ],
     "quality": "rare",
-    "image": "images/amulet_rare.webp",
+    "image": "images/amulet_all_res.webp",
     "description": "一个全抗项链",
     "description_cn": "一个全抗项链",
     "baseStats": {},
@@ -6210,7 +5394,7 @@
       "amulet"
     ],
     "quality": "rare",
-    "image": "images/amulet_rare.webp",
+    "image": "images/amulet_ele_damage.webp",
     "description": "一个元素项链",
     "description_cn": "一个元素项链",
     "baseStats": {},
@@ -6236,7 +5420,7 @@
       "amulet"
     ],
     "quality": "magic",
-    "image": "images/amulet_magic.webp",
+    "image": "images/amulet_fire_damage.webp",
     "description": "一个火焰项链",
     "description_cn": "一个火焰项链",
     "baseStats": {},
@@ -6262,7 +5446,7 @@
       "amulet"
     ],
     "quality": "magic",
-    "image": "images/amulet_magic.webp",
+    "image": "images/amulet_cold_damage.webp",
     "description": "一个冰霜项链",
     "description_cn": "一个冰霜项链",
     "baseStats": {},
@@ -6288,7 +5472,7 @@
       "amulet"
     ],
     "quality": "magic",
-    "image": "images/amulet_magic.webp",
+    "image": "images/amulet_lightning_damage.webp",
     "description": "一个闪电项链",
     "description_cn": "一个闪电项链",
     "baseStats": {},
@@ -6314,7 +5498,7 @@
       "belt"
     ],
     "quality": "common",
-    "image": "images/belt_common.webp",
+    "image": "images/belt_tier_1.webp",
     "description": "一个简易腰带",
     "description_cn": "一个简易腰带",
     "baseStats": {},
@@ -6340,7 +5524,7 @@
       "belt"
     ],
     "quality": "magic",
-    "image": "images/belt_magic.webp",
+    "image": "images/belt_tier_2.webp",
     "description": "一个铆钉腰带",
     "description_cn": "一个铆钉腰带",
     "baseStats": {},
@@ -6366,7 +5550,7 @@
       "belt"
     ],
     "quality": "rare",
-    "image": "images/belt_rare.webp",
+    "image": "images/belt_tier_3.webp",
     "description": "一个加固腰带",
     "description_cn": "一个加固腰带",
     "baseStats": {},
@@ -6392,7 +5576,7 @@
       "belt"
     ],
     "quality": "rare",
-    "image": "images/belt_rare.webp",
+    "image": "images/belt_tier_4.webp",
     "description": "一个战争腰带",
     "description_cn": "一个战争腰带",
     "baseStats": {},
@@ -6418,7 +5602,7 @@
       "belt"
     ],
     "quality": "legendary",
-    "image": "images/belt_legendary.webp",
+    "image": "images/belt_tier_5.webp",
     "description": "一个冠军腰带",
     "description_cn": "一个冠军腰带",
     "baseStats": {},
@@ -6444,7 +5628,7 @@
       "belt"
     ],
     "quality": "mythic",
-    "image": "images/belt_mythic.webp",
+    "image": "images/belt_tier_6.webp",
     "description": "一个永恒腰带",
     "description_cn": "一个永恒腰带",
     "baseStats": {},
@@ -6470,7 +5654,7 @@
       "belt"
     ],
     "quality": "magic",
-    "image": "images/belt_magic.webp",
+    "image": "images/belt_evasion.webp",
     "description": "一个闪避腰带",
     "description_cn": "一个闪避腰带",
     "baseStats": {},
@@ -6496,7 +5680,7 @@
       "belt"
     ],
     "quality": "magic",
-    "image": "images/belt_magic.webp",
+    "image": "images/belt_strength.webp",
     "description": "一个力量腰带",
     "description_cn": "一个力量腰带",
     "baseStats": {},
@@ -6522,7 +5706,7 @@
       "belt"
     ],
     "quality": "epic",
-    "image": "images/belt_epic.webp",
+    "image": "images/belt_all_attributes.webp",
     "description": "一个全属腰带",
     "description_cn": "一个全属腰带",
     "baseStats": {},
@@ -6548,7 +5732,7 @@
       "belt"
     ],
     "quality": "magic",
-    "image": "images/belt_magic.webp",
+    "image": "images/belt_fire_res.webp",
     "description": "一个抗火腰带",
     "description_cn": "一个抗火腰带",
     "baseStats": {},
@@ -6574,7 +5758,7 @@
       "belt"
     ],
     "quality": "magic",
-    "image": "images/belt_magic.webp",
+    "image": "images/belt_cold_res.webp",
     "description": "一个抗寒腰带",
     "description_cn": "一个抗寒腰带",
     "baseStats": {},
@@ -6600,7 +5784,7 @@
       "belt"
     ],
     "quality": "magic",
-    "image": "images/belt_magic.webp",
+    "image": "images/belt_lightning_res.webp",
     "description": "一个抗电腰带",
     "description_cn": "一个抗电腰带",
     "baseStats": {},
@@ -6626,7 +5810,7 @@
       "belt"
     ],
     "quality": "rare",
-    "image": "images/belt_rare.webp",
+    "image": "images/belt_movement_speed.webp",
     "description": "一个移速腰带",
     "description_cn": "一个移速腰带",
     "baseStats": {},
@@ -6652,7 +5836,7 @@
       "belt"
     ],
     "quality": "rare",
-    "image": "images/belt_rare.webp",
+    "image": "images/belt_stun_recovery.webp",
     "description": "一个解晕腰带",
     "description_cn": "一个解晕腰带",
     "baseStats": {},
@@ -6678,7 +5862,7 @@
       "belt"
     ],
     "quality": "rare",
-    "image": "images/belt_rare.webp",
+    "image": "images/belt_life_regen.webp",
     "description": "一个回血腰带",
     "description_cn": "一个回血腰带",
     "baseStats": {},
@@ -6704,7 +5888,7 @@
       "belt"
     ],
     "quality": "rare",
-    "image": "images/belt_rare.webp",
+    "image": "images/belt_phys_damage.webp",
     "description": "一个物理腰带",
     "description_cn": "一个物理腰带",
     "baseStats": {},
@@ -6730,7 +5914,7 @@
       "belt"
     ],
     "quality": "rare",
-    "image": "images/belt_rare.webp",
+    "image": "images/belt_ele_damage.webp",
     "description": "一个元素腰带",
     "description_cn": "一个元素腰带",
     "baseStats": {},
@@ -6756,7 +5940,7 @@
       "belt"
     ],
     "quality": "epic",
-    "image": "images/belt_epic.webp",
+    "image": "images/belt_weapon_ele_damage.webp",
     "description": "一个武元腰带",
     "description_cn": "一个武元腰带",
     "baseStats": {},
@@ -6764,6 +5948,5262 @@
     "implicit_cn": "+9% 武器元素伤害。",
     "req": {
       "level": 70,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Strength Tattered",
+    "name_cn": "力量破烂头盔",
+    "name_id": "helm_strength_tattered",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "strength"
+    ],
+    "quality": "common",
+    "image": "images/helm_common.webp",
+    "description": "一件力量破烂头盔",
+    "description_cn": "一件力量破烂头盔",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.81
+        }
+      }
+    },
+    "implicit": "4% reduced Stagger taken.",
+    "implicit_cn": "受到的眩晕减少 4%。",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Strength Patched",
+    "name_cn": "力量修补头盔",
+    "name_id": "helm_strength_patched",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "strength"
+    ],
+    "quality": "magic",
+    "image": "images/helm_magic.webp",
+    "description": "一件力量修补头盔",
+    "description_cn": "一件力量修补头盔",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.81
+        }
+      }
+    },
+    "implicit": "5% of Damage taken Recouped as Life.",
+    "implicit_cn": "5% 受到的伤害回复为生命值。",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Strength Linked",
+    "name_cn": "力量连锁头盔",
+    "name_id": "helm_strength_linked",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "strength"
+    ],
+    "quality": "rare",
+    "image": "images/helm_rare.webp",
+    "description": "一件力量连锁头盔",
+    "description_cn": "一件力量连锁头盔",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.81
+        }
+      }
+    },
+    "implicit": "5% Physical Damage Reduction.",
+    "implicit_cn": "5% 物理伤害减免。",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Strength Plated",
+    "name_cn": "力量镀甲头盔",
+    "name_id": "helm_strength_plated",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "strength"
+    ],
+    "quality": "rare",
+    "image": "images/helm_rare.webp",
+    "description": "一件力量镀甲头盔",
+    "description_cn": "一件力量镀甲头盔",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.81
+        }
+      }
+    },
+    "implicit": "+12% increased Armor.",
+    "implicit_cn": "+12% 护甲提升。",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Strength Lordly",
+    "name_cn": "力量领主头盔",
+    "name_id": "helm_strength_lordly",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "strength"
+    ],
+    "quality": "legendary",
+    "image": "images/helm_legendary.webp",
+    "description": "一件力量领主头盔",
+    "description_cn": "一件力量领主头盔",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.81
+        }
+      }
+    },
+    "implicit": "+7% Life Recovery Rate.",
+    "implicit_cn": "+7% 生命回复率。",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Strength Transcendent",
+    "name_cn": "力量超凡头盔",
+    "name_id": "helm_strength_transcendent",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "strength"
+    ],
+    "quality": "mythic",
+    "image": "images/helm_mythic.webp",
+    "description": "一件力量超凡头盔",
+    "description_cn": "一件力量超凡头盔",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.81
+        }
+      }
+    },
+    "implicit": "+7% to all Maximum Elemental Resistances.",
+    "implicit_cn": "+7% 全最大元素抗性。",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Dexterity Tattered",
+    "name_cn": "敏捷破烂头盔",
+    "name_id": "helm_dexterity_tattered",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "dexterity"
+    ],
+    "quality": "common",
+    "image": "images/helm_common.webp",
+    "description": "一件敏捷破烂头盔",
+    "description_cn": "一件敏捷破烂头盔",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.81
+        }
+      }
+    },
+    "implicit": "On Hit, 18% chance to inflict Blind for 2.2s.",
+    "implicit_cn": "击中时，18% 几率致盲 2.2 秒。",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Dexterity Patched",
+    "name_cn": "敏捷修补头盔",
+    "name_id": "helm_dexterity_patched",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "dexterity"
+    ],
+    "quality": "magic",
+    "image": "images/helm_magic.webp",
+    "description": "一件敏捷修补头盔",
+    "description_cn": "一件敏捷修补头盔",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.81
+        }
+      }
+    },
+    "implicit": "On Crit, gain 4% Movement Speed for 3s.",
+    "implicit_cn": "暴击时，获得 4% 移动速度，持续 3 秒。",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Dexterity Linked",
+    "name_cn": "敏捷连锁头盔",
+    "name_id": "helm_dexterity_linked",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "dexterity"
+    ],
+    "quality": "rare",
+    "image": "images/helm_rare.webp",
+    "description": "一件敏捷连锁头盔",
+    "description_cn": "一件敏捷连锁头盔",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.81
+        }
+      }
+    },
+    "implicit": "+6% Spell Suppression Chance.",
+    "implicit_cn": "+6% 法术压制几率。",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Dexterity Plated",
+    "name_cn": "敏捷镀甲头盔",
+    "name_id": "helm_dexterity_plated",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "dexterity"
+    ],
+    "quality": "rare",
+    "image": "images/helm_rare.webp",
+    "description": "一件敏捷镀甲头盔",
+    "description_cn": "一件敏捷镀甲头盔",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.81
+        }
+      }
+    },
+    "implicit": "On Kill, gain 11 Dodge Attack Chance and 21% Movement Speed for 3.8s.",
+    "implicit_cn": "击杀时，获得 11 闪避攻击几率和 21% 移动速度，持续 3.8 秒。",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Dexterity Lordly",
+    "name_cn": "敏捷领主头盔",
+    "name_id": "helm_dexterity_lordly",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "dexterity"
+    ],
+    "quality": "legendary",
+    "image": "images/helm_legendary.webp",
+    "description": "一件敏捷领主头盔",
+    "description_cn": "一件敏捷领主头盔",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.81
+        }
+      }
+    },
+    "implicit": "+22% Projectile Speed.",
+    "implicit_cn": "+22% 投射物速度。",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Dexterity Transcendent",
+    "name_cn": "敏捷超凡头盔",
+    "name_id": "helm_dexterity_transcendent",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "dexterity"
+    ],
+    "quality": "mythic",
+    "image": "images/helm_mythic.webp",
+    "description": "一件敏捷超凡头盔",
+    "description_cn": "一件敏捷超凡头盔",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.81
+        }
+      }
+    },
+    "implicit": "33% chance to Pierce.",
+    "implicit_cn": "33% 几率穿透。",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Intelligence Tattered",
+    "name_cn": "智力破烂头盔",
+    "name_id": "helm_intelligence_tattered",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "intelligence"
+    ],
+    "quality": "common",
+    "image": "images/helm_common.webp",
+    "description": "一件智力破烂头盔",
+    "description_cn": "一件智力破烂头盔",
+    "baseStats": {
+      "defenses": {
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.81
+        }
+      }
+    },
+    "implicit": "Skills Cost Life instead of Mana.",
+    "implicit_cn": "技能消耗生命值而非法力值。",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Intelligence Patched",
+    "name_cn": "智力修补头盔",
+    "name_id": "helm_intelligence_patched",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "intelligence"
+    ],
+    "quality": "magic",
+    "image": "images/helm_magic.webp",
+    "description": "一件智力修补头盔",
+    "description_cn": "一件智力修补头盔",
+    "baseStats": {
+      "defenses": {
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.81
+        }
+      }
+    },
+    "implicit": "+5% increased Maximum Mana.",
+    "implicit_cn": "+5% 最大法力值提升。",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Intelligence Linked",
+    "name_cn": "智力连锁头盔",
+    "name_id": "helm_intelligence_linked",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "intelligence"
+    ],
+    "quality": "rare",
+    "image": "images/helm_rare.webp",
+    "description": "一件智力连锁头盔",
+    "description_cn": "一件智力连锁头盔",
+    "baseStats": {
+      "defenses": {
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.81
+        }
+      }
+    },
+    "implicit": "+5% Cooldown Recovery Rate.",
+    "implicit_cn": "+5% 冷却回复率。",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Intelligence Plated",
+    "name_cn": "智力镀甲头盔",
+    "name_id": "helm_intelligence_plated",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "intelligence"
+    ],
+    "quality": "rare",
+    "image": "images/helm_rare.webp",
+    "description": "一件智力镀甲头盔",
+    "description_cn": "一件智力镀甲头盔",
+    "baseStats": {
+      "defenses": {
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.81
+        }
+      }
+    },
+    "implicit": "+6% Spell Cooldown Recovery Rate.",
+    "implicit_cn": "+6% 法术冷却回复率。",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Intelligence Lordly",
+    "name_cn": "智力领主头盔",
+    "name_id": "helm_intelligence_lordly",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "intelligence"
+    ],
+    "quality": "legendary",
+    "image": "images/helm_legendary.webp",
+    "description": "一件智力领主头盔",
+    "description_cn": "一件智力领主头盔",
+    "baseStats": {
+      "defenses": {
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.81
+        }
+      }
+    },
+    "implicit": "+8% Aura Effect.",
+    "implicit_cn": "+8% 光环效果。",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Intelligence Transcendent",
+    "name_cn": "智力超凡头盔",
+    "name_id": "helm_intelligence_transcendent",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "intelligence"
+    ],
+    "quality": "mythic",
+    "image": "images/helm_mythic.webp",
+    "description": "一件智力超凡头盔",
+    "description_cn": "一件智力超凡头盔",
+    "baseStats": {
+      "defenses": {
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.81
+        }
+      }
+    },
+    "implicit": "+15 Mana Regeneration per second.",
+    "implicit_cn": "+15 每秒法力回复。",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Dexterity Strength Tattered",
+    "name_cn": "敏捷力量破烂头盔",
+    "name_id": "helm_dexterity_strength_tattered",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "dexterity",
+      "strength"
+    ],
+    "quality": "common",
+    "image": "images/helm_common.webp",
+    "description": "一件敏捷力量破烂头盔",
+    "description_cn": "一件敏捷力量破烂头盔",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.4455
+        },
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.4455
+        }
+      }
+    },
+    "implicit": "11% chance to Armor Break.",
+    "implicit_cn": "11% 几率护甲粉碎。",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Dexterity Strength Patched",
+    "name_cn": "敏捷力量修补头盔",
+    "name_id": "helm_dexterity_strength_patched",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "dexterity",
+      "strength"
+    ],
+    "quality": "magic",
+    "image": "images/helm_magic.webp",
+    "description": "一件敏捷力量修补头盔",
+    "description_cn": "一件敏捷力量修补头盔",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.4455
+        },
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.4455
+        }
+      }
+    },
+    "implicit": "26% chance to Impale.",
+    "implicit_cn": "26% 几率刺穿。",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Dexterity Strength Linked",
+    "name_cn": "敏捷力量连锁头盔",
+    "name_id": "helm_dexterity_strength_linked",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "dexterity",
+      "strength"
+    ],
+    "quality": "rare",
+    "image": "images/helm_rare.webp",
+    "description": "一件敏捷力量连锁头盔",
+    "description_cn": "一件敏捷力量连锁头盔",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.4455
+        },
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.4455
+        }
+      }
+    },
+    "implicit": "+6% Stagger Buildup.",
+    "implicit_cn": "+6% 眩晕累积。",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Dexterity Strength Plated",
+    "name_cn": "敏捷力量镀甲头盔",
+    "name_id": "helm_dexterity_strength_plated",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "dexterity",
+      "strength"
+    ],
+    "quality": "rare",
+    "image": "images/helm_rare.webp",
+    "description": "一件敏捷力量镀甲头盔",
+    "description_cn": "一件敏捷力量镀甲头盔",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.4455
+        },
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.4455
+        }
+      }
+    },
+    "implicit": "+6% Attack Damage.",
+    "implicit_cn": "+6% 攻击伤害。",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Dexterity Strength Lordly",
+    "name_cn": "敏捷力量领主头盔",
+    "name_id": "helm_dexterity_strength_lordly",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "dexterity",
+      "strength"
+    ],
+    "quality": "legendary",
+    "image": "images/helm_legendary.webp",
+    "description": "一件敏捷力量领主头盔",
+    "description_cn": "一件敏捷力量领主头盔",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.4455
+        },
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.4455
+        }
+      }
+    },
+    "implicit": "+13% increased Evasion.",
+    "implicit_cn": "+13% 闪避提升。",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Dexterity Strength Transcendent",
+    "name_cn": "敏捷力量超凡头盔",
+    "name_id": "helm_dexterity_strength_transcendent",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "dexterity",
+      "strength"
+    ],
+    "quality": "mythic",
+    "image": "images/helm_mythic.webp",
+    "description": "一件敏捷力量超凡头盔",
+    "description_cn": "一件敏捷力量超凡头盔",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.4455
+        },
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.4455
+        }
+      }
+    },
+    "implicit": "1% of Damage Leeched as Life.",
+    "implicit_cn": "1% 伤害偷取为生命值。",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Intelligence Strength Tattered",
+    "name_cn": "智力力量破烂头盔",
+    "name_id": "helm_intelligence_strength_tattered",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "intelligence",
+      "strength"
+    ],
+    "quality": "common",
+    "image": "images/helm_common.webp",
+    "description": "一件智力力量破烂头盔",
+    "description_cn": "一件智力力量破烂头盔",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.4455
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.4455
+        }
+      }
+    },
+    "implicit": "+3% Recovery Rate.",
+    "implicit_cn": "+3% 回复率。",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Intelligence Strength Patched",
+    "name_cn": "智力力量修补头盔",
+    "name_id": "helm_intelligence_strength_patched",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "intelligence",
+      "strength"
+    ],
+    "quality": "magic",
+    "image": "images/helm_magic.webp",
+    "description": "一件智力力量修补头盔",
+    "description_cn": "一件智力力量修补头盔",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.4455
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.4455
+        }
+      }
+    },
+    "implicit": "On Block, inflict Slow for 2.4s.",
+    "implicit_cn": "格挡时，造成减速，持续 2.4 秒。",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Intelligence Strength Linked",
+    "name_cn": "智力力量连锁头盔",
+    "name_id": "helm_intelligence_strength_linked",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "intelligence",
+      "strength"
+    ],
+    "quality": "rare",
+    "image": "images/helm_rare.webp",
+    "description": "一件智力力量连锁头盔",
+    "description_cn": "一件智力力量连锁头盔",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.4455
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.4455
+        }
+      }
+    },
+    "implicit": "5% of Physical Damage taken as Fire.",
+    "implicit_cn": "5% 受到的物理伤害转化为火焰伤害。",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Intelligence Strength Plated",
+    "name_cn": "智力力量镀甲头盔",
+    "name_id": "helm_intelligence_strength_plated",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "intelligence",
+      "strength"
+    ],
+    "quality": "rare",
+    "image": "images/helm_rare.webp",
+    "description": "一件智力力量镀甲头盔",
+    "description_cn": "一件智力力量镀甲头盔",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.4455
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.4455
+        }
+      }
+    },
+    "implicit": "+6% Healing Effect.",
+    "implicit_cn": "+6% 治疗效果。",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Intelligence Strength Lordly",
+    "name_cn": "智力力量领主头盔",
+    "name_id": "helm_intelligence_strength_lordly",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "intelligence",
+      "strength"
+    ],
+    "quality": "legendary",
+    "image": "images/helm_legendary.webp",
+    "description": "一件智力力量领主头盔",
+    "description_cn": "一件智力力量领主头盔",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.4455
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.4455
+        }
+      }
+    },
+    "implicit": "+7% Fortify Effect.",
+    "implicit_cn": "+7% 强化效果。",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Intelligence Strength Transcendent",
+    "name_cn": "智力力量超凡头盔",
+    "name_id": "helm_intelligence_strength_transcendent",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "intelligence",
+      "strength"
+    ],
+    "quality": "mythic",
+    "image": "images/helm_mythic.webp",
+    "description": "一件智力力量超凡头盔",
+    "description_cn": "一件智力力量超凡头盔",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.4455
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.4455
+        }
+      }
+    },
+    "implicit": "+8% Fortify Effect.",
+    "implicit_cn": "+8% 强化效果。",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Dexterity Intelligence Tattered",
+    "name_cn": "敏捷智力破烂头盔",
+    "name_id": "helm_dexterity_intelligence_tattered",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "dexterity",
+      "intelligence"
+    ],
+    "quality": "common",
+    "image": "images/helm_common.webp",
+    "description": "一件敏捷智力破烂头盔",
+    "description_cn": "一件敏捷智力破烂头盔",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.4455
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.4455
+        }
+      }
+    },
+    "implicit": "On Hit, 12% chance to inflict Blind for 2.3s.",
+    "implicit_cn": "击中时，12% 几率致盲 2.3 秒。",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Dexterity Intelligence Patched",
+    "name_cn": "敏捷智力修补头盔",
+    "name_id": "helm_dexterity_intelligence_patched",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "dexterity",
+      "intelligence"
+    ],
+    "quality": "magic",
+    "image": "images/helm_magic.webp",
+    "description": "一件敏捷智力修补头盔",
+    "description_cn": "一件敏捷智力修补头盔",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.4455
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.4455
+        }
+      }
+    },
+    "implicit": "Gain a Power Charge on Crit.",
+    "implicit_cn": "暴击时获得能量球。",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Dexterity Intelligence Linked",
+    "name_cn": "敏捷智力连锁头盔",
+    "name_id": "helm_dexterity_intelligence_linked",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "dexterity",
+      "intelligence"
+    ],
+    "quality": "rare",
+    "image": "images/helm_rare.webp",
+    "description": "一件敏捷智力连锁头盔",
+    "description_cn": "一件敏捷智力连锁头盔",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.4455
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.4455
+        }
+      }
+    },
+    "implicit": "Gain 17% of Fire Damage as Extra Cold Damage.",
+    "implicit_cn": "获得 17% 火焰伤害作为额外冰霜伤害。",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Dexterity Intelligence Plated",
+    "name_cn": "敏捷智力镀甲头盔",
+    "name_id": "helm_dexterity_intelligence_plated",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "dexterity",
+      "intelligence"
+    ],
+    "quality": "rare",
+    "image": "images/helm_rare.webp",
+    "description": "一件敏捷智力镀甲头盔",
+    "description_cn": "一件敏捷智力镀甲头盔",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.4455
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.4455
+        }
+      }
+    },
+    "implicit": "On Crit, gain 8 Dodge Attack Chance and 18% Movement Speed for 3.8s.",
+    "implicit_cn": "暴击时，获得 8 闪避攻击几率和 18% 移动速度，持续 3.8 秒。",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Dexterity Intelligence Lordly",
+    "name_cn": "敏捷智力领主头盔",
+    "name_id": "helm_dexterity_intelligence_lordly",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "dexterity",
+      "intelligence"
+    ],
+    "quality": "legendary",
+    "image": "images/helm_legendary.webp",
+    "description": "一件敏捷智力领主头盔",
+    "description_cn": "一件敏捷智力领主头盔",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.4455
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.4455
+        }
+      }
+    },
+    "implicit": "+8% Ailment Effect.",
+    "implicit_cn": "+8% 异常状态效果。",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Helm Dexterity Intelligence Transcendent",
+    "name_cn": "敏捷智力超凡头盔",
+    "name_id": "helm_dexterity_intelligence_transcendent",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "helm",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "helm",
+      "dexterity",
+      "intelligence"
+    ],
+    "quality": "mythic",
+    "image": "images/helm_mythic.webp",
+    "description": "一件敏捷智力超凡头盔",
+    "description_cn": "一件敏捷智力超凡头盔",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.4455
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.4455
+        }
+      }
+    },
+    "implicit": "+1 Maximum Power Charges.",
+    "implicit_cn": "+1 最大能量球。",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Strength Tattered",
+    "name_cn": "力量破烂胸甲",
+    "name_id": "body_strength_tattered",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "strength"
+    ],
+    "quality": "common",
+    "image": "images/body_common.webp",
+    "description": "一件力量破烂胸甲",
+    "description_cn": "一件力量破烂胸甲",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 1.728
+        }
+      }
+    },
+    "implicit": "Reflect 14% of Physical Damage taken to Attacker.",
+    "implicit_cn": "将 14% 受到的物理伤害反弹给攻击者。",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Strength Patched",
+    "name_cn": "力量修补胸甲",
+    "name_id": "body_strength_patched",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "strength"
+    ],
+    "quality": "magic",
+    "image": "images/body_magic.webp",
+    "description": "一件力量修补胸甲",
+    "description_cn": "一件力量修补胸甲",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 1.728
+        }
+      }
+    },
+    "implicit": "Recover 14% of Life when Hit by a Savage Hit.",
+    "implicit_cn": "被猛击击中时，回复 14% 生命值。",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Strength Linked",
+    "name_cn": "力量连锁胸甲",
+    "name_id": "body_strength_linked",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "strength"
+    ],
+    "quality": "rare",
+    "image": "images/body_rare.webp",
+    "description": "一件力量连锁胸甲",
+    "description_cn": "一件力量连锁胸甲",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 1.728
+        }
+      }
+    },
+    "implicit": "5% less Physical Damage Taken.",
+    "implicit_cn": "受到的物理伤害减少 5%。",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Strength Plated",
+    "name_cn": "力量镀甲胸甲",
+    "name_id": "body_strength_plated",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "strength"
+    ],
+    "quality": "rare",
+    "image": "images/body_rare.webp",
+    "description": "一件力量镀甲胸甲",
+    "description_cn": "一件力量镀甲胸甲",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 1.728
+        }
+      }
+    },
+    "implicit": "+6 minimum Fortification.",
+    "implicit_cn": "+6 最小强化。",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Strength Lordly",
+    "name_cn": "力量领主胸甲",
+    "name_id": "body_strength_lordly",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "strength"
+    ],
+    "quality": "legendary",
+    "image": "images/body_legendary.webp",
+    "description": "一件力量领主胸甲",
+    "description_cn": "一件力量领主胸甲",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 1.728
+        }
+      }
+    },
+    "implicit": "+8% increased Maximum Life.",
+    "implicit_cn": "+8% 最大生命值提升。",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Strength Transcendent",
+    "name_cn": "力量超凡胸甲",
+    "name_id": "body_strength_transcendent",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "strength"
+    ],
+    "quality": "mythic",
+    "image": "images/body_mythic.webp",
+    "description": "一件力量超凡胸甲",
+    "description_cn": "一件力量超凡胸甲",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 1.728
+        }
+      }
+    },
+    "implicit": "7% Physical Damage Reduction.",
+    "implicit_cn": "7% 物理伤害减免。",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Dexterity Tattered",
+    "name_cn": "敏捷破烂胸甲",
+    "name_id": "body_dexterity_tattered",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "dexterity"
+    ],
+    "quality": "common",
+    "image": "images/body_common.webp",
+    "description": "一件敏捷破烂胸甲",
+    "description_cn": "一件敏捷破烂胸甲",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 1.728
+        }
+      }
+    },
+    "implicit": "+5% increased Evasion.",
+    "implicit_cn": "+5% 闪避提升。",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Dexterity Patched",
+    "name_cn": "敏捷修补胸甲",
+    "name_id": "body_dexterity_patched",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "dexterity"
+    ],
+    "quality": "magic",
+    "image": "images/body_magic.webp",
+    "description": "一件敏捷修补胸甲",
+    "description_cn": "一件敏捷修补胸甲",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 1.728
+        }
+      }
+    },
+    "implicit": "+4% Spell Suppression Chance.",
+    "implicit_cn": "+4% 法术压制几率。",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Dexterity Linked",
+    "name_cn": "敏捷连锁胸甲",
+    "name_id": "body_dexterity_linked",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "dexterity"
+    ],
+    "quality": "rare",
+    "image": "images/body_rare.webp",
+    "description": "一件敏捷连锁胸甲",
+    "description_cn": "一件敏捷连锁胸甲",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 1.728
+        }
+      }
+    },
+    "implicit": "6% reduced Stagger taken.",
+    "implicit_cn": "受到的眩晕减少 6%。",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Dexterity Plated",
+    "name_cn": "敏捷镀甲胸甲",
+    "name_id": "body_dexterity_plated",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "dexterity"
+    ],
+    "quality": "rare",
+    "image": "images/body_rare.webp",
+    "description": "一件敏捷镀甲胸甲",
+    "description_cn": "一件敏捷镀甲胸甲",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 1.728
+        }
+      }
+    },
+    "implicit": "6% of Damage taken Recouped as Life.",
+    "implicit_cn": "6% 受到的伤害回复为生命值。",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Dexterity Lordly",
+    "name_cn": "敏捷领主胸甲",
+    "name_id": "body_dexterity_lordly",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "dexterity"
+    ],
+    "quality": "legendary",
+    "image": "images/body_legendary.webp",
+    "description": "一件敏捷领主胸甲",
+    "description_cn": "一件敏捷领主胸甲",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 1.728
+        }
+      }
+    },
+    "implicit": "35% chance to Pierce.",
+    "implicit_cn": "35% 几率穿透。",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Dexterity Transcendent",
+    "name_cn": "敏捷超凡胸甲",
+    "name_id": "body_dexterity_transcendent",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "dexterity"
+    ],
+    "quality": "mythic",
+    "image": "images/body_mythic.webp",
+    "description": "一件敏捷超凡胸甲",
+    "description_cn": "一件敏捷超凡胸甲",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 1.728
+        }
+      }
+    },
+    "implicit": "+9% Attack Speed.",
+    "implicit_cn": "+9% 攻击速度。",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Intelligence Tattered",
+    "name_cn": "智力破烂胸甲",
+    "name_id": "body_intelligence_tattered",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "intelligence"
+    ],
+    "quality": "common",
+    "image": "images/body_common.webp",
+    "description": "一件智力破烂胸甲",
+    "description_cn": "一件智力破烂胸甲",
+    "baseStats": {
+      "defenses": {
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 1.728
+        }
+      }
+    },
+    "implicit": "14% of Damage taken from Mana before Life.",
+    "implicit_cn": "14% 伤害先从法力值扣除，再从生命值扣除。",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Intelligence Patched",
+    "name_cn": "智力修补胸甲",
+    "name_id": "body_intelligence_patched",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "intelligence"
+    ],
+    "quality": "magic",
+    "image": "images/body_magic.webp",
+    "description": "一件智力修补胸甲",
+    "description_cn": "一件智力修补胸甲",
+    "baseStats": {
+      "defenses": {
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 1.728
+        }
+      }
+    },
+    "implicit": "Ward is not depleted by a single Hit.",
+    "implicit_cn": "护盾不会被单次攻击耗尽。",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Intelligence Linked",
+    "name_cn": "智力连锁胸甲",
+    "name_id": "body_intelligence_linked",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "intelligence"
+    ],
+    "quality": "rare",
+    "image": "images/body_rare.webp",
+    "description": "一件智力连锁胸甲",
+    "description_cn": "一件智力连锁胸甲",
+    "baseStats": {
+      "defenses": {
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 1.728
+        }
+      }
+    },
+    "implicit": "Gain 22% of Cold Damage as Extra Lightning Damage.",
+    "implicit_cn": "获得 22% 冰霜伤害作为额外闪电伤害。",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Intelligence Plated",
+    "name_cn": "智力镀甲胸甲",
+    "name_id": "body_intelligence_plated",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "intelligence"
+    ],
+    "quality": "rare",
+    "image": "images/body_rare.webp",
+    "description": "一件智力镀甲胸甲",
+    "description_cn": "一件智力镀甲胸甲",
+    "baseStats": {
+      "defenses": {
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 1.728
+        }
+      }
+    },
+    "implicit": "Threshold protects Mana before it is drained.",
+    "implicit_cn": "阈值在法力值被消耗前保护它。",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Intelligence Lordly",
+    "name_cn": "智力领主胸甲",
+    "name_id": "body_intelligence_lordly",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "intelligence"
+    ],
+    "quality": "legendary",
+    "image": "images/body_legendary.webp",
+    "description": "一件智力领主胸甲",
+    "description_cn": "一件智力领主胸甲",
+    "baseStats": {
+      "defenses": {
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 1.728
+        }
+      }
+    },
+    "implicit": "+8% increased Maximum Mana.",
+    "implicit_cn": "+8% 最大法力值提升。",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Intelligence Transcendent",
+    "name_cn": "智力超凡胸甲",
+    "name_id": "body_intelligence_transcendent",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "intelligence"
+    ],
+    "quality": "mythic",
+    "image": "images/body_mythic.webp",
+    "description": "一件智力超凡胸甲",
+    "description_cn": "一件智力超凡胸甲",
+    "baseStats": {
+      "defenses": {
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 1.728
+        }
+      }
+    },
+    "implicit": "+9% Cooldown Recovery Rate.",
+    "implicit_cn": "+9% 冷却回复率。",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Dexterity Strength Tattered",
+    "name_cn": "敏捷力量破烂胸甲",
+    "name_id": "body_dexterity_strength_tattered",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "dexterity",
+      "strength"
+    ],
+    "quality": "common",
+    "image": "images/body_common.webp",
+    "description": "一件敏捷力量破烂胸甲",
+    "description_cn": "一件敏捷力量破烂胸甲",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.9504
+        },
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.9504
+        }
+      }
+    },
+    "implicit": "On Kill, gain 14 Damage Increase and 11% Movement Speed for 2.5s.",
+    "implicit_cn": "击杀时，获得 14 伤害提升和 11% 移动速度，持续 2.5 秒。",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Dexterity Strength Patched",
+    "name_cn": "敏捷力量修补胸甲",
+    "name_id": "body_dexterity_strength_patched",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "dexterity",
+      "strength"
+    ],
+    "quality": "magic",
+    "image": "images/body_magic.webp",
+    "description": "一件敏捷力量修补胸甲",
+    "description_cn": "一件敏捷力量修补胸甲",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.9504
+        },
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.9504
+        }
+      }
+    },
+    "implicit": "5 Mana on Hit.",
+    "implicit_cn": "5 Mana on Hit.",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Dexterity Strength Linked",
+    "name_cn": "敏捷力量连锁胸甲",
+    "name_id": "body_dexterity_strength_linked",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "dexterity",
+      "strength"
+    ],
+    "quality": "rare",
+    "image": "images/body_rare.webp",
+    "description": "一件敏捷力量连锁胸甲",
+    "description_cn": "一件敏捷力量连锁胸甲",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.9504
+        },
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.9504
+        }
+      }
+    },
+    "implicit": "37% chance to Impale.",
+    "implicit_cn": "37% 几率刺穿。",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Dexterity Strength Plated",
+    "name_cn": "敏捷力量镀甲胸甲",
+    "name_id": "body_dexterity_strength_plated",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "dexterity",
+      "strength"
+    ],
+    "quality": "rare",
+    "image": "images/body_rare.webp",
+    "description": "一件敏捷力量镀甲胸甲",
+    "description_cn": "一件敏捷力量镀甲胸甲",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.9504
+        },
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.9504
+        }
+      }
+    },
+    "implicit": "+7% Stagger Buildup.",
+    "implicit_cn": "+7% 眩晕累积。",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Dexterity Strength Lordly",
+    "name_cn": "敏捷力量领主胸甲",
+    "name_id": "body_dexterity_strength_lordly",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "dexterity",
+      "strength"
+    ],
+    "quality": "legendary",
+    "image": "images/body_legendary.webp",
+    "description": "一件敏捷力量领主胸甲",
+    "description_cn": "一件敏捷力量领主胸甲",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.9504
+        },
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.9504
+        }
+      }
+    },
+    "implicit": "+7% Attack Damage.",
+    "implicit_cn": "+7% 攻击伤害。",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Dexterity Strength Transcendent",
+    "name_cn": "敏捷力量超凡胸甲",
+    "name_id": "body_dexterity_strength_transcendent",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "dexterity",
+      "strength"
+    ],
+    "quality": "mythic",
+    "image": "images/body_mythic.webp",
+    "description": "一件敏捷力量超凡胸甲",
+    "description_cn": "一件敏捷力量超凡胸甲",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.9504
+        },
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.9504
+        }
+      }
+    },
+    "implicit": "8% less Damage Taken.",
+    "implicit_cn": "受到的伤害减少 8%。",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Intelligence Strength Tattered",
+    "name_cn": "智力力量破烂胸甲",
+    "name_id": "body_intelligence_strength_tattered",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "intelligence",
+      "strength"
+    ],
+    "quality": "common",
+    "image": "images/body_common.webp",
+    "description": "一件智力力量破烂胸甲",
+    "description_cn": "一件智力力量破烂胸甲",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.9504
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.9504
+        }
+      }
+    },
+    "implicit": "+6% increased Armor.",
+    "implicit_cn": "+6% 护甲提升。",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Intelligence Strength Patched",
+    "name_cn": "智力力量修补胸甲",
+    "name_id": "body_intelligence_strength_patched",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "intelligence",
+      "strength"
+    ],
+    "quality": "magic",
+    "image": "images/body_magic.webp",
+    "description": "一件智力力量修补胸甲",
+    "description_cn": "一件智力力量修补胸甲",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.9504
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.9504
+        }
+      }
+    },
+    "implicit": "+7 Life Regeneration per second.",
+    "implicit_cn": "+7 每秒生命回复。",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Intelligence Strength Linked",
+    "name_cn": "智力力量连锁胸甲",
+    "name_id": "body_intelligence_strength_linked",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "intelligence",
+      "strength"
+    ],
+    "quality": "rare",
+    "image": "images/body_rare.webp",
+    "description": "一件智力力量连锁胸甲",
+    "description_cn": "一件智力力量连锁胸甲",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.9504
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.9504
+        }
+      }
+    },
+    "implicit": "+4% to all Maximum Elemental Resistances.",
+    "implicit_cn": "+4% 全最大元素抗性。",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Intelligence Strength Plated",
+    "name_cn": "智力力量镀甲胸甲",
+    "name_id": "body_intelligence_strength_plated",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "intelligence",
+      "strength"
+    ],
+    "quality": "rare",
+    "image": "images/body_rare.webp",
+    "description": "一件智力力量镀甲胸甲",
+    "description_cn": "一件智力力量镀甲胸甲",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.9504
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.9504
+        }
+      }
+    },
+    "implicit": "+7% Fortify Effect.",
+    "implicit_cn": "+7% 强化效果。",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Intelligence Strength Lordly",
+    "name_cn": "智力力量领主胸甲",
+    "name_id": "body_intelligence_strength_lordly",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "intelligence",
+      "strength"
+    ],
+    "quality": "legendary",
+    "image": "images/body_legendary.webp",
+    "description": "一件智力力量领主胸甲",
+    "description_cn": "一件智力力量领主胸甲",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.9504
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.9504
+        }
+      }
+    },
+    "implicit": "+7% Healing Effect.",
+    "implicit_cn": "+7% 治疗效果。",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Intelligence Strength Transcendent",
+    "name_cn": "智力力量超凡胸甲",
+    "name_id": "body_intelligence_strength_transcendent",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "intelligence",
+      "strength"
+    ],
+    "quality": "mythic",
+    "image": "images/body_mythic.webp",
+    "description": "一件智力力量超凡胸甲",
+    "description_cn": "一件智力力量超凡胸甲",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.9504
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.9504
+        }
+      }
+    },
+    "implicit": "+8% Life Recovery Rate.",
+    "implicit_cn": "+8% 生命回复率。",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Dexterity Intelligence Tattered",
+    "name_cn": "敏捷智力破烂胸甲",
+    "name_id": "body_dexterity_intelligence_tattered",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "dexterity",
+      "intelligence"
+    ],
+    "quality": "common",
+    "image": "images/body_common.webp",
+    "description": "一件敏捷智力破烂胸甲",
+    "description_cn": "一件敏捷智力破烂胸甲",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.9504
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.9504
+        }
+      }
+    },
+    "implicit": "+3% Ailment Effect.",
+    "implicit_cn": "+3% 异常状态效果。",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Dexterity Intelligence Patched",
+    "name_cn": "敏捷智力修补胸甲",
+    "name_id": "body_dexterity_intelligence_patched",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "dexterity",
+      "intelligence"
+    ],
+    "quality": "magic",
+    "image": "images/body_magic.webp",
+    "description": "一件敏捷智力修补胸甲",
+    "description_cn": "一件敏捷智力修补胸甲",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.9504
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.9504
+        }
+      }
+    },
+    "implicit": "19% Chaos Damage over Time Multiplier.",
+    "implicit_cn": "19% 混沌持续伤害倍数。",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Dexterity Intelligence Linked",
+    "name_cn": "敏捷智力连锁胸甲",
+    "name_id": "body_dexterity_intelligence_linked",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "dexterity",
+      "intelligence"
+    ],
+    "quality": "rare",
+    "image": "images/body_rare.webp",
+    "description": "一件敏捷智力连锁胸甲",
+    "description_cn": "一件敏捷智力连锁胸甲",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.9504
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.9504
+        }
+      }
+    },
+    "implicit": "Gain 20% of Physical Damage as Extra Chaos Damage.",
+    "implicit_cn": "获得 20% 物理伤害作为额外混沌伤害。",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Dexterity Intelligence Plated",
+    "name_cn": "敏捷智力镀甲胸甲",
+    "name_id": "body_dexterity_intelligence_plated",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "dexterity",
+      "intelligence"
+    ],
+    "quality": "rare",
+    "image": "images/body_rare.webp",
+    "description": "一件敏捷智力镀甲胸甲",
+    "description_cn": "一件敏捷智力镀甲胸甲",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.9504
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.9504
+        }
+      }
+    },
+    "implicit": "On Crit, gain 6 Spell Damage and 5% Cast Speed for 4s.",
+    "implicit_cn": "暴击时，获得 6 法术伤害和 5% 施法速度，持续 4 秒。",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Dexterity Intelligence Lordly",
+    "name_cn": "敏捷智力领主胸甲",
+    "name_id": "body_dexterity_intelligence_lordly",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "dexterity",
+      "intelligence"
+    ],
+    "quality": "legendary",
+    "image": "images/body_legendary.webp",
+    "description": "一件敏捷智力领主胸甲",
+    "description_cn": "一件敏捷智力领主胸甲",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.9504
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.9504
+        }
+      }
+    },
+    "implicit": "19% Cold Penetration for Spells.",
+    "implicit_cn": "19% 法术冰霜穿透。",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Body Dexterity Intelligence Transcendent",
+    "name_cn": "敏捷智力超凡胸甲",
+    "name_id": "body_dexterity_intelligence_transcendent",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "body",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "body",
+      "dexterity",
+      "intelligence"
+    ],
+    "quality": "mythic",
+    "image": "images/body_mythic.webp",
+    "description": "一件敏捷智力超凡胸甲",
+    "description_cn": "一件敏捷智力超凡胸甲",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.9504
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.9504
+        }
+      }
+    },
+    "implicit": "Ailments spread to enemies within 33m on Kill.",
+    "implicit_cn": "击杀时，异常状态会传播到 33 米内的敌人。",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Strength Tattered",
+    "name_cn": "力量破烂手套",
+    "name_id": "gloves_strength_tattered",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "strength"
+    ],
+    "quality": "common",
+    "image": "images/gloves_common.webp",
+    "description": "一件力量破烂手套",
+    "description_cn": "一件力量破烂手套",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "On Hit, 8% chance to inflict Vulnerability for 2.3s.",
+    "implicit_cn": "击中时，8% 几率造成易伤，持续 2.3 秒。",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Strength Patched",
+    "name_cn": "力量修补手套",
+    "name_id": "gloves_strength_patched",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "strength"
+    ],
+    "quality": "magic",
+    "image": "images/gloves_magic.webp",
+    "description": "一件力量修补手套",
+    "description_cn": "一件力量修补手套",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "21% chance to Stun.",
+    "implicit_cn": "21% 几率眩晕。",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Strength Linked",
+    "name_cn": "力量连锁手套",
+    "name_id": "gloves_strength_linked",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "strength"
+    ],
+    "quality": "rare",
+    "image": "images/gloves_rare.webp",
+    "description": "一件力量连锁手套",
+    "description_cn": "一件力量连锁手套",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "+24% Impale Damage.",
+    "implicit_cn": "+24% 刺穿伤害。",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Strength Plated",
+    "name_cn": "力量镀甲手套",
+    "name_id": "gloves_strength_plated",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "strength"
+    ],
+    "quality": "rare",
+    "image": "images/gloves_rare.webp",
+    "description": "一件力量镀甲手套",
+    "description_cn": "一件力量镀甲手套",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "16% chance to Armor Break.",
+    "implicit_cn": "16% 几率护甲粉碎。",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Strength Lordly",
+    "name_cn": "力量领主手套",
+    "name_id": "gloves_strength_lordly",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "strength"
+    ],
+    "quality": "legendary",
+    "image": "images/gloves_legendary.webp",
+    "description": "一件力量领主手套",
+    "description_cn": "一件力量领主手套",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "8% Physical Overwhelm.",
+    "implicit_cn": "8% 物理碾压。",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Strength Transcendent",
+    "name_cn": "力量超凡手套",
+    "name_id": "gloves_strength_transcendent",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "strength"
+    ],
+    "quality": "mythic",
+    "image": "images/gloves_mythic.webp",
+    "description": "一件力量超凡手套",
+    "description_cn": "一件力量超凡手套",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "9% chance to deal Double Damage.",
+    "implicit_cn": "9% 几率造成双倍伤害。",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Dexterity Tattered",
+    "name_cn": "敏捷破烂手套",
+    "name_id": "gloves_dexterity_tattered",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "dexterity"
+    ],
+    "quality": "common",
+    "image": "images/gloves_common.webp",
+    "description": "一件敏捷破烂手套",
+    "description_cn": "一件敏捷破烂手套",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "All Damage can Poison.",
+    "implicit_cn": "所有伤害可以造成中毒。",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Dexterity Patched",
+    "name_cn": "敏捷修补手套",
+    "name_id": "gloves_dexterity_patched",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "dexterity"
+    ],
+    "quality": "magic",
+    "image": "images/gloves_magic.webp",
+    "description": "一件敏捷修补手套",
+    "description_cn": "一件敏捷修补手套",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "On Crit, gain 4% Attack Speed for 3.0s.",
+    "implicit_cn": "暴击时，获得 4% 攻击速度，持续 3 秒。",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Dexterity Linked",
+    "name_cn": "敏捷连锁手套",
+    "name_id": "gloves_dexterity_linked",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "dexterity"
+    ],
+    "quality": "rare",
+    "image": "images/gloves_rare.webp",
+    "description": "一件敏捷连锁手套",
+    "description_cn": "一件敏捷连锁手套",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "On Kill, gain 20% Attack Speed and 12% Movement Speed for 3.5s.",
+    "implicit_cn": "击杀时，获得 20% 攻击速度和 12% 移动速度，持续 3.5 秒。",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Dexterity Plated",
+    "name_cn": "敏捷镀甲手套",
+    "name_id": "gloves_dexterity_plated",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "dexterity"
+    ],
+    "quality": "rare",
+    "image": "images/gloves_rare.webp",
+    "description": "一件敏捷镀甲手套",
+    "description_cn": "一件敏捷镀甲手套",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "1% of Damage Leeched as Mana.",
+    "implicit_cn": "1% 伤害偷取为法力值。",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Dexterity Lordly",
+    "name_cn": "敏捷领主手套",
+    "name_id": "gloves_dexterity_lordly",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "dexterity"
+    ],
+    "quality": "legendary",
+    "image": "images/gloves_legendary.webp",
+    "description": "一件敏捷领主手套",
+    "description_cn": "一件敏捷领主手套",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "",
+    "implicit_cn": "",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Dexterity Transcendent",
+    "name_cn": "敏捷超凡手套",
+    "name_id": "gloves_dexterity_transcendent",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "dexterity"
+    ],
+    "quality": "mythic",
+    "image": "images/gloves_mythic.webp",
+    "description": "一件敏捷超凡手套",
+    "description_cn": "一件敏捷超凡手套",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "20% chance to Armor Break.",
+    "implicit_cn": "20% 几率护甲粉碎。",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Intelligence Tattered",
+    "name_cn": "智力破烂手套",
+    "name_id": "gloves_intelligence_tattered",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "intelligence"
+    ],
+    "quality": "common",
+    "image": "images/gloves_common.webp",
+    "description": "一件智力破烂手套",
+    "description_cn": "一件智力破烂手套",
+    "baseStats": {
+      "defenses": {
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "On Hit, 16% chance to inflict Enfeeble for 2.3s.",
+    "implicit_cn": "击中时，16% 几率造成虚弱，持续 2.3 秒。",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Intelligence Patched",
+    "name_cn": "智力修补手套",
+    "name_id": "gloves_intelligence_patched",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "intelligence"
+    ],
+    "quality": "magic",
+    "image": "images/gloves_magic.webp",
+    "description": "一件智力修补手套",
+    "description_cn": "一件智力修补手套",
+    "baseStats": {
+      "defenses": {
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "Gain 17% of Physical Damage as Extra Fire Damage.",
+    "implicit_cn": "获得 17% 物理伤害作为额外火焰伤害。",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Intelligence Linked",
+    "name_cn": "智力连锁手套",
+    "name_id": "gloves_intelligence_linked",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "intelligence"
+    ],
+    "quality": "rare",
+    "image": "images/gloves_rare.webp",
+    "description": "一件智力连锁手套",
+    "description_cn": "一件智力连锁手套",
+    "baseStats": {
+      "defenses": {
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "On Crit, gain 5% Cast Speed for 3.5s.",
+    "implicit_cn": "暴击时，获得 5% 施法速度，持续 3.5 秒。",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Intelligence Plated",
+    "name_cn": "智力镀甲手套",
+    "name_id": "gloves_intelligence_plated",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "intelligence"
+    ],
+    "quality": "rare",
+    "image": "images/gloves_rare.webp",
+    "description": "一件智力镀甲手套",
+    "description_cn": "一件智力镀甲手套",
+    "baseStats": {
+      "defenses": {
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "6% Elemental Penetration.",
+    "implicit_cn": "6% 元素穿透。",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Intelligence Lordly",
+    "name_cn": "智力领主手套",
+    "name_id": "gloves_intelligence_lordly",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "intelligence"
+    ],
+    "quality": "legendary",
+    "image": "images/gloves_legendary.webp",
+    "description": "一件智力领主手套",
+    "description_cn": "一件智力领主手套",
+    "baseStats": {
+      "defenses": {
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "8% Cold Penetration for Spells.",
+    "implicit_cn": "8% 法术冰霜穿透。",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Intelligence Transcendent",
+    "name_cn": "智力超凡手套",
+    "name_id": "gloves_intelligence_transcendent",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "intelligence"
+    ],
+    "quality": "mythic",
+    "image": "images/gloves_mythic.webp",
+    "description": "一件智力超凡手套",
+    "description_cn": "一件智力超凡手套",
+    "baseStats": {
+      "defenses": {
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "+33% Spell Critical Strike Chance.",
+    "implicit_cn": "+33% 法术暴击率。",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Dexterity Strength Tattered",
+    "name_cn": "敏捷力量破烂手套",
+    "name_id": "gloves_dexterity_strength_tattered",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "dexterity",
+      "strength"
+    ],
+    "quality": "common",
+    "image": "images/gloves_common.webp",
+    "description": "一件敏捷力量破烂手套",
+    "description_cn": "一件敏捷力量破烂手套",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.3267
+        },
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "Gain a Frenzy Charge on Crit.",
+    "implicit_cn": "暴击时获得狂怒球。",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Dexterity Strength Patched",
+    "name_cn": "敏捷力量修补手套",
+    "name_id": "gloves_dexterity_strength_patched",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "dexterity",
+      "strength"
+    ],
+    "quality": "magic",
+    "image": "images/gloves_magic.webp",
+    "description": "一件敏捷力量修补手套",
+    "description_cn": "一件敏捷力量修补手套",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.3267
+        },
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "21% Physical Overwhelm.",
+    "implicit_cn": "21% 物理碾压。",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Dexterity Strength Linked",
+    "name_cn": "敏捷力量连锁手套",
+    "name_id": "gloves_dexterity_strength_linked",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "dexterity",
+      "strength"
+    ],
+    "quality": "rare",
+    "image": "images/gloves_rare.webp",
+    "description": "一件敏捷力量连锁手套",
+    "description_cn": "一件敏捷力量连锁手套",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.3267
+        },
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "38% chance to Bleed.",
+    "implicit_cn": "38% 几率造成流血。",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Dexterity Strength Plated",
+    "name_cn": "敏捷力量镀甲手套",
+    "name_id": "gloves_dexterity_strength_plated",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "dexterity",
+      "strength"
+    ],
+    "quality": "rare",
+    "image": "images/gloves_rare.webp",
+    "description": "一件敏捷力量镀甲手套",
+    "description_cn": "一件敏捷力量镀甲手套",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.3267
+        },
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "On Kill, gain 7% Damage Reduction for 4s.",
+    "implicit_cn": "击杀时，获得 7% 伤害减免，持续 4 秒。",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Dexterity Strength Lordly",
+    "name_cn": "敏捷力量领主手套",
+    "name_id": "gloves_dexterity_strength_lordly",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "dexterity",
+      "strength"
+    ],
+    "quality": "legendary",
+    "image": "images/gloves_legendary.webp",
+    "description": "一件敏捷力量领主手套",
+    "description_cn": "一件敏捷力量领主手套",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.3267
+        },
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "",
+    "implicit_cn": "",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Dexterity Strength Transcendent",
+    "name_cn": "敏捷力量超凡手套",
+    "name_id": "gloves_dexterity_strength_transcendent",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "dexterity",
+      "strength"
+    ],
+    "quality": "mythic",
+    "image": "images/gloves_mythic.webp",
+    "description": "一件敏捷力量超凡手套",
+    "description_cn": "一件敏捷力量超凡手套",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.3267
+        },
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "+1 Maximum Frenzy Charges.",
+    "implicit_cn": "+1 最大狂怒球。",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Intelligence Strength Tattered",
+    "name_cn": "智力力量破烂手套",
+    "name_id": "gloves_intelligence_strength_tattered",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "intelligence",
+      "strength"
+    ],
+    "quality": "common",
+    "image": "images/gloves_common.webp",
+    "description": "一件智力力量破烂手套",
+    "description_cn": "一件智力力量破烂手套",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.3267
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "On Hit, 12% chance to inflict Slow for 1.8s.",
+    "implicit_cn": "击中时，12% 几率造成减速，持续 1.8 秒。",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Intelligence Strength Patched",
+    "name_cn": "智力力量修补手套",
+    "name_id": "gloves_intelligence_strength_patched",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "intelligence",
+      "strength"
+    ],
+    "quality": "magic",
+    "image": "images/gloves_magic.webp",
+    "description": "一件智力力量修补手套",
+    "description_cn": "一件智力力量修补手套",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.3267
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "On Hit, 18% chance to inflict Weakness for 2.6s.",
+    "implicit_cn": "击中时，18% 几率造成虚弱，持续 2.6 秒。",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Intelligence Strength Linked",
+    "name_cn": "智力力量连锁手套",
+    "name_id": "gloves_intelligence_strength_linked",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "intelligence",
+      "strength"
+    ],
+    "quality": "rare",
+    "image": "images/gloves_rare.webp",
+    "description": "一件智力力量连锁手套",
+    "description_cn": "一件智力力量连锁手套",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.3267
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "+6% Healing Effect.",
+    "implicit_cn": "+6% 治疗效果。",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Intelligence Strength Plated",
+    "name_cn": "智力力量镀甲手套",
+    "name_id": "gloves_intelligence_strength_plated",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "intelligence",
+      "strength"
+    ],
+    "quality": "rare",
+    "image": "images/gloves_rare.webp",
+    "description": "一件智力力量镀甲手套",
+    "description_cn": "一件智力力量镀甲手套",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.3267
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "On Block, gain 20% Damage Reduction for 4s.",
+    "implicit_cn": "格挡时，获得 20% 伤害减免，持续 4 秒。",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Intelligence Strength Lordly",
+    "name_cn": "智力力量领主手套",
+    "name_id": "gloves_intelligence_strength_lordly",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "intelligence",
+      "strength"
+    ],
+    "quality": "legendary",
+    "image": "images/gloves_legendary.webp",
+    "description": "一件智力力量领主手套",
+    "description_cn": "一件智力力量领主手套",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.3267
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "+8% Aura Effect.",
+    "implicit_cn": "+8% 光环效果。",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Intelligence Strength Transcendent",
+    "name_cn": "智力力量超凡手套",
+    "name_id": "gloves_intelligence_strength_transcendent",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "intelligence",
+      "strength"
+    ],
+    "quality": "mythic",
+    "image": "images/gloves_mythic.webp",
+    "description": "一件智力力量超凡手套",
+    "description_cn": "一件智力力量超凡手套",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.3267
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "50 Armor Shred on Hit.",
+    "implicit_cn": "击中时造成 50 护甲粉碎。",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Dexterity Intelligence Tattered",
+    "name_cn": "敏捷智力破烂手套",
+    "name_id": "gloves_dexterity_intelligence_tattered",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "dexterity",
+      "intelligence"
+    ],
+    "quality": "common",
+    "image": "images/gloves_common.webp",
+    "description": "一件敏捷智力破烂手套",
+    "description_cn": "一件敏捷智力破烂手套",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.3267
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "On Hit, 8% chance to inflict Temporal Chains for 2.3s.",
+    "implicit_cn": "击中时，8% 几率造成时空锁链，持续 2.3 秒。",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Dexterity Intelligence Patched",
+    "name_cn": "敏捷智力修补手套",
+    "name_id": "gloves_dexterity_intelligence_patched",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "dexterity",
+      "intelligence"
+    ],
+    "quality": "magic",
+    "image": "images/gloves_magic.webp",
+    "description": "一件敏捷智力修补手套",
+    "description_cn": "一件敏捷智力修补手套",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.3267
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "All Damage can Poison.",
+    "implicit_cn": "所有伤害可以造成中毒。",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Dexterity Intelligence Linked",
+    "name_cn": "敏捷智力连锁手套",
+    "name_id": "gloves_dexterity_intelligence_linked",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "dexterity",
+      "intelligence"
+    ],
+    "quality": "rare",
+    "image": "images/gloves_rare.webp",
+    "description": "一件敏捷智力连锁手套",
+    "description_cn": "一件敏捷智力连锁手套",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.3267
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "25% chance to Poison.",
+    "implicit_cn": "25% 几率造成中毒。",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Dexterity Intelligence Plated",
+    "name_cn": "敏捷智力镀甲手套",
+    "name_id": "gloves_dexterity_intelligence_plated",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "dexterity",
+      "intelligence"
+    ],
+    "quality": "rare",
+    "image": "images/gloves_rare.webp",
+    "description": "一件敏捷智力镀甲手套",
+    "description_cn": "一件敏捷智力镀甲手套",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.3267
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "Poison spread to enemies within 9m on Kill.",
+    "implicit_cn": "击杀时，中毒会传播到 9 米内的敌人。",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Dexterity Intelligence Lordly",
+    "name_cn": "敏捷智力领主手套",
+    "name_id": "gloves_dexterity_intelligence_lordly",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "dexterity",
+      "intelligence"
+    ],
+    "quality": "legendary",
+    "image": "images/gloves_legendary.webp",
+    "description": "一件敏捷智力领主手套",
+    "description_cn": "一件敏捷智力领主手套",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.3267
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "",
+    "implicit_cn": "",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Gloves Dexterity Intelligence Transcendent",
+    "name_cn": "敏捷智力超凡手套",
+    "name_id": "gloves_dexterity_intelligence_transcendent",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "gloves",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "gloves",
+      "dexterity",
+      "intelligence"
+    ],
+    "quality": "mythic",
+    "image": "images/gloves_mythic.webp",
+    "description": "一件敏捷智力超凡手套",
+    "description_cn": "一件敏捷智力超凡手套",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.3267
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "30% Chaos Damage over Time Multiplier.",
+    "implicit_cn": "30% 混沌持续伤害倍数。",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Strength Tattered",
+    "name_cn": "力量破烂鞋子",
+    "name_id": "boots_strength_tattered",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "strength"
+    ],
+    "quality": "common",
+    "image": "images/boots_common.webp",
+    "description": "一件力量破烂鞋子",
+    "description_cn": "一件力量破烂鞋子",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "+5% increased Armor and +4 Increased Movement Speed.",
+    "implicit_cn": "+5% 护甲提升和 +4 移动速度。",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Strength Patched",
+    "name_cn": "力量修补鞋子",
+    "name_id": "boots_strength_patched",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "strength"
+    ],
+    "quality": "magic",
+    "image": "images/boots_magic.webp",
+    "description": "一件力量修补鞋子",
+    "description_cn": "一件力量修补鞋子",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "+8 Life Regeneration per second and +6 Increased Movement Speed.",
+    "implicit_cn": "+8 每秒生命回复和 +6 移动速度。",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Strength Linked",
+    "name_cn": "力量连锁鞋子",
+    "name_id": "boots_strength_linked",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "strength"
+    ],
+    "quality": "rare",
+    "image": "images/boots_rare.webp",
+    "description": "一件力量连锁鞋子",
+    "description_cn": "一件力量连锁鞋子",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "+6 Increased Movement Speed; On Kill, gain 6% Damage Reduction for 3.5s.",
+    "implicit_cn": "+6 移动速度；击杀时，获得 6% 伤害减免，持续 3.5 秒。",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Strength Plated",
+    "name_cn": "力量镀甲鞋子",
+    "name_id": "boots_strength_plated",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "strength"
+    ],
+    "quality": "rare",
+    "image": "images/boots_rare.webp",
+    "description": "一件力量镀甲鞋子",
+    "description_cn": "一件力量镀甲鞋子",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "6% Physical Damage Reduction and +8 Increased Movement Speed.",
+    "implicit_cn": "6% 物理伤害减免和 +8 移动速度。",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Strength Lordly",
+    "name_cn": "力量领主鞋子",
+    "name_id": "boots_strength_lordly",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "strength"
+    ],
+    "quality": "legendary",
+    "image": "images/boots_legendary.webp",
+    "description": "一件力量领主鞋子",
+    "description_cn": "一件力量领主鞋子",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "+9 Increased Movement Speed; Cannot be Slowed below base speed.",
+    "implicit_cn": "+9 移动速度；无法被减速到低于基础速度。",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Strength Transcendent",
+    "name_cn": "力量超凡鞋子",
+    "name_id": "boots_strength_transcendent",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "strength"
+    ],
+    "quality": "mythic",
+    "image": "images/boots_mythic.webp",
+    "description": "一件力量超凡鞋子",
+    "description_cn": "一件力量超凡鞋子",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "+1 Maximum Endurance Charges and +10 Increased Movement Speed.",
+    "implicit_cn": "+1 最大耐力球和 +10 移动速度。",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Dexterity Tattered",
+    "name_cn": "敏捷破烂鞋子",
+    "name_id": "boots_dexterity_tattered",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "dexterity"
+    ],
+    "quality": "common",
+    "image": "images/boots_common.webp",
+    "description": "一件敏捷破烂鞋子",
+    "description_cn": "一件敏捷破烂鞋子",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "+4 Increased Movement Speed; On Kill, gain 4% Movement Speed and 2% Attack Speed for 2.5s.",
+    "implicit_cn": "+4 移动速度；击杀时，获得 4% 移动速度和 2% 攻击速度，持续 2.5 秒。",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Dexterity Patched",
+    "name_cn": "敏捷修补鞋子",
+    "name_id": "boots_dexterity_patched",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "dexterity"
+    ],
+    "quality": "magic",
+    "image": "images/boots_magic.webp",
+    "description": "一件敏捷修补鞋子",
+    "description_cn": "一件敏捷修补鞋子",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "Gain 4% Speed on Evade and +6 Increased Movement Speed.",
+    "implicit_cn": "闪避时获得 4% 速度和 +6 移动速度。",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Dexterity Linked",
+    "name_cn": "敏捷连锁鞋子",
+    "name_id": "boots_dexterity_linked",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "dexterity"
+    ],
+    "quality": "rare",
+    "image": "images/boots_rare.webp",
+    "description": "一件敏捷连锁鞋子",
+    "description_cn": "一件敏捷连锁鞋子",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "+6 Increased Movement Speed; On Kill, gain 6 Dodge Attack Chance and 12% Movement Speed for 3.5s.",
+    "implicit_cn": "+6 移动速度；击杀时，获得 6 闪避攻击几率和 12% 移动速度，持续 3.5 秒。",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Dexterity Plated",
+    "name_cn": "敏捷镀甲鞋子",
+    "name_id": "boots_dexterity_plated",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "dexterity"
+    ],
+    "quality": "rare",
+    "image": "images/boots_rare.webp",
+    "description": "一件敏捷镀甲鞋子",
+    "description_cn": "一件敏捷镀甲鞋子",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "+8 Increased Movement Speed; On Kill, gain 6% Movement Speed for 4s.",
+    "implicit_cn": "+8 移动速度；击杀时，获得 6% 移动速度，持续 4 秒。",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Dexterity Lordly",
+    "name_cn": "敏捷领主鞋子",
+    "name_id": "boots_dexterity_lordly",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "dexterity"
+    ],
+    "quality": "legendary",
+    "image": "images/boots_legendary.webp",
+    "description": "一件敏捷领主鞋子",
+    "description_cn": "一件敏捷领主鞋子",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "31% chance to Pierce and +8 Increased Movement Speed.",
+    "implicit_cn": "31% 几率穿透和 +8 移动速度。",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Dexterity Transcendent",
+    "name_cn": "敏捷超凡鞋子",
+    "name_id": "boots_dexterity_transcendent",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "dexterity"
+    ],
+    "quality": "mythic",
+    "image": "images/boots_mythic.webp",
+    "description": "一件敏捷超凡鞋子",
+    "description_cn": "一件敏捷超凡鞋子",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "34% chance to Pierce and +9 Increased Movement Speed.",
+    "implicit_cn": "34% 几率穿透和 +9 移动速度。",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Intelligence Tattered",
+    "name_cn": "智力破烂鞋子",
+    "name_id": "boots_intelligence_tattered",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "intelligence"
+    ],
+    "quality": "common",
+    "image": "images/boots_common.webp",
+    "description": "一件智力破烂鞋子",
+    "description_cn": "一件智力破烂鞋子",
+    "baseStats": {
+      "defenses": {
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "+5 Increased Movement Speed; On Kill.",
+    "implicit_cn": "+5 Increased Movement Speed; On Kill.",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Intelligence Patched",
+    "name_cn": "智力修补鞋子",
+    "name_id": "boots_intelligence_patched",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "intelligence"
+    ],
+    "quality": "magic",
+    "image": "images/boots_magic.webp",
+    "description": "一件智力修补鞋子",
+    "description_cn": "一件智力修补鞋子",
+    "baseStats": {
+      "defenses": {
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "+7 Mana Regeneration per second and +6 Increased Movement Speed.",
+    "implicit_cn": "+7 每秒法力回复和 +6 移动速度。",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Intelligence Linked",
+    "name_cn": "智力连锁鞋子",
+    "name_id": "boots_intelligence_linked",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "intelligence"
+    ],
+    "quality": "rare",
+    "image": "images/boots_rare.webp",
+    "description": "一件智力连锁鞋子",
+    "description_cn": "一件智力连锁鞋子",
+    "baseStats": {
+      "defenses": {
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "Recover 250ms of Cooldown on Crit and +6 Increased Movement Speed.",
+    "implicit_cn": "暴击时回复 250 毫秒冷却和 +6 移动速度。",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Intelligence Plated",
+    "name_cn": "智力镀甲鞋子",
+    "name_id": "boots_intelligence_plated",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "intelligence"
+    ],
+    "quality": "rare",
+    "image": "images/boots_rare.webp",
+    "description": "一件智力镀甲鞋子",
+    "description_cn": "一件智力镀甲鞋子",
+    "baseStats": {
+      "defenses": {
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "+6% Spell Suppression Chance and +7 Increased Movement Speed.",
+    "implicit_cn": "+6% 法术压制几率和 +7 移动速度。",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Intelligence Lordly",
+    "name_cn": "智力领主鞋子",
+    "name_id": "boots_intelligence_lordly",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "intelligence"
+    ],
+    "quality": "legendary",
+    "image": "images/boots_legendary.webp",
+    "description": "一件智力领主鞋子",
+    "description_cn": "一件智力领主鞋子",
+    "baseStats": {
+      "defenses": {
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "+7% increased Maximum Mana and +8 Increased Movement Speed.",
+    "implicit_cn": "+7% 最大法力值提升和 +8 移动速度。",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Intelligence Transcendent",
+    "name_cn": "智力超凡鞋子",
+    "name_id": "boots_intelligence_transcendent",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "intelligence"
+    ],
+    "quality": "mythic",
+    "image": "images/boots_mythic.webp",
+    "description": "一件智力超凡鞋子",
+    "description_cn": "一件智力超凡鞋子",
+    "baseStats": {
+      "defenses": {
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.594
+        }
+      }
+    },
+    "implicit": "+9% Cooldown Recovery Rate and +9 Increased Movement Speed.",
+    "implicit_cn": "+9% 冷却回复率和 +9 移动速度。",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Dexterity Strength Tattered",
+    "name_cn": "敏捷力量破烂鞋子",
+    "name_id": "boots_dexterity_strength_tattered",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "dexterity",
+      "strength"
+    ],
+    "quality": "common",
+    "image": "images/boots_common.webp",
+    "description": "一件敏捷力量破烂鞋子",
+    "description_cn": "一件敏捷力量破烂鞋子",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.3267
+        },
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "+3% Attack Speed and +5 Increased Movement Speed.",
+    "implicit_cn": "+3% 攻击速度和 +5 移动速度。",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Dexterity Strength Patched",
+    "name_cn": "敏捷力量修补鞋子",
+    "name_id": "boots_dexterity_strength_patched",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "dexterity",
+      "strength"
+    ],
+    "quality": "magic",
+    "image": "images/boots_magic.webp",
+    "description": "一件敏捷力量修补鞋子",
+    "description_cn": "一件敏捷力量修补鞋子",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.3267
+        },
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "+5 Increased Movement Speed; On Kill, gain 5% Movement Speed for 3s.",
+    "implicit_cn": "+5 移动速度；击杀时，获得 5% 移动速度，持续 3 秒。",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Dexterity Strength Linked",
+    "name_cn": "敏捷力量连锁鞋子",
+    "name_id": "boots_dexterity_strength_linked",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "dexterity",
+      "strength"
+    ],
+    "quality": "rare",
+    "image": "images/boots_rare.webp",
+    "description": "一件敏捷力量连锁鞋子",
+    "description_cn": "一件敏捷力量连锁鞋子",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.3267
+        },
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "1% of Damage Leeched as Life and +6 Increased Movement Speed.",
+    "implicit_cn": "1% 伤害偷取为生命值和 +6 移动速度。",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Dexterity Strength Plated",
+    "name_cn": "敏捷力量镀甲鞋子",
+    "name_id": "boots_dexterity_strength_plated",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "dexterity",
+      "strength"
+    ],
+    "quality": "rare",
+    "image": "images/boots_rare.webp",
+    "description": "一件敏捷力量镀甲鞋子",
+    "description_cn": "一件敏捷力量镀甲鞋子",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.3267
+        },
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "+7 Increased Movement Speed; On Kill, gain 7% Attack and Cast Speed for 4s.",
+    "implicit_cn": "+7 移动速度；击杀时，获得 7% 攻击和施法速度，持续 4 秒。",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Dexterity Strength Lordly",
+    "name_cn": "敏捷力量领主鞋子",
+    "name_id": "boots_dexterity_strength_lordly",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "dexterity",
+      "strength"
+    ],
+    "quality": "legendary",
+    "image": "images/boots_legendary.webp",
+    "description": "一件敏捷力量领主鞋子",
+    "description_cn": "一件敏捷力量领主鞋子",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.3267
+        },
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "+8 Increased Movement Speed; On Kill, recover 14 Threshold.",
+    "implicit_cn": "+8 移动速度；击杀时，回复 14 阈值。",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Dexterity Strength Transcendent",
+    "name_cn": "敏捷力量超凡鞋子",
+    "name_id": "boots_dexterity_strength_transcendent",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "dexterity",
+      "strength"
+    ],
+    "quality": "mythic",
+    "image": "images/boots_mythic.webp",
+    "description": "一件敏捷力量超凡鞋子",
+    "description_cn": "一件敏捷力量超凡鞋子",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.3267
+        },
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "+10 Increased Movement Speed.",
+    "implicit_cn": "+10 移动速度。",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Intelligence Strength Tattered",
+    "name_cn": "智力力量破烂鞋子",
+    "name_id": "boots_intelligence_strength_tattered",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "intelligence",
+      "strength"
+    ],
+    "quality": "common",
+    "image": "images/boots_common.webp",
+    "description": "一件智力力量破烂鞋子",
+    "description_cn": "一件智力力量破烂鞋子",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.3267
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "+3% Recovery Rate and +5 Increased Movement Speed.",
+    "implicit_cn": "+3% 回复率和 +5 移动速度。",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Intelligence Strength Patched",
+    "name_cn": "智力力量修补鞋子",
+    "name_id": "boots_intelligence_strength_patched",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "intelligence",
+      "strength"
+    ],
+    "quality": "magic",
+    "image": "images/boots_magic.webp",
+    "description": "一件智力力量修补鞋子",
+    "description_cn": "一件智力力量修补鞋子",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.3267
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "+5 Increased Movement Speed; On Block, gain 3% Movement Speed for 3s.",
+    "implicit_cn": "+5 移动速度；格挡时，获得 3% 移动速度，持续 3 秒。",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Intelligence Strength Linked",
+    "name_cn": "智力力量连锁鞋子",
+    "name_id": "boots_intelligence_strength_linked",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "intelligence",
+      "strength"
+    ],
+    "quality": "rare",
+    "image": "images/boots_rare.webp",
+    "description": "一件智力力量连锁鞋子",
+    "description_cn": "一件智力力量连锁鞋子",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.3267
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "+4% to all Maximum Elemental Resistances and +7 Increased Movement Speed.",
+    "implicit_cn": "+4% 全最大元素抗性和 +7 移动速度。",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Intelligence Strength Plated",
+    "name_cn": "智力力量镀甲鞋子",
+    "name_id": "boots_intelligence_strength_plated",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "intelligence",
+      "strength"
+    ],
+    "quality": "rare",
+    "image": "images/boots_rare.webp",
+    "description": "一件智力力量镀甲鞋子",
+    "description_cn": "一件智力力量镀甲鞋子",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.3267
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "7% of Damage taken Recouped as Life and +8 Increased Movement Speed.",
+    "implicit_cn": "7% 受到的伤害回复为生命值和 +8 移动速度。",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Intelligence Strength Lordly",
+    "name_cn": "智力力量领主鞋子",
+    "name_id": "boots_intelligence_strength_lordly",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "intelligence",
+      "strength"
+    ],
+    "quality": "legendary",
+    "image": "images/boots_legendary.webp",
+    "description": "一件智力力量领主鞋子",
+    "description_cn": "一件智力力量领主鞋子",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.3267
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "Recover 14 Life on Kill and +8 Increased Movement Speed.",
+    "implicit_cn": "击杀时回复 14 生命值和 +8 移动速度。",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Intelligence Strength Transcendent",
+    "name_cn": "智力力量超凡鞋子",
+    "name_id": "boots_intelligence_strength_transcendent",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "intelligence",
+      "strength"
+    ],
+    "quality": "mythic",
+    "image": "images/boots_mythic.webp",
+    "description": "一件智力力量超凡鞋子",
+    "description_cn": "一件智力力量超凡鞋子",
+    "baseStats": {
+      "defenses": {
+        "armor": {
+          "curve": "defense_armor",
+          "mult": 0.3267
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "+8% Fortify Effect and +10 Increased Movement Speed.",
+    "implicit_cn": "+8% 强化效果和 +10 移动速度。",
+    "req": {
+      "level": 84,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Dexterity Intelligence Tattered",
+    "name_cn": "敏捷智力破烂鞋子",
+    "name_id": "boots_dexterity_intelligence_tattered",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "dexterity",
+      "intelligence"
+    ],
+    "quality": "common",
+    "image": "images/boots_common.webp",
+    "description": "一件敏捷智力破烂鞋子",
+    "description_cn": "一件敏捷智力破烂鞋子",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.3267
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "+3% Ailment Effect and +5 Increased Movement Speed.",
+    "implicit_cn": "+3% 异常状态效果和 +5 移动速度。",
+    "req": {
+      "level": 1,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Dexterity Intelligence Patched",
+    "name_cn": "敏捷智力修补鞋子",
+    "name_id": "boots_dexterity_intelligence_patched",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "dexterity",
+      "intelligence"
+    ],
+    "quality": "magic",
+    "image": "images/boots_magic.webp",
+    "description": "一件敏捷智力修补鞋子",
+    "description_cn": "一件敏捷智力修补鞋子",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.3267
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "+5 Increased Movement Speed; On Hit, 20% chance to gain 4% Movement Speed for 3s.",
+    "implicit_cn": "+5 移动速度；击中时，20% 几率获得 4% 移动速度，持续 3 秒。",
+    "req": {
+      "level": 17,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Dexterity Intelligence Linked",
+    "name_cn": "敏捷智力连锁鞋子",
+    "name_id": "boots_dexterity_intelligence_linked",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "dexterity",
+      "intelligence"
+    ],
+    "quality": "rare",
+    "image": "images/boots_rare.webp",
+    "description": "一件敏捷智力连锁鞋子",
+    "description_cn": "一件敏捷智力连锁鞋子",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.3267
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "+7 Increased Movement Speed; Poison spread to enemies within 8m on Kill.",
+    "implicit_cn": "+7 移动速度；击杀时，中毒会传播到 8 米内的敌人。",
+    "req": {
+      "level": 34,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Dexterity Intelligence Plated",
+    "name_cn": "敏捷智力镀甲鞋子",
+    "name_id": "boots_dexterity_intelligence_plated",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "dexterity",
+      "intelligence"
+    ],
+    "quality": "rare",
+    "image": "images/boots_rare.webp",
+    "description": "一件敏捷智力镀甲鞋子",
+    "description_cn": "一件敏捷智力镀甲鞋子",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.3267
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "Recover 220ms of Cooldowns on Kill and +7 Increased Movement Speed.",
+    "implicit_cn": "击杀时回复 220 毫秒冷却和 +7 移动速度。",
+    "req": {
+      "level": 50,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Dexterity Intelligence Lordly",
+    "name_cn": "敏捷智力领主鞋子",
+    "name_id": "boots_dexterity_intelligence_lordly",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "dexterity",
+      "intelligence"
+    ],
+    "quality": "legendary",
+    "image": "images/boots_legendary.webp",
+    "description": "一件敏捷智力领主鞋子",
+    "description_cn": "一件敏捷智力领主鞋子",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.3267
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "7% reduced Stagger taken and +9 Increased Movement Speed.",
+    "implicit_cn": "受到的眩晕减少 7% 和 +9 移动速度。",
+    "req": {
+      "level": 67,
+      "stats": {}
+    }
+  },
+  {
+    "name": "Boots Dexterity Intelligence Transcendent",
+    "name_cn": "敏捷智力超凡鞋子",
+    "name_id": "boots_dexterity_intelligence_transcendent",
+    "type": "护甲",
+    "category": "armor",
+    "slot": "boots",
+    "weaponFamily": null,
+    "hands": "none",
+    "tags": [
+      "base",
+      "armor",
+      "boots",
+      "dexterity",
+      "intelligence"
+    ],
+    "quality": "mythic",
+    "image": "images/boots_mythic.webp",
+    "description": "一件敏捷智力超凡鞋子",
+    "description_cn": "一件敏捷智力超凡鞋子",
+    "baseStats": {
+      "defenses": {
+        "evasion": {
+          "curve": "defense_evasion",
+          "mult": 0.3267
+        },
+        "threshold": {
+          "curve": "defense_threshold",
+          "mult": 0.3267
+        }
+      }
+    },
+    "implicit": "+9 Increased Movement Speed; On Kill, gain 28% Attack and Cast Speed for 5.0s.",
+    "implicit_cn": "+9 移动速度；击杀时，获得 28% 攻击和施法速度，持续 5.0 秒。",
+    "req": {
+      "level": 84,
       "stats": {}
     }
   }
